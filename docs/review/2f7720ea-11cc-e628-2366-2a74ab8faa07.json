@@ -1,0 +1,169 @@
+{
+  "review_id": "2f7720ea-11cc-e628-2366-2a74ab8faa07",
+  "observations": [
+    {
+      "evidence_id": "sample:a39eb54c-0727-4d38-92fd-4d4d80f499e4:SW-B3-2:eth1",
+      "device_id": "SW-B3-2",
+      "kind": "interface",
+      "observed_at": "2026-11-16 22:35:52.016321+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "SW-B3-2:eth1 administrative status 1, operational status 1."
+    },
+    {
+      "evidence_id": "probe:8e105675-94c9-4aa7-91be-3b54dfe1d5c7",
+      "device_id": "PC-B3-IT",
+      "kind": "probe",
+      "observed_at": "2026-11-16 22:35:51.665366+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:44f4599e-1165-4e54-8446-afaa7961eaa4",
+      "device_id": "PC-B3-IT",
+      "kind": "probe",
+      "observed_at": "2026-11-16 22:35:48.018264+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "snapshot:7c719c01-6a97-4872-8fc5-ece9197f7d05:link:eth1",
+      "device_id": "SW-B3-2",
+      "kind": "console_interface",
+      "observed_at": "2026-11-16 22:35:52.605716+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Console shows eth1 administratively up."
+    },
+    {
+      "evidence_id": "topology:6a761ca4c9524b6e",
+      "device_id": "PC-B3-IT",
+      "kind": "topology",
+      "observed_at": "2026-11-16 22:35:53.039913+00:00",
+      "source": "inventory",
+      "is_stale": false,
+      "summary": "Inventory path from monitoring server to target."
+    }
+  ],
+  "candidate_hypotheses": [
+    {
+      "fault_class": "unreachability",
+      "device_id": "PC-B3-IT",
+      "interface": null,
+      "affected_devices": [],
+      "topology_path": [
+        "MON-HQ",
+        "SW-HQ-2",
+        "MLS-HQ",
+        "R-HQ",
+        "SW-WAN",
+        "R-B3",
+        "MLS-B3",
+        "SW-B3-2",
+        "PC-B3-IT"
+      ]
+    }
+  ],
+  "status": "ok",
+  "interpretation": {
+    "disposition": "inconclusive",
+    "fault_class": "inconclusive",
+    "device_id": "",
+    "interface": "",
+    "summary": "The alert indicates suspected unreachability at PC-B3-IT, but no observational data or evidence IDs have been provided to investigate the root cause.",
+    "supporting_evidence_ids": [],
+    "alternative_checks": [
+      "addresses",
+      "routes",
+      "ospf_neighbors",
+      "ospf_interfaces",
+      "acl_rules"
+    ],
+    "uncertainty": "No telemetry, logs, or diagnostic check outputs are present in the observations to confirm the state of the network or the affected device.",
+    "missing_evidence": [
+      "addresses",
+      "routes",
+      "ospf_neighbors",
+      "ospf_interfaces",
+      "acl_rules"
+    ]
+  },
+  "read_only_checks": [
+    {
+      "id": "addresses",
+      "command": "ip -j address show",
+      "device_id": "",
+      "executable": false
+    },
+    {
+      "id": "routes",
+      "command": "ip -j route show",
+      "device_id": "",
+      "executable": false
+    },
+    {
+      "id": "ospf_neighbors",
+      "command": "vtysh -c 'show ip ospf neighbor json'",
+      "device_id": "",
+      "executable": false
+    },
+    {
+      "id": "ospf_interfaces",
+      "command": "vtysh -c 'show ip ospf interface json'",
+      "device_id": "",
+      "executable": false
+    },
+    {
+      "id": "acl_rules",
+      "command": "nft -j list table inet fyp_policy",
+      "device_id": "",
+      "executable": false
+    }
+  ],
+  "actual_diagnostic_input": {
+    "description": "Alert: unreachability suspected at PC-B3-IT . Affected devices: ",
+    "allowed_devices": [
+      "MLS-B1",
+      "MLS-B2",
+      "MLS-B3",
+      "MLS-HQ",
+      "MON-HQ",
+      "PC-B1-ADMIN",
+      "PC-B1-IT",
+      "PC-B1-STAFF",
+      "PC-B2-ADMIN",
+      "PC-B2-IT",
+      "PC-B2-STAFF",
+      "PC-B3-ADMIN",
+      "PC-B3-IT",
+      "PC-B3-STAFF",
+      "PC-HQ-ADMIN",
+      "PC-HQ-IT",
+      "PC-HQ-STAFF",
+      "R-B1",
+      "R-B2",
+      "R-B3",
+      "R-HQ",
+      "SW-B1-1",
+      "SW-B1-2",
+      "SW-B2-1",
+      "SW-B2-2",
+      "SW-B3-1",
+      "SW-B3-2",
+      "SW-HQ-1",
+      "SW-HQ-2",
+      "SW-WAN"
+    ],
+    "allowed_check_ids": [
+      "addresses",
+      "routes",
+      "ospf_neighbors",
+      "ospf_interfaces",
+      "acl_rules"
+    ]
+  },
+  "local_source_observations": "source-37516dd754f399cb6afd.json",
+  "review_boundary": "Support is relative to the actual diagnostic input. The masked source bundle is available only to verify derived observations; it must not give credit for information absent from the diagnostic input."
+}

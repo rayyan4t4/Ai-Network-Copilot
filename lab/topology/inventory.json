@@ -1,0 +1,581 @@
+{
+  "name": "AI Network Copilot - Four Site Lightweight Lab",
+  "image": "fyp-network-node:week1",
+  "sites": [
+    {
+      "name": "HQ",
+      "index": 0,
+      "vlans": {
+        "10": 10,
+        "20": 20,
+        "30": 30
+      },
+      "transit": "10.10.0",
+      "x": -900
+    },
+    {
+      "name": "B1",
+      "index": 1,
+      "vlans": {
+        "10": 110,
+        "20": 120,
+        "30": 130
+      },
+      "transit": "10.11.0",
+      "x": -300
+    },
+    {
+      "name": "B2",
+      "index": 2,
+      "vlans": {
+        "10": 210,
+        "20": 220,
+        "30": 230
+      },
+      "transit": "10.12.0",
+      "x": 300
+    },
+    {
+      "name": "B3",
+      "index": 3,
+      "vlans": {
+        "10": 31,
+        "20": 32,
+        "30": 33
+      },
+      "transit": "10.13.0",
+      "x": 900
+    }
+  ],
+  "nodes": {
+    "SW-WAN": {
+      "name": "SW-WAN",
+      "role": "wan",
+      "adapters": 4,
+      "x": 0,
+      "y": -550,
+      "management_ip": "10.0.0.254",
+      "gateway": "10.0.0.1"
+    },
+    "R-HQ": {
+      "name": "R-HQ",
+      "role": "router",
+      "adapters": 2,
+      "x": -900,
+      "y": -380,
+      "site": "HQ",
+      "management_ip": "10.0.0.1"
+    },
+    "MLS-HQ": {
+      "name": "MLS-HQ",
+      "role": "mls",
+      "adapters": 4,
+      "x": -900,
+      "y": -180,
+      "site": "HQ",
+      "management_ip": "192.168.30.1"
+    },
+    "SW-HQ-1": {
+      "name": "SW-HQ-1",
+      "role": "access1",
+      "adapters": 4,
+      "x": -1010,
+      "y": 40,
+      "site": "HQ",
+      "management_ip": "192.168.30.2"
+    },
+    "SW-HQ-2": {
+      "name": "SW-HQ-2",
+      "role": "access2",
+      "adapters": 3,
+      "x": -770,
+      "y": 40,
+      "site": "HQ",
+      "management_ip": "192.168.30.3"
+    },
+    "PC-HQ-ADMIN": {
+      "name": "PC-HQ-ADMIN",
+      "role": "host",
+      "adapters": 1,
+      "x": -1100,
+      "y": 230,
+      "site": "HQ",
+      "vlan": 10,
+      "expected_ip": "192.168.10.101",
+      "gateway": "192.168.10.1"
+    },
+    "PC-HQ-STAFF": {
+      "name": "PC-HQ-STAFF",
+      "role": "host",
+      "adapters": 1,
+      "x": -930,
+      "y": 230,
+      "site": "HQ",
+      "vlan": 20,
+      "expected_ip": "192.168.20.101",
+      "gateway": "192.168.20.1"
+    },
+    "PC-HQ-IT": {
+      "name": "PC-HQ-IT",
+      "role": "host",
+      "adapters": 1,
+      "x": -740,
+      "y": 230,
+      "site": "HQ",
+      "vlan": 30,
+      "expected_ip": "192.168.30.101",
+      "gateway": "192.168.30.1"
+    },
+    "R-B1": {
+      "name": "R-B1",
+      "role": "router",
+      "adapters": 2,
+      "x": -300,
+      "y": -380,
+      "site": "B1",
+      "management_ip": "10.0.0.2"
+    },
+    "MLS-B1": {
+      "name": "MLS-B1",
+      "role": "mls",
+      "adapters": 4,
+      "x": -300,
+      "y": -180,
+      "site": "B1",
+      "management_ip": "192.168.130.1"
+    },
+    "SW-B1-1": {
+      "name": "SW-B1-1",
+      "role": "access1",
+      "adapters": 4,
+      "x": -410,
+      "y": 40,
+      "site": "B1",
+      "management_ip": "192.168.130.2"
+    },
+    "SW-B1-2": {
+      "name": "SW-B1-2",
+      "role": "access2",
+      "adapters": 2,
+      "x": -170,
+      "y": 40,
+      "site": "B1",
+      "management_ip": "192.168.130.3"
+    },
+    "PC-B1-ADMIN": {
+      "name": "PC-B1-ADMIN",
+      "role": "host",
+      "adapters": 1,
+      "x": -500,
+      "y": 230,
+      "site": "B1",
+      "vlan": 10,
+      "expected_ip": "192.168.110.101",
+      "gateway": "192.168.110.1"
+    },
+    "PC-B1-STAFF": {
+      "name": "PC-B1-STAFF",
+      "role": "host",
+      "adapters": 1,
+      "x": -330,
+      "y": 230,
+      "site": "B1",
+      "vlan": 20,
+      "expected_ip": "192.168.120.101",
+      "gateway": "192.168.120.1"
+    },
+    "PC-B1-IT": {
+      "name": "PC-B1-IT",
+      "role": "host",
+      "adapters": 1,
+      "x": -140,
+      "y": 230,
+      "site": "B1",
+      "vlan": 30,
+      "expected_ip": "192.168.130.101",
+      "gateway": "192.168.130.1"
+    },
+    "R-B2": {
+      "name": "R-B2",
+      "role": "router",
+      "adapters": 2,
+      "x": 300,
+      "y": -380,
+      "site": "B2",
+      "management_ip": "10.0.0.3"
+    },
+    "MLS-B2": {
+      "name": "MLS-B2",
+      "role": "mls",
+      "adapters": 4,
+      "x": 300,
+      "y": -180,
+      "site": "B2",
+      "management_ip": "192.168.230.1"
+    },
+    "SW-B2-1": {
+      "name": "SW-B2-1",
+      "role": "access1",
+      "adapters": 4,
+      "x": 190,
+      "y": 40,
+      "site": "B2",
+      "management_ip": "192.168.230.2"
+    },
+    "SW-B2-2": {
+      "name": "SW-B2-2",
+      "role": "access2",
+      "adapters": 2,
+      "x": 430,
+      "y": 40,
+      "site": "B2",
+      "management_ip": "192.168.230.3"
+    },
+    "PC-B2-ADMIN": {
+      "name": "PC-B2-ADMIN",
+      "role": "host",
+      "adapters": 1,
+      "x": 100,
+      "y": 230,
+      "site": "B2",
+      "vlan": 10,
+      "expected_ip": "192.168.210.101",
+      "gateway": "192.168.210.1"
+    },
+    "PC-B2-STAFF": {
+      "name": "PC-B2-STAFF",
+      "role": "host",
+      "adapters": 1,
+      "x": 270,
+      "y": 230,
+      "site": "B2",
+      "vlan": 20,
+      "expected_ip": "192.168.220.101",
+      "gateway": "192.168.220.1"
+    },
+    "PC-B2-IT": {
+      "name": "PC-B2-IT",
+      "role": "host",
+      "adapters": 1,
+      "x": 460,
+      "y": 230,
+      "site": "B2",
+      "vlan": 30,
+      "expected_ip": "192.168.230.101",
+      "gateway": "192.168.230.1"
+    },
+    "R-B3": {
+      "name": "R-B3",
+      "role": "router",
+      "adapters": 2,
+      "x": 900,
+      "y": -380,
+      "site": "B3",
+      "management_ip": "10.0.0.4"
+    },
+    "MLS-B3": {
+      "name": "MLS-B3",
+      "role": "mls",
+      "adapters": 4,
+      "x": 900,
+      "y": -180,
+      "site": "B3",
+      "management_ip": "192.168.33.1"
+    },
+    "SW-B3-1": {
+      "name": "SW-B3-1",
+      "role": "access1",
+      "adapters": 4,
+      "x": 790,
+      "y": 40,
+      "site": "B3",
+      "management_ip": "192.168.33.2"
+    },
+    "SW-B3-2": {
+      "name": "SW-B3-2",
+      "role": "access2",
+      "adapters": 2,
+      "x": 1030,
+      "y": 40,
+      "site": "B3",
+      "management_ip": "192.168.33.3"
+    },
+    "PC-B3-ADMIN": {
+      "name": "PC-B3-ADMIN",
+      "role": "host",
+      "adapters": 1,
+      "x": 700,
+      "y": 230,
+      "site": "B3",
+      "vlan": 10,
+      "expected_ip": "192.168.31.101",
+      "gateway": "192.168.31.1"
+    },
+    "PC-B3-STAFF": {
+      "name": "PC-B3-STAFF",
+      "role": "host",
+      "adapters": 1,
+      "x": 870,
+      "y": 230,
+      "site": "B3",
+      "vlan": 20,
+      "expected_ip": "192.168.32.101",
+      "gateway": "192.168.32.1"
+    },
+    "PC-B3-IT": {
+      "name": "PC-B3-IT",
+      "role": "host",
+      "adapters": 1,
+      "x": 1060,
+      "y": 230,
+      "site": "B3",
+      "vlan": 30,
+      "expected_ip": "192.168.33.101",
+      "gateway": "192.168.33.1"
+    },
+    "MON-HQ": {
+      "name": "MON-HQ",
+      "role": "monitor",
+      "adapters": 1,
+      "x": -650,
+      "y": 350,
+      "site": "HQ",
+      "management_ip": "192.168.30.10",
+      "gateway": "192.168.30.1",
+      "image": "fyp-monitor:week1"
+    }
+  },
+  "links": [
+    {
+      "a": "R-HQ",
+      "a_port": 1,
+      "b": "SW-WAN",
+      "b_port": 0,
+      "purpose": "Shared OSPF WAN"
+    },
+    {
+      "a": "R-HQ",
+      "a_port": 0,
+      "b": "MLS-HQ",
+      "b_port": 0,
+      "purpose": "Routed /30 uplink"
+    },
+    {
+      "a": "MLS-HQ",
+      "a_port": 1,
+      "b": "SW-HQ-1",
+      "b_port": 0,
+      "purpose": "LACP member 1"
+    },
+    {
+      "a": "MLS-HQ",
+      "a_port": 2,
+      "b": "SW-HQ-1",
+      "b_port": 1,
+      "purpose": "LACP member 2"
+    },
+    {
+      "a": "MLS-HQ",
+      "a_port": 3,
+      "b": "SW-HQ-2",
+      "b_port": 0,
+      "purpose": "VLAN trunk 10 20 30"
+    },
+    {
+      "a": "SW-HQ-1",
+      "a_port": 2,
+      "b": "PC-HQ-ADMIN",
+      "b_port": 0,
+      "purpose": "Access VLAN 10"
+    },
+    {
+      "a": "SW-HQ-1",
+      "a_port": 3,
+      "b": "PC-HQ-STAFF",
+      "b_port": 0,
+      "purpose": "Access VLAN 20"
+    },
+    {
+      "a": "SW-HQ-2",
+      "a_port": 1,
+      "b": "PC-HQ-IT",
+      "b_port": 0,
+      "purpose": "Access VLAN 30"
+    },
+    {
+      "a": "R-B1",
+      "a_port": 1,
+      "b": "SW-WAN",
+      "b_port": 1,
+      "purpose": "Shared OSPF WAN"
+    },
+    {
+      "a": "R-B1",
+      "a_port": 0,
+      "b": "MLS-B1",
+      "b_port": 0,
+      "purpose": "Routed /30 uplink"
+    },
+    {
+      "a": "MLS-B1",
+      "a_port": 1,
+      "b": "SW-B1-1",
+      "b_port": 0,
+      "purpose": "LACP member 1"
+    },
+    {
+      "a": "MLS-B1",
+      "a_port": 2,
+      "b": "SW-B1-1",
+      "b_port": 1,
+      "purpose": "LACP member 2"
+    },
+    {
+      "a": "MLS-B1",
+      "a_port": 3,
+      "b": "SW-B1-2",
+      "b_port": 0,
+      "purpose": "VLAN trunk 10 20 30"
+    },
+    {
+      "a": "SW-B1-1",
+      "a_port": 2,
+      "b": "PC-B1-ADMIN",
+      "b_port": 0,
+      "purpose": "Access VLAN 10"
+    },
+    {
+      "a": "SW-B1-1",
+      "a_port": 3,
+      "b": "PC-B1-STAFF",
+      "b_port": 0,
+      "purpose": "Access VLAN 20"
+    },
+    {
+      "a": "SW-B1-2",
+      "a_port": 1,
+      "b": "PC-B1-IT",
+      "b_port": 0,
+      "purpose": "Access VLAN 30"
+    },
+    {
+      "a": "R-B2",
+      "a_port": 1,
+      "b": "SW-WAN",
+      "b_port": 2,
+      "purpose": "Shared OSPF WAN"
+    },
+    {
+      "a": "R-B2",
+      "a_port": 0,
+      "b": "MLS-B2",
+      "b_port": 0,
+      "purpose": "Routed /30 uplink"
+    },
+    {
+      "a": "MLS-B2",
+      "a_port": 1,
+      "b": "SW-B2-1",
+      "b_port": 0,
+      "purpose": "LACP member 1"
+    },
+    {
+      "a": "MLS-B2",
+      "a_port": 2,
+      "b": "SW-B2-1",
+      "b_port": 1,
+      "purpose": "LACP member 2"
+    },
+    {
+      "a": "MLS-B2",
+      "a_port": 3,
+      "b": "SW-B2-2",
+      "b_port": 0,
+      "purpose": "VLAN trunk 10 20 30"
+    },
+    {
+      "a": "SW-B2-1",
+      "a_port": 2,
+      "b": "PC-B2-ADMIN",
+      "b_port": 0,
+      "purpose": "Access VLAN 10"
+    },
+    {
+      "a": "SW-B2-1",
+      "a_port": 3,
+      "b": "PC-B2-STAFF",
+      "b_port": 0,
+      "purpose": "Access VLAN 20"
+    },
+    {
+      "a": "SW-B2-2",
+      "a_port": 1,
+      "b": "PC-B2-IT",
+      "b_port": 0,
+      "purpose": "Access VLAN 30"
+    },
+    {
+      "a": "R-B3",
+      "a_port": 1,
+      "b": "SW-WAN",
+      "b_port": 3,
+      "purpose": "Shared OSPF WAN"
+    },
+    {
+      "a": "R-B3",
+      "a_port": 0,
+      "b": "MLS-B3",
+      "b_port": 0,
+      "purpose": "Routed /30 uplink"
+    },
+    {
+      "a": "MLS-B3",
+      "a_port": 1,
+      "b": "SW-B3-1",
+      "b_port": 0,
+      "purpose": "LACP member 1"
+    },
+    {
+      "a": "MLS-B3",
+      "a_port": 2,
+      "b": "SW-B3-1",
+      "b_port": 1,
+      "purpose": "LACP member 2"
+    },
+    {
+      "a": "MLS-B3",
+      "a_port": 3,
+      "b": "SW-B3-2",
+      "b_port": 0,
+      "purpose": "VLAN trunk 10 20 30"
+    },
+    {
+      "a": "SW-B3-1",
+      "a_port": 2,
+      "b": "PC-B3-ADMIN",
+      "b_port": 0,
+      "purpose": "Access VLAN 10"
+    },
+    {
+      "a": "SW-B3-1",
+      "a_port": 3,
+      "b": "PC-B3-STAFF",
+      "b_port": 0,
+      "purpose": "Access VLAN 20"
+    },
+    {
+      "a": "SW-B3-2",
+      "a_port": 1,
+      "b": "PC-B3-IT",
+      "b_port": 0,
+      "purpose": "Access VLAN 30"
+    },
+    {
+      "a": "SW-HQ-2",
+      "a_port": 2,
+      "b": "MON-HQ",
+      "b_port": 0,
+      "purpose": "Monitoring server VLAN 30"
+    }
+  ]
+}

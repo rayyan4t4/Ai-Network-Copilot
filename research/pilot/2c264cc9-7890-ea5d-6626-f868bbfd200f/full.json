@@ -1,0 +1,66 @@
+{
+  "result_id": "3e0554c3-574d-4b55-a318-d8b512010d29",
+  "case_id": "2c264cc9-7890-ea5d-6626-f868bbfd200f",
+  "phase": "pilot",
+  "approach": "full",
+  "started_at": "2026-11-16T22:12:54.012406+00:00",
+  "observation_sha256": "6d04eab442d8409a867f0c35c05950fc244465e439eb4ee5ccc3672c865224e7",
+  "status": "ok",
+  "prediction": {
+    "fault_class": "inconclusive",
+    "device_id": "",
+    "interface": "",
+    "disposition": "inconclusive",
+    "incident_detected": true
+  },
+  "model_called": false,
+  "gate": {
+    "status": "inconclusive",
+    "score": 0.7,
+    "threshold": 0.8,
+    "available_weight": 7,
+    "total_required_weight": 10,
+    "missing": [
+      "link_event"
+    ],
+    "missing_critical": [
+      "link_event"
+    ],
+    "contradictions": [],
+    "signals": {
+      "interface_down": [
+        "sample:ab280c39-ab8a-4e47-ae8e-b04b244c5ac3:R-B1:eth0",
+        "snapshot:8cbdebbb-6ddf-4c85-a691-32dcd94d5a19:link:eth0"
+      ],
+      "link_event": [],
+      "console_down": [
+        "snapshot:8cbdebbb-6ddf-4c85-a691-32dcd94d5a19:link:eth0"
+      ],
+      "downstream_failure": [
+        "probe:ecaec122-e719-4015-8c99-83aa2b907e73",
+        "probe:58faa8aa-d83f-4213-81e7-72937efcf25b",
+        "probe:789415ec-b4d5-4ec7-81b2-fe9821b1ff8f",
+        "probe:284dffb1-461e-40bb-9151-7e32fb712626",
+        "probe:f5eadd3f-91b0-4a98-86f8-844558baa4a5",
+        "probe:feb26543-ba20-4ae0-b95c-99eaea84356d"
+      ]
+    },
+    "matrix_version": "study-pilot-1",
+    "matrix_sha256": "0edf6ea5dc8ae6a60f8f4b3afd669cf7ec47417aac8d320139ac3a25b4234f3a",
+    "score_is_probability": false
+  },
+  "pipeline_latency_ms": 0,
+  "available_at": "2026-11-16T22:12:54.024963+00:00",
+  "scores": {
+    "fault_instance": false,
+    "healthy_instance": false,
+    "insufficient_instance": true,
+    "detection_tp": false,
+    "detection_fn": false,
+    "detection_fp": false,
+    "detection_tn": false,
+    "exact_root_correct": null,
+    "correct_abstention": true,
+    "error": false
+  }
+}

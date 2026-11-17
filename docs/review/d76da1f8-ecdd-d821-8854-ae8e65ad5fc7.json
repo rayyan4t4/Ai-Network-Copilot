@@ -1,0 +1,208 @@
+{
+  "review_id": "d76da1f8-ecdd-d821-8854-ae8e65ad5fc7",
+  "observations": [
+    {
+      "evidence_id": "sample:2a108aaf-b95e-43f1-8fae-bca1357e5ce9:R-B1:eth0",
+      "device_id": "R-B1",
+      "kind": "interface",
+      "observed_at": "2026-11-17 00:04:16.047937+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "R-B1:eth0 administrative status 2, operational status 2."
+    },
+    {
+      "evidence_id": "probe:4286eb5e-329f-4380-83af-8a843e440b15",
+      "device_id": "SW-B1-1",
+      "kind": "probe",
+      "observed_at": "2026-11-17 00:04:20.632773+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:c82cd780-00ab-46b2-94a2-fde8bb477cb9",
+      "device_id": "MLS-B1",
+      "kind": "probe",
+      "observed_at": "2026-11-17 00:04:20.621799+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:893566fb-9540-4502-9bad-26cf462f32bd",
+      "device_id": "PC-B1-IT",
+      "kind": "probe",
+      "observed_at": "2026-11-17 00:04:15.645690+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:8b1444ec-67c0-4f67-a6f3-ecc005d2a64d",
+      "device_id": "PC-B1-STAFF",
+      "kind": "probe",
+      "observed_at": "2026-11-17 00:04:15.639208+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:ac1f5470-b84f-4d64-a048-99d57d8696be",
+      "device_id": "PC-B1-ADMIN",
+      "kind": "probe",
+      "observed_at": "2026-11-17 00:04:14.629975+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:a08dc94b-3e98-48f5-9474-29d573fa406b",
+      "device_id": "SW-B1-2",
+      "kind": "probe",
+      "observed_at": "2026-11-17 00:04:14.623706+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "snapshot:751da990-53f3-4a7c-836b-02d531236a47:link:eth0",
+      "device_id": "R-B1",
+      "kind": "console_interface",
+      "observed_at": "2026-11-17 00:04:19.873681+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Console shows eth0 administratively down."
+    },
+    {
+      "evidence_id": "event:bb2e7d9d-13b2-57a0-b9b9-8303a47c8e45",
+      "device_id": "R-B1",
+      "kind": "link_down",
+      "observed_at": "2026-11-17 00:03:34.390280+00:00",
+      "source": "syslog",
+      "is_stale": false,
+      "summary": "Identified link-state event: link_down on eth0."
+    },
+    {
+      "evidence_id": "event:cadb110c-6cfd-5565-b0fa-8f23af2b98d5",
+      "device_id": "R-B1",
+      "kind": "ospf_loss_event",
+      "observed_at": "2026-11-17 00:03:34.372500+00:00",
+      "source": "syslog",
+      "is_stale": false,
+      "summary": "Identified ospfd event: ospf_loss_event on eth0."
+    }
+  ],
+  "candidate_hypotheses": [
+    {
+      "fault_class": "interface_shutdown",
+      "device_id": "R-B1",
+      "interface": "eth0",
+      "affected_devices": [
+        "MLS-B1",
+        "PC-B1-ADMIN",
+        "PC-B1-IT",
+        "PC-B1-STAFF",
+        "SW-B1-1",
+        "SW-B1-2"
+      ],
+      "topology_path": [
+        "MON-HQ",
+        "SW-HQ-2",
+        "MLS-HQ",
+        "R-HQ",
+        "SW-WAN",
+        "R-B1"
+      ]
+    }
+  ],
+  "status": "ok",
+  "interpretation": {
+    "disposition": "inconclusive",
+    "fault_class": "inconclusive",
+    "device_id": "R-B1",
+    "interface": "eth0",
+    "summary": "The observation only contains a baseline alert description naming R-B1 eth0 and several affected devices, but provides no actual supporting observation data or evidence IDs to verify the fault.",
+    "supporting_evidence_ids": [],
+    "alternative_checks": [
+      "addresses",
+      "routes",
+      "ospf_neighbors",
+      "ospf_interfaces"
+    ],
+    "uncertainty": "No observational telemetry or state verification data is provided to confirm if the interface is actually shut down.",
+    "missing_evidence": [
+      "interface status data",
+      "device configuration logs"
+    ]
+  },
+  "read_only_checks": [
+    {
+      "id": "addresses",
+      "command": "ip -j address show",
+      "device_id": "R-B1",
+      "executable": false
+    },
+    {
+      "id": "routes",
+      "command": "ip -j route show",
+      "device_id": "R-B1",
+      "executable": false
+    },
+    {
+      "id": "ospf_neighbors",
+      "command": "vtysh -c 'show ip ospf neighbor json'",
+      "device_id": "R-B1",
+      "executable": false
+    },
+    {
+      "id": "ospf_interfaces",
+      "command": "vtysh -c 'show ip ospf interface json'",
+      "device_id": "R-B1",
+      "executable": false
+    }
+  ],
+  "actual_diagnostic_input": {
+    "description": "Alert: interface_shutdown suspected at R-B1 eth0. Affected devices: MLS-B1, PC-B1-ADMIN, PC-B1-IT, PC-B1-STAFF, SW-B1-1, SW-B1-2",
+    "allowed_devices": [
+      "MLS-B1",
+      "MLS-B2",
+      "MLS-B3",
+      "MLS-HQ",
+      "MON-HQ",
+      "PC-B1-ADMIN",
+      "PC-B1-IT",
+      "PC-B1-STAFF",
+      "PC-B2-ADMIN",
+      "PC-B2-IT",
+      "PC-B2-STAFF",
+      "PC-B3-ADMIN",
+      "PC-B3-IT",
+      "PC-B3-STAFF",
+      "PC-HQ-ADMIN",
+      "PC-HQ-IT",
+      "PC-HQ-STAFF",
+      "R-B1",
+      "R-B2",
+      "R-B3",
+      "R-HQ",
+      "SW-B1-1",
+      "SW-B1-2",
+      "SW-B2-1",
+      "SW-B2-2",
+      "SW-B3-1",
+      "SW-B3-2",
+      "SW-HQ-1",
+      "SW-HQ-2",
+      "SW-WAN"
+    ],
+    "allowed_check_ids": [
+      "addresses",
+      "routes",
+      "ospf_neighbors",
+      "ospf_interfaces",
+      "acl_rules"
+    ]
+  },
+  "local_source_observations": "source-6098d71d523a2ebfd7e0.json",
+  "review_boundary": "Support is relative to the actual diagnostic input. The masked source bundle is available only to verify derived observations; it must not give credit for information absent from the diagnostic input."
+}

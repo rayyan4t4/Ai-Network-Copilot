@@ -1,0 +1,610 @@
+{
+  "recorded_at": "2026-11-17T11:48:38.289262+00:00",
+  "passed": true,
+  "observation_seconds": 120,
+  "distinct_exports": 21,
+  "samples": [
+    {
+      "at": "2026-11-17T11:46:37.021614+00:00",
+      "as_of": "2026-11-17 11:46:34.886879+00:00",
+      "age_seconds": 2.1,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.062
+    },
+    {
+      "at": "2026-11-17T11:46:39.058595+00:00",
+      "as_of": "2026-11-17 11:46:34.886879+00:00",
+      "age_seconds": 4.1,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.031
+    },
+    {
+      "at": "2026-11-17T11:46:41.142659+00:00",
+      "as_of": "2026-11-17 11:46:39.683052+00:00",
+      "age_seconds": 1.4,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.094
+    },
+    {
+      "at": "2026-11-17T11:46:43.196415+00:00",
+      "as_of": "2026-11-17 11:46:39.683052+00:00",
+      "age_seconds": 3.5,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.047
+    },
+    {
+      "at": "2026-11-17T11:46:45.243749+00:00",
+      "as_of": "2026-11-17 11:46:44.195528+00:00",
+      "age_seconds": 1.0,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.047
+    },
+    {
+      "at": "2026-11-17T11:46:47.304798+00:00",
+      "as_of": "2026-11-17 11:46:44.195528+00:00",
+      "age_seconds": 3.1,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.062
+    },
+    {
+      "at": "2026-11-17T11:46:49.353540+00:00",
+      "as_of": "2026-11-17 11:46:44.195528+00:00",
+      "age_seconds": 5.1,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.047
+    },
+    {
+      "at": "2026-11-17T11:46:51.406810+00:00",
+      "as_of": "2026-11-17 11:46:44.195528+00:00",
+      "age_seconds": 7.2,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.063
+    },
+    {
+      "at": "2026-11-17T11:46:53.485763+00:00",
+      "as_of": "2026-11-17 11:46:51.020413+00:00",
+      "age_seconds": 2.4,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.078
+    },
+    {
+      "at": "2026-11-17T11:46:55.537420+00:00",
+      "as_of": "2026-11-17 11:46:51.020413+00:00",
+      "age_seconds": 4.5,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.047
+    },
+    {
+      "at": "2026-11-17T11:46:57.620721+00:00",
+      "as_of": "2026-11-17 11:46:51.020413+00:00",
+      "age_seconds": 6.5,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.078
+    },
+    {
+      "at": "2026-11-17T11:46:59.679724+00:00",
+      "as_of": "2026-11-17 11:46:51.020413+00:00",
+      "age_seconds": 8.6,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.047
+    },
+    {
+      "at": "2026-11-17T11:47:01.739560+00:00",
+      "as_of": "2026-11-17 11:46:51.020413+00:00",
+      "age_seconds": 10.7,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.063
+    },
+    {
+      "at": "2026-11-17T11:47:03.827963+00:00",
+      "as_of": "2026-11-17 11:47:02.832540+00:00",
+      "age_seconds": 0.9,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.094
+    },
+    {
+      "at": "2026-11-17T11:47:05.879043+00:00",
+      "as_of": "2026-11-17 11:47:02.832540+00:00",
+      "age_seconds": 3.0,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.046
+    },
+    {
+      "at": "2026-11-17T11:47:07.925160+00:00",
+      "as_of": "2026-11-17 11:47:02.832540+00:00",
+      "age_seconds": 5.1,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.047
+    },
+    {
+      "at": "2026-11-17T11:47:10.046498+00:00",
+      "as_of": "2026-11-17 11:47:08.669574+00:00",
+      "age_seconds": 1.3,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.125
+    },
+    {
+      "at": "2026-11-17T11:47:12.101354+00:00",
+      "as_of": "2026-11-17 11:47:08.669574+00:00",
+      "age_seconds": 3.4,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.047
+    },
+    {
+      "at": "2026-11-17T11:47:14.161015+00:00",
+      "as_of": "2026-11-17 11:47:08.669574+00:00",
+      "age_seconds": 5.5,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.063
+    },
+    {
+      "at": "2026-11-17T11:47:16.199460+00:00",
+      "as_of": "2026-11-17 11:47:14.338324+00:00",
+      "age_seconds": 1.8,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.031
+    },
+    {
+      "at": "2026-11-17T11:47:18.252290+00:00",
+      "as_of": "2026-11-17 11:47:14.338324+00:00",
+      "age_seconds": 3.9,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.062
+    },
+    {
+      "at": "2026-11-17T11:47:20.286898+00:00",
+      "as_of": "2026-11-17 11:47:14.338324+00:00",
+      "age_seconds": 5.9,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.032
+    },
+    {
+      "at": "2026-11-17T11:47:22.323687+00:00",
+      "as_of": "2026-11-17 11:47:14.338324+00:00",
+      "age_seconds": 8.0,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.031
+    },
+    {
+      "at": "2026-11-17T11:47:24.399305+00:00",
+      "as_of": "2026-11-17 11:47:23.810226+00:00",
+      "age_seconds": 0.5,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.078
+    },
+    {
+      "at": "2026-11-17T11:47:26.456089+00:00",
+      "as_of": "2026-11-17 11:47:23.810226+00:00",
+      "age_seconds": 2.6,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.063
+    },
+    {
+      "at": "2026-11-17T11:47:28.495321+00:00",
+      "as_of": "2026-11-17 11:47:23.810226+00:00",
+      "age_seconds": 4.7,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.031
+    },
+    {
+      "at": "2026-11-17T11:47:30.531958+00:00",
+      "as_of": "2026-11-17 11:47:28.685666+00:00",
+      "age_seconds": 1.8,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.047
+    },
+    {
+      "at": "2026-11-17T11:47:32.593043+00:00",
+      "as_of": "2026-11-17 11:47:28.685666+00:00",
+      "age_seconds": 3.9,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.047
+    },
+    {
+      "at": "2026-11-17T11:47:34.660757+00:00",
+      "as_of": "2026-11-17 11:47:33.185096+00:00",
+      "age_seconds": 1.4,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.063
+    },
+    {
+      "at": "2026-11-17T11:47:36.716129+00:00",
+      "as_of": "2026-11-17 11:47:33.185096+00:00",
+      "age_seconds": 3.5,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.047
+    },
+    {
+      "at": "2026-11-17T11:47:38.773435+00:00",
+      "as_of": "2026-11-17 11:47:33.185096+00:00",
+      "age_seconds": 5.6,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.062
+    },
+    {
+      "at": "2026-11-17T11:47:40.841999+00:00",
+      "as_of": "2026-11-17 11:47:39.257511+00:00",
+      "age_seconds": 1.6,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.063
+    },
+    {
+      "at": "2026-11-17T11:47:42.899999+00:00",
+      "as_of": "2026-11-17 11:47:39.257511+00:00",
+      "age_seconds": 3.6,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.047
+    },
+    {
+      "at": "2026-11-17T11:47:44.945436+00:00",
+      "as_of": "2026-11-17 11:47:39.257511+00:00",
+      "age_seconds": 5.7,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.047
+    },
+    {
+      "at": "2026-11-17T11:47:46.984127+00:00",
+      "as_of": "2026-11-17 11:47:39.257511+00:00",
+      "age_seconds": 7.7,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.047
+    },
+    {
+      "at": "2026-11-17T11:47:49.034490+00:00",
+      "as_of": "2026-11-17 11:47:48.055625+00:00",
+      "age_seconds": 1.0,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.047
+    },
+    {
+      "at": "2026-11-17T11:47:51.080639+00:00",
+      "as_of": "2026-11-17 11:47:48.055625+00:00",
+      "age_seconds": 3.0,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.047
+    },
+    {
+      "at": "2026-11-17T11:47:53.149789+00:00",
+      "as_of": "2026-11-17 11:47:48.055625+00:00",
+      "age_seconds": 5.1,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.062
+    },
+    {
+      "at": "2026-11-17T11:47:55.213702+00:00",
+      "as_of": "2026-11-17 11:47:53.183675+00:00",
+      "age_seconds": 2.0,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.063
+    },
+    {
+      "at": "2026-11-17T11:47:57.270026+00:00",
+      "as_of": "2026-11-17 11:47:53.183675+00:00",
+      "age_seconds": 4.1,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.062
+    },
+    {
+      "at": "2026-11-17T11:47:59.323781+00:00",
+      "as_of": "2026-11-17 11:47:58.462155+00:00",
+      "age_seconds": 0.8,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.047
+    },
+    {
+      "at": "2026-11-17T11:48:01.387307+00:00",
+      "as_of": "2026-11-17 11:47:58.462155+00:00",
+      "age_seconds": 2.9,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.062
+    },
+    {
+      "at": "2026-11-17T11:48:03.432693+00:00",
+      "as_of": "2026-11-17 11:47:58.462155+00:00",
+      "age_seconds": 4.9,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.047
+    },
+    {
+      "at": "2026-11-17T11:48:05.494670+00:00",
+      "as_of": "2026-11-17 11:48:03.236216+00:00",
+      "age_seconds": 2.2,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.063
+    },
+    {
+      "at": "2026-11-17T11:48:07.546096+00:00",
+      "as_of": "2026-11-17 11:48:03.236216+00:00",
+      "age_seconds": 4.3,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.047
+    },
+    {
+      "at": "2026-11-17T11:48:09.617968+00:00",
+      "as_of": "2026-11-17 11:48:09.020367+00:00",
+      "age_seconds": 0.6,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.063
+    },
+    {
+      "at": "2026-11-17T11:48:11.659485+00:00",
+      "as_of": "2026-11-17 11:48:09.020367+00:00",
+      "age_seconds": 2.6,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.047
+    },
+    {
+      "at": "2026-11-17T11:48:13.717437+00:00",
+      "as_of": "2026-11-17 11:48:09.020367+00:00",
+      "age_seconds": 4.7,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.047
+    },
+    {
+      "at": "2026-11-17T11:48:15.750122+00:00",
+      "as_of": "2026-11-17 11:48:13.820425+00:00",
+      "age_seconds": 1.9,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.031
+    },
+    {
+      "at": "2026-11-17T11:48:17.813737+00:00",
+      "as_of": "2026-11-17 11:48:13.820425+00:00",
+      "age_seconds": 4.0,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.063
+    },
+    {
+      "at": "2026-11-17T11:48:19.870329+00:00",
+      "as_of": "2026-11-17 11:48:18.515416+00:00",
+      "age_seconds": 1.3,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.047
+    },
+    {
+      "at": "2026-11-17T11:48:21.926044+00:00",
+      "as_of": "2026-11-17 11:48:18.515416+00:00",
+      "age_seconds": 3.4,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.047
+    },
+    {
+      "at": "2026-11-17T11:48:23.962554+00:00",
+      "as_of": "2026-11-17 11:48:18.515416+00:00",
+      "age_seconds": 5.4,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.032
+    },
+    {
+      "at": "2026-11-17T11:48:26.002491+00:00",
+      "as_of": "2026-11-17 11:48:23.641173+00:00",
+      "age_seconds": 2.3,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.046
+    },
+    {
+      "at": "2026-11-17T11:48:28.050482+00:00",
+      "as_of": "2026-11-17 11:48:23.641173+00:00",
+      "age_seconds": 4.4,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.047
+    },
+    {
+      "at": "2026-11-17T11:48:30.088734+00:00",
+      "as_of": "2026-11-17 11:48:29.400977+00:00",
+      "age_seconds": 0.7,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.032
+    },
+    {
+      "at": "2026-11-17T11:48:32.141545+00:00",
+      "as_of": "2026-11-17 11:48:29.400977+00:00",
+      "age_seconds": 2.7,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.062
+    },
+    {
+      "at": "2026-11-17T11:48:34.199228+00:00",
+      "as_of": "2026-11-17 11:48:29.400977+00:00",
+      "age_seconds": 4.8,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.047
+    },
+    {
+      "at": "2026-11-17T11:48:36.250293+00:00",
+      "as_of": "2026-11-17 11:48:33.794754+00:00",
+      "age_seconds": 2.4,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.062
+    },
+    {
+      "at": "2026-11-17T11:48:38.288754+00:00",
+      "as_of": "2026-11-17 11:48:33.794754+00:00",
+      "age_seconds": 4.5,
+      "stale": false,
+      "healthy": 30,
+      "nodes": 30,
+      "bridge_status": "ok",
+      "request_seconds": 0.032
+    }
+  ],
+  "max_observation_age_seconds": 10.7,
+  "scope": "API freshness observation only, not browser rendering, human review or incident-to-display latency. Existing 45-second freshness rule unchanged."
+}

@@ -1,0 +1,115 @@
+{
+  "review_id": "6c57a680-b804-205d-e516-ef54485505b6",
+  "observations": [
+    {
+      "evidence_id": "sample:6ae9ff01-36eb-4443-b19a-36ada21f66ff:R-B3:eth0",
+      "device_id": "R-B3",
+      "kind": "interface",
+      "observed_at": "2026-11-16 23:25:56.506699+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "R-B3:eth0 administrative status 2, operational status 2."
+    },
+    {
+      "evidence_id": "probe:563dcd3e-0ec8-4b9d-b649-4da18f5b193a",
+      "device_id": "SW-B3-1",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:25:58.276970+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:40a381fe-6da7-4ab3-84ef-4a35f67b34ca",
+      "device_id": "MLS-B3",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:25:58.257246+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:21c6d5c4-7e2d-4096-b240-87e63de5620c",
+      "device_id": "PC-B3-IT",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:25:55.764949+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:40347dd3-07f0-43fa-8c79-38624e9fa079",
+      "device_id": "PC-B3-STAFF",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:25:54.736188+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:a93d65fd-4277-4e7d-b212-7d28c435bb29",
+      "device_id": "PC-B3-ADMIN",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:25:54.730597+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:32956e27-4825-4d40-a36f-aeae0ad872dd",
+      "device_id": "SW-B3-2",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:25:53.716716+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "snapshot:e8fa95a2-d733-4a4c-9219-c2c32a27629d:link:eth0",
+      "device_id": "R-B3",
+      "kind": "console_interface",
+      "observed_at": "2026-11-16 23:25:58.441228+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Console shows eth0 administratively down."
+    }
+  ],
+  "candidate_hypotheses": [
+    {
+      "fault_class": "interface_shutdown",
+      "device_id": "R-B3",
+      "interface": "eth0",
+      "affected_devices": [
+        "MLS-B3",
+        "PC-B3-ADMIN",
+        "PC-B3-IT",
+        "PC-B3-STAFF",
+        "SW-B3-1",
+        "SW-B3-2"
+      ],
+      "topology_path": [
+        "MON-HQ",
+        "SW-HQ-2",
+        "MLS-HQ",
+        "R-HQ",
+        "SW-WAN",
+        "R-B3"
+      ]
+    }
+  ],
+  "status": "ok",
+  "interpretation": {
+    "fault_class": "interface_shutdown",
+    "device_id": "R-B3",
+    "interface": "eth0",
+    "disposition": "supported",
+    "incident_detected": true
+  },
+  "read_only_checks": [],
+  "actual_diagnostic_input": {
+    "gate": null,
+    "meaning": "No model was called. Assess only the displayed deterministic result and its available observations."
+  },
+  "local_source_observations": "source-d3f36d4e88a310ff0aae.json",
+  "review_boundary": "Support is relative to the actual diagnostic input. The masked source bundle is available only to verify derived observations; it must not give credit for information absent from the diagnostic input."
+}

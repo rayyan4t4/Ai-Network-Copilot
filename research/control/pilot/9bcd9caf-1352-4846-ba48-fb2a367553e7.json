@@ -1,0 +1,74 @@
+{
+  "case_id": "9bcd9caf-1352-4846-ba48-fb2a367553e7",
+  "category": "ospf_loss",
+  "underlying_class": "ospf_loss",
+  "branch": "B1",
+  "device_id": "R-B1",
+  "interface": "eth0",
+  "target_host": "PC-B1-IT",
+  "load_mbps": 3,
+  "sequence": 8,
+  "started_at": "2026-11-16T22:19:20.050550+00:00",
+  "complete": true,
+  "intervention": {
+    "exit_code": 0,
+    "at": "2026-11-16T22:19:20.259879+00:00",
+    "stdout": "",
+    "stderr": ""
+  },
+  "captured_at": "2026-11-16T22:20:50.319508+00:00",
+  "observed_as_of": "2026-11-16 22:20:44.540930+00:00",
+  "capture_lag_seconds": 5.778578,
+  "observed_candidates": [
+    {
+      "class": "ospf_loss",
+      "device": "R-B1",
+      "gate": "sufficient",
+      "missing": []
+    },
+    {
+      "class": "unreachability",
+      "device": "PC-B1-ADMIN",
+      "gate": "sufficient",
+      "missing": [
+        "fresh_poll_outcome"
+      ]
+    },
+    {
+      "class": "unreachability",
+      "device": "PC-B1-IT",
+      "gate": "sufficient",
+      "missing": [
+        "fresh_poll_outcome"
+      ]
+    },
+    {
+      "class": "unreachability",
+      "device": "PC-B1-STAFF",
+      "gate": "sufficient",
+      "missing": [
+        "fresh_poll_outcome"
+      ]
+    },
+    {
+      "class": "unreachability",
+      "device": "SW-B1-1",
+      "gate": "sufficient",
+      "missing": []
+    },
+    {
+      "class": "unreachability",
+      "device": "SW-B1-2",
+      "gate": "sufficient",
+      "missing": []
+    }
+  ],
+  "restoration": {
+    "exit_code": 0,
+    "at": "2026-11-16T22:20:50.515509+00:00",
+    "stdout": "",
+    "stderr": ""
+  },
+  "restored_at": "2026-11-16T22:20:50.515509+00:00",
+  "restoration_verified": true
+}

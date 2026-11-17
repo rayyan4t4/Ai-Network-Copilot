@@ -1,0 +1,222 @@
+{
+  "as_of": "2026-11-16 22:07:48.612941+00:00",
+  "facts": [
+    {
+      "evidence_id": "sample:8762bff0-4a7a-4442-9e14-efdcdb5e8616:R-B1:eth1",
+      "device_id": "R-B1",
+      "kind": "interface",
+      "observed_at": "2026-11-16 22:07:39.778162+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "R-B1:eth1 administrative status 1, operational status 1."
+    },
+    {
+      "evidence_id": "rate:8762bff0-4a7a-4442-9e14-efdcdb5e8616:R-B1:eth1",
+      "device_id": "R-B1",
+      "kind": "rate",
+      "observed_at": "2026-11-16 22:07:39.778162+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "Measured R-B1 eth1 traffic: ingress 7623 bps, egress 1772988 bps, effective capacity 2000000 bps; utilization at least 80 percent."
+    },
+    {
+      "evidence_id": "rate:29f3068c-eeae-48f9-a48b-0e946bf5f67e:R-B1:eth1",
+      "device_id": "R-B1",
+      "kind": "rate",
+      "observed_at": "2026-11-16 22:07:29.623663+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "Measured R-B1 eth1 traffic: ingress 5327 bps, egress 1638882 bps, effective capacity 2000000 bps; utilization at least 80 percent."
+    },
+    {
+      "evidence_id": "rate:de6aa641-389a-4820-a65b-886eacf02d0b:R-B1:eth1",
+      "device_id": "R-B1",
+      "kind": "rate",
+      "observed_at": "2026-11-16 22:07:18.630279+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "Measured R-B1 eth1 traffic: ingress 6153 bps, egress 2369185 bps, effective capacity 2000000 bps; utilization at least 80 percent."
+    }
+  ],
+  "devices": [
+    "MLS-B1",
+    "MLS-B2",
+    "MLS-B3",
+    "MLS-HQ",
+    "MON-HQ",
+    "PC-B1-ADMIN",
+    "PC-B1-IT",
+    "PC-B1-STAFF",
+    "PC-B2-ADMIN",
+    "PC-B2-IT",
+    "PC-B2-STAFF",
+    "PC-B3-ADMIN",
+    "PC-B3-IT",
+    "PC-B3-STAFF",
+    "PC-HQ-ADMIN",
+    "PC-HQ-IT",
+    "PC-HQ-STAFF",
+    "R-B1",
+    "R-B2",
+    "R-B3",
+    "R-HQ",
+    "SW-B1-1",
+    "SW-B1-2",
+    "SW-B2-1",
+    "SW-B2-2",
+    "SW-B3-1",
+    "SW-B3-2",
+    "SW-HQ-1",
+    "SW-HQ-2",
+    "SW-WAN"
+  ],
+  "candidates": [
+    {
+      "fault_class": "high_utilization",
+      "device_id": "R-B1",
+      "interface": "eth1",
+      "affected_devices": [],
+      "topology_path": [
+        "MON-HQ",
+        "SW-HQ-2",
+        "MLS-HQ",
+        "R-HQ",
+        "SW-WAN",
+        "R-B1"
+      ]
+    }
+  ],
+  "primary": {
+    "fingerprint": "high_utilization|R-B1|eth1",
+    "fault_class": "high_utilization",
+    "device_id": "R-B1",
+    "interface": "eth1",
+    "site": "B1",
+    "rules_applied": [
+      "R5_THREE_SUSTAINED_RATE_INTERVALS"
+    ],
+    "affected_devices": [],
+    "related_evidence_ids": [],
+    "topology_path": [
+      "MON-HQ",
+      "SW-HQ-2",
+      "MLS-HQ",
+      "R-HQ",
+      "SW-WAN",
+      "R-B1"
+    ],
+    "gate": {
+      "status": "sufficient",
+      "score": 1.0,
+      "threshold": 0.8,
+      "available_weight": 10,
+      "total_required_weight": 10,
+      "missing": [],
+      "missing_critical": [],
+      "contradictions": [],
+      "signals": {
+        "sustained_rates": [
+          "rate:8762bff0-4a7a-4442-9e14-efdcdb5e8616:R-B1:eth1",
+          "rate:29f3068c-eeae-48f9-a48b-0e946bf5f67e:R-B1:eth1",
+          "rate:de6aa641-389a-4820-a65b-886eacf02d0b:R-B1:eth1"
+        ],
+        "effective_capacity": [
+          "sample:8762bff0-4a7a-4442-9e14-efdcdb5e8616:R-B1:eth1"
+        ],
+        "fresh_counters": [
+          "rate:8762bff0-4a7a-4442-9e14-efdcdb5e8616:R-B1:eth1",
+          "rate:29f3068c-eeae-48f9-a48b-0e946bf5f67e:R-B1:eth1",
+          "rate:de6aa641-389a-4820-a65b-886eacf02d0b:R-B1:eth1"
+        ]
+      },
+      "matrix_version": "study-pilot-1",
+      "matrix_sha256": "0edf6ea5dc8ae6a60f8f4b3afd669cf7ec47417aac8d320139ac3a25b4234f3a",
+      "score_is_probability": false
+    },
+    "facts": [
+      {
+        "evidence_id": "rate:29f3068c-eeae-48f9-a48b-0e946bf5f67e:R-B1:eth1",
+        "device_id": "R-B1",
+        "kind": "rate",
+        "observed_at": "2026-11-16 22:07:29.623663+00:00",
+        "source": "snmp",
+        "age_seconds": 18.989,
+        "is_stale": false,
+        "value": {
+          "in_bps": 5326.840215897125,
+          "out_bps": 1638882.4405660713,
+          "speed_bps": 2000000,
+          "interval_s": 10.993384,
+          "in_utilization_pct": 0.26634201079485625,
+          "out_utilization_pct": 81.94412202830357
+        },
+        "summary": "Measured R-B1 eth1 traffic: ingress 5327 bps, egress 1638882 bps, effective capacity 2000000 bps; utilization at least 80 percent."
+      },
+      {
+        "evidence_id": "rate:8762bff0-4a7a-4442-9e14-efdcdb5e8616:R-B1:eth1",
+        "device_id": "R-B1",
+        "kind": "rate",
+        "observed_at": "2026-11-16 22:07:39.778162+00:00",
+        "source": "snmp",
+        "age_seconds": 8.835,
+        "is_stale": false,
+        "value": {
+          "in_bps": 7623.025025656116,
+          "out_bps": 1772987.5201130062,
+          "speed_bps": 2000000,
+          "interval_s": 10.154499,
+          "in_utilization_pct": 0.3811512512828058,
+          "out_utilization_pct": 88.64937600565031
+        },
+        "summary": "Measured R-B1 eth1 traffic: ingress 7623 bps, egress 1772988 bps, effective capacity 2000000 bps; utilization at least 80 percent."
+      },
+      {
+        "evidence_id": "rate:de6aa641-389a-4820-a65b-886eacf02d0b:R-B1:eth1",
+        "device_id": "R-B1",
+        "kind": "rate",
+        "observed_at": "2026-11-16 22:07:18.630279+00:00",
+        "source": "snmp",
+        "age_seconds": 29.983,
+        "is_stale": false,
+        "value": {
+          "in_bps": 6152.632741393429,
+          "out_bps": 2369185.20249587,
+          "speed_bps": 2000000,
+          "interval_s": 10.132898,
+          "in_utilization_pct": 0.3076316370696714,
+          "out_utilization_pct": 118.45926012479352
+        },
+        "summary": "Measured R-B1 eth1 traffic: ingress 6153 bps, egress 2369185 bps, effective capacity 2000000 bps; utilization at least 80 percent."
+      },
+      {
+        "evidence_id": "sample:8762bff0-4a7a-4442-9e14-efdcdb5e8616:R-B1:eth1",
+        "device_id": "R-B1",
+        "kind": "interface",
+        "observed_at": "2026-11-16 22:07:39.778162+00:00",
+        "source": "snmp",
+        "age_seconds": 8.835,
+        "is_stale": false,
+        "value": {
+          "interface_id": "R-B1:eth1",
+          "admin_status": 1,
+          "oper_status": 1,
+          "in_bps": 7623.025025656116,
+          "out_bps": 1772987.5201130062,
+          "in_utilization_pct": 0.3811512512828058,
+          "out_utilization_pct": 88.64937600565031,
+          "rate_status": "valid",
+          "speed_bps": 2000000
+        },
+        "summary": "R-B1:eth1 administrative status 1, operational status 1."
+      }
+    ],
+    "missing_observations": [],
+    "as_of": "2026-11-16 22:07:48.612941+00:00",
+    "evidence_digest": "d2a10459d68c995b5a0e83a90b8a86e32ad3aa90d1f86964bc724771ee6ce280"
+  },
+  "health_counts": {
+    "healthy": 28,
+    "unknown": 0,
+    "unreachable": 2
+  }
+}

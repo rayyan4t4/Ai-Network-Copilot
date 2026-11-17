@@ -1,0 +1,147 @@
+{
+  "review_id": "d39e7013-4d97-75ab-5b24-4aa3dfacbbf2",
+  "observations": [
+    {
+      "evidence_id": "sample:70761d19-6c60-4b93-8d1f-100bf1bac0ee:SW-B3-2:eth1",
+      "device_id": "SW-B3-2",
+      "kind": "interface",
+      "observed_at": "2026-11-17 00:16:22.383423+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "SW-B3-2:eth1 administrative status 1, operational status 1."
+    },
+    {
+      "evidence_id": "probe:c2fcb382-5354-4c5a-9211-06cc1c99face",
+      "device_id": "MLS-B3",
+      "kind": "probe",
+      "observed_at": "2026-11-17 00:16:25.144960+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:ca87276d-4dc3-43e1-b8b9-84b6b22753f2",
+      "device_id": "PC-B3-IT",
+      "kind": "probe",
+      "observed_at": "2026-11-17 00:16:22.276393+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:8cc09502-a192-4cb1-8065-9217220ff9f6",
+      "device_id": "PC-B3-IT",
+      "kind": "probe",
+      "observed_at": "2026-11-17 00:16:19.013992+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "snapshot:aba72362-da80-43a0-b5dc-6c9bb1a5e989:link:eth1",
+      "device_id": "SW-B3-2",
+      "kind": "console_interface",
+      "observed_at": "2026-11-17 00:16:15.408387+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Console shows eth1 administratively up."
+    },
+    {
+      "evidence_id": "snapshot:33107aa8-cbc4-4cbc-b1bd-01cfac54142f:acl",
+      "device_id": "MLS-B3",
+      "kind": "acl",
+      "observed_at": "2026-11-17 00:16:15.124208+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Read-only nftables rules and counters."
+    },
+    {
+      "evidence_id": "topology:6a761ca4c9524b6e",
+      "device_id": "PC-B3-IT",
+      "kind": "topology",
+      "observed_at": "2026-11-17 00:16:25.233383+00:00",
+      "source": "inventory",
+      "is_stale": false,
+      "summary": "Inventory path from monitoring server to target."
+    }
+  ],
+  "candidate_hypotheses": [
+    {
+      "fault_class": "acl_fault",
+      "device_id": "MLS-B3",
+      "interface": null,
+      "affected_devices": [
+        "PC-B3-IT"
+      ],
+      "topology_path": [
+        "MON-HQ",
+        "SW-HQ-2",
+        "MLS-HQ",
+        "R-HQ",
+        "SW-WAN",
+        "R-B3",
+        "MLS-B3"
+      ]
+    },
+    {
+      "fault_class": "unreachability",
+      "device_id": "PC-B3-IT",
+      "interface": null,
+      "affected_devices": [],
+      "topology_path": [
+        "MON-HQ",
+        "SW-HQ-2",
+        "MLS-HQ",
+        "R-HQ",
+        "SW-WAN",
+        "R-B3",
+        "MLS-B3",
+        "SW-B3-2",
+        "PC-B3-IT"
+      ]
+    }
+  ],
+  "status": "ok",
+  "interpretation": {
+    "fault_class": "inconclusive",
+    "device_id": "",
+    "interface": "",
+    "disposition": "inconclusive",
+    "incident_detected": true
+  },
+  "read_only_checks": [],
+  "actual_diagnostic_input": {
+    "gate": {
+      "status": "inconclusive",
+      "score": 0.7,
+      "threshold": 0.8,
+      "available_weight": 7,
+      "total_required_weight": 10,
+      "missing": [
+        "deny_counter_delta"
+      ],
+      "missing_critical": [
+        "deny_counter_delta"
+      ],
+      "contradictions": [],
+      "signals": {
+        "failed_flow": [
+          "probe:ca87276d-4dc3-43e1-b8b9-84b6b22753f2"
+        ],
+        "matching_rule": [
+          "snapshot:33107aa8-cbc4-4cbc-b1bd-01cfac54142f:acl"
+        ],
+        "deny_counter_delta": [],
+        "upstream_healthy": [
+          "probe:c2fcb382-5354-4c5a-9211-06cc1c99face"
+        ]
+      },
+      "matrix_version": "study-final-1",
+      "matrix_sha256": "4da2280e4c017f523116384f4b7dff6138e59bd22091a5294b335a1493ff6c1a",
+      "score_is_probability": false
+    },
+    "meaning": "No model was called. Assess only the displayed deterministic result and its available observations."
+  },
+  "local_source_observations": "source-238b4bc313ed0889b267.json",
+  "review_boundary": "Support is relative to the actual diagnostic input. The masked source bundle is available only to verify derived observations; it must not give credit for information absent from the diagnostic input."
+}

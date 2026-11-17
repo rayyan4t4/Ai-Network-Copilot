@@ -1,0 +1,30 @@
+{
+  "result_id": "32785aa4-6542-4f4c-bdf7-64f5de6a988c",
+  "case_id": "9bcd9caf-1352-4846-ba48-fb2a367553e7",
+  "phase": "pilot",
+  "approach": "B1",
+  "started_at": "2026-11-16T22:22:01.805979+00:00",
+  "observation_sha256": "7399c78591bc493acc5cee08f53d5bcf5b2369a7797e38fcf5b3f31e87351e23",
+  "status": "ok",
+  "prediction": {
+    "fault_class": "unreachability",
+    "device_id": "MLS-B1",
+    "interface": "",
+    "disposition": "supported",
+    "incident_detected": true
+  },
+  "pipeline_latency_ms": 16,
+  "available_at": "2026-11-16T22:22:01.820211+00:00",
+  "scores": {
+    "fault_instance": true,
+    "healthy_instance": false,
+    "insufficient_instance": false,
+    "detection_tp": true,
+    "detection_fn": false,
+    "detection_fp": false,
+    "detection_tn": false,
+    "exact_root_correct": false,
+    "correct_abstention": null,
+    "error": false
+  }
+}

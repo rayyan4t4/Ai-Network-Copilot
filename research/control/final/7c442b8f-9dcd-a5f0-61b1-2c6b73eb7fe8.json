@@ -1,0 +1,27 @@
+{
+  "case_id": "7c442b8f-9dcd-a5f0-61b1-2c6b73eb7fe8",
+  "category": "healthy",
+  "underlying_class": "healthy",
+  "branch": "B1",
+  "device_id": "",
+  "interface": "",
+  "target_host": "PC-B1-IT",
+  "load_mbps": 4,
+  "sequence": 6,
+  "started_at": "2026-11-16T22:31:29.280221+00:00",
+  "complete": true,
+  "intervention": {
+    "exit_code": 0,
+    "at": "2026-11-16T22:31:29.280727+00:00"
+  },
+  "captured_at": "2026-11-16T22:32:04.336358+00:00",
+  "observed_as_of": "2026-11-16 22:32:00.193960+00:00",
+  "capture_lag_seconds": 4.142398,
+  "observed_candidates": [],
+  "restoration": {
+    "exit_code": 0,
+    "at": "2026-11-16T22:32:04.341643+00:00"
+  },
+  "restored_at": "2026-11-16T22:32:04.341643+00:00",
+  "restoration_verified": true
+}

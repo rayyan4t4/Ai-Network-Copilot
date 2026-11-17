@@ -1,0 +1,16 @@
+.local/
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+*.log
+*.sqlite3*
+*.dump
+*.gns3project
+*.tgz
+*.tar.gz
+lab/topology/deployment.json
+.DS_Store
+Thumbs.db

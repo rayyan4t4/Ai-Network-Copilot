@@ -1,0 +1,21 @@
+{
+  "recorded_at": "2026-11-17T00:09:30.612467+00:00",
+  "kind": "resource_only",
+  "old_attempt_cap": 260,
+  "new_attempt_cap": 300,
+  "attempts_already_recorded": 250,
+  "acquisitions_complete_at_amendment": 65,
+  "reason": "Retained provider service-error retries made the original allowance too close to the remaining prespecified evaluations. A bounded resource reserve completes the same 70 cases without rerunning completed outputs. The comparison was paused between requests, after its last response was archived.",
+  "changes": [
+    "maximum_study_generation_attempts only"
+  ],
+  "diagnostic_code_changed": false,
+  "model_or_prompt_changed": false,
+  "capture_or_scoring_changed": false,
+  "billing_settings_changed": false,
+  "original_profile_sha256": "a538694ff444da0a9030af085ec9a5be4956e5afe54ac7485661a219b2bfdb1e",
+  "amended_profile_sha256": "3bcabb5e14472159265ccddd81cadf4380410bc1798e50f0009a49b382d33cbe",
+  "original_freeze_sha256": "70fa48b904d5960590f67b9de77cfefc728fda7ad19a6e1dc3f8760d94413159",
+  "original_records_retained": true,
+  "completed_outputs_to_be_rerun": 0
+}

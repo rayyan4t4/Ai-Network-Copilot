@@ -1,0 +1,63 @@
+{
+  "review_id": "dc5e47f4-9876-a912-64f9-77f5c82a5846",
+  "observations": [
+    {
+      "evidence_id": "sample:e86731e3-9826-489f-b3f0-ced1311f4cf2:R-B1:eth1",
+      "device_id": "R-B1",
+      "kind": "interface",
+      "observed_at": "2026-11-17 00:02:44.394890+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "R-B1:eth1 administrative status 1, operational status 1."
+    },
+    {
+      "evidence_id": "rate:e86731e3-9826-489f-b3f0-ced1311f4cf2:R-B1:eth1",
+      "device_id": "R-B1",
+      "kind": "rate",
+      "observed_at": "2026-11-17 00:02:44.394890+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "Measured R-B1 eth1 traffic: ingress 7717 bps, egress 1763883 bps. Configured effective capacity 2000000 bps; utilization at least 80 percent."
+    },
+    {
+      "evidence_id": "rate:4b14916e-1da3-4dc8-b049-1261e1be9031:R-B1:eth1",
+      "device_id": "R-B1",
+      "kind": "rate",
+      "observed_at": "2026-11-17 00:02:23.973846+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "Measured R-B1 eth1 traffic: ingress 4804 bps, egress 1988149 bps. Configured effective capacity 2000000 bps; utilization at least 80 percent."
+    }
+  ],
+  "candidate_hypotheses": [
+    {
+      "fault_class": "high_utilization",
+      "device_id": "R-B1",
+      "interface": "eth1",
+      "affected_devices": [],
+      "topology_path": [
+        "MON-HQ",
+        "SW-HQ-2",
+        "MLS-HQ",
+        "R-HQ",
+        "SW-WAN",
+        "R-B1"
+      ]
+    }
+  ],
+  "status": "ok",
+  "interpretation": {
+    "fault_class": "high_utilization",
+    "device_id": "R-B1",
+    "interface": "eth1",
+    "disposition": "supported",
+    "incident_detected": true
+  },
+  "read_only_checks": [],
+  "actual_diagnostic_input": {
+    "gate": null,
+    "meaning": "No model was called. Assess only the displayed deterministic result and its available observations."
+  },
+  "local_source_observations": "source-4c1079600644158dd078.json",
+  "review_boundary": "Support is relative to the actual diagnostic input. The masked source bundle is available only to verify derived observations; it must not give credit for information absent from the diagnostic input."
+}

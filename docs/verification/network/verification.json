@@ -1,0 +1,2217 @@
+{
+  "recorded_at": "2026-11-17T11:27:52.663956+00:00",
+  "project_id": "97f4808f-beca-44d8-bab4-c0b1c1126167",
+  "passed": true,
+  "checks": 243,
+  "failures": 0,
+  "results": [
+    {
+      "test": "30 nodes started",
+      "passed": true,
+      "details": {
+        "SW-WAN": "started",
+        "R-HQ": "started",
+        "MLS-HQ": "started",
+        "SW-HQ-1": "started",
+        "SW-HQ-2": "started",
+        "PC-HQ-ADMIN": "started",
+        "PC-HQ-STAFF": "started",
+        "PC-HQ-IT": "started",
+        "R-B1": "started",
+        "MLS-B1": "started",
+        "SW-B1-1": "started",
+        "SW-B1-2": "started",
+        "PC-B1-ADMIN": "started",
+        "PC-B1-STAFF": "started",
+        "PC-B1-IT": "started",
+        "R-B2": "started",
+        "MLS-B2": "started",
+        "SW-B2-1": "started",
+        "SW-B2-2": "started",
+        "PC-B2-ADMIN": "started",
+        "PC-B2-STAFF": "started",
+        "PC-B2-IT": "started",
+        "R-B3": "started",
+        "MLS-B3": "started",
+        "SW-B3-1": "started",
+        "SW-B3-2": "started",
+        "PC-B3-ADMIN": "started",
+        "PC-B3-STAFF": "started",
+        "PC-B3-IT": "started",
+        "MON-HQ": "started"
+      }
+    },
+    {
+      "test": "PC-HQ-ADMIN DHCP and gateway",
+      "passed": true,
+      "details": {
+        "attempts": [
+          {
+            "exit_code": 0,
+            "stdout": "192: eth0    inet 192.168.10.101/24 scope global eth0\\       valid_lft forever preferred_lft forever\nPING 192.168.10.1 (192.168.10.1) 56(84) bytes of data.\n64 bytes from 192.168.10.1: icmp_seq=1 ttl=64 time=0.681 ms\n\n--- 192.168.10.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.681/0.681/0.681/0.000 ms\nPING 192.168.30.10 (192.168.30.10) 56(84) bytes of data.\n64 bytes from 192.168.30.10: icmp_seq=1 ttl=63 time=5.71 ms\n\n--- 192.168.30.10 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 5.710/5.710/5.710/0.000 ms\n",
+            "stderr": ""
+          }
+        ]
+      }
+    },
+    {
+      "test": "PC-HQ-STAFF DHCP and gateway",
+      "passed": true,
+      "details": {
+        "attempts": [
+          {
+            "exit_code": 0,
+            "stdout": "193: eth0    inet 192.168.20.101/24 scope global eth0\\       valid_lft forever preferred_lft forever\nPING 192.168.20.1 (192.168.20.1) 56(84) bytes of data.\n64 bytes from 192.168.20.1: icmp_seq=1 ttl=64 time=3.00 ms\n\n--- 192.168.20.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.995/2.995/2.995/0.000 ms\nPING 192.168.30.10 (192.168.30.10) 56(84) bytes of data.\n64 bytes from 192.168.30.10: icmp_seq=1 ttl=63 time=8.44 ms\n\n--- 192.168.30.10 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 8.444/8.444/8.444/0.000 ms\n",
+            "stderr": ""
+          }
+        ]
+      }
+    },
+    {
+      "test": "PC-HQ-IT DHCP and gateway",
+      "passed": true,
+      "details": {
+        "attempts": [
+          {
+            "exit_code": 0,
+            "stdout": "194: eth0    inet 192.168.30.101/24 scope global eth0\\       valid_lft forever preferred_lft forever\nPING 192.168.30.1 (192.168.30.1) 56(84) bytes of data.\n64 bytes from 192.168.30.1: icmp_seq=1 ttl=64 time=0.528 ms\n\n--- 192.168.30.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.528/0.528/0.528/0.000 ms\nPING 192.168.30.10 (192.168.30.10) 56(84) bytes of data.\n64 bytes from 192.168.30.10: icmp_seq=1 ttl=64 time=1.23 ms\n\n--- 192.168.30.10 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.228/1.228/1.228/0.000 ms\n",
+            "stderr": ""
+          }
+        ]
+      }
+    },
+    {
+      "test": "PC-B1-ADMIN DHCP and gateway",
+      "passed": true,
+      "details": {
+        "attempts": [
+          {
+            "exit_code": 0,
+            "stdout": "195: eth0    inet 192.168.110.101/24 scope global eth0\\       valid_lft forever preferred_lft forever\nPING 192.168.110.1 (192.168.110.1) 56(84) bytes of data.\n64 bytes from 192.168.110.1: icmp_seq=1 ttl=64 time=3.44 ms\n\n--- 192.168.110.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.438/3.438/3.438/0.000 ms\nPING 192.168.30.10 (192.168.30.10) 56(84) bytes of data.\n64 bytes from 192.168.30.10: icmp_seq=1 ttl=60 time=7.40 ms\n\n--- 192.168.30.10 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 7.396/7.396/7.396/0.000 ms\n",
+            "stderr": ""
+          }
+        ]
+      }
+    },
+    {
+      "test": "PC-B1-STAFF DHCP and gateway",
+      "passed": true,
+      "details": {
+        "attempts": [
+          {
+            "exit_code": 0,
+            "stdout": "196: eth0    inet 192.168.120.101/24 scope global eth0\\       valid_lft forever preferred_lft forever\nPING 192.168.120.1 (192.168.120.1) 56(84) bytes of data.\n64 bytes from 192.168.120.1: icmp_seq=1 ttl=64 time=6.32 ms\n\n--- 192.168.120.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 6.321/6.321/6.321/0.000 ms\nPING 192.168.30.10 (192.168.30.10) 56(84) bytes of data.\n64 bytes from 192.168.30.10: icmp_seq=1 ttl=60 time=8.58 ms\n\n--- 192.168.30.10 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 8.579/8.579/8.579/0.000 ms\n",
+            "stderr": ""
+          }
+        ]
+      }
+    },
+    {
+      "test": "PC-B1-IT DHCP and gateway",
+      "passed": true,
+      "details": {
+        "attempts": [
+          {
+            "exit_code": 0,
+            "stdout": "197: eth0    inet 192.168.130.101/24 scope global eth0\\       valid_lft forever preferred_lft forever\nPING 192.168.130.1 (192.168.130.1) 56(84) bytes of data.\n64 bytes from 192.168.130.1: icmp_seq=1 ttl=64 time=2.99 ms\n\n--- 192.168.130.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.990/2.990/2.990/0.000 ms\nPING 192.168.30.10 (192.168.30.10) 56(84) bytes of data.\n64 bytes from 192.168.30.10: icmp_seq=1 ttl=60 time=7.81 ms\n\n--- 192.168.30.10 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 7.807/7.807/7.807/0.000 ms\n",
+            "stderr": ""
+          }
+        ]
+      }
+    },
+    {
+      "test": "PC-B2-ADMIN DHCP and gateway",
+      "passed": true,
+      "details": {
+        "attempts": [
+          {
+            "exit_code": 0,
+            "stdout": "198: eth0    inet 192.168.210.101/24 scope global eth0\\       valid_lft forever preferred_lft forever\nPING 192.168.210.1 (192.168.210.1) 56(84) bytes of data.\n64 bytes from 192.168.210.1: icmp_seq=1 ttl=64 time=5.96 ms\n\n--- 192.168.210.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 5.961/5.961/5.961/0.000 ms\nPING 192.168.30.10 (192.168.30.10) 56(84) bytes of data.\n64 bytes from 192.168.30.10: icmp_seq=1 ttl=60 time=4.73 ms\n\n--- 192.168.30.10 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 4.732/4.732/4.732/0.000 ms\n",
+            "stderr": ""
+          }
+        ]
+      }
+    },
+    {
+      "test": "PC-B2-STAFF DHCP and gateway",
+      "passed": true,
+      "details": {
+        "attempts": [
+          {
+            "exit_code": 0,
+            "stdout": "199: eth0    inet 192.168.220.101/24 scope global eth0\\       valid_lft forever preferred_lft forever\nPING 192.168.220.1 (192.168.220.1) 56(84) bytes of data.\n64 bytes from 192.168.220.1: icmp_seq=1 ttl=64 time=0.807 ms\n\n--- 192.168.220.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.807/0.807/0.807/0.000 ms\nPING 192.168.30.10 (192.168.30.10) 56(84) bytes of data.\n64 bytes from 192.168.30.10: icmp_seq=1 ttl=60 time=6.24 ms\n\n--- 192.168.30.10 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 6.236/6.236/6.236/0.000 ms\n",
+            "stderr": ""
+          }
+        ]
+      }
+    },
+    {
+      "test": "PC-B2-IT DHCP and gateway",
+      "passed": true,
+      "details": {
+        "attempts": [
+          {
+            "exit_code": 0,
+            "stdout": "200: eth0    inet 192.168.230.101/24 scope global eth0\\       valid_lft forever preferred_lft forever\nPING 192.168.230.1 (192.168.230.1) 56(84) bytes of data.\n64 bytes from 192.168.230.1: icmp_seq=1 ttl=64 time=1.94 ms\n\n--- 192.168.230.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.944/1.944/1.944/0.000 ms\nPING 192.168.30.10 (192.168.30.10) 56(84) bytes of data.\n64 bytes from 192.168.30.10: icmp_seq=1 ttl=60 time=2.70 ms\n\n--- 192.168.30.10 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.696/2.696/2.696/0.000 ms\n",
+            "stderr": ""
+          }
+        ]
+      }
+    },
+    {
+      "test": "PC-B3-ADMIN DHCP and gateway",
+      "passed": true,
+      "details": {
+        "attempts": [
+          {
+            "exit_code": 0,
+            "stdout": "201: eth0    inet 192.168.31.101/24 scope global eth0\\       valid_lft forever preferred_lft forever\nPING 192.168.31.1 (192.168.31.1) 56(84) bytes of data.\n64 bytes from 192.168.31.1: icmp_seq=1 ttl=64 time=1.58 ms\n\n--- 192.168.31.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.583/1.583/1.583/0.000 ms\nPING 192.168.30.10 (192.168.30.10) 56(84) bytes of data.\n64 bytes from 192.168.30.10: icmp_seq=1 ttl=60 time=3.99 ms\n\n--- 192.168.30.10 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.988/3.988/3.988/0.000 ms\n",
+            "stderr": ""
+          }
+        ]
+      }
+    },
+    {
+      "test": "PC-B3-STAFF DHCP and gateway",
+      "passed": true,
+      "details": {
+        "attempts": [
+          {
+            "exit_code": 0,
+            "stdout": "202: eth0    inet 192.168.32.101/24 scope global eth0\\       valid_lft forever preferred_lft forever\nPING 192.168.32.1 (192.168.32.1) 56(84) bytes of data.\n64 bytes from 192.168.32.1: icmp_seq=1 ttl=64 time=2.13 ms\n\n--- 192.168.32.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.127/2.127/2.127/0.000 ms\nPING 192.168.30.10 (192.168.30.10) 56(84) bytes of data.\n64 bytes from 192.168.30.10: icmp_seq=1 ttl=60 time=10.8 ms\n\n--- 192.168.30.10 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 10.778/10.778/10.778/0.000 ms\n",
+            "stderr": ""
+          }
+        ]
+      }
+    },
+    {
+      "test": "PC-B3-IT DHCP and gateway",
+      "passed": true,
+      "details": {
+        "attempts": [
+          {
+            "exit_code": 0,
+            "stdout": "203: eth0    inet 192.168.33.101/24 scope global eth0\\       valid_lft forever preferred_lft forever\nPING 192.168.33.1 (192.168.33.1) 56(84) bytes of data.\n64 bytes from 192.168.33.1: icmp_seq=1 ttl=64 time=2.76 ms\n\n--- 192.168.33.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.762/2.762/2.762/0.000 ms\nPING 192.168.30.10 (192.168.30.10) 56(84) bytes of data.\n64 bytes from 192.168.30.10: icmp_seq=1 ttl=60 time=7.20 ms\n\n--- 192.168.30.10 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 7.200/7.200/7.200/0.000 ms\n",
+            "stderr": ""
+          }
+        ]
+      }
+    },
+    {
+      "test": "PC-HQ-ADMIN to PC-HQ-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "blocked",
+        "actual": "blocked",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-ADMIN to PC-HQ-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-ADMIN to PC-B1-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-ADMIN to PC-B1-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-ADMIN to PC-B1-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-ADMIN to PC-B2-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-ADMIN to PC-B2-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-ADMIN to PC-B2-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-ADMIN to PC-B3-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-ADMIN to PC-B3-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-ADMIN to PC-B3-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-STAFF to PC-HQ-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "blocked",
+        "actual": "blocked",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-STAFF to PC-HQ-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-STAFF to PC-B1-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-STAFF to PC-B1-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-STAFF to PC-B1-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-STAFF to PC-B2-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-STAFF to PC-B2-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-STAFF to PC-B2-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-STAFF to PC-B3-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-STAFF to PC-B3-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-STAFF to PC-B3-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-IT to PC-HQ-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-IT to PC-HQ-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-IT to PC-B1-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-IT to PC-B1-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-IT to PC-B1-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-IT to PC-B2-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-IT to PC-B2-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-IT to PC-B2-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-IT to PC-B3-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-IT to PC-B3-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-HQ-IT to PC-B3-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-ADMIN to PC-HQ-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-ADMIN to PC-HQ-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-ADMIN to PC-HQ-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-ADMIN to PC-B1-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "blocked",
+        "actual": "blocked",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-ADMIN to PC-B1-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-ADMIN to PC-B2-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-ADMIN to PC-B2-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-ADMIN to PC-B2-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-ADMIN to PC-B3-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-ADMIN to PC-B3-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-ADMIN to PC-B3-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-STAFF to PC-HQ-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-STAFF to PC-HQ-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-STAFF to PC-HQ-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-STAFF to PC-B1-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "blocked",
+        "actual": "blocked",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-STAFF to PC-B1-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-STAFF to PC-B2-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-STAFF to PC-B2-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-STAFF to PC-B2-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-STAFF to PC-B3-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-STAFF to PC-B3-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-STAFF to PC-B3-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-IT to PC-HQ-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-IT to PC-HQ-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-IT to PC-HQ-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-IT to PC-B1-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-IT to PC-B1-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-IT to PC-B2-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-IT to PC-B2-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-IT to PC-B2-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-IT to PC-B3-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-IT to PC-B3-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B1-IT to PC-B3-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-ADMIN to PC-HQ-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-ADMIN to PC-HQ-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-ADMIN to PC-HQ-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-ADMIN to PC-B1-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-ADMIN to PC-B1-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-ADMIN to PC-B1-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-ADMIN to PC-B2-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "blocked",
+        "actual": "blocked",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-ADMIN to PC-B2-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-ADMIN to PC-B3-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-ADMIN to PC-B3-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-ADMIN to PC-B3-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-STAFF to PC-HQ-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-STAFF to PC-HQ-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-STAFF to PC-HQ-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-STAFF to PC-B1-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-STAFF to PC-B1-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-STAFF to PC-B1-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-STAFF to PC-B2-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "blocked",
+        "actual": "blocked",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-STAFF to PC-B2-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-STAFF to PC-B3-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-STAFF to PC-B3-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-STAFF to PC-B3-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-IT to PC-HQ-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-IT to PC-HQ-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-IT to PC-HQ-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-IT to PC-B1-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-IT to PC-B1-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-IT to PC-B1-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-IT to PC-B2-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-IT to PC-B2-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-IT to PC-B3-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-IT to PC-B3-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B2-IT to PC-B3-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-ADMIN to PC-HQ-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-ADMIN to PC-HQ-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-ADMIN to PC-HQ-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-ADMIN to PC-B1-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-ADMIN to PC-B1-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-ADMIN to PC-B1-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-ADMIN to PC-B2-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-ADMIN to PC-B2-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-ADMIN to PC-B2-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-ADMIN to PC-B3-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "blocked",
+        "actual": "blocked",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-ADMIN to PC-B3-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-STAFF to PC-HQ-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-STAFF to PC-HQ-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-STAFF to PC-HQ-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-STAFF to PC-B1-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-STAFF to PC-B1-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-STAFF to PC-B1-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-STAFF to PC-B2-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-STAFF to PC-B2-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-STAFF to PC-B2-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-STAFF to PC-B3-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "blocked",
+        "actual": "blocked",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-STAFF to PC-B3-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-IT to PC-HQ-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-IT to PC-HQ-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-IT to PC-HQ-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-IT to PC-B1-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-IT to PC-B1-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-IT to PC-B1-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-IT to PC-B2-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-IT to PC-B2-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-IT to PC-B2-IT",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-IT to PC-B3-ADMIN",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "PC-B3-IT to PC-B3-STAFF",
+      "passed": true,
+      "details": {
+        "expected": "reachable",
+        "actual": "reachable",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "R-HQ OSPF command",
+      "passed": true,
+      "details": {
+        "node": "R-HQ",
+        "stdout": "{\n  \"neighbors\":{\n    \"11.11.11.11\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/-\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/-\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":6885598,\n        \"deadTimeMsecs\":38216,\n        \"routerDeadIntervalTimerDueMsec\":38216,\n        \"upTime\":\"1h54m45s\",\n        \"deadTime\":\"38.216s\",\n        \"address\":\"10.10.0.2\",\n        \"ifaceAddress\":\"10.10.0.2\",\n        \"ifaceName\":\"eth0:10.10.0.1\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ],\n    \"2.2.2.2\":[\n      {\n        \"priority\":1,\n        \"state\":\"2-Way\\/DROther\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"2-Way\\/DROther\",\n        \"converged\":\"2-Way\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":5897064,\n        \"deadTimeMsecs\":36941,\n        \"routerDeadIntervalTimerDueMsec\":36941,\n        \"upTime\":\"1h38m17s\",\n        \"deadTime\":\"36.941s\",\n        \"address\":\"10.0.0.2\",\n        \"ifaceAddress\":\"10.0.0.2\",\n        \"ifaceName\":\"eth1:10.0.0.1\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ],\n    \"3.3.3.3\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/Backup\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/Backup\",\n        \"converged\":\"Full\",\n        \"role\":\"Backup\",\n        \"upTimeInMsec\":6845745,\n        \"deadTimeMsecs\":36939,\n        \"routerDeadIntervalTimerDueMsec\":36939,\n        \"upTime\":\"1h54m05s\",\n        \"deadTime\":\"36.939s\",\n        \"address\":\"10.0.0.3\",\n        \"ifaceAddress\":\"10.0.0.3\",\n        \"ifaceName\":\"eth1:10.0.0.1\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ],\n    \"4.4.4.4\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/DR\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/DR\",\n        \"converged\":\"Full\",\n        \"role\":\"DR\",\n        \"upTimeInMsec\":6850806,\n        \"deadTimeMsecs\":36674,\n        \"routerDeadIntervalTimerDueMsec\":36674,\n        \"upTime\":\"1h54m10s\",\n        \"deadTime\":\"36.674s\",\n        \"address\":\"10.0.0.4\",\n        \"ifaceAddress\":\"10.0.0.4\",\n        \"ifaceName\":\"eth1:10.0.0.1\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ]\n  }\n}\nCodes: K - kernel route, C - connected, S - static, R - RIP,\n       O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,\n       T - Table, v - VNC, V - VNC-Direct, A - Babel, F - PBR,\n       f - OpenFabric,\n       > - selected route, * - FIB route, q - queued, r - rejected, b - backup\n       t - trapped, o - offload failure\n\nO   10.0.0.0/24 [110/10] is directly connected, eth1, weight 1, 01:54:01\nO   10.10.0.0/30 [110/10] is directly connected, eth0, weight 1, 01:54:56\nO>* 10.11.0.0/30 [110/20] via 10.0.0.2, eth1, weight 1, 01:38:11\nO>* 10.12.0.0/30 [110/20] via 10.0.0.3, eth1, weight 1, 01:54:01\nO>* 10.13.0.0/30 [110/20] via 10.0.0.4, eth1, weight 1, 01:54:01\nO>* 192.168.10.0/24 [110/20] via 10.10.0.2, eth0, weight 1, 01:54:41\nO>* 192.168.20.0/24 [110/20] via 10.10.0.2, eth0, weight 1, 01:54:41\nO>* 192.168.30.0/24 [110/20] via 10.10.0.2, eth0, weight 1, 01:54:41\nO>* 192.168.31.0/24 [110/30] via 10.0.0.4, eth1, weight 1, 01:54:01\nO>* 192.168.32.0/24 [110/30] via 10.0.0.4, eth1, weight 1, 01:54:01\nO>* 192.168.33.0/24 [110/30] via 10.0.0.4, eth1, weight 1, 01:54:01\nO>* 192.168.110.0/24 [110/30] via 10.0.0.2, eth1, weight 1, 01:38:11\nO>* 192.168.120.0/24 [110/30] via 10.0.0.2, eth1, weight 1, 01:38:11\nO>* 192.168.130.0/24 [110/30] via 10.0.0.2, eth1, weight 1, 01:38:11\nO>* 192.168.210.0/24 [110/30] via 10.0.0.3, eth1, weight 1, 01:54:01\nO>* 192.168.220.0/24 [110/30] via 10.0.0.3, eth1, weight 1, 01:54:01\nO>* 192.168.230.0/24 [110/30] via 10.0.0.3, eth1, weight 1, 01:54:01\n",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "R-HQ OSPF Full neighbor",
+      "passed": true,
+      "details": "{\n  \"neighbors\":{\n    \"11.11.11.11\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/-\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/-\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":6885598,\n        \"deadTimeMsecs\":38216,\n        \"routerDeadIntervalTimerDueMsec\":38216,\n        \"upTime\":\"1h54m45s\",\n        \"deadTime\":\"38.216s\",\n        \"address\":\"10.10.0.2\",\n        \"ifaceAddress\":\"10.10.0.2\",\n        \"ifaceName\":\"eth0:10.10.0.1\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ],\n    \"2.2.2.2\":[\n      {\n        \"priority\":1,\n        \"state\":\"2-Way\\/DROther\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"2-Way\\/DROther\",\n        \"converged\":\"2-Way\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":5897064,\n        \"deadTimeMsecs\":36941,\n        \"routerDeadIntervalTimerDueMsec\":36941,\n        \"upTime\":\"1h38m17s\",\n        \"deadTime\":\"36.941s\",\n        \"address\":\"10.0.0.2\",\n        \"ifaceAddress\":\"10.0.0.2\",\n        \"ifaceName\":\"eth1:10.0.0.1\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ],\n    \"3.3.3.3\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/Backup\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/Backup\",\n        \"converged\":\"Full\",\n        \"role\":\"Backup\",\n        \"upTimeInMsec\":6845745,\n        \"deadTimeMsecs\":36939,\n        \"routerDeadIntervalTimerDueMsec\":36939,\n        \"upTime\":\"1h54m05s\",\n        \"deadTime\":\"36.939s\",\n        \"address\":\"10.0.0.3\",\n        \"ifaceAddress\":\"10.0.0.3\",\n        \"ifaceName\":\"eth1:10.0.0.1\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ],\n    \"4.4.4.4\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/DR\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/DR\",\n        \"converged\":\"Full\",\n        \"role\":\"DR\",\n        \"upTimeInMsec\":6850806,\n        \"deadTimeMsecs\":36674,\n        \"routerDeadIntervalTimerDueMsec\":36674,\n        \"upTime\":\"1h54m10s\",\n        \"deadTime\":\"36.674s\",\n        \"address\":\"10.0.0.4\",\n        \"ifaceAddress\":\"10.0.0.4\",\n        \"ifaceName\":\"eth1:10.0.0.1\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ]\n  }\n}\nCodes: K - kernel route, C - connected, S - static, R - RIP,\n       O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,\n       T - Table, v - VNC, V - VNC-Direct, A - Babel, F - PBR,\n       f - OpenFabric,\n       > - selected route, * - FIB route, q - queued, r - rejected, b - backup\n       t - trapped, o - offload failure\n\nO   10.0.0.0/24 [110/10] is directly connected, eth1, weight 1, 01:54:01\nO   10.10.0.0/30 [110/10] is directly connected, eth0, weight 1, 01:54:56\nO>* 10.11.0.0/30 [110/20] via 10.0.0.2, eth1, weight 1, 01:38:11\nO>* 10.12.0.0/30 [110/20] via 10.0.0.3, eth1, weight 1, 01:54:01\nO>* 10.13.0.0/30 [110/20] via 10.0.0.4, eth1, weight 1, 01:54:01\nO>* 192.168.10.0/24 [110/20] via 10.10.0.2, eth0, weight 1, 01:54:41\nO>* 192.168.20.0/24 [110/20] via 10.10.0.2, eth0, weight 1, 01:54:41\nO>* 192.168.30.0/24 [110/20] via 10.10.0.2, eth0, weight 1, 01:54:41\nO>* 192.168.31.0/24 [110/30] via 10.0.0.4, eth1, weight 1, 01:54:01\nO>* 192.168.32.0/24 [110/30] via 10.0.0.4, eth1, weight 1, 01:54:01\nO>* 192.168.33.0/24 [110/30] via 10.0.0.4, eth1, weight 1, 01:54:01\nO>* 192.168.110.0/24 [110/30] via 10.0.0.2, eth1, weight 1, 01:38:11\nO>* 192.168.120.0/24 [110/30] via 10.0.0.2, eth1, weight 1, 01:38:11\nO>* 192.168.130.0/24 [110/30] via 10.0.0.2, eth1, weight 1, 01:38:11\nO>* 192.168.210.0/24 [110/30] via 10.0.0.3, eth1, weight 1, 01:54:01\nO>* 192.168.220.0/24 [110/30] via 10.0.0.3, eth1, weight 1, 01:54:01\nO>* 192.168.230.0/24 [110/30] via 10.0.0.3, eth1, weight 1, 01:54:01\n"
+    },
+    {
+      "test": "MLS-HQ OSPF command",
+      "passed": true,
+      "details": {
+        "node": "MLS-HQ",
+        "stdout": "{\n  \"neighbors\":{\n    \"1.1.1.1\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/-\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/-\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":6886258,\n        \"deadTimeMsecs\":35079,\n        \"routerDeadIntervalTimerDueMsec\":35079,\n        \"upTime\":\"1h54m46s\",\n        \"deadTime\":\"35.079s\",\n        \"address\":\"10.10.0.1\",\n        \"ifaceAddress\":\"10.10.0.1\",\n        \"ifaceName\":\"eth0:10.10.0.2\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ]\n  }\n}\nCodes: K - kernel route, C - connected, S - static, R - RIP,\n       O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,\n       T - Table, v - VNC, V - VNC-Direct, A - Babel, F - PBR,\n       f - OpenFabric,\n       > - selected route, * - FIB route, q - queued, r - rejected, b - backup\n       t - trapped, o - offload failure\n\nO>* 10.0.0.0/24 [110/20] via 10.10.0.1, eth0, weight 1, 01:54:02\nO   10.10.0.0/30 [110/10] is directly connected, eth0, weight 1, 01:54:49\nO>* 10.11.0.0/30 [110/30] via 10.10.0.1, eth0, weight 1, 01:38:12\nO>* 10.12.0.0/30 [110/30] via 10.10.0.1, eth0, weight 1, 01:54:02\nO>* 10.13.0.0/30 [110/30] via 10.10.0.1, eth0, weight 1, 01:54:02\nO   192.168.10.0/24 [110/10] is directly connected, vlan10, weight 1, 01:54:49\nO   192.168.20.0/24 [110/10] is directly connected, vlan20, weight 1, 01:54:49\nO   192.168.30.0/24 [110/10] is directly connected, vlan30, weight 1, 01:54:49\nO>* 192.168.31.0/24 [110/40] via 10.10.0.1, eth0, weight 1, 01:54:02\nO>* 192.168.32.0/24 [110/40] via 10.10.0.1, eth0, weight 1, 01:54:02\nO>* 192.168.33.0/24 [110/40] via 10.10.0.1, eth0, weight 1, 01:54:02\nO>* 192.168.110.0/24 [110/40] via 10.10.0.1, eth0, weight 1, 01:38:12\nO>* 192.168.120.0/24 [110/40] via 10.10.0.1, eth0, weight 1, 01:38:12\nO>* 192.168.130.0/24 [110/40] via 10.10.0.1, eth0, weight 1, 01:38:12\nO>* 192.168.210.0/24 [110/40] via 10.10.0.1, eth0, weight 1, 01:54:02\nO>* 192.168.220.0/24 [110/40] via 10.10.0.1, eth0, weight 1, 01:54:02\nO>* 192.168.230.0/24 [110/40] via 10.10.0.1, eth0, weight 1, 01:54:02\n",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "MLS-HQ OSPF Full neighbor",
+      "passed": true,
+      "details": "{\n  \"neighbors\":{\n    \"1.1.1.1\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/-\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/-\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":6886258,\n        \"deadTimeMsecs\":35079,\n        \"routerDeadIntervalTimerDueMsec\":35079,\n        \"upTime\":\"1h54m46s\",\n        \"deadTime\":\"35.079s\",\n        \"address\":\"10.10.0.1\",\n        \"ifaceAddress\":\"10.10.0.1\",\n        \"ifaceName\":\"eth0:10.10.0.2\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ]\n  }\n}\nCodes: K - kernel route, C - connected, S - static, R - RIP,\n       O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,\n       T - Table, v - VNC, V - VNC-Direct, A - Babel, F - PBR,\n       f - OpenFabric,\n       > - selected route, * - FIB route, q - queued, r - rejected, b - backup\n       t - trapped, o - offload failure\n\nO>* 10.0.0.0/24 [110/20] via 10.10.0.1, eth0, weight 1, 01:54:02\nO   10.10.0.0/30 [110/10] is directly connected, eth0, weight 1, 01:54:49\nO>* 10.11.0.0/30 [110/30] via 10.10.0.1, eth0, weight 1, 01:38:12\nO>* 10.12.0.0/30 [110/30] via 10.10.0.1, eth0, weight 1, 01:54:02\nO>* 10.13.0.0/30 [110/30] via 10.10.0.1, eth0, weight 1, 01:54:02\nO   192.168.10.0/24 [110/10] is directly connected, vlan10, weight 1, 01:54:49\nO   192.168.20.0/24 [110/10] is directly connected, vlan20, weight 1, 01:54:49\nO   192.168.30.0/24 [110/10] is directly connected, vlan30, weight 1, 01:54:49\nO>* 192.168.31.0/24 [110/40] via 10.10.0.1, eth0, weight 1, 01:54:02\nO>* 192.168.32.0/24 [110/40] via 10.10.0.1, eth0, weight 1, 01:54:02\nO>* 192.168.33.0/24 [110/40] via 10.10.0.1, eth0, weight 1, 01:54:02\nO>* 192.168.110.0/24 [110/40] via 10.10.0.1, eth0, weight 1, 01:38:12\nO>* 192.168.120.0/24 [110/40] via 10.10.0.1, eth0, weight 1, 01:38:12\nO>* 192.168.130.0/24 [110/40] via 10.10.0.1, eth0, weight 1, 01:38:12\nO>* 192.168.210.0/24 [110/40] via 10.10.0.1, eth0, weight 1, 01:54:02\nO>* 192.168.220.0/24 [110/40] via 10.10.0.1, eth0, weight 1, 01:54:02\nO>* 192.168.230.0/24 [110/40] via 10.10.0.1, eth0, weight 1, 01:54:02\n"
+    },
+    {
+      "test": "MLS-HQ two LACP members",
+      "passed": true,
+      "details": {
+        "stdout": "---- bond1 ----\n  status: active negotiated\n  sys_id: 72:96:66:c1:b5:44\n  sys_priority: 65534\n  aggregation key: 1\n  lacp_time: fast\n\nmember: eth1: current attached\n  port_id: 1\n  port_priority: 65535\n  may_enable: true\n\n  actor sys_id: 72:96:66:c1:b5:44\n  actor sys_priority: 65534\n  actor port_id: 1\n  actor port_priority: 65535\n  actor key: 1\n  actor state: activity timeout aggregation synchronized collecting distributing\n\n  partner sys_id: a6:df:fa:dc:a6:44\n  partner sys_priority: 65534\n  partner port_id: 2\n  partner port_priority: 65535\n  partner key: 1\n  partner state: activity timeout aggregation synchronized collecting distributing\n\nmember: eth2: current attached\n  port_id: 2\n  port_priority: 65535\n  may_enable: true\n\n  actor sys_id: 72:96:66:c1:b5:44\n  actor sys_priority: 65534\n  actor port_id: 2\n  actor port_priority: 65535\n  actor key: 1\n  actor state: activity timeout aggregation synchronized collecting distributing\n\n  partner sys_id: a6:df:fa:dc:a6:44\n  partner sys_priority: 65534\n  partner port_id: 1\n  partner port_priority: 65535\n  partner key: 1\n  partner state: activity timeout aggregation synchronized collecting distributing\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "MLS-HQ ACL deny counter",
+      "passed": true,
+      "details": {
+        "stdout": "{\"nftables\": [{\"metainfo\": {\"version\": \"1.0.6\", \"release_name\": \"Lester Gooch #5\", \"json_schema_version\": 1}}, {\"table\": {\"family\": \"inet\", \"name\": \"fyp_policy\", \"handle\": 1}}, {\"chain\": {\"family\": \"inet\", \"table\": \"fyp_policy\", \"name\": \"forward\", \"handle\": 1, \"type\": \"filter\", \"hook\": \"forward\", \"prio\": 0, \"policy\": \"accept\"}}, {\"rule\": {\"family\": \"inet\", \"table\": \"fyp_policy\", \"chain\": \"forward\", \"handle\": 2, \"expr\": [{\"match\": {\"op\": \"==\", \"left\": {\"meta\": {\"key\": \"iifname\"}}, \"right\": \"vlan10\"}}, {\"match\": {\"op\": \"==\", \"left\": {\"payload\": {\"protocol\": \"ip\", \"field\": \"saddr\"}}, \"right\": {\"prefix\": {\"addr\": \"192.168.10.0\", \"len\": 24}}}}, {\"match\": {\"op\": \"==\", \"left\": {\"payload\": {\"protocol\": \"ip\", \"field\": \"daddr\"}}, \"right\": {\"prefix\": {\"addr\": \"192.168.20.0\", \"len\": 24}}}}, {\"counter\": {\"packets\": 4, \"bytes\": 336}}, {\"drop\": null}]}}]}\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "SW-HQ-1 two LACP members",
+      "passed": true,
+      "details": {
+        "stdout": "---- bond1 ----\n  status: active negotiated\n  sys_id: a6:df:fa:dc:a6:44\n  sys_priority: 65534\n  aggregation key: 1\n  lacp_time: fast\n\nmember: eth0: current attached\n  port_id: 2\n  port_priority: 65535\n  may_enable: true\n\n  actor sys_id: a6:df:fa:dc:a6:44\n  actor sys_priority: 65534\n  actor port_id: 2\n  actor port_priority: 65535\n  actor key: 1\n  actor state: activity timeout aggregation synchronized collecting distributing\n\n  partner sys_id: 72:96:66:c1:b5:44\n  partner sys_priority: 65534\n  partner port_id: 1\n  partner port_priority: 65535\n  partner key: 1\n  partner state: activity timeout aggregation synchronized collecting distributing\n\nmember: eth1: current attached\n  port_id: 1\n  port_priority: 65535\n  may_enable: true\n\n  actor sys_id: a6:df:fa:dc:a6:44\n  actor sys_priority: 65534\n  actor port_id: 1\n  actor port_priority: 65535\n  actor key: 1\n  actor state: activity timeout aggregation synchronized collecting distributing\n\n  partner sys_id: 72:96:66:c1:b5:44\n  partner sys_priority: 65534\n  partner port_id: 2\n  partner port_priority: 65535\n  partner key: 1\n  partner state: activity timeout aggregation synchronized collecting distributing\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "R-B1 OSPF command",
+      "passed": true,
+      "details": {
+        "node": "R-B1",
+        "stdout": "{\n  \"neighbors\":{\n    \"22.22.22.22\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/-\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/-\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":5907780,\n        \"deadTimeMsecs\":34572,\n        \"routerDeadIntervalTimerDueMsec\":34572,\n        \"upTime\":\"1h38m27s\",\n        \"deadTime\":\"34.572s\",\n        \"address\":\"10.11.0.2\",\n        \"ifaceAddress\":\"10.11.0.2\",\n        \"ifaceName\":\"eth0:10.11.0.1\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ],\n    \"1.1.1.1\":[\n      {\n        \"priority\":1,\n        \"state\":\"2-Way\\/DROther\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"2-Way\\/DROther\",\n        \"converged\":\"2-Way\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":5907505,\n        \"deadTimeMsecs\":33629,\n        \"routerDeadIntervalTimerDueMsec\":33629,\n        \"upTime\":\"1h38m27s\",\n        \"deadTime\":\"33.629s\",\n        \"address\":\"10.0.0.1\",\n        \"ifaceAddress\":\"10.0.0.1\",\n        \"ifaceName\":\"eth1:10.0.0.2\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ],\n    \"3.3.3.3\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/Backup\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/Backup\",\n        \"converged\":\"Full\",\n        \"role\":\"Backup\",\n        \"upTimeInMsec\":5904571,\n        \"deadTimeMsecs\":34833,\n        \"routerDeadIntervalTimerDueMsec\":34833,\n        \"upTime\":\"1h38m24s\",\n        \"deadTime\":\"34.833s\",\n        \"address\":\"10.0.0.3\",\n        \"ifaceAddress\":\"10.0.0.3\",\n        \"ifaceName\":\"eth1:10.0.0.2\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ],\n    \"4.4.4.4\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/DR\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/DR\",\n        \"converged\":\"Full\",\n        \"role\":\"DR\",\n        \"upTimeInMsec\":5902393,\n        \"deadTimeMsecs\":34568,\n        \"routerDeadIntervalTimerDueMsec\":34568,\n        \"upTime\":\"1h38m22s\",\n        \"deadTime\":\"34.568s\",\n        \"address\":\"10.0.0.4\",\n        \"ifaceAddress\":\"10.0.0.4\",\n        \"ifaceName\":\"eth1:10.0.0.2\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ]\n  }\n}\nCodes: K - kernel route, C - connected, S - static, R - RIP,\n       O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,\n       T - Table, v - VNC, V - VNC-Direct, A - Babel, F - PBR,\n       f - OpenFabric,\n       > - selected route, * - FIB route, q - queued, r - rejected, b - backup\n       t - trapped, o - offload failure\n\nO   10.0.0.0/24 [110/10] is directly connected, eth1, weight 1, 01:38:23\nO>* 10.10.0.0/30 [110/20] via 10.0.0.1, eth1, weight 1, 01:38:23\nO   10.11.0.0/30 [110/10] is directly connected, eth0, weight 1, 01:38:30\nO>* 10.12.0.0/30 [110/20] via 10.0.0.3, eth1, weight 1, 01:38:23\nO>* 10.13.0.0/30 [110/20] via 10.0.0.4, eth1, weight 1, 01:38:23\nO>* 192.168.10.0/24 [110/30] via 10.0.0.1, eth1, weight 1, 01:38:23\nO>* 192.168.20.0/24 [110/30] via 10.0.0.1, eth1, weight 1, 01:38:23\nO>* 192.168.30.0/24 [110/30] via 10.0.0.1, eth1, weight 1, 01:38:23\nO>* 192.168.31.0/24 [110/30] via 10.0.0.4, eth1, weight 1, 01:38:23\nO>* 192.168.32.0/24 [110/30] via 10.0.0.4, eth1, weight 1, 01:38:23\nO>* 192.168.33.0/24 [110/30] via 10.0.0.4, eth1, weight 1, 01:38:23\nO>* 192.168.110.0/24 [110/20] via 10.11.0.2, eth0, weight 1, 01:38:18\nO>* 192.168.120.0/24 [110/20] via 10.11.0.2, eth0, weight 1, 01:38:18\nO>* 192.168.130.0/24 [110/20] via 10.11.0.2, eth0, weight 1, 01:38:18\nO>* 192.168.210.0/24 [110/30] via 10.0.0.3, eth1, weight 1, 01:38:23\nO>* 192.168.220.0/24 [110/30] via 10.0.0.3, eth1, weight 1, 01:38:23\nO>* 192.168.230.0/24 [110/30] via 10.0.0.3, eth1, weight 1, 01:38:23\n",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "R-B1 OSPF Full neighbor",
+      "passed": true,
+      "details": "{\n  \"neighbors\":{\n    \"22.22.22.22\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/-\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/-\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":5907780,\n        \"deadTimeMsecs\":34572,\n        \"routerDeadIntervalTimerDueMsec\":34572,\n        \"upTime\":\"1h38m27s\",\n        \"deadTime\":\"34.572s\",\n        \"address\":\"10.11.0.2\",\n        \"ifaceAddress\":\"10.11.0.2\",\n        \"ifaceName\":\"eth0:10.11.0.1\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ],\n    \"1.1.1.1\":[\n      {\n        \"priority\":1,\n        \"state\":\"2-Way\\/DROther\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"2-Way\\/DROther\",\n        \"converged\":\"2-Way\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":5907505,\n        \"deadTimeMsecs\":33629,\n        \"routerDeadIntervalTimerDueMsec\":33629,\n        \"upTime\":\"1h38m27s\",\n        \"deadTime\":\"33.629s\",\n        \"address\":\"10.0.0.1\",\n        \"ifaceAddress\":\"10.0.0.1\",\n        \"ifaceName\":\"eth1:10.0.0.2\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ],\n    \"3.3.3.3\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/Backup\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/Backup\",\n        \"converged\":\"Full\",\n        \"role\":\"Backup\",\n        \"upTimeInMsec\":5904571,\n        \"deadTimeMsecs\":34833,\n        \"routerDeadIntervalTimerDueMsec\":34833,\n        \"upTime\":\"1h38m24s\",\n        \"deadTime\":\"34.833s\",\n        \"address\":\"10.0.0.3\",\n        \"ifaceAddress\":\"10.0.0.3\",\n        \"ifaceName\":\"eth1:10.0.0.2\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ],\n    \"4.4.4.4\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/DR\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/DR\",\n        \"converged\":\"Full\",\n        \"role\":\"DR\",\n        \"upTimeInMsec\":5902393,\n        \"deadTimeMsecs\":34568,\n        \"routerDeadIntervalTimerDueMsec\":34568,\n        \"upTime\":\"1h38m22s\",\n        \"deadTime\":\"34.568s\",\n        \"address\":\"10.0.0.4\",\n        \"ifaceAddress\":\"10.0.0.4\",\n        \"ifaceName\":\"eth1:10.0.0.2\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ]\n  }\n}\nCodes: K - kernel route, C - connected, S - static, R - RIP,\n       O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,\n       T - Table, v - VNC, V - VNC-Direct, A - Babel, F - PBR,\n       f - OpenFabric,\n       > - selected route, * - FIB route, q - queued, r - rejected, b - backup\n       t - trapped, o - offload failure\n\nO   10.0.0.0/24 [110/10] is directly connected, eth1, weight 1, 01:38:23\nO>* 10.10.0.0/30 [110/20] via 10.0.0.1, eth1, weight 1, 01:38:23\nO   10.11.0.0/30 [110/10] is directly connected, eth0, weight 1, 01:38:30\nO>* 10.12.0.0/30 [110/20] via 10.0.0.3, eth1, weight 1, 01:38:23\nO>* 10.13.0.0/30 [110/20] via 10.0.0.4, eth1, weight 1, 01:38:23\nO>* 192.168.10.0/24 [110/30] via 10.0.0.1, eth1, weight 1, 01:38:23\nO>* 192.168.20.0/24 [110/30] via 10.0.0.1, eth1, weight 1, 01:38:23\nO>* 192.168.30.0/24 [110/30] via 10.0.0.1, eth1, weight 1, 01:38:23\nO>* 192.168.31.0/24 [110/30] via 10.0.0.4, eth1, weight 1, 01:38:23\nO>* 192.168.32.0/24 [110/30] via 10.0.0.4, eth1, weight 1, 01:38:23\nO>* 192.168.33.0/24 [110/30] via 10.0.0.4, eth1, weight 1, 01:38:23\nO>* 192.168.110.0/24 [110/20] via 10.11.0.2, eth0, weight 1, 01:38:18\nO>* 192.168.120.0/24 [110/20] via 10.11.0.2, eth0, weight 1, 01:38:18\nO>* 192.168.130.0/24 [110/20] via 10.11.0.2, eth0, weight 1, 01:38:18\nO>* 192.168.210.0/24 [110/30] via 10.0.0.3, eth1, weight 1, 01:38:23\nO>* 192.168.220.0/24 [110/30] via 10.0.0.3, eth1, weight 1, 01:38:23\nO>* 192.168.230.0/24 [110/30] via 10.0.0.3, eth1, weight 1, 01:38:23\n"
+    },
+    {
+      "test": "MLS-B1 OSPF command",
+      "passed": true,
+      "details": {
+        "node": "MLS-B1",
+        "stdout": "{\n  \"neighbors\":{\n    \"2.2.2.2\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/-\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/-\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":5908610,\n        \"deadTimeMsecs\":34020,\n        \"routerDeadIntervalTimerDueMsec\":34020,\n        \"upTime\":\"1h38m28s\",\n        \"deadTime\":\"34.020s\",\n        \"address\":\"10.11.0.1\",\n        \"ifaceAddress\":\"10.11.0.1\",\n        \"ifaceName\":\"eth0:10.11.0.2\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ]\n  }\n}\nCodes: K - kernel route, C - connected, S - static, R - RIP,\n       O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,\n       T - Table, v - VNC, V - VNC-Direct, A - Babel, F - PBR,\n       f - OpenFabric,\n       > - selected route, * - FIB route, q - queued, r - rejected, b - backup\n       t - trapped, o - offload failure\n\nO>* 10.0.0.0/24 [110/20] via 10.11.0.1, eth0, weight 1, 01:38:26\nO>* 10.10.0.0/30 [110/30] via 10.11.0.1, eth0, weight 1, 01:38:24\nO   10.11.0.0/30 [110/10] is directly connected, eth0, weight 1, 01:54:49\nO>* 10.12.0.0/30 [110/30] via 10.11.0.1, eth0, weight 1, 01:38:24\nO>* 10.13.0.0/30 [110/30] via 10.11.0.1, eth0, weight 1, 01:38:24\nO>* 192.168.10.0/24 [110/40] via 10.11.0.1, eth0, weight 1, 01:38:24\nO>* 192.168.20.0/24 [110/40] via 10.11.0.1, eth0, weight 1, 01:38:24\nO>* 192.168.30.0/24 [110/40] via 10.11.0.1, eth0, weight 1, 01:38:24\nO>* 192.168.31.0/24 [110/40] via 10.11.0.1, eth0, weight 1, 01:38:24\nO>* 192.168.32.0/24 [110/40] via 10.11.0.1, eth0, weight 1, 01:38:24\nO>* 192.168.33.0/24 [110/40] via 10.11.0.1, eth0, weight 1, 01:38:24\nO   192.168.110.0/24 [110/10] is directly connected, vlan10, weight 1, 01:54:49\nO   192.168.120.0/24 [110/10] is directly connected, vlan20, weight 1, 01:54:49\nO   192.168.130.0/24 [110/10] is directly connected, vlan30, weight 1, 01:54:49\nO>* 192.168.210.0/24 [110/40] via 10.11.0.1, eth0, weight 1, 01:38:24\nO>* 192.168.220.0/24 [110/40] via 10.11.0.1, eth0, weight 1, 01:38:24\nO>* 192.168.230.0/24 [110/40] via 10.11.0.1, eth0, weight 1, 01:38:24\n",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "MLS-B1 OSPF Full neighbor",
+      "passed": true,
+      "details": "{\n  \"neighbors\":{\n    \"2.2.2.2\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/-\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/-\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":5908610,\n        \"deadTimeMsecs\":34020,\n        \"routerDeadIntervalTimerDueMsec\":34020,\n        \"upTime\":\"1h38m28s\",\n        \"deadTime\":\"34.020s\",\n        \"address\":\"10.11.0.1\",\n        \"ifaceAddress\":\"10.11.0.1\",\n        \"ifaceName\":\"eth0:10.11.0.2\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ]\n  }\n}\nCodes: K - kernel route, C - connected, S - static, R - RIP,\n       O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,\n       T - Table, v - VNC, V - VNC-Direct, A - Babel, F - PBR,\n       f - OpenFabric,\n       > - selected route, * - FIB route, q - queued, r - rejected, b - backup\n       t - trapped, o - offload failure\n\nO>* 10.0.0.0/24 [110/20] via 10.11.0.1, eth0, weight 1, 01:38:26\nO>* 10.10.0.0/30 [110/30] via 10.11.0.1, eth0, weight 1, 01:38:24\nO   10.11.0.0/30 [110/10] is directly connected, eth0, weight 1, 01:54:49\nO>* 10.12.0.0/30 [110/30] via 10.11.0.1, eth0, weight 1, 01:38:24\nO>* 10.13.0.0/30 [110/30] via 10.11.0.1, eth0, weight 1, 01:38:24\nO>* 192.168.10.0/24 [110/40] via 10.11.0.1, eth0, weight 1, 01:38:24\nO>* 192.168.20.0/24 [110/40] via 10.11.0.1, eth0, weight 1, 01:38:24\nO>* 192.168.30.0/24 [110/40] via 10.11.0.1, eth0, weight 1, 01:38:24\nO>* 192.168.31.0/24 [110/40] via 10.11.0.1, eth0, weight 1, 01:38:24\nO>* 192.168.32.0/24 [110/40] via 10.11.0.1, eth0, weight 1, 01:38:24\nO>* 192.168.33.0/24 [110/40] via 10.11.0.1, eth0, weight 1, 01:38:24\nO   192.168.110.0/24 [110/10] is directly connected, vlan10, weight 1, 01:54:49\nO   192.168.120.0/24 [110/10] is directly connected, vlan20, weight 1, 01:54:49\nO   192.168.130.0/24 [110/10] is directly connected, vlan30, weight 1, 01:54:49\nO>* 192.168.210.0/24 [110/40] via 10.11.0.1, eth0, weight 1, 01:38:24\nO>* 192.168.220.0/24 [110/40] via 10.11.0.1, eth0, weight 1, 01:38:24\nO>* 192.168.230.0/24 [110/40] via 10.11.0.1, eth0, weight 1, 01:38:24\n"
+    },
+    {
+      "test": "MLS-B1 two LACP members",
+      "passed": true,
+      "details": {
+        "stdout": "---- bond1 ----\n  status: active negotiated\n  sys_id: 56:9b:ce:39:6c:41\n  sys_priority: 65534\n  aggregation key: 1\n  lacp_time: fast\n\nmember: eth1: current attached\n  port_id: 2\n  port_priority: 65535\n  may_enable: true\n\n  actor sys_id: 56:9b:ce:39:6c:41\n  actor sys_priority: 65534\n  actor port_id: 2\n  actor port_priority: 65535\n  actor key: 1\n  actor state: activity timeout aggregation synchronized collecting distributing\n\n  partner sys_id: 9a:d6:ca:0d:4f:48\n  partner sys_priority: 65534\n  partner port_id: 1\n  partner port_priority: 65535\n  partner key: 1\n  partner state: activity timeout aggregation synchronized collecting distributing\n\nmember: eth2: current attached\n  port_id: 1\n  port_priority: 65535\n  may_enable: true\n\n  actor sys_id: 56:9b:ce:39:6c:41\n  actor sys_priority: 65534\n  actor port_id: 1\n  actor port_priority: 65535\n  actor key: 1\n  actor state: activity timeout aggregation synchronized collecting distributing\n\n  partner sys_id: 9a:d6:ca:0d:4f:48\n  partner sys_priority: 65534\n  partner port_id: 2\n  partner port_priority: 65535\n  partner key: 1\n  partner state: activity timeout aggregation synchronized collecting distributing\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "MLS-B1 ACL deny counter",
+      "passed": true,
+      "details": {
+        "stdout": "{\"nftables\": [{\"metainfo\": {\"version\": \"1.0.6\", \"release_name\": \"Lester Gooch #5\", \"json_schema_version\": 1}}, {\"table\": {\"family\": \"inet\", \"name\": \"fyp_policy\", \"handle\": 1}}, {\"chain\": {\"family\": \"inet\", \"table\": \"fyp_policy\", \"name\": \"forward\", \"handle\": 1, \"type\": \"filter\", \"hook\": \"forward\", \"prio\": 0, \"policy\": \"accept\"}}, {\"rule\": {\"family\": \"inet\", \"table\": \"fyp_policy\", \"chain\": \"forward\", \"handle\": 2, \"expr\": [{\"match\": {\"op\": \"==\", \"left\": {\"meta\": {\"key\": \"iifname\"}}, \"right\": \"vlan10\"}}, {\"match\": {\"op\": \"==\", \"left\": {\"payload\": {\"protocol\": \"ip\", \"field\": \"saddr\"}}, \"right\": {\"prefix\": {\"addr\": \"192.168.110.0\", \"len\": 24}}}}, {\"match\": {\"op\": \"==\", \"left\": {\"payload\": {\"protocol\": \"ip\", \"field\": \"daddr\"}}, \"right\": {\"prefix\": {\"addr\": \"192.168.120.0\", \"len\": 24}}}}, {\"counter\": {\"packets\": 4, \"bytes\": 336}}, {\"drop\": null}]}}]}\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "SW-B1-1 two LACP members",
+      "passed": true,
+      "details": {
+        "stdout": "---- bond1 ----\n  status: active negotiated\n  sys_id: 9a:d6:ca:0d:4f:48\n  sys_priority: 65534\n  aggregation key: 1\n  lacp_time: fast\n\nmember: eth0: current attached\n  port_id: 1\n  port_priority: 65535\n  may_enable: true\n\n  actor sys_id: 9a:d6:ca:0d:4f:48\n  actor sys_priority: 65534\n  actor port_id: 1\n  actor port_priority: 65535\n  actor key: 1\n  actor state: activity timeout aggregation synchronized collecting distributing\n\n  partner sys_id: 56:9b:ce:39:6c:41\n  partner sys_priority: 65534\n  partner port_id: 2\n  partner port_priority: 65535\n  partner key: 1\n  partner state: activity timeout aggregation synchronized collecting distributing\n\nmember: eth1: current attached\n  port_id: 2\n  port_priority: 65535\n  may_enable: true\n\n  actor sys_id: 9a:d6:ca:0d:4f:48\n  actor sys_priority: 65534\n  actor port_id: 2\n  actor port_priority: 65535\n  actor key: 1\n  actor state: activity timeout aggregation synchronized collecting distributing\n\n  partner sys_id: 56:9b:ce:39:6c:41\n  partner sys_priority: 65534\n  partner port_id: 1\n  partner port_priority: 65535\n  partner key: 1\n  partner state: activity timeout aggregation synchronized collecting distributing\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "R-B2 OSPF command",
+      "passed": true,
+      "details": {
+        "node": "R-B2",
+        "stdout": "{\n  \"neighbors\":{\n    \"33.33.33.33\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/-\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/-\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":6887546,\n        \"deadTimeMsecs\":31234,\n        \"routerDeadIntervalTimerDueMsec\":31234,\n        \"upTime\":\"1h54m47s\",\n        \"deadTime\":\"31.234s\",\n        \"address\":\"10.12.0.2\",\n        \"ifaceAddress\":\"10.12.0.2\",\n        \"ifaceName\":\"eth0:10.12.0.1\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ],\n    \"1.1.1.1\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/DROther\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/DROther\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":6850353,\n        \"deadTimeMsecs\":31131,\n        \"routerDeadIntervalTimerDueMsec\":31131,\n        \"upTime\":\"1h54m10s\",\n        \"deadTime\":\"31.131s\",\n        \"address\":\"10.0.0.1\",\n        \"ifaceAddress\":\"10.0.0.1\",\n        \"ifaceName\":\"eth1:10.0.0.3\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ],\n    \"2.2.2.2\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/DROther\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/DROther\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":5907078,\n        \"deadTimeMsecs\":32337,\n        \"routerDeadIntervalTimerDueMsec\":32337,\n        \"upTime\":\"1h38m27s\",\n        \"deadTime\":\"32.337s\",\n        \"address\":\"10.0.0.2\",\n        \"ifaceAddress\":\"10.0.0.2\",\n        \"ifaceName\":\"eth1:10.0.0.3\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ],\n    \"4.4.4.4\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/DR\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/DR\",\n        \"converged\":\"Full\",\n        \"role\":\"DR\",\n        \"upTimeInMsec\":6855407,\n        \"deadTimeMsecs\":32069,\n        \"routerDeadIntervalTimerDueMsec\":32069,\n        \"upTime\":\"1h54m15s\",\n        \"deadTime\":\"32.069s\",\n        \"address\":\"10.0.0.4\",\n        \"ifaceAddress\":\"10.0.0.4\",\n        \"ifaceName\":\"eth1:10.0.0.3\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ]\n  }\n}\nCodes: K - kernel route, C - connected, S - static, R - RIP,\n       O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,\n       T - Table, v - VNC, V - VNC-Direct, A - Babel, F - PBR,\n       f - OpenFabric,\n       > - selected route, * - FIB route, q - queued, r - rejected, b - backup\n       t - trapped, o - offload failure\n\nO   10.0.0.0/24 [110/10] is directly connected, eth1, weight 1, 01:54:15\nO>* 10.10.0.0/30 [110/20] via 10.0.0.1, eth1, weight 1, 01:54:05\nO>* 10.11.0.0/30 [110/20] via 10.0.0.2, eth1, weight 1, 01:38:17\nO   10.12.0.0/30 [110/10] is directly connected, eth0, weight 1, 01:54:57\nO>* 10.13.0.0/30 [110/20] via 10.0.0.4, eth1, weight 1, 01:54:05\nO>* 192.168.10.0/24 [110/30] via 10.0.0.1, eth1, weight 1, 01:54:05\nO>* 192.168.20.0/24 [110/30] via 10.0.0.1, eth1, weight 1, 01:54:05\nO>* 192.168.30.0/24 [110/30] via 10.0.0.1, eth1, weight 1, 01:54:05\nO>* 192.168.31.0/24 [110/30] via 10.0.0.4, eth1, weight 1, 01:54:05\nO>* 192.168.32.0/24 [110/30] via 10.0.0.4, eth1, weight 1, 01:54:05\nO>* 192.168.33.0/24 [110/30] via 10.0.0.4, eth1, weight 1, 01:54:05\nO>* 192.168.110.0/24 [110/30] via 10.0.0.2, eth1, weight 1, 01:38:17\nO>* 192.168.120.0/24 [110/30] via 10.0.0.2, eth1, weight 1, 01:38:17\nO>* 192.168.130.0/24 [110/30] via 10.0.0.2, eth1, weight 1, 01:38:17\nO>* 192.168.210.0/24 [110/20] via 10.12.0.2, eth0, weight 1, 01:54:37\nO>* 192.168.220.0/24 [110/20] via 10.12.0.2, eth0, weight 1, 01:54:37\nO>* 192.168.230.0/24 [110/20] via 10.12.0.2, eth0, weight 1, 01:54:37\n",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "R-B2 OSPF Full neighbor",
+      "passed": true,
+      "details": "{\n  \"neighbors\":{\n    \"33.33.33.33\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/-\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/-\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":6887546,\n        \"deadTimeMsecs\":31234,\n        \"routerDeadIntervalTimerDueMsec\":31234,\n        \"upTime\":\"1h54m47s\",\n        \"deadTime\":\"31.234s\",\n        \"address\":\"10.12.0.2\",\n        \"ifaceAddress\":\"10.12.0.2\",\n        \"ifaceName\":\"eth0:10.12.0.1\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ],\n    \"1.1.1.1\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/DROther\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/DROther\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":6850353,\n        \"deadTimeMsecs\":31131,\n        \"routerDeadIntervalTimerDueMsec\":31131,\n        \"upTime\":\"1h54m10s\",\n        \"deadTime\":\"31.131s\",\n        \"address\":\"10.0.0.1\",\n        \"ifaceAddress\":\"10.0.0.1\",\n        \"ifaceName\":\"eth1:10.0.0.3\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ],\n    \"2.2.2.2\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/DROther\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/DROther\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":5907078,\n        \"deadTimeMsecs\":32337,\n        \"routerDeadIntervalTimerDueMsec\":32337,\n        \"upTime\":\"1h38m27s\",\n        \"deadTime\":\"32.337s\",\n        \"address\":\"10.0.0.2\",\n        \"ifaceAddress\":\"10.0.0.2\",\n        \"ifaceName\":\"eth1:10.0.0.3\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ],\n    \"4.4.4.4\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/DR\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/DR\",\n        \"converged\":\"Full\",\n        \"role\":\"DR\",\n        \"upTimeInMsec\":6855407,\n        \"deadTimeMsecs\":32069,\n        \"routerDeadIntervalTimerDueMsec\":32069,\n        \"upTime\":\"1h54m15s\",\n        \"deadTime\":\"32.069s\",\n        \"address\":\"10.0.0.4\",\n        \"ifaceAddress\":\"10.0.0.4\",\n        \"ifaceName\":\"eth1:10.0.0.3\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ]\n  }\n}\nCodes: K - kernel route, C - connected, S - static, R - RIP,\n       O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,\n       T - Table, v - VNC, V - VNC-Direct, A - Babel, F - PBR,\n       f - OpenFabric,\n       > - selected route, * - FIB route, q - queued, r - rejected, b - backup\n       t - trapped, o - offload failure\n\nO   10.0.0.0/24 [110/10] is directly connected, eth1, weight 1, 01:54:15\nO>* 10.10.0.0/30 [110/20] via 10.0.0.1, eth1, weight 1, 01:54:05\nO>* 10.11.0.0/30 [110/20] via 10.0.0.2, eth1, weight 1, 01:38:17\nO   10.12.0.0/30 [110/10] is directly connected, eth0, weight 1, 01:54:57\nO>* 10.13.0.0/30 [110/20] via 10.0.0.4, eth1, weight 1, 01:54:05\nO>* 192.168.10.0/24 [110/30] via 10.0.0.1, eth1, weight 1, 01:54:05\nO>* 192.168.20.0/24 [110/30] via 10.0.0.1, eth1, weight 1, 01:54:05\nO>* 192.168.30.0/24 [110/30] via 10.0.0.1, eth1, weight 1, 01:54:05\nO>* 192.168.31.0/24 [110/30] via 10.0.0.4, eth1, weight 1, 01:54:05\nO>* 192.168.32.0/24 [110/30] via 10.0.0.4, eth1, weight 1, 01:54:05\nO>* 192.168.33.0/24 [110/30] via 10.0.0.4, eth1, weight 1, 01:54:05\nO>* 192.168.110.0/24 [110/30] via 10.0.0.2, eth1, weight 1, 01:38:17\nO>* 192.168.120.0/24 [110/30] via 10.0.0.2, eth1, weight 1, 01:38:17\nO>* 192.168.130.0/24 [110/30] via 10.0.0.2, eth1, weight 1, 01:38:17\nO>* 192.168.210.0/24 [110/20] via 10.12.0.2, eth0, weight 1, 01:54:37\nO>* 192.168.220.0/24 [110/20] via 10.12.0.2, eth0, weight 1, 01:54:37\nO>* 192.168.230.0/24 [110/20] via 10.12.0.2, eth0, weight 1, 01:54:37\n"
+    },
+    {
+      "test": "MLS-B2 OSPF command",
+      "passed": true,
+      "details": {
+        "node": "MLS-B2",
+        "stdout": "{\n  \"neighbors\":{\n    \"3.3.3.3\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/-\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/-\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":6888106,\n        \"deadTimeMsecs\":31782,\n        \"routerDeadIntervalTimerDueMsec\":31782,\n        \"upTime\":\"1h54m48s\",\n        \"deadTime\":\"31.782s\",\n        \"address\":\"10.12.0.1\",\n        \"ifaceAddress\":\"10.12.0.1\",\n        \"ifaceName\":\"eth0:10.12.0.2\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ]\n  }\n}\nCodes: K - kernel route, C - connected, S - static, R - RIP,\n       O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,\n       T - Table, v - VNC, V - VNC-Direct, A - Babel, F - PBR,\n       f - OpenFabric,\n       > - selected route, * - FIB route, q - queued, r - rejected, b - backup\n       t - trapped, o - offload failure\n\nO>* 10.0.0.0/24 [110/20] via 10.12.0.1, eth0, weight 1, 01:54:38\nO>* 10.10.0.0/30 [110/30] via 10.12.0.1, eth0, weight 1, 01:54:06\nO>* 10.11.0.0/30 [110/30] via 10.12.0.1, eth0, weight 1, 01:38:18\nO   10.12.0.0/30 [110/10] is directly connected, eth0, weight 1, 01:54:50\nO>* 10.13.0.0/30 [110/30] via 10.12.0.1, eth0, weight 1, 01:54:06\nO>* 192.168.10.0/24 [110/40] via 10.12.0.1, eth0, weight 1, 01:54:06\nO>* 192.168.20.0/24 [110/40] via 10.12.0.1, eth0, weight 1, 01:54:06\nO>* 192.168.30.0/24 [110/40] via 10.12.0.1, eth0, weight 1, 01:54:06\nO>* 192.168.31.0/24 [110/40] via 10.12.0.1, eth0, weight 1, 01:54:06\nO>* 192.168.32.0/24 [110/40] via 10.12.0.1, eth0, weight 1, 01:54:06\nO>* 192.168.33.0/24 [110/40] via 10.12.0.1, eth0, weight 1, 01:54:06\nO>* 192.168.110.0/24 [110/40] via 10.12.0.1, eth0, weight 1, 01:38:18\nO>* 192.168.120.0/24 [110/40] via 10.12.0.1, eth0, weight 1, 01:38:18\nO>* 192.168.130.0/24 [110/40] via 10.12.0.1, eth0, weight 1, 01:38:18\nO   192.168.210.0/24 [110/10] is directly connected, vlan10, weight 1, 01:54:50\nO   192.168.220.0/24 [110/10] is directly connected, vlan20, weight 1, 01:54:50\nO   192.168.230.0/24 [110/10] is directly connected, vlan30, weight 1, 01:54:50\n",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "MLS-B2 OSPF Full neighbor",
+      "passed": true,
+      "details": "{\n  \"neighbors\":{\n    \"3.3.3.3\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/-\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/-\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":6888106,\n        \"deadTimeMsecs\":31782,\n        \"routerDeadIntervalTimerDueMsec\":31782,\n        \"upTime\":\"1h54m48s\",\n        \"deadTime\":\"31.782s\",\n        \"address\":\"10.12.0.1\",\n        \"ifaceAddress\":\"10.12.0.1\",\n        \"ifaceName\":\"eth0:10.12.0.2\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ]\n  }\n}\nCodes: K - kernel route, C - connected, S - static, R - RIP,\n       O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,\n       T - Table, v - VNC, V - VNC-Direct, A - Babel, F - PBR,\n       f - OpenFabric,\n       > - selected route, * - FIB route, q - queued, r - rejected, b - backup\n       t - trapped, o - offload failure\n\nO>* 10.0.0.0/24 [110/20] via 10.12.0.1, eth0, weight 1, 01:54:38\nO>* 10.10.0.0/30 [110/30] via 10.12.0.1, eth0, weight 1, 01:54:06\nO>* 10.11.0.0/30 [110/30] via 10.12.0.1, eth0, weight 1, 01:38:18\nO   10.12.0.0/30 [110/10] is directly connected, eth0, weight 1, 01:54:50\nO>* 10.13.0.0/30 [110/30] via 10.12.0.1, eth0, weight 1, 01:54:06\nO>* 192.168.10.0/24 [110/40] via 10.12.0.1, eth0, weight 1, 01:54:06\nO>* 192.168.20.0/24 [110/40] via 10.12.0.1, eth0, weight 1, 01:54:06\nO>* 192.168.30.0/24 [110/40] via 10.12.0.1, eth0, weight 1, 01:54:06\nO>* 192.168.31.0/24 [110/40] via 10.12.0.1, eth0, weight 1, 01:54:06\nO>* 192.168.32.0/24 [110/40] via 10.12.0.1, eth0, weight 1, 01:54:06\nO>* 192.168.33.0/24 [110/40] via 10.12.0.1, eth0, weight 1, 01:54:06\nO>* 192.168.110.0/24 [110/40] via 10.12.0.1, eth0, weight 1, 01:38:18\nO>* 192.168.120.0/24 [110/40] via 10.12.0.1, eth0, weight 1, 01:38:18\nO>* 192.168.130.0/24 [110/40] via 10.12.0.1, eth0, weight 1, 01:38:18\nO   192.168.210.0/24 [110/10] is directly connected, vlan10, weight 1, 01:54:50\nO   192.168.220.0/24 [110/10] is directly connected, vlan20, weight 1, 01:54:50\nO   192.168.230.0/24 [110/10] is directly connected, vlan30, weight 1, 01:54:50\n"
+    },
+    {
+      "test": "MLS-B2 two LACP members",
+      "passed": true,
+      "details": {
+        "stdout": "---- bond1 ----\n  status: active negotiated\n  sys_id: 6e:dc:a7:6f:4f:43\n  sys_priority: 65534\n  aggregation key: 1\n  lacp_time: fast\n\nmember: eth1: current attached\n  port_id: 2\n  port_priority: 65535\n  may_enable: true\n\n  actor sys_id: 6e:dc:a7:6f:4f:43\n  actor sys_priority: 65534\n  actor port_id: 2\n  actor port_priority: 65535\n  actor key: 1\n  actor state: activity timeout aggregation synchronized collecting distributing\n\n  partner sys_id: a2:4c:d4:b4:b4:47\n  partner sys_priority: 65534\n  partner port_id: 2\n  partner port_priority: 65535\n  partner key: 1\n  partner state: activity timeout aggregation synchronized collecting distributing\n\nmember: eth2: current attached\n  port_id: 1\n  port_priority: 65535\n  may_enable: true\n\n  actor sys_id: 6e:dc:a7:6f:4f:43\n  actor sys_priority: 65534\n  actor port_id: 1\n  actor port_priority: 65535\n  actor key: 1\n  actor state: activity timeout aggregation synchronized collecting distributing\n\n  partner sys_id: a2:4c:d4:b4:b4:47\n  partner sys_priority: 65534\n  partner port_id: 1\n  partner port_priority: 65535\n  partner key: 1\n  partner state: activity timeout aggregation synchronized collecting distributing\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "MLS-B2 ACL deny counter",
+      "passed": true,
+      "details": {
+        "stdout": "{\"nftables\": [{\"metainfo\": {\"version\": \"1.0.6\", \"release_name\": \"Lester Gooch #5\", \"json_schema_version\": 1}}, {\"table\": {\"family\": \"inet\", \"name\": \"fyp_policy\", \"handle\": 1}}, {\"chain\": {\"family\": \"inet\", \"table\": \"fyp_policy\", \"name\": \"forward\", \"handle\": 1, \"type\": \"filter\", \"hook\": \"forward\", \"prio\": 0, \"policy\": \"accept\"}}, {\"rule\": {\"family\": \"inet\", \"table\": \"fyp_policy\", \"chain\": \"forward\", \"handle\": 2, \"expr\": [{\"match\": {\"op\": \"==\", \"left\": {\"meta\": {\"key\": \"iifname\"}}, \"right\": \"vlan10\"}}, {\"match\": {\"op\": \"==\", \"left\": {\"payload\": {\"protocol\": \"ip\", \"field\": \"saddr\"}}, \"right\": {\"prefix\": {\"addr\": \"192.168.210.0\", \"len\": 24}}}}, {\"match\": {\"op\": \"==\", \"left\": {\"payload\": {\"protocol\": \"ip\", \"field\": \"daddr\"}}, \"right\": {\"prefix\": {\"addr\": \"192.168.220.0\", \"len\": 24}}}}, {\"counter\": {\"packets\": 4, \"bytes\": 336}}, {\"drop\": null}]}}]}\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "SW-B2-1 two LACP members",
+      "passed": true,
+      "details": {
+        "stdout": "---- bond1 ----\n  status: active negotiated\n  sys_id: a2:4c:d4:b4:b4:47\n  sys_priority: 65534\n  aggregation key: 1\n  lacp_time: fast\n\nmember: eth0: current attached\n  port_id: 2\n  port_priority: 65535\n  may_enable: true\n\n  actor sys_id: a2:4c:d4:b4:b4:47\n  actor sys_priority: 65534\n  actor port_id: 2\n  actor port_priority: 65535\n  actor key: 1\n  actor state: activity timeout aggregation synchronized collecting distributing\n\n  partner sys_id: 6e:dc:a7:6f:4f:43\n  partner sys_priority: 65534\n  partner port_id: 2\n  partner port_priority: 65535\n  partner key: 1\n  partner state: activity timeout aggregation synchronized collecting distributing\n\nmember: eth1: current attached\n  port_id: 1\n  port_priority: 65535\n  may_enable: true\n\n  actor sys_id: a2:4c:d4:b4:b4:47\n  actor sys_priority: 65534\n  actor port_id: 1\n  actor port_priority: 65535\n  actor key: 1\n  actor state: activity timeout aggregation synchronized collecting distributing\n\n  partner sys_id: 6e:dc:a7:6f:4f:43\n  partner sys_priority: 65534\n  partner port_id: 1\n  partner port_priority: 65535\n  partner key: 1\n  partner state: activity timeout aggregation synchronized collecting distributing\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "R-B3 OSPF command",
+      "passed": true,
+      "details": {
+        "node": "R-B3",
+        "stdout": "{\n  \"neighbors\":{\n    \"44.44.44.44\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/-\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/-\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":6886588,\n        \"deadTimeMsecs\":39642,\n        \"routerDeadIntervalTimerDueMsec\":39642,\n        \"upTime\":\"1h54m46s\",\n        \"deadTime\":\"39.642s\",\n        \"address\":\"10.13.0.2\",\n        \"ifaceAddress\":\"10.13.0.2\",\n        \"ifaceName\":\"eth0:10.13.0.1\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ],\n    \"1.1.1.1\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/DROther\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/DROther\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":6856971,\n        \"deadTimeMsecs\":39576,\n        \"routerDeadIntervalTimerDueMsec\":39576,\n        \"upTime\":\"1h54m16s\",\n        \"deadTime\":\"39.576s\",\n        \"address\":\"10.0.0.1\",\n        \"ifaceAddress\":\"10.0.0.1\",\n        \"ifaceName\":\"eth1:10.0.0.4\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ],\n    \"2.2.2.2\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/DROther\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/DROther\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":5906453,\n        \"deadTimeMsecs\":30779,\n        \"routerDeadIntervalTimerDueMsec\":30779,\n        \"upTime\":\"1h38m26s\",\n        \"deadTime\":\"30.779s\",\n        \"address\":\"10.0.0.2\",\n        \"ifaceAddress\":\"10.0.0.2\",\n        \"ifaceName\":\"eth1:10.0.0.4\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ],\n    \"3.3.3.3\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/Backup\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/Backup\",\n        \"converged\":\"Full\",\n        \"role\":\"Backup\",\n        \"upTimeInMsec\":6856975,\n        \"deadTimeMsecs\":30777,\n        \"routerDeadIntervalTimerDueMsec\":30777,\n        \"upTime\":\"1h54m16s\",\n        \"deadTime\":\"30.777s\",\n        \"address\":\"10.0.0.3\",\n        \"ifaceAddress\":\"10.0.0.3\",\n        \"ifaceName\":\"eth1:10.0.0.4\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ]\n  }\n}\nCodes: K - kernel route, C - connected, S - static, R - RIP,\n       O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,\n       T - Table, v - VNC, V - VNC-Direct, A - Babel, F - PBR,\n       f - OpenFabric,\n       > - selected route, * - FIB route, q - queued, r - rejected, b - backup\n       t - trapped, o - offload failure\n\nO   10.0.0.0/24 [110/10] is directly connected, eth1, weight 1, 01:54:57\nO>* 10.10.0.0/30 [110/20] via 10.0.0.1, eth1, weight 1, 01:54:12\nO>* 10.11.0.0/30 [110/20] via 10.0.0.2, eth1, weight 1, 01:38:17\nO>* 10.12.0.0/30 [110/20] via 10.0.0.3, eth1, weight 1, 01:54:12\nO   10.13.0.0/30 [110/10] is directly connected, eth0, weight 1, 01:54:57\nO>* 192.168.10.0/24 [110/30] via 10.0.0.1, eth1, weight 1, 01:54:12\nO>* 192.168.20.0/24 [110/30] via 10.0.0.1, eth1, weight 1, 01:54:12\nO>* 192.168.30.0/24 [110/30] via 10.0.0.1, eth1, weight 1, 01:54:12\nO>* 192.168.31.0/24 [110/20] via 10.13.0.2, eth0, weight 1, 01:54:37\nO>* 192.168.32.0/24 [110/20] via 10.13.0.2, eth0, weight 1, 01:54:37\nO>* 192.168.33.0/24 [110/20] via 10.13.0.2, eth0, weight 1, 01:54:37\nO>* 192.168.110.0/24 [110/30] via 10.0.0.2, eth1, weight 1, 01:38:17\nO>* 192.168.120.0/24 [110/30] via 10.0.0.2, eth1, weight 1, 01:38:17\nO>* 192.168.130.0/24 [110/30] via 10.0.0.2, eth1, weight 1, 01:38:17\nO>* 192.168.210.0/24 [110/30] via 10.0.0.3, eth1, weight 1, 01:54:12\nO>* 192.168.220.0/24 [110/30] via 10.0.0.3, eth1, weight 1, 01:54:12\nO>* 192.168.230.0/24 [110/30] via 10.0.0.3, eth1, weight 1, 01:54:12\n",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "R-B3 OSPF Full neighbor",
+      "passed": true,
+      "details": "{\n  \"neighbors\":{\n    \"44.44.44.44\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/-\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/-\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":6886588,\n        \"deadTimeMsecs\":39642,\n        \"routerDeadIntervalTimerDueMsec\":39642,\n        \"upTime\":\"1h54m46s\",\n        \"deadTime\":\"39.642s\",\n        \"address\":\"10.13.0.2\",\n        \"ifaceAddress\":\"10.13.0.2\",\n        \"ifaceName\":\"eth0:10.13.0.1\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ],\n    \"1.1.1.1\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/DROther\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/DROther\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":6856971,\n        \"deadTimeMsecs\":39576,\n        \"routerDeadIntervalTimerDueMsec\":39576,\n        \"upTime\":\"1h54m16s\",\n        \"deadTime\":\"39.576s\",\n        \"address\":\"10.0.0.1\",\n        \"ifaceAddress\":\"10.0.0.1\",\n        \"ifaceName\":\"eth1:10.0.0.4\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ],\n    \"2.2.2.2\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/DROther\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/DROther\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":5906453,\n        \"deadTimeMsecs\":30779,\n        \"routerDeadIntervalTimerDueMsec\":30779,\n        \"upTime\":\"1h38m26s\",\n        \"deadTime\":\"30.779s\",\n        \"address\":\"10.0.0.2\",\n        \"ifaceAddress\":\"10.0.0.2\",\n        \"ifaceName\":\"eth1:10.0.0.4\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ],\n    \"3.3.3.3\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/Backup\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/Backup\",\n        \"converged\":\"Full\",\n        \"role\":\"Backup\",\n        \"upTimeInMsec\":6856975,\n        \"deadTimeMsecs\":30777,\n        \"routerDeadIntervalTimerDueMsec\":30777,\n        \"upTime\":\"1h54m16s\",\n        \"deadTime\":\"30.777s\",\n        \"address\":\"10.0.0.3\",\n        \"ifaceAddress\":\"10.0.0.3\",\n        \"ifaceName\":\"eth1:10.0.0.4\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ]\n  }\n}\nCodes: K - kernel route, C - connected, S - static, R - RIP,\n       O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,\n       T - Table, v - VNC, V - VNC-Direct, A - Babel, F - PBR,\n       f - OpenFabric,\n       > - selected route, * - FIB route, q - queued, r - rejected, b - backup\n       t - trapped, o - offload failure\n\nO   10.0.0.0/24 [110/10] is directly connected, eth1, weight 1, 01:54:57\nO>* 10.10.0.0/30 [110/20] via 10.0.0.1, eth1, weight 1, 01:54:12\nO>* 10.11.0.0/30 [110/20] via 10.0.0.2, eth1, weight 1, 01:38:17\nO>* 10.12.0.0/30 [110/20] via 10.0.0.3, eth1, weight 1, 01:54:12\nO   10.13.0.0/30 [110/10] is directly connected, eth0, weight 1, 01:54:57\nO>* 192.168.10.0/24 [110/30] via 10.0.0.1, eth1, weight 1, 01:54:12\nO>* 192.168.20.0/24 [110/30] via 10.0.0.1, eth1, weight 1, 01:54:12\nO>* 192.168.30.0/24 [110/30] via 10.0.0.1, eth1, weight 1, 01:54:12\nO>* 192.168.31.0/24 [110/20] via 10.13.0.2, eth0, weight 1, 01:54:37\nO>* 192.168.32.0/24 [110/20] via 10.13.0.2, eth0, weight 1, 01:54:37\nO>* 192.168.33.0/24 [110/20] via 10.13.0.2, eth0, weight 1, 01:54:37\nO>* 192.168.110.0/24 [110/30] via 10.0.0.2, eth1, weight 1, 01:38:17\nO>* 192.168.120.0/24 [110/30] via 10.0.0.2, eth1, weight 1, 01:38:17\nO>* 192.168.130.0/24 [110/30] via 10.0.0.2, eth1, weight 1, 01:38:17\nO>* 192.168.210.0/24 [110/30] via 10.0.0.3, eth1, weight 1, 01:54:12\nO>* 192.168.220.0/24 [110/30] via 10.0.0.3, eth1, weight 1, 01:54:12\nO>* 192.168.230.0/24 [110/30] via 10.0.0.3, eth1, weight 1, 01:54:12\n"
+    },
+    {
+      "test": "MLS-B3 OSPF command",
+      "passed": true,
+      "details": {
+        "node": "MLS-B3",
+        "stdout": "{\n  \"neighbors\":{\n    \"4.4.4.4\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/-\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/-\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":6887202,\n        \"deadTimeMsecs\":30108,\n        \"routerDeadIntervalTimerDueMsec\":30108,\n        \"upTime\":\"1h54m47s\",\n        \"deadTime\":\"30.108s\",\n        \"address\":\"10.13.0.1\",\n        \"ifaceAddress\":\"10.13.0.1\",\n        \"ifaceName\":\"eth0:10.13.0.2\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ]\n  }\n}\nCodes: K - kernel route, C - connected, S - static, R - RIP,\n       O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,\n       T - Table, v - VNC, V - VNC-Direct, A - Babel, F - PBR,\n       f - OpenFabric,\n       > - selected route, * - FIB route, q - queued, r - rejected, b - backup\n       t - trapped, o - offload failure\n\nO>* 10.0.0.0/24 [110/20] via 10.13.0.1, eth0, weight 1, 01:54:37\nO>* 10.10.0.0/30 [110/30] via 10.13.0.1, eth0, weight 1, 01:54:12\nO>* 10.11.0.0/30 [110/30] via 10.13.0.1, eth0, weight 1, 01:38:17\nO>* 10.12.0.0/30 [110/30] via 10.13.0.1, eth0, weight 1, 01:54:12\nO   10.13.0.0/30 [110/10] is directly connected, eth0, weight 1, 01:54:48\nO>* 192.168.10.0/24 [110/40] via 10.13.0.1, eth0, weight 1, 01:54:12\nO>* 192.168.20.0/24 [110/40] via 10.13.0.1, eth0, weight 1, 01:54:12\nO>* 192.168.30.0/24 [110/40] via 10.13.0.1, eth0, weight 1, 01:54:12\nO   192.168.31.0/24 [110/10] is directly connected, vlan10, weight 1, 01:54:48\nO   192.168.32.0/24 [110/10] is directly connected, vlan20, weight 1, 01:54:48\nO   192.168.33.0/24 [110/10] is directly connected, vlan30, weight 1, 01:54:48\nO>* 192.168.110.0/24 [110/40] via 10.13.0.1, eth0, weight 1, 01:38:17\nO>* 192.168.120.0/24 [110/40] via 10.13.0.1, eth0, weight 1, 01:38:17\nO>* 192.168.130.0/24 [110/40] via 10.13.0.1, eth0, weight 1, 01:38:17\nO>* 192.168.210.0/24 [110/40] via 10.13.0.1, eth0, weight 1, 01:54:12\nO>* 192.168.220.0/24 [110/40] via 10.13.0.1, eth0, weight 1, 01:54:12\nO>* 192.168.230.0/24 [110/40] via 10.13.0.1, eth0, weight 1, 01:54:12\n",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "MLS-B3 OSPF Full neighbor",
+      "passed": true,
+      "details": "{\n  \"neighbors\":{\n    \"4.4.4.4\":[\n      {\n        \"priority\":1,\n        \"state\":\"Full\\/-\",\n        \"nbrPriority\":1,\n        \"nbrState\":\"Full\\/-\",\n        \"converged\":\"Full\",\n        \"role\":\"DROther\",\n        \"upTimeInMsec\":6887202,\n        \"deadTimeMsecs\":30108,\n        \"routerDeadIntervalTimerDueMsec\":30108,\n        \"upTime\":\"1h54m47s\",\n        \"deadTime\":\"30.108s\",\n        \"address\":\"10.13.0.1\",\n        \"ifaceAddress\":\"10.13.0.1\",\n        \"ifaceName\":\"eth0:10.13.0.2\",\n        \"retransmitCounter\":0,\n        \"linkStateRetransmissionListCounter\":0,\n        \"requestCounter\":0,\n        \"linkStateRequestListCounter\":0,\n        \"dbSummaryCounter\":0,\n        \"databaseSummaryListCounter\":0\n      }\n    ]\n  }\n}\nCodes: K - kernel route, C - connected, S - static, R - RIP,\n       O - OSPF, I - IS-IS, B - BGP, E - EIGRP, N - NHRP,\n       T - Table, v - VNC, V - VNC-Direct, A - Babel, F - PBR,\n       f - OpenFabric,\n       > - selected route, * - FIB route, q - queued, r - rejected, b - backup\n       t - trapped, o - offload failure\n\nO>* 10.0.0.0/24 [110/20] via 10.13.0.1, eth0, weight 1, 01:54:37\nO>* 10.10.0.0/30 [110/30] via 10.13.0.1, eth0, weight 1, 01:54:12\nO>* 10.11.0.0/30 [110/30] via 10.13.0.1, eth0, weight 1, 01:38:17\nO>* 10.12.0.0/30 [110/30] via 10.13.0.1, eth0, weight 1, 01:54:12\nO   10.13.0.0/30 [110/10] is directly connected, eth0, weight 1, 01:54:48\nO>* 192.168.10.0/24 [110/40] via 10.13.0.1, eth0, weight 1, 01:54:12\nO>* 192.168.20.0/24 [110/40] via 10.13.0.1, eth0, weight 1, 01:54:12\nO>* 192.168.30.0/24 [110/40] via 10.13.0.1, eth0, weight 1, 01:54:12\nO   192.168.31.0/24 [110/10] is directly connected, vlan10, weight 1, 01:54:48\nO   192.168.32.0/24 [110/10] is directly connected, vlan20, weight 1, 01:54:48\nO   192.168.33.0/24 [110/10] is directly connected, vlan30, weight 1, 01:54:48\nO>* 192.168.110.0/24 [110/40] via 10.13.0.1, eth0, weight 1, 01:38:17\nO>* 192.168.120.0/24 [110/40] via 10.13.0.1, eth0, weight 1, 01:38:17\nO>* 192.168.130.0/24 [110/40] via 10.13.0.1, eth0, weight 1, 01:38:17\nO>* 192.168.210.0/24 [110/40] via 10.13.0.1, eth0, weight 1, 01:54:12\nO>* 192.168.220.0/24 [110/40] via 10.13.0.1, eth0, weight 1, 01:54:12\nO>* 192.168.230.0/24 [110/40] via 10.13.0.1, eth0, weight 1, 01:54:12\n"
+    },
+    {
+      "test": "MLS-B3 two LACP members",
+      "passed": true,
+      "details": {
+        "stdout": "---- bond1 ----\n  status: active negotiated\n  sys_id: 52:3e:72:41:4b:4d\n  sys_priority: 65534\n  aggregation key: 1\n  lacp_time: fast\n\nmember: eth1: current attached\n  port_id: 2\n  port_priority: 65535\n  may_enable: true\n\n  actor sys_id: 52:3e:72:41:4b:4d\n  actor sys_priority: 65534\n  actor port_id: 2\n  actor port_priority: 65535\n  actor key: 1\n  actor state: activity timeout aggregation synchronized collecting distributing\n\n  partner sys_id: 4e:5c:c6:98:16:48\n  partner sys_priority: 65534\n  partner port_id: 1\n  partner port_priority: 65535\n  partner key: 1\n  partner state: activity timeout aggregation synchronized collecting distributing\n\nmember: eth2: current attached\n  port_id: 1\n  port_priority: 65535\n  may_enable: true\n\n  actor sys_id: 52:3e:72:41:4b:4d\n  actor sys_priority: 65534\n  actor port_id: 1\n  actor port_priority: 65535\n  actor key: 1\n  actor state: activity timeout aggregation synchronized collecting distributing\n\n  partner sys_id: 4e:5c:c6:98:16:48\n  partner sys_priority: 65534\n  partner port_id: 2\n  partner port_priority: 65535\n  partner key: 1\n  partner state: activity timeout aggregation synchronized collecting distributing\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "MLS-B3 ACL deny counter",
+      "passed": true,
+      "details": {
+        "stdout": "{\"nftables\": [{\"metainfo\": {\"version\": \"1.0.6\", \"release_name\": \"Lester Gooch #5\", \"json_schema_version\": 1}}, {\"table\": {\"family\": \"inet\", \"name\": \"fyp_policy\", \"handle\": 1}}, {\"chain\": {\"family\": \"inet\", \"table\": \"fyp_policy\", \"name\": \"forward\", \"handle\": 1, \"type\": \"filter\", \"hook\": \"forward\", \"prio\": 0, \"policy\": \"accept\"}}, {\"rule\": {\"family\": \"inet\", \"table\": \"fyp_policy\", \"chain\": \"forward\", \"handle\": 2, \"expr\": [{\"match\": {\"op\": \"==\", \"left\": {\"meta\": {\"key\": \"iifname\"}}, \"right\": \"vlan10\"}}, {\"match\": {\"op\": \"==\", \"left\": {\"payload\": {\"protocol\": \"ip\", \"field\": \"saddr\"}}, \"right\": {\"prefix\": {\"addr\": \"192.168.31.0\", \"len\": 24}}}}, {\"match\": {\"op\": \"==\", \"left\": {\"payload\": {\"protocol\": \"ip\", \"field\": \"daddr\"}}, \"right\": {\"prefix\": {\"addr\": \"192.168.32.0\", \"len\": 24}}}}, {\"counter\": {\"packets\": 4, \"bytes\": 336}}, {\"drop\": null}]}}]}\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "SW-B3-1 two LACP members",
+      "passed": true,
+      "details": {
+        "stdout": "---- bond1 ----\n  status: active negotiated\n  sys_id: 4e:5c:c6:98:16:48\n  sys_priority: 65534\n  aggregation key: 1\n  lacp_time: fast\n\nmember: eth0: current attached\n  port_id: 1\n  port_priority: 65535\n  may_enable: true\n\n  actor sys_id: 4e:5c:c6:98:16:48\n  actor sys_priority: 65534\n  actor port_id: 1\n  actor port_priority: 65535\n  actor key: 1\n  actor state: activity timeout aggregation synchronized collecting distributing\n\n  partner sys_id: 52:3e:72:41:4b:4d\n  partner sys_priority: 65534\n  partner port_id: 2\n  partner port_priority: 65535\n  partner key: 1\n  partner state: activity timeout aggregation synchronized collecting distributing\n\nmember: eth1: current attached\n  port_id: 2\n  port_priority: 65535\n  may_enable: true\n\n  actor sys_id: 4e:5c:c6:98:16:48\n  actor sys_priority: 65534\n  actor port_id: 2\n  actor port_priority: 65535\n  actor key: 1\n  actor state: activity timeout aggregation synchronized collecting distributing\n\n  partner sys_id: 52:3e:72:41:4b:4d\n  partner sys_priority: 65534\n  partner port_id: 1\n  partner port_priority: 65535\n  partner key: 1\n  partner state: activity timeout aggregation synchronized collecting distributing\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "Management ping SW-WAN",
+      "passed": true,
+      "details": {
+        "node": "MON-HQ",
+        "stdout": "PING 10.0.0.254 (10.0.0.254) 56(84) bytes of data.\n64 bytes from 10.0.0.254: icmp_seq=1 ttl=62 time=2.26 ms\n\n--- 10.0.0.254 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.256/2.256/2.256/0.000 ms\n",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "SNMP identity SW-WAN",
+      "passed": true,
+      "details": {
+        "stdout": "\"SW-WAN\"\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "Emit syslog SW-WAN",
+      "passed": true,
+      "details": {
+        "node": "SW-WAN",
+        "stdout": "",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "Management ping R-HQ",
+      "passed": true,
+      "details": {
+        "node": "MON-HQ",
+        "stdout": "PING 10.0.0.1 (10.0.0.1) 56(84) bytes of data.\n64 bytes from 10.0.0.1: icmp_seq=1 ttl=63 time=0.563 ms\n\n--- 10.0.0.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.563/0.563/0.563/0.000 ms\n",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "SNMP identity R-HQ",
+      "passed": true,
+      "details": {
+        "stdout": "\"R-HQ\"\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "Emit syslog R-HQ",
+      "passed": true,
+      "details": {
+        "node": "R-HQ",
+        "stdout": "",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "Management ping MLS-HQ",
+      "passed": true,
+      "details": {
+        "node": "MON-HQ",
+        "stdout": "PING 192.168.30.1 (192.168.30.1) 56(84) bytes of data.\n64 bytes from 192.168.30.1: icmp_seq=1 ttl=64 time=0.880 ms\n\n--- 192.168.30.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.880/0.880/0.880/0.000 ms\n",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "SNMP identity MLS-HQ",
+      "passed": true,
+      "details": {
+        "stdout": "\"MLS-HQ\"\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "Emit syslog MLS-HQ",
+      "passed": true,
+      "details": {
+        "node": "MLS-HQ",
+        "stdout": "",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "Management ping SW-HQ-1",
+      "passed": true,
+      "details": {
+        "node": "MON-HQ",
+        "stdout": "PING 192.168.30.2 (192.168.30.2) 56(84) bytes of data.\n64 bytes from 192.168.30.2: icmp_seq=1 ttl=64 time=1.32 ms\n\n--- 192.168.30.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.321/1.321/1.321/0.000 ms\n",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "SNMP identity SW-HQ-1",
+      "passed": true,
+      "details": {
+        "stdout": "\"SW-HQ-1\"\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "Emit syslog SW-HQ-1",
+      "passed": true,
+      "details": {
+        "node": "SW-HQ-1",
+        "stdout": "",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "Management ping SW-HQ-2",
+      "passed": true,
+      "details": {
+        "node": "MON-HQ",
+        "stdout": "PING 192.168.30.3 (192.168.30.3) 56(84) bytes of data.\n64 bytes from 192.168.30.3: icmp_seq=1 ttl=64 time=0.247 ms\n\n--- 192.168.30.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.247/0.247/0.247/0.000 ms\n",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "SNMP identity SW-HQ-2",
+      "passed": true,
+      "details": {
+        "stdout": "\"SW-HQ-2\"\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "Emit syslog SW-HQ-2",
+      "passed": true,
+      "details": {
+        "node": "SW-HQ-2",
+        "stdout": "",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "Management ping R-B1",
+      "passed": true,
+      "details": {
+        "node": "MON-HQ",
+        "stdout": "PING 10.0.0.2 (10.0.0.2) 56(84) bytes of data.\n64 bytes from 10.0.0.2: icmp_seq=1 ttl=62 time=1.26 ms\n\n--- 10.0.0.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.259/1.259/1.259/0.000 ms\n",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "SNMP identity R-B1",
+      "passed": true,
+      "details": {
+        "stdout": "\"R-B1\"\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "Emit syslog R-B1",
+      "passed": true,
+      "details": {
+        "node": "R-B1",
+        "stdout": "",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "Management ping MLS-B1",
+      "passed": true,
+      "details": {
+        "node": "MON-HQ",
+        "stdout": "PING 192.168.130.1 (192.168.130.1) 56(84) bytes of data.\n64 bytes from 192.168.130.1: icmp_seq=1 ttl=61 time=2.08 ms\n\n--- 192.168.130.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.084/2.084/2.084/0.000 ms\n",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "SNMP identity MLS-B1",
+      "passed": true,
+      "details": {
+        "stdout": "\"MLS-B1\"\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "Emit syslog MLS-B1",
+      "passed": true,
+      "details": {
+        "node": "MLS-B1",
+        "stdout": "",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "Management ping SW-B1-1",
+      "passed": true,
+      "details": {
+        "node": "MON-HQ",
+        "stdout": "PING 192.168.130.2 (192.168.130.2) 56(84) bytes of data.\n64 bytes from 192.168.130.2: icmp_seq=1 ttl=60 time=2.90 ms\n\n--- 192.168.130.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.899/2.899/2.899/0.000 ms\n",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "SNMP identity SW-B1-1",
+      "passed": true,
+      "details": {
+        "stdout": "\"SW-B1-1\"\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "Emit syslog SW-B1-1",
+      "passed": true,
+      "details": {
+        "node": "SW-B1-1",
+        "stdout": "",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "Management ping SW-B1-2",
+      "passed": true,
+      "details": {
+        "node": "MON-HQ",
+        "stdout": "PING 192.168.130.3 (192.168.130.3) 56(84) bytes of data.\n64 bytes from 192.168.130.3: icmp_seq=1 ttl=60 time=2.03 ms\n\n--- 192.168.130.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.032/2.032/2.032/0.000 ms\n",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "SNMP identity SW-B1-2",
+      "passed": true,
+      "details": {
+        "stdout": "\"SW-B1-2\"\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "Emit syslog SW-B1-2",
+      "passed": true,
+      "details": {
+        "node": "SW-B1-2",
+        "stdout": "",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "Management ping R-B2",
+      "passed": true,
+      "details": {
+        "node": "MON-HQ",
+        "stdout": "PING 10.0.0.3 (10.0.0.3) 56(84) bytes of data.\n64 bytes from 10.0.0.3: icmp_seq=1 ttl=62 time=2.00 ms\n\n--- 10.0.0.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.999/1.999/1.999/0.000 ms\n",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "SNMP identity R-B2",
+      "passed": true,
+      "details": {
+        "stdout": "\"R-B2\"\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "Emit syslog R-B2",
+      "passed": true,
+      "details": {
+        "node": "R-B2",
+        "stdout": "",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "Management ping MLS-B2",
+      "passed": true,
+      "details": {
+        "node": "MON-HQ",
+        "stdout": "PING 192.168.230.1 (192.168.230.1) 56(84) bytes of data.\n64 bytes from 192.168.230.1: icmp_seq=1 ttl=61 time=1.81 ms\n\n--- 192.168.230.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.812/1.812/1.812/0.000 ms\n",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "SNMP identity MLS-B2",
+      "passed": true,
+      "details": {
+        "stdout": "\"MLS-B2\"\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "Emit syslog MLS-B2",
+      "passed": true,
+      "details": {
+        "node": "MLS-B2",
+        "stdout": "",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "Management ping SW-B2-1",
+      "passed": true,
+      "details": {
+        "node": "MON-HQ",
+        "stdout": "PING 192.168.230.2 (192.168.230.2) 56(84) bytes of data.\n64 bytes from 192.168.230.2: icmp_seq=1 ttl=60 time=2.27 ms\n\n--- 192.168.230.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.268/2.268/2.268/0.000 ms\n",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "SNMP identity SW-B2-1",
+      "passed": true,
+      "details": {
+        "stdout": "\"SW-B2-1\"\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "Emit syslog SW-B2-1",
+      "passed": true,
+      "details": {
+        "node": "SW-B2-1",
+        "stdout": "",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "Management ping SW-B2-2",
+      "passed": true,
+      "details": {
+        "node": "MON-HQ",
+        "stdout": "PING 192.168.230.3 (192.168.230.3) 56(84) bytes of data.\n64 bytes from 192.168.230.3: icmp_seq=1 ttl=60 time=4.10 ms\n\n--- 192.168.230.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 4.099/4.099/4.099/0.000 ms\n",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "SNMP identity SW-B2-2",
+      "passed": true,
+      "details": {
+        "stdout": "\"SW-B2-2\"\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "Emit syslog SW-B2-2",
+      "passed": true,
+      "details": {
+        "node": "SW-B2-2",
+        "stdout": "",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "Management ping R-B3",
+      "passed": true,
+      "details": {
+        "node": "MON-HQ",
+        "stdout": "PING 10.0.0.4 (10.0.0.4) 56(84) bytes of data.\n64 bytes from 10.0.0.4: icmp_seq=1 ttl=62 time=1.33 ms\n\n--- 10.0.0.4 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.331/1.331/1.331/0.000 ms\n",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "SNMP identity R-B3",
+      "passed": true,
+      "details": {
+        "stdout": "\"R-B3\"\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "Emit syslog R-B3",
+      "passed": true,
+      "details": {
+        "node": "R-B3",
+        "stdout": "",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "Management ping MLS-B3",
+      "passed": true,
+      "details": {
+        "node": "MON-HQ",
+        "stdout": "PING 192.168.33.1 (192.168.33.1) 56(84) bytes of data.\n64 bytes from 192.168.33.1: icmp_seq=1 ttl=61 time=8.58 ms\n\n--- 192.168.33.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 8.582/8.582/8.582/0.000 ms\n",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "SNMP identity MLS-B3",
+      "passed": true,
+      "details": {
+        "stdout": "\"MLS-B3\"\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "Emit syslog MLS-B3",
+      "passed": true,
+      "details": {
+        "node": "MLS-B3",
+        "stdout": "",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "Management ping SW-B3-1",
+      "passed": true,
+      "details": {
+        "node": "MON-HQ",
+        "stdout": "PING 192.168.33.2 (192.168.33.2) 56(84) bytes of data.\n64 bytes from 192.168.33.2: icmp_seq=1 ttl=60 time=2.48 ms\n\n--- 192.168.33.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.476/2.476/2.476/0.000 ms\n",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "SNMP identity SW-B3-1",
+      "passed": true,
+      "details": {
+        "stdout": "\"SW-B3-1\"\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "Emit syslog SW-B3-1",
+      "passed": true,
+      "details": {
+        "node": "SW-B3-1",
+        "stdout": "",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "Management ping SW-B3-2",
+      "passed": true,
+      "details": {
+        "node": "MON-HQ",
+        "stdout": "PING 192.168.33.3 (192.168.33.3) 56(84) bytes of data.\n64 bytes from 192.168.33.3: icmp_seq=1 ttl=60 time=3.38 ms\n\n--- 192.168.33.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.378/3.378/3.378/0.000 ms\n",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "SNMP identity SW-B3-2",
+      "passed": true,
+      "details": {
+        "stdout": "\"SW-B3-2\"\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "Emit syslog SW-B3-2",
+      "passed": true,
+      "details": {
+        "node": "SW-B3-2",
+        "stdout": "",
+        "stderr": "",
+        "exit_code": 0
+      }
+    },
+    {
+      "test": "Central syslog SW-WAN",
+      "passed": true,
+      "details": {
+        "seen": true
+      }
+    },
+    {
+      "test": "Central syslog R-HQ",
+      "passed": true,
+      "details": {
+        "seen": true
+      }
+    },
+    {
+      "test": "Central syslog MLS-HQ",
+      "passed": true,
+      "details": {
+        "seen": true
+      }
+    },
+    {
+      "test": "Central syslog SW-HQ-1",
+      "passed": true,
+      "details": {
+        "seen": true
+      }
+    },
+    {
+      "test": "Central syslog SW-HQ-2",
+      "passed": true,
+      "details": {
+        "seen": true
+      }
+    },
+    {
+      "test": "Central syslog R-B1",
+      "passed": true,
+      "details": {
+        "seen": true
+      }
+    },
+    {
+      "test": "Central syslog MLS-B1",
+      "passed": true,
+      "details": {
+        "seen": true
+      }
+    },
+    {
+      "test": "Central syslog SW-B1-1",
+      "passed": true,
+      "details": {
+        "seen": true
+      }
+    },
+    {
+      "test": "Central syslog SW-B1-2",
+      "passed": true,
+      "details": {
+        "seen": true
+      }
+    },
+    {
+      "test": "Central syslog R-B2",
+      "passed": true,
+      "details": {
+        "seen": true
+      }
+    },
+    {
+      "test": "Central syslog MLS-B2",
+      "passed": true,
+      "details": {
+        "seen": true
+      }
+    },
+    {
+      "test": "Central syslog SW-B2-1",
+      "passed": true,
+      "details": {
+        "seen": true
+      }
+    },
+    {
+      "test": "Central syslog SW-B2-2",
+      "passed": true,
+      "details": {
+        "seen": true
+      }
+    },
+    {
+      "test": "Central syslog R-B3",
+      "passed": true,
+      "details": {
+        "seen": true
+      }
+    },
+    {
+      "test": "Central syslog MLS-B3",
+      "passed": true,
+      "details": {
+        "seen": true
+      }
+    },
+    {
+      "test": "Central syslog SW-B3-1",
+      "passed": true,
+      "details": {
+        "seen": true
+      }
+    },
+    {
+      "test": "Central syslog SW-B3-2",
+      "passed": true,
+      "details": {
+        "seen": true
+      }
+    },
+    {
+      "test": "Resource snapshot",
+      "passed": true,
+      "details": {
+        "stdout": "GNS3.SW-WAN.97f4808f-beca-44d8-bab4-c0b1c1126167|21.71MiB / 1.917GiB|0.69%\nGNS3.R-HQ.97f4808f-beca-44d8-bab4-c0b1c1126167|21.25MiB / 1.917GiB|0.10%\nGNS3.MLS-HQ.97f4808f-beca-44d8-bab4-c0b1c1126167|35.21MiB / 1.917GiB|1.03%\nGNS3.SW-HQ-1.97f4808f-beca-44d8-bab4-c0b1c1126167|21MiB / 1.917GiB|0.77%\nGNS3.SW-HQ-2.97f4808f-beca-44d8-bab4-c0b1c1126167|20.98MiB / 1.917GiB|0.88%\nGNS3.PC-HQ-ADMIN.97f4808f-beca-44d8-bab4-c0b1c1126167|1.887MiB / 1.917GiB|0.00%\nGNS3.PC-HQ-STAFF.97f4808f-beca-44d8-bab4-c0b1c1126167|1.789MiB / 1.917GiB|0.00%\nGNS3.PC-HQ-IT.97f4808f-beca-44d8-bab4-c0b1c1126167|2.016MiB / 1.917GiB|0.00%\nGNS3.R-B1.97f4808f-beca-44d8-bab4-c0b1c1126167|19.79MiB / 1.917GiB|0.10%\nGNS3.MLS-B1.97f4808f-beca-44d8-bab4-c0b1c1126167|35.17MiB / 1.917GiB|0.65%\nGNS3.SW-B1-1.97f4808f-beca-44d8-bab4-c0b1c1126167|21.22MiB / 1.917GiB|0.58%\nGNS3.SW-B1-2.97f4808f-beca-44d8-bab4-c0b1c1126167|20.8MiB / 1.917GiB|0.15%\nGNS3.PC-B1-ADMIN.97f4808f-beca-44d8-bab4-c0b1c1126167|1.645MiB / 1.917GiB|0.00%\nGNS3.PC-B1-STAFF.97f4808f-beca-44d8-bab4-c0b1c1126167|1.637MiB / 1.917GiB|0.00%\nGNS3.PC-B1-IT.97f4808f-beca-44d8-bab4-c0b1c1126167|1.754MiB / 1.917GiB|0.00%\nGNS3.R-B2.97f4808f-beca-44d8-bab4-c0b1c1126167|20.54MiB / 1.917GiB|0.14%\nGNS3.MLS-B2.97f4808f-beca-44d8-bab4-c0b1c1126167|35.41MiB / 1.917GiB|0.64%\nGNS3.SW-B2-1.97f4808f-beca-44d8-bab4-c0b1c1126167|21.11MiB / 1.917GiB|0.50%\nGNS3.SW-B2-2.97f4808f-beca-44d8-bab4-c0b1c1126167|21.44MiB / 1.917GiB|0.27%\nGNS3.PC-B2-ADMIN.97f4808f-beca-44d8-bab4-c0b1c1126167|1.723MiB / 1.917GiB|0.00%\nGNS3.PC-B2-STAFF.97f4808f-beca-44d8-bab4-c0b1c1126167|2.039MiB / 1.917GiB|0.00%\nGNS3.PC-B2-IT.97f4808f-beca-44d8-bab4-c0b1c1126167|1.641MiB / 1.917GiB|0.00%\nGNS3.R-B3.97f4808f-beca-44d8-bab4-c0b1c1126167|20.25MiB / 1.917GiB|0.09%\nGNS3.MLS-B3.97f4808f-beca-44d8-bab4-c0b1c1126167|35.53MiB / 1.917GiB|0.59%\nGNS3.SW-B3-1.97f4808f-beca-44d8-bab4-c0b1c1126167|21.09MiB / 1.917GiB|0.56%\nGNS3.SW-B3-2.97f4808f-beca-44d8-bab4-c0b1c1126167|20.83MiB / 1.917GiB|0.24%\nGNS3.PC-B3-ADMIN.97f4808f-beca-44d8-bab4-c0b1c1126167|1.812MiB / 1.917GiB|0.00%\nGNS3.PC-B3-STAFF.97f4808f-beca-44d8-bab4-c0b1c1126167|1.688MiB / 1.917GiB|0.00%\nGNS3.PC-B3-IT.97f4808f-beca-44d8-bab4-c0b1c1126167|1.781MiB / 1.917GiB|0.00%\nGNS3.MON-HQ.97f4808f-beca-44d8-bab4-c0b1c1126167|75.29MiB / 1.917GiB|1.74%\n",
+        "stderr": ""
+      }
+    },
+    {
+      "test": "Guest resource snapshot",
+      "passed": true,
+      "details": {
+        "stdout": "               total        used        free      shared  buff/cache   available\nMem:            1962        1518         104          40         545         444\nSwap:              0           0           0\nFilesystem      Size  Used Avail Use% Mounted on\n/dev/sda1        96G  3.6G   93G   4% /\n/dev/sdb1      1007G  1.2G  955G   1% /opt\n",
+        "stderr": ""
+      }
+    }
+  ],
+  "syslog_marker": "NETWORK_BASELINE_CHECK_78cddbc52ee04aad9b942d93c83fc6e9"
+}

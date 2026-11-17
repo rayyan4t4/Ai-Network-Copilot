@@ -1,0 +1,431 @@
+{
+  "recorded_at": "2026-11-17T11:28:21.786242+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "test": "Inventory has 30 devices and 33 links",
+      "passed": true,
+      "details": [
+        {
+          "devices": 30,
+          "links": 33,
+          "interfaces": 116
+        }
+      ]
+    },
+    {
+      "test": "All 17 latest SNMP polls are current and successful",
+      "passed": true,
+      "details": [
+        {
+          "device_id": "MLS-B1",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:47.853733+00:00"
+        },
+        {
+          "device_id": "MLS-B2",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:48.416313+00:00"
+        },
+        {
+          "device_id": "MLS-B3",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:48.740941+00:00"
+        },
+        {
+          "device_id": "MLS-HQ",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:56.934830+00:00"
+        },
+        {
+          "device_id": "R-B1",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:47.496073+00:00"
+        },
+        {
+          "device_id": "R-B2",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:48.337510+00:00"
+        },
+        {
+          "device_id": "R-B3",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:48.629829+00:00"
+        },
+        {
+          "device_id": "R-HQ",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:47.491332+00:00"
+        },
+        {
+          "device_id": "SW-B1-1",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:47.890961+00:00"
+        },
+        {
+          "device_id": "SW-B1-2",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:48.234715+00:00"
+        },
+        {
+          "device_id": "SW-B2-1",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:48.446155+00:00"
+        },
+        {
+          "device_id": "SW-B2-2",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:48.594623+00:00"
+        },
+        {
+          "device_id": "SW-B3-1",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:48.746333+00:00"
+        },
+        {
+          "device_id": "SW-B3-2",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:48.969912+00:00"
+        },
+        {
+          "device_id": "SW-HQ-1",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:56.949397+00:00"
+        },
+        {
+          "device_id": "SW-HQ-2",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:57.579458+00:00"
+        },
+        {
+          "device_id": "SW-WAN",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:57.537397+00:00"
+        }
+      ]
+    },
+    {
+      "test": "All 29 target probes are current and successful",
+      "passed": true,
+      "details": [
+        {
+          "device_id": "MLS-B1",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:58.895368+00:00"
+        },
+        {
+          "device_id": "MLS-B2",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:56.353488+00:00"
+        },
+        {
+          "device_id": "MLS-B3",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:56.709967+00:00"
+        },
+        {
+          "device_id": "MLS-HQ",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:58.355342+00:00"
+        },
+        {
+          "device_id": "PC-B1-ADMIN",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:59.092312+00:00"
+        },
+        {
+          "device_id": "PC-B1-IT",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:59.236639+00:00"
+        },
+        {
+          "device_id": "PC-B1-STAFF",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:59.142595+00:00"
+        },
+        {
+          "device_id": "PC-B2-ADMIN",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:56.507579+00:00"
+        },
+        {
+          "device_id": "PC-B2-IT",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:56.625289+00:00"
+        },
+        {
+          "device_id": "PC-B2-STAFF",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:56.614041+00:00"
+        },
+        {
+          "device_id": "PC-B3-ADMIN",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:56.955022+00:00"
+        },
+        {
+          "device_id": "PC-B3-IT",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:57.084593+00:00"
+        },
+        {
+          "device_id": "PC-B3-STAFF",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:56.973460+00:00"
+        },
+        {
+          "device_id": "PC-HQ-ADMIN",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:58.590466+00:00"
+        },
+        {
+          "device_id": "PC-HQ-IT",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:58.790698+00:00"
+        },
+        {
+          "device_id": "PC-HQ-STAFF",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:58.746382+00:00"
+        },
+        {
+          "device_id": "R-B1",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:58.850325+00:00"
+        },
+        {
+          "device_id": "R-B2",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:59.262068+00:00"
+        },
+        {
+          "device_id": "R-B3",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:56.703717+00:00"
+        },
+        {
+          "device_id": "R-HQ",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:58.617398+00:00"
+        },
+        {
+          "device_id": "SW-B1-1",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:58.972989+00:00"
+        },
+        {
+          "device_id": "SW-B1-2",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:59.023691+00:00"
+        },
+        {
+          "device_id": "SW-B2-1",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:56.364010+00:00"
+        },
+        {
+          "device_id": "SW-B2-2",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:56.491059+00:00"
+        },
+        {
+          "device_id": "SW-B3-1",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:56.780929+00:00"
+        },
+        {
+          "device_id": "SW-B3-2",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:56.789271+00:00"
+        },
+        {
+          "device_id": "SW-HQ-1",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:58.357844+00:00"
+        },
+        {
+          "device_id": "SW-HQ-2",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:58.490069+00:00"
+        },
+        {
+          "device_id": "SW-WAN",
+          "status": "ok",
+          "is_stale": false,
+          "observed_at": "2026-11-17 11:27:58.475353+00:00"
+        }
+      ]
+    },
+    {
+      "test": "Raw SNMP evidence covers HQ three branches and WAN",
+      "passed": true,
+      "details": [
+        {
+          "site": "B1",
+          "devices": 4
+        },
+        {
+          "site": "B2",
+          "devices": 4
+        },
+        {
+          "site": "B3",
+          "devices": 4
+        },
+        {
+          "site": "HQ",
+          "devices": 4
+        },
+        {
+          "site": "WAN",
+          "devices": 1
+        }
+      ]
+    },
+    {
+      "test": "Counter derived rates have valid intervals",
+      "passed": true,
+      "details": [
+        {
+          "n": 278962
+        }
+      ]
+    },
+    {
+      "test": "SNMP agent uptime evidence exists for 17 devices",
+      "passed": true,
+      "details": [
+        {
+          "n": 17
+        }
+      ]
+    },
+    {
+      "test": "Syslog stored from all 17 network devices",
+      "passed": true,
+      "details": [
+        {
+          "n": 17
+        }
+      ]
+    },
+    {
+      "test": "Syslog source identities are recorded",
+      "passed": true,
+      "details": [
+        {
+          "identity_status": "unknown",
+          "n": 1
+        },
+        {
+          "identity_status": "hostname_only",
+          "n": 7165
+        },
+        {
+          "identity_status": "source_and_hostname",
+          "n": 3906
+        }
+      ]
+    },
+    {
+      "test": "All three collector services have fresh heartbeats",
+      "passed": true,
+      "details": [
+        {
+          "service": "probes",
+          "status": "ok",
+          "fresh": true,
+          "detail": {
+            "targets": 29,
+            "elapsed_s": 0.588,
+            "observed_ok": 29,
+            "observed_unavailable": 0
+          }
+        },
+        {
+          "service": "snmp",
+          "status": "ok",
+          "fresh": true,
+          "detail": {
+            "targets": 17,
+            "elapsed_s": 2.377,
+            "observed_ok": 17,
+            "observed_unavailable": 0
+          }
+        },
+        {
+          "service": "syslog",
+          "status": "ok",
+          "fresh": true,
+          "detail": {
+            "ingested": 11
+          }
+        }
+      ]
+    },
+    {
+      "test": "Observation and ingestion times are distinct stored fields",
+      "passed": true,
+      "details": [
+        {
+          "n": 42204
+        }
+      ]
+    },
+    {
+      "test": "Read only configuration snapshots stored",
+      "passed": true,
+      "details": [
+        {
+          "n": 16864
+        }
+      ]
+    }
+  ],
+  "syslog_marker": "WEEK1_CONNECTIVITY_CHECK_ade70083049c491ea44bbb340e1c99b7"
+}

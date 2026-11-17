@@ -1,0 +1,66 @@
+{
+  "result_id": "50e29702-5a6f-4ed5-a9cb-ebb171154ce3",
+  "case_id": "56d5affd-365b-dc63-80c3-9f7c9251650c",
+  "phase": "final",
+  "approach": "full",
+  "started_at": "2026-11-16T23:27:14.743795+00:00",
+  "observation_sha256": "3a41bba523d46b4b4475863b3ac392a4134ba2f2bda9314ac4a0173531b29dc0",
+  "status": "ok",
+  "prediction": {
+    "fault_class": "inconclusive",
+    "device_id": "",
+    "interface": "",
+    "disposition": "inconclusive",
+    "incident_detected": true
+  },
+  "model_called": false,
+  "gate": {
+    "status": "inconclusive",
+    "score": 0.7,
+    "threshold": 0.8,
+    "available_weight": 7,
+    "total_required_weight": 10,
+    "missing": [
+      "link_event"
+    ],
+    "missing_critical": [
+      "link_event"
+    ],
+    "contradictions": [],
+    "signals": {
+      "interface_down": [
+        "sample:6ae9ff01-36eb-4443-b19a-36ada21f66ff:R-B3:eth0",
+        "snapshot:e8fa95a2-d733-4a4c-9219-c2c32a27629d:link:eth0"
+      ],
+      "link_event": [],
+      "console_down": [
+        "snapshot:e8fa95a2-d733-4a4c-9219-c2c32a27629d:link:eth0"
+      ],
+      "downstream_failure": [
+        "probe:40a381fe-6da7-4ab3-84ef-4a35f67b34ca",
+        "probe:a93d65fd-4277-4e7d-b212-7d28c435bb29",
+        "probe:21c6d5c4-7e2d-4096-b240-87e63de5620c",
+        "probe:40347dd3-07f0-43fa-8c79-38624e9fa079",
+        "probe:563dcd3e-0ec8-4b9d-b649-4da18f5b193a",
+        "probe:32956e27-4825-4d40-a36f-aeae0ad872dd"
+      ]
+    },
+    "matrix_version": "study-final-1",
+    "matrix_sha256": "4da2280e4c017f523116384f4b7dff6138e59bd22091a5294b335a1493ff6c1a",
+    "score_is_probability": false
+  },
+  "pipeline_latency_ms": 16,
+  "available_at": "2026-11-16T23:27:14.756116+00:00",
+  "scores": {
+    "fault_instance": false,
+    "healthy_instance": false,
+    "insufficient_instance": true,
+    "detection_tp": false,
+    "detection_fn": false,
+    "detection_fp": false,
+    "detection_tn": false,
+    "exact_root_correct": null,
+    "correct_abstention": true,
+    "error": false
+  }
+}

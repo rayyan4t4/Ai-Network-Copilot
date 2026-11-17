@@ -1,0 +1,40 @@
+{
+  "case_id": "41bd240a-05b6-f6e0-07d2-4a139a157200",
+  "category": "insufficient",
+  "underlying_class": "ospf_loss",
+  "branch": "B1",
+  "device_id": "R-B1",
+  "interface": "eth0",
+  "target_host": "PC-B1-IT",
+  "load_mbps": 3,
+  "sequence": 50,
+  "started_at": "2026-11-16T23:41:45.679011+00:00",
+  "complete": true,
+  "intervention": {
+    "exit_code": 0,
+    "at": "2026-11-16T23:41:45.775992+00:00",
+    "stdout": "",
+    "stderr": ""
+  },
+  "captured_at": "2026-11-16T23:43:15.843810+00:00",
+  "observed_as_of": "2026-11-16 23:43:12.654282+00:00",
+  "capture_lag_seconds": 3.189528,
+  "observed_candidates": [
+    {
+      "class": "ospf_loss",
+      "device": "R-B1",
+      "gate": "inconclusive",
+      "missing": [
+        "ospf_event"
+      ]
+    }
+  ],
+  "restoration": {
+    "exit_code": 0,
+    "at": "2026-11-16T23:43:16.025534+00:00",
+    "stdout": "",
+    "stderr": ""
+  },
+  "restored_at": "2026-11-16T23:43:16.025534+00:00",
+  "restoration_verified": true
+}

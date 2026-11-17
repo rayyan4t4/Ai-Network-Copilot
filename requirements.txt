@@ -1,0 +1,9 @@
+# Host-side experimental runner. Gemini uses Python standard-library HTTPS.
+# Existing environment versions recorded on 17 November 2026.
+paramiko==5.1.0
+cryptography==50.0.2
+bcrypt==5.0.0
+PyNaCl==1.6.2
+cffi==2.1.1
+invoke==3.0.3
+pycparser==3.12

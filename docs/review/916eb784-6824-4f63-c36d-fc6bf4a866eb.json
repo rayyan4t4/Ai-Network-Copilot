@@ -1,0 +1,157 @@
+{
+  "review_id": "916eb784-6824-4f63-c36d-fc6bf4a866eb",
+  "observations": [
+    {
+      "evidence_id": "snapshot:04348ed1-4f2c-4c9e-ba4b-fa02f779cdc9:link:eth0",
+      "device_id": "R-B1",
+      "kind": "console_interface",
+      "observed_at": "2026-11-16 23:01:36.594085+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Console shows eth0 administratively up."
+    },
+    {
+      "evidence_id": "snapshot:04348ed1-4f2c-4c9e-ba4b-fa02f779cdc9:ospf",
+      "device_id": "R-B1",
+      "kind": "ospf_neighbors",
+      "observed_at": "2026-11-16 23:01:36.594085+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Read-only FRR OSPF neighbor snapshot."
+    },
+    {
+      "evidence_id": "snapshot:04348ed1-4f2c-4c9e-ba4b-fa02f779cdc9:ospf_config:eth0",
+      "device_id": "R-B1",
+      "kind": "ospf_config",
+      "observed_at": "2026-11-16 23:01:36.594085+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "OSPF interface eth0 is passive; verified healthy reference mode is active."
+    },
+    {
+      "evidence_id": "event:e64e9744-08f9-5367-8e06-f8d2bea05b84",
+      "device_id": "R-B1",
+      "kind": "ospf_loss_event",
+      "observed_at": "2026-11-16 23:00:57.509344+00:00",
+      "source": "syslog",
+      "is_stale": false,
+      "summary": "Identified ospfd event: ospf_loss_event on eth0."
+    },
+    {
+      "evidence_id": "snapshot:60958bf7-7262-4c5b-b249-9a7053c1d3b6:ospf",
+      "device_id": "R-B1",
+      "kind": "ospf_neighbors",
+      "observed_at": "2026-11-16 23:01:17.380230+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Previous missing-neighbor observation with underlying interface up."
+    }
+  ],
+  "candidate_hypotheses": [
+    {
+      "fault_class": "ospf_loss",
+      "device_id": "R-B1",
+      "interface": "eth0",
+      "affected_devices": [
+        "MLS-B1",
+        "PC-B1-ADMIN",
+        "PC-B1-IT",
+        "PC-B1-STAFF",
+        "SW-B1-1",
+        "SW-B1-2"
+      ],
+      "topology_path": [
+        "MON-HQ",
+        "SW-HQ-2",
+        "MLS-HQ",
+        "R-HQ",
+        "SW-WAN",
+        "R-B1"
+      ]
+    }
+  ],
+  "status": "ok",
+  "interpretation": {
+    "disposition": "inconclusive",
+    "fault_class": "inconclusive",
+    "device_id": "R-B1",
+    "interface": "eth0",
+    "summary": "Alert suspects ospf_loss at R-B1 eth0, but no explicit observations or check evidence IDs were supplied to confirm the fault.",
+    "supporting_evidence_ids": [],
+    "alternative_checks": [
+      "ospf_neighbors",
+      "ospf_interfaces",
+      "routes"
+    ],
+    "uncertainty": "The baseline description only contains a summary alert without underlying telemetry or observation data.",
+    "missing_evidence": [
+      "ospf_neighbors",
+      "ospf_interfaces",
+      "routes"
+    ]
+  },
+  "read_only_checks": [
+    {
+      "id": "ospf_neighbors",
+      "command": "vtysh -c 'show ip ospf neighbor json'",
+      "device_id": "R-B1",
+      "executable": false
+    },
+    {
+      "id": "ospf_interfaces",
+      "command": "vtysh -c 'show ip ospf interface json'",
+      "device_id": "R-B1",
+      "executable": false
+    },
+    {
+      "id": "routes",
+      "command": "ip -j route show",
+      "device_id": "R-B1",
+      "executable": false
+    }
+  ],
+  "actual_diagnostic_input": {
+    "description": "Alert: ospf_loss suspected at R-B1 eth0. Affected devices: MLS-B1, PC-B1-ADMIN, PC-B1-IT, PC-B1-STAFF, SW-B1-1, SW-B1-2",
+    "allowed_devices": [
+      "MLS-B1",
+      "MLS-B2",
+      "MLS-B3",
+      "MLS-HQ",
+      "MON-HQ",
+      "PC-B1-ADMIN",
+      "PC-B1-IT",
+      "PC-B1-STAFF",
+      "PC-B2-ADMIN",
+      "PC-B2-IT",
+      "PC-B2-STAFF",
+      "PC-B3-ADMIN",
+      "PC-B3-IT",
+      "PC-B3-STAFF",
+      "PC-HQ-ADMIN",
+      "PC-HQ-IT",
+      "PC-HQ-STAFF",
+      "R-B1",
+      "R-B2",
+      "R-B3",
+      "R-HQ",
+      "SW-B1-1",
+      "SW-B1-2",
+      "SW-B2-1",
+      "SW-B2-2",
+      "SW-B3-1",
+      "SW-B3-2",
+      "SW-HQ-1",
+      "SW-HQ-2",
+      "SW-WAN"
+    ],
+    "allowed_check_ids": [
+      "addresses",
+      "routes",
+      "ospf_neighbors",
+      "ospf_interfaces",
+      "acl_rules"
+    ]
+  },
+  "local_source_observations": "source-25b1da8d7e9dbf0330f3.json",
+  "review_boundary": "Support is relative to the actual diagnostic input. The masked source bundle is available only to verify derived observations; it must not give credit for information absent from the diagnostic input."
+}

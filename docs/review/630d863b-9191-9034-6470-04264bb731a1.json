@@ -1,0 +1,108 @@
+{
+  "review_id": "630d863b-9191-9034-6470-04264bb731a1",
+  "observations": [
+    {
+      "evidence_id": "sample:8b93be7f-29b0-498d-b05b-1d3c49ebcd9f:R-B3:eth1",
+      "device_id": "R-B3",
+      "kind": "interface",
+      "observed_at": "2026-11-17 00:14:41.025984+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "R-B3:eth1 administrative status 1, operational status 1."
+    },
+    {
+      "evidence_id": "rate:8b93be7f-29b0-498d-b05b-1d3c49ebcd9f:R-B3:eth1",
+      "device_id": "R-B3",
+      "kind": "rate",
+      "observed_at": "2026-11-17 00:14:41.025984+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "Measured R-B3 eth1 traffic: ingress 6239 bps, egress 1740113 bps. Configured effective capacity 2000000 bps; utilization at least 80 percent."
+    },
+    {
+      "evidence_id": "rate:c766a717-7936-409b-ba7c-0b4ab904036c:R-B3:eth1",
+      "device_id": "R-B3",
+      "kind": "rate",
+      "observed_at": "2026-11-17 00:14:30.684535+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "Measured R-B3 eth1 traffic: ingress 7271 bps, egress 2043621 bps. Configured effective capacity 2000000 bps; utilization at least 80 percent."
+    }
+  ],
+  "candidate_hypotheses": [
+    {
+      "fault_class": "high_utilization",
+      "device_id": "R-B3",
+      "interface": "eth1",
+      "affected_devices": [],
+      "topology_path": [
+        "MON-HQ",
+        "SW-HQ-2",
+        "MLS-HQ",
+        "R-HQ",
+        "SW-WAN",
+        "R-B3"
+      ]
+    }
+  ],
+  "status": "ok",
+  "interpretation": {
+    "disposition": "inconclusive",
+    "fault_class": "inconclusive",
+    "device_id": "",
+    "interface": "",
+    "summary": "Alert suspects high utilization on R-B3 eth1, but no observation data or check results have been provided to support this claim.",
+    "supporting_evidence_ids": [],
+    "alternative_checks": [],
+    "uncertainty": "The alert is unsubstantiated by any provided telemetry or observation data.",
+    "missing_evidence": [
+      "interface utilization statistics",
+      "traffic flow data"
+    ]
+  },
+  "read_only_checks": [],
+  "actual_diagnostic_input": {
+    "description": "Alert: high_utilization suspected at R-B3 eth1. Affected devices: ",
+    "allowed_devices": [
+      "MLS-B1",
+      "MLS-B2",
+      "MLS-B3",
+      "MLS-HQ",
+      "MON-HQ",
+      "PC-B1-ADMIN",
+      "PC-B1-IT",
+      "PC-B1-STAFF",
+      "PC-B2-ADMIN",
+      "PC-B2-IT",
+      "PC-B2-STAFF",
+      "PC-B3-ADMIN",
+      "PC-B3-IT",
+      "PC-B3-STAFF",
+      "PC-HQ-ADMIN",
+      "PC-HQ-IT",
+      "PC-HQ-STAFF",
+      "R-B1",
+      "R-B2",
+      "R-B3",
+      "R-HQ",
+      "SW-B1-1",
+      "SW-B1-2",
+      "SW-B2-1",
+      "SW-B2-2",
+      "SW-B3-1",
+      "SW-B3-2",
+      "SW-HQ-1",
+      "SW-HQ-2",
+      "SW-WAN"
+    ],
+    "allowed_check_ids": [
+      "addresses",
+      "routes",
+      "ospf_neighbors",
+      "ospf_interfaces",
+      "acl_rules"
+    ]
+  },
+  "local_source_observations": "source-9f0578f193ada64dd530.json",
+  "review_boundary": "Support is relative to the actual diagnostic input. The masked source bundle is available only to verify derived observations; it must not give credit for information absent from the diagnostic input."
+}

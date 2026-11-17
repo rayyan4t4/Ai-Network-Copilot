@@ -1,0 +1,66 @@
+{
+  "review_id": "45f289ec-2310-0f02-6cdd-91e40d3b89fc",
+  "observations": [
+    {
+      "evidence_id": "probe:6c928bce-e6f3-4e9b-b601-83edd3e0fc6f",
+      "device_id": "PC-B2-IT",
+      "kind": "probe",
+      "observed_at": "2026-11-16 22:37:05.506082+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:2de9fbc5-55e2-442f-b663-7a76853a4498",
+      "device_id": "PC-B2-IT",
+      "kind": "probe",
+      "observed_at": "2026-11-16 22:37:01.290020+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "topology:64593eb85708fccb",
+      "device_id": "PC-B2-IT",
+      "kind": "topology",
+      "observed_at": "2026-11-16 22:37:07.624838+00:00",
+      "source": "inventory",
+      "is_stale": false,
+      "summary": "Inventory path from monitoring server to target."
+    }
+  ],
+  "candidate_hypotheses": [
+    {
+      "fault_class": "unreachability",
+      "device_id": "PC-B2-IT",
+      "interface": null,
+      "affected_devices": [],
+      "topology_path": [
+        "MON-HQ",
+        "SW-HQ-2",
+        "MLS-HQ",
+        "R-HQ",
+        "SW-WAN",
+        "R-B2",
+        "MLS-B2",
+        "SW-B2-2",
+        "PC-B2-IT"
+      ]
+    }
+  ],
+  "status": "ok",
+  "interpretation": {
+    "fault_class": "unreachability",
+    "device_id": "PC-B2-IT",
+    "interface": "",
+    "disposition": "supported",
+    "incident_detected": true
+  },
+  "read_only_checks": [],
+  "actual_diagnostic_input": {
+    "gate": null,
+    "meaning": "No model was called. Assess only the displayed deterministic result and its available observations."
+  },
+  "local_source_observations": "source-1515a22e0eedfc2ff8b3.json",
+  "review_boundary": "Support is relative to the actual diagnostic input. The masked source bundle is available only to verify derived observations; it must not give credit for information absent from the diagnostic input."
+}

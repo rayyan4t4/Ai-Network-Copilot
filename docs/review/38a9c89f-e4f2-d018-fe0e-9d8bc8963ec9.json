@@ -1,0 +1,128 @@
+{
+  "review_id": "38a9c89f-e4f2-d018-fe0e-9d8bc8963ec9",
+  "observations": [
+    {
+      "evidence_id": "probe:6c928bce-e6f3-4e9b-b601-83edd3e0fc6f",
+      "device_id": "PC-B2-IT",
+      "kind": "probe",
+      "observed_at": "2026-11-16 22:37:05.506082+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:2de9fbc5-55e2-442f-b663-7a76853a4498",
+      "device_id": "PC-B2-IT",
+      "kind": "probe",
+      "observed_at": "2026-11-16 22:37:01.290020+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "topology:64593eb85708fccb",
+      "device_id": "PC-B2-IT",
+      "kind": "topology",
+      "observed_at": "2026-11-16 22:37:07.624838+00:00",
+      "source": "inventory",
+      "is_stale": false,
+      "summary": "Inventory path from monitoring server to target."
+    }
+  ],
+  "candidate_hypotheses": [
+    {
+      "fault_class": "unreachability",
+      "device_id": "PC-B2-IT",
+      "interface": null,
+      "affected_devices": [],
+      "topology_path": [
+        "MON-HQ",
+        "SW-HQ-2",
+        "MLS-HQ",
+        "R-HQ",
+        "SW-WAN",
+        "R-B2",
+        "MLS-B2",
+        "SW-B2-2",
+        "PC-B2-IT"
+      ]
+    }
+  ],
+  "status": "ok",
+  "interpretation": {
+    "disposition": "inconclusive",
+    "fault_class": "inconclusive",
+    "device_id": "PC-B2-IT",
+    "interface": "",
+    "summary": "Alert indicates unreachability at PC-B2-IT, but no empirical observation data was provided to confirm the root cause or location of the fault.",
+    "supporting_evidence_ids": [],
+    "alternative_checks": [
+      "addresses",
+      "routes"
+    ],
+    "uncertainty": "The observation consists solely of an alert description without any telemetry or check output.",
+    "missing_evidence": [
+      "Network reachability test results",
+      "Interface status",
+      "Routing table"
+    ]
+  },
+  "read_only_checks": [
+    {
+      "id": "addresses",
+      "command": "ip -j address show",
+      "device_id": "PC-B2-IT",
+      "executable": false
+    },
+    {
+      "id": "routes",
+      "command": "ip -j route show",
+      "device_id": "PC-B2-IT",
+      "executable": false
+    }
+  ],
+  "actual_diagnostic_input": {
+    "description": "Alert: unreachability suspected at PC-B2-IT . Affected devices: ",
+    "allowed_devices": [
+      "MLS-B1",
+      "MLS-B2",
+      "MLS-B3",
+      "MLS-HQ",
+      "MON-HQ",
+      "PC-B1-ADMIN",
+      "PC-B1-IT",
+      "PC-B1-STAFF",
+      "PC-B2-ADMIN",
+      "PC-B2-IT",
+      "PC-B2-STAFF",
+      "PC-B3-ADMIN",
+      "PC-B3-IT",
+      "PC-B3-STAFF",
+      "PC-HQ-ADMIN",
+      "PC-HQ-IT",
+      "PC-HQ-STAFF",
+      "R-B1",
+      "R-B2",
+      "R-B3",
+      "R-HQ",
+      "SW-B1-1",
+      "SW-B1-2",
+      "SW-B2-1",
+      "SW-B2-2",
+      "SW-B3-1",
+      "SW-B3-2",
+      "SW-HQ-1",
+      "SW-HQ-2",
+      "SW-WAN"
+    ],
+    "allowed_check_ids": [
+      "addresses",
+      "routes",
+      "ospf_neighbors",
+      "ospf_interfaces",
+      "acl_rules"
+    ]
+  },
+  "local_source_observations": "source-1515a22e0eedfc2ff8b3.json",
+  "review_boundary": "Support is relative to the actual diagnostic input. The masked source bundle is available only to verify derived observations; it must not give credit for information absent from the diagnostic input."
+}

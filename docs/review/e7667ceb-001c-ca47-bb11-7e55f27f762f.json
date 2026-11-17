@@ -1,0 +1,94 @@
+{
+  "review_id": "e7667ceb-001c-ca47-bb11-7e55f27f762f",
+  "observations": [
+    {
+      "evidence_id": "probe:3128a15c-2cba-4574-a2bf-31fe91ecc0de",
+      "device_id": "PC-B1-IT",
+      "kind": "probe",
+      "observed_at": "2026-11-17 00:05:43.418816+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:8e4e5d6f-c9aa-4a12-95f2-b5fe5059a90a",
+      "device_id": "PC-B1-IT",
+      "kind": "probe",
+      "observed_at": "2026-11-17 00:05:40.318056+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "topology:3dcff2902d95b4c1",
+      "device_id": "PC-B1-IT",
+      "kind": "topology",
+      "observed_at": "2026-11-17 00:05:45.623434+00:00",
+      "source": "inventory",
+      "is_stale": false,
+      "summary": "Inventory path from monitoring server to target."
+    }
+  ],
+  "candidate_hypotheses": [
+    {
+      "fault_class": "unreachability",
+      "device_id": "PC-B1-IT",
+      "interface": null,
+      "affected_devices": [],
+      "topology_path": [
+        "MON-HQ",
+        "SW-HQ-2",
+        "MLS-HQ",
+        "R-HQ",
+        "SW-WAN",
+        "R-B1",
+        "MLS-B1",
+        "SW-B1-2",
+        "PC-B1-IT"
+      ]
+    }
+  ],
+  "status": "ok",
+  "interpretation": {
+    "fault_class": "inconclusive",
+    "device_id": "",
+    "interface": "",
+    "disposition": "inconclusive",
+    "incident_detected": true
+  },
+  "read_only_checks": [],
+  "actual_diagnostic_input": {
+    "gate": {
+      "status": "inconclusive",
+      "score": 0.5,
+      "threshold": 0.8,
+      "available_weight": 5,
+      "total_required_weight": 10,
+      "missing": [
+        "upstream_status",
+        "fresh_poll_outcome"
+      ],
+      "missing_critical": [
+        "upstream_status"
+      ],
+      "contradictions": [],
+      "signals": {
+        "repeated_probe_failure": [
+          "probe:3128a15c-2cba-4574-a2bf-31fe91ecc0de",
+          "probe:8e4e5d6f-c9aa-4a12-95f2-b5fe5059a90a"
+        ],
+        "upstream_status": [],
+        "fresh_poll_outcome": [],
+        "topology_path": [
+          "topology:3dcff2902d95b4c1"
+        ]
+      },
+      "matrix_version": "study-final-1",
+      "matrix_sha256": "4da2280e4c017f523116384f4b7dff6138e59bd22091a5294b335a1493ff6c1a",
+      "score_is_probability": false
+    },
+    "meaning": "No model was called. Assess only the displayed deterministic result and its available observations."
+  },
+  "local_source_observations": "source-a5a8137a841438591d6c.json",
+  "review_boundary": "Support is relative to the actual diagnostic input. The masked source bundle is available only to verify derived observations; it must not give credit for information absent from the diagnostic input."
+}

@@ -1,0 +1,343 @@
+{
+  "phase": "final",
+  "planned_instances": 70,
+  "recorded_outputs": 280,
+  "metrics": {
+    "B1": {
+      "counts": {
+        "recorded": 70,
+        "healthy_instance": 10,
+        "detection_tn": 10,
+        "fault_instance": 50,
+        "detection_tp": 50,
+        "exact_root_correct": 33,
+        "insufficient_instance": 10
+      },
+      "detection_precision": 1.0,
+      "detection_recall": 1.0,
+      "detection_f1": 1.0,
+      "root_accuracy_faults": 0.66,
+      "root_wilson_95": [
+        0.5215356854148285,
+        0.7756323036493895
+      ],
+      "insufficient_correct_abstention": 0.0,
+      "pipeline_success_median_ms": 16.0,
+      "pipeline_success_p95_ms": 31.0,
+      "api_attempt_median_ms": null,
+      "browser_display_ack_count": 0,
+      "browser_display_median_ms": null,
+      "denominators": {
+        "diagnosable_faults": 50,
+        "healthy": 10,
+        "insufficient": 10
+      },
+      "latency_scope": "Recorded-window replay processing to result-file availability, including local request spacing when applicable. API duration separate. Incident injection to browser display is not established by these measurements."
+    },
+    "B2": {
+      "counts": {
+        "recorded": 70,
+        "healthy_instance": 10,
+        "detection_tn": 10,
+        "fault_instance": 50,
+        "detection_fn": 49,
+        "insufficient_instance": 10,
+        "correct_abstention": 9,
+        "detection_tp": 1,
+        "exact_root_correct": 1,
+        "error": 1
+      },
+      "detection_precision": 1.0,
+      "detection_recall": 0.02,
+      "detection_f1": 0.0392156862745098,
+      "root_accuracy_faults": 0.02,
+      "root_wilson_95": [
+        0.0035391680889764604,
+        0.10495686471836953
+      ],
+      "insufficient_correct_abstention": 0.9,
+      "pipeline_success_median_ms": 17016,
+      "pipeline_success_p95_ms": 49365.2,
+      "api_attempt_median_ms": 2812.5,
+      "browser_display_ack_count": 0,
+      "browser_display_median_ms": null,
+      "denominators": {
+        "diagnosable_faults": 50,
+        "healthy": 10,
+        "insufficient": 10
+      },
+      "latency_scope": "Recorded-window replay processing to result-file availability, including local request spacing when applicable. API duration separate. Incident injection to browser display is not established by these measurements."
+    },
+    "no_gate": {
+      "counts": {
+        "recorded": 70,
+        "healthy_instance": 10,
+        "detection_fp": 8,
+        "error": 8,
+        "fault_instance": 50,
+        "detection_tp": 49,
+        "exact_root_correct": 41,
+        "detection_tn": 2,
+        "insufficient_instance": 10,
+        "correct_abstention": 6,
+        "detection_fn": 1
+      },
+      "detection_precision": 0.8596491228070176,
+      "detection_recall": 0.98,
+      "detection_f1": 0.9158878504672898,
+      "root_accuracy_faults": 0.82,
+      "root_wilson_95": [
+        0.6920368054529739,
+        0.902299172675462
+      ],
+      "insufficient_correct_abstention": 0.6,
+      "pipeline_success_median_ms": 17516.0,
+      "pipeline_success_p95_ms": 56943.64999999999,
+      "api_attempt_median_ms": 2594.0,
+      "browser_display_ack_count": 0,
+      "browser_display_median_ms": null,
+      "denominators": {
+        "diagnosable_faults": 50,
+        "healthy": 10,
+        "insufficient": 10
+      },
+      "latency_scope": "Recorded-window replay processing to result-file availability, including local request spacing when applicable. API duration separate. Incident injection to browser display is not established by these measurements."
+    },
+    "full": {
+      "counts": {
+        "recorded": 70,
+        "healthy_instance": 10,
+        "detection_tn": 3,
+        "fault_instance": 50,
+        "detection_tp": 47,
+        "exact_root_correct": 39,
+        "detection_fp": 7,
+        "error": 11,
+        "insufficient_instance": 10,
+        "correct_abstention": 8,
+        "detection_fn": 3
+      },
+      "detection_precision": 0.8703703703703703,
+      "detection_recall": 0.94,
+      "detection_f1": 0.9038461538461539,
+      "root_accuracy_faults": 0.78,
+      "root_wilson_95": [
+        0.6475818431054045,
+        0.8724621377569771
+      ],
+      "insufficient_correct_abstention": 0.8,
+      "pipeline_success_median_ms": 17047,
+      "pipeline_success_p95_ms": 52832.399999999994,
+      "api_attempt_median_ms": 2430.0,
+      "browser_display_ack_count": 0,
+      "browser_display_median_ms": null,
+      "denominators": {
+        "diagnosable_faults": 50,
+        "healthy": 10,
+        "insufficient": 10
+      },
+      "latency_scope": "Recorded-window replay processing to result-file availability, including local request spacing when applicable. API duration separate. Incident injection to browser display is not established by these measurements."
+    }
+  },
+  "confusion": {
+    "B1": {
+      "healthy": {
+        "healthy": 10
+      },
+      "interface_shutdown": {
+        "interface_shutdown": 10
+      },
+      "acl_fault": {
+        "unreachability": 10
+      },
+      "unreachability": {
+        "unreachability": 10
+      },
+      "insufficient": {
+        "unreachability": 6,
+        "high_utilization": 2,
+        "interface_shutdown": 2
+      },
+      "high_utilization": {
+        "high_utilization": 10
+      },
+      "ospf_loss": {
+        "ospf_loss": 10
+      }
+    },
+    "B2": {
+      "healthy": {
+        "healthy": 10
+      },
+      "interface_shutdown": {
+        "inconclusive": 10
+      },
+      "acl_fault": {
+        "inconclusive": 10
+      },
+      "unreachability": {
+        "inconclusive": 10
+      },
+      "insufficient": {
+        "inconclusive": 9,
+        "error": 1
+      },
+      "high_utilization": {
+        "inconclusive": 10
+      },
+      "ospf_loss": {
+        "ospf_loss": 1,
+        "inconclusive": 9
+      }
+    },
+    "no_gate": {
+      "healthy": {
+        "error": 8,
+        "healthy": 2
+      },
+      "interface_shutdown": {
+        "interface_shutdown": 10
+      },
+      "acl_fault": {
+        "acl_fault": 10
+      },
+      "unreachability": {
+        "unreachability": 2,
+        "inconclusive": 8
+      },
+      "insufficient": {
+        "inconclusive": 6,
+        "interface_shutdown": 2,
+        "ospf_loss": 2
+      },
+      "high_utilization": {
+        "high_utilization": 9,
+        "inconclusive": 1
+      },
+      "ospf_loss": {
+        "ospf_loss": 10
+      }
+    },
+    "full": {
+      "healthy": {
+        "healthy": 3,
+        "error": 7
+      },
+      "interface_shutdown": {
+        "interface_shutdown": 10
+      },
+      "acl_fault": {
+        "acl_fault": 10
+      },
+      "unreachability": {
+        "inconclusive": 8,
+        "unreachability": 1,
+        "error": 1
+      },
+      "insufficient": {
+        "inconclusive": 8,
+        "error": 2
+      },
+      "high_utilization": {
+        "high_utilization": 9,
+        "inconclusive": 1
+      },
+      "ospf_loss": {
+        "ospf_loss": 9,
+        "error": 1
+      }
+    }
+  },
+  "per_fault": {
+    "B1": {
+      "interface_shutdown": {
+        "n": 10,
+        "correct": 10
+      },
+      "acl_fault": {
+        "n": 10,
+        "correct": 0
+      },
+      "unreachability": {
+        "n": 10,
+        "correct": 10
+      },
+      "high_utilization": {
+        "n": 10,
+        "correct": 10
+      },
+      "ospf_loss": {
+        "n": 10,
+        "correct": 3
+      }
+    },
+    "B2": {
+      "interface_shutdown": {
+        "n": 10,
+        "correct": 0
+      },
+      "acl_fault": {
+        "n": 10,
+        "correct": 0
+      },
+      "unreachability": {
+        "n": 10,
+        "correct": 0
+      },
+      "high_utilization": {
+        "n": 10,
+        "correct": 0
+      },
+      "ospf_loss": {
+        "n": 10,
+        "correct": 1
+      }
+    },
+    "no_gate": {
+      "interface_shutdown": {
+        "n": 10,
+        "correct": 10
+      },
+      "acl_fault": {
+        "n": 10,
+        "correct": 10
+      },
+      "unreachability": {
+        "n": 10,
+        "correct": 2
+      },
+      "high_utilization": {
+        "n": 10,
+        "correct": 9
+      },
+      "ospf_loss": {
+        "n": 10,
+        "correct": 10
+      }
+    },
+    "full": {
+      "interface_shutdown": {
+        "n": 10,
+        "correct": 10
+      },
+      "acl_fault": {
+        "n": 10,
+        "correct": 10
+      },
+      "unreachability": {
+        "n": 10,
+        "correct": 1
+      },
+      "high_utilization": {
+        "n": 10,
+        "correct": 9
+      },
+      "ospf_loss": {
+        "n": 10,
+        "correct": 9
+      }
+    }
+  },
+  "human_review_status": "pending two independent human reviewers",
+  "browser_ui_status": "Browser origin access rejected; display latency and visual UI checks unverified."
+}

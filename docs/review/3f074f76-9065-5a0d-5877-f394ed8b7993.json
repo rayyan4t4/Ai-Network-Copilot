@@ -1,0 +1,72 @@
+{
+  "review_id": "3f074f76-9065-5a0d-5877-f394ed8b7993",
+  "observations": [
+    {
+      "evidence_id": "sample:67af10eb-97da-4b35-9ad1-936b231c4ce4:R-B1:eth1",
+      "device_id": "R-B1",
+      "kind": "interface",
+      "observed_at": "2026-11-16 23:44:45.303027+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "R-B1:eth1 administrative status 1, operational status 1."
+    },
+    {
+      "evidence_id": "rate:67af10eb-97da-4b35-9ad1-936b231c4ce4:R-B1:eth1",
+      "device_id": "R-B1",
+      "kind": "rate",
+      "observed_at": "2026-11-16 23:44:45.303027+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "Measured R-B1 eth1 traffic: ingress 6552 bps, egress 1816332 bps. Configured effective capacity 2000000 bps; utilization at least 80 percent."
+    },
+    {
+      "evidence_id": "rate:4fbe7dfe-b2b8-444d-8712-d22fc7c13912:R-B1:eth1",
+      "device_id": "R-B1",
+      "kind": "rate",
+      "observed_at": "2026-11-16 23:44:35.385829+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "Measured R-B1 eth1 traffic: ingress 4473 bps, egress 1780469 bps. Configured effective capacity 2000000 bps; utilization at least 80 percent."
+    },
+    {
+      "evidence_id": "rate:4547cba0-1215-4f7d-b841-51ec18593533:R-B1:eth1",
+      "device_id": "R-B1",
+      "kind": "rate",
+      "observed_at": "2026-11-16 23:44:25.274143+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "Measured R-B1 eth1 traffic: ingress 8911 bps, egress 2302590 bps. Configured effective capacity 2000000 bps; utilization at least 80 percent."
+    }
+  ],
+  "candidate_hypotheses": [
+    {
+      "fault_class": "high_utilization",
+      "device_id": "R-B1",
+      "interface": "eth1",
+      "affected_devices": [],
+      "topology_path": [
+        "MON-HQ",
+        "SW-HQ-2",
+        "MLS-HQ",
+        "R-HQ",
+        "SW-WAN",
+        "R-B1"
+      ]
+    }
+  ],
+  "status": "ok",
+  "interpretation": {
+    "fault_class": "high_utilization",
+    "device_id": "R-B1",
+    "interface": "eth1",
+    "disposition": "supported",
+    "incident_detected": true
+  },
+  "read_only_checks": [],
+  "actual_diagnostic_input": {
+    "gate": null,
+    "meaning": "No model was called. Assess only the displayed deterministic result and its available observations."
+  },
+  "local_source_observations": "source-c115a061d0382993296f.json",
+  "review_boundary": "Support is relative to the actual diagnostic input. The masked source bundle is available only to verify derived observations; it must not give credit for information absent from the diagnostic input."
+}

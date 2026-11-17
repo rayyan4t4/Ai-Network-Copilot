@@ -1,0 +1,391 @@
+{
+  "review_id": "0b56cb60-4770-cd81-4368-e8a50bfb8fbd",
+  "observations": [
+    {
+      "evidence_id": "sample:09057fc4-e7db-4be6-b220-e0efbaf3cf30:R-B1:eth0",
+      "device_id": "R-B1",
+      "kind": "interface",
+      "observed_at": "2026-11-16 22:27:26.278922+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "R-B1:eth0 administrative status 2, operational status 2."
+    },
+    {
+      "evidence_id": "probe:f1ebd95e-68bb-408c-ad8a-d711f434cf42",
+      "device_id": "PC-B1-IT",
+      "kind": "probe",
+      "observed_at": "2026-11-16 22:27:25.776368+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:3a5a9528-bb8b-4de3-92c1-2ee5c85c78a0",
+      "device_id": "PC-B1-STAFF",
+      "kind": "probe",
+      "observed_at": "2026-11-16 22:27:24.758291+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:5ee54703-9ddf-4e5a-8233-5245af751abc",
+      "device_id": "PC-B1-ADMIN",
+      "kind": "probe",
+      "observed_at": "2026-11-16 22:27:24.754746+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:594c8cd0-6604-4aaa-8558-f6b97983ec07",
+      "device_id": "SW-B1-2",
+      "kind": "probe",
+      "observed_at": "2026-11-16 22:27:23.738672+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:94bbf710-0f12-42d2-9881-68da5d292d5d",
+      "device_id": "SW-B1-1",
+      "kind": "probe",
+      "observed_at": "2026-11-16 22:27:23.737880+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:ba5d78d5-5086-49cf-ab12-fdd008c88687",
+      "device_id": "MLS-B1",
+      "kind": "probe",
+      "observed_at": "2026-11-16 22:27:23.723130+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "snapshot:39c1f357-9435-4ddb-bc3e-2c4435a4bcab:link:eth0",
+      "device_id": "R-B1",
+      "kind": "console_interface",
+      "observed_at": "2026-11-16 22:27:18.725258+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Console shows eth0 administratively down."
+    },
+    {
+      "evidence_id": "event:fcfdad0e-936f-5db7-b09a-9c670b3d032c",
+      "device_id": "R-B1",
+      "kind": "link_down",
+      "observed_at": "2026-11-16 22:26:38.856558+00:00",
+      "source": "syslog",
+      "is_stale": false,
+      "summary": "Identified link-state event: link_down on eth0."
+    },
+    {
+      "evidence_id": "event:b9a1b22d-4d1a-5f5d-adba-40754dd2285b",
+      "device_id": "R-B1",
+      "kind": "ospf_loss_event",
+      "observed_at": "2026-11-16 22:26:38.849902+00:00",
+      "source": "syslog",
+      "is_stale": false,
+      "summary": "Identified ospfd event: ospf_loss_event on eth0."
+    }
+  ],
+  "candidate_hypotheses": [
+    {
+      "fault_class": "interface_shutdown",
+      "device_id": "R-B1",
+      "interface": "eth0",
+      "affected_devices": [
+        "MLS-B1",
+        "PC-B1-ADMIN",
+        "PC-B1-IT",
+        "PC-B1-STAFF",
+        "SW-B1-1",
+        "SW-B1-2"
+      ],
+      "topology_path": [
+        "MON-HQ",
+        "SW-HQ-2",
+        "MLS-HQ",
+        "R-HQ",
+        "SW-WAN",
+        "R-B1"
+      ]
+    }
+  ],
+  "status": "ok",
+  "interpretation": {
+    "disposition": "supported",
+    "fault_class": "interface_shutdown",
+    "device_id": "R-B1",
+    "interface": "eth0",
+    "summary": "Interface eth0 on device R-B1 is administratively down, causing downstream unreachability symptoms.",
+    "supporting_evidence_ids": [
+      "sample:09057fc4-e7db-4be6-b220-e0efbaf3cf30:R-B1:eth0",
+      "snapshot:39c1f357-9435-4ddb-bc3e-2c4435a4bcab:link:eth0",
+      "event:fcfdad0e-936f-5db7-b09a-9c670b3d032c",
+      "event:b9a1b22d-4d1a-5f5d-adba-40754dd2285b"
+    ],
+    "alternative_checks": [
+      "ospf_neighbors",
+      "routes"
+    ],
+    "uncertainty": "None regarding the interface admin status and link down event on R-B1 eth0.",
+    "missing_evidence": []
+  },
+  "read_only_checks": [
+    {
+      "id": "ospf_neighbors",
+      "command": "vtysh -c 'show ip ospf neighbor json'",
+      "device_id": "R-B1",
+      "executable": false
+    },
+    {
+      "id": "routes",
+      "command": "ip -j route show",
+      "device_id": "R-B1",
+      "executable": false
+    }
+  ],
+  "actual_diagnostic_input": {
+    "as_of": "2026-11-16 22:27:28.449702+00:00",
+    "observations": [
+      {
+        "evidence_id": "sample:09057fc4-e7db-4be6-b220-e0efbaf3cf30:R-B1:eth0",
+        "device_id": "R-B1",
+        "kind": "interface",
+        "observed_at": "2026-11-16 22:27:26.278922+00:00",
+        "source": "snmp",
+        "is_stale": false,
+        "summary": "R-B1:eth0 administrative status 2, operational status 2."
+      },
+      {
+        "evidence_id": "probe:f1ebd95e-68bb-408c-ad8a-d711f434cf42",
+        "device_id": "PC-B1-IT",
+        "kind": "probe",
+        "observed_at": "2026-11-16 22:27:25.776368+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned timeout."
+      },
+      {
+        "evidence_id": "probe:3a5a9528-bb8b-4de3-92c1-2ee5c85c78a0",
+        "device_id": "PC-B1-STAFF",
+        "kind": "probe",
+        "observed_at": "2026-11-16 22:27:24.758291+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned timeout."
+      },
+      {
+        "evidence_id": "probe:5ee54703-9ddf-4e5a-8233-5245af751abc",
+        "device_id": "PC-B1-ADMIN",
+        "kind": "probe",
+        "observed_at": "2026-11-16 22:27:24.754746+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned timeout."
+      },
+      {
+        "evidence_id": "probe:594c8cd0-6604-4aaa-8558-f6b97983ec07",
+        "device_id": "SW-B1-2",
+        "kind": "probe",
+        "observed_at": "2026-11-16 22:27:23.738672+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned timeout."
+      },
+      {
+        "evidence_id": "probe:94bbf710-0f12-42d2-9881-68da5d292d5d",
+        "device_id": "SW-B1-1",
+        "kind": "probe",
+        "observed_at": "2026-11-16 22:27:23.737880+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned timeout."
+      },
+      {
+        "evidence_id": "probe:ba5d78d5-5086-49cf-ab12-fdd008c88687",
+        "device_id": "MLS-B1",
+        "kind": "probe",
+        "observed_at": "2026-11-16 22:27:23.723130+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned timeout."
+      },
+      {
+        "evidence_id": "snapshot:39c1f357-9435-4ddb-bc3e-2c4435a4bcab:link:eth0",
+        "device_id": "R-B1",
+        "kind": "console_interface",
+        "observed_at": "2026-11-16 22:27:18.725258+00:00",
+        "source": "authorized_readonly_console",
+        "is_stale": false,
+        "summary": "Console shows eth0 administratively down."
+      },
+      {
+        "evidence_id": "event:fcfdad0e-936f-5db7-b09a-9c670b3d032c",
+        "device_id": "R-B1",
+        "kind": "link_down",
+        "observed_at": "2026-11-16 22:26:38.856558+00:00",
+        "source": "syslog",
+        "is_stale": false,
+        "summary": "Identified link-state event: link_down on eth0."
+      },
+      {
+        "evidence_id": "event:b9a1b22d-4d1a-5f5d-adba-40754dd2285b",
+        "device_id": "R-B1",
+        "kind": "ospf_loss_event",
+        "observed_at": "2026-11-16 22:26:38.849902+00:00",
+        "source": "syslog",
+        "is_stale": false,
+        "summary": "Identified ospfd event: ospf_loss_event on eth0."
+      }
+    ],
+    "candidate_hypotheses": [
+      {
+        "fault_class": "interface_shutdown",
+        "device_id": "R-B1",
+        "interface": "eth0",
+        "affected_devices": [
+          "MLS-B1",
+          "PC-B1-ADMIN",
+          "PC-B1-IT",
+          "PC-B1-STAFF",
+          "SW-B1-1",
+          "SW-B1-2"
+        ],
+        "topology_path": [
+          "MON-HQ",
+          "SW-HQ-2",
+          "MLS-HQ",
+          "R-HQ",
+          "SW-WAN",
+          "R-B1"
+        ]
+      }
+    ],
+    "health_counts": {
+      "healthy": 24,
+      "unknown": 0,
+      "unreachable": 6
+    },
+    "allowed_devices": [
+      "MLS-B1",
+      "MLS-B2",
+      "MLS-B3",
+      "MLS-HQ",
+      "MON-HQ",
+      "PC-B1-ADMIN",
+      "PC-B1-IT",
+      "PC-B1-STAFF",
+      "PC-B2-ADMIN",
+      "PC-B2-IT",
+      "PC-B2-STAFF",
+      "PC-B3-ADMIN",
+      "PC-B3-IT",
+      "PC-B3-STAFF",
+      "PC-HQ-ADMIN",
+      "PC-HQ-IT",
+      "PC-HQ-STAFF",
+      "R-B1",
+      "R-B2",
+      "R-B3",
+      "R-HQ",
+      "SW-B1-1",
+      "SW-B1-2",
+      "SW-B2-1",
+      "SW-B2-2",
+      "SW-B3-1",
+      "SW-B3-2",
+      "SW-HQ-1",
+      "SW-HQ-2",
+      "SW-WAN"
+    ],
+    "curated_guidance": [
+      {
+        "id": "KB-LINK",
+        "faults": [
+          "interface_shutdown",
+          "unreachability"
+        ],
+        "title": "Distinguish administrative state from reachability symptoms",
+        "guidance": "Compare the named interface's observed administrative state and link events. Downstream probe failures establish impact, not the physical or configuration cause by themselves.",
+        "source": "https://github.com/iproute2/iproute2/blob/main/man/man8/ip-link.8.in",
+        "command_ids": [
+          "link_state",
+          "addresses",
+          "routes"
+        ]
+      },
+      {
+        "id": "KB-OSPF",
+        "faults": [
+          "ospf_loss",
+          "interface_shutdown"
+        ],
+        "title": "Check the expected adjacency and underlying interface",
+        "guidance": "Inspect FRR neighbors and interface configuration. Point-to-point uplinks require the expected neighbor. On a broadcast network a 2-Way DROther relationship may be normal; do not label every non-Full pair a fault.",
+        "source": "https://docs.frrouting.org/en/stable-8.4/ospfd.html",
+        "command_ids": [
+          "ospf_neighbors",
+          "ospf_interfaces",
+          "routes"
+        ]
+      },
+      {
+        "id": "KB-ACL",
+        "faults": [
+          "acl_fault"
+        ],
+        "title": "Attribute a failed flow using rule matches and counter changes",
+        "guidance": "Compare the actual source, destination and incoming interface against the rule. Require a positive deny-counter change over an observation interval. Existing intended policy blocks are healthy behavior.",
+        "source": "https://netfilter.org/projects/nftables/manpage.html",
+        "command_ids": [
+          "acl_rules",
+          "routes"
+        ]
+      },
+      {
+        "id": "KB-RATE",
+        "faults": [
+          "high_utilization"
+        ],
+        "title": "Use sustained counter deltas and effective capacity",
+        "guidance": "Rates require elapsed time, usable consecutive counters and reset handling. Virtual NIC speed is not a validated bottleneck capacity. Inspect the configured shaping and repeat measurements before interpreting a high percentage.",
+        "source": "https://www.rfc-editor.org/rfc/rfc2863",
+        "command_ids": [
+          "link_counters",
+          "traffic_control"
+        ]
+      },
+      {
+        "id": "KB-MISSING",
+        "faults": [
+          "interface_shutdown",
+          "ospf_loss",
+          "acl_fault",
+          "high_utilization",
+          "unreachability"
+        ],
+        "title": "Abstain when distinguishing evidence is unavailable",
+        "guidance": "A lost management path can remove several signals at once. Preserve last observations and their age. Missing, stale or contradictory critical evidence requires an inconclusive outcome and further read-only checks.",
+        "source": "local:FYP Proposal.docx:5.4-5.6",
+        "command_ids": [
+          "link_state",
+          "routes"
+        ]
+      }
+    ],
+    "allowed_check_ids": [
+      "addresses",
+      "routes",
+      "ospf_neighbors",
+      "ospf_interfaces",
+      "acl_rules"
+    ]
+  },
+  "local_source_observations": "source-cff5754929ac054054e7.json",
+  "review_boundary": "Support is relative to the actual diagnostic input. The masked source bundle is available only to verify derived observations; it must not give credit for information absent from the diagnostic input."
+}

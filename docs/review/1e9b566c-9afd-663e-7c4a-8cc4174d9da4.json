@@ -1,0 +1,252 @@
+{
+  "review_id": "1e9b566c-9afd-663e-7c4a-8cc4174d9da4",
+  "observations": [
+    {
+      "evidence_id": "sample:a5610067-fdfb-4235-9534-675dacc051c6:R-B1:eth1",
+      "device_id": "R-B1",
+      "kind": "interface",
+      "observed_at": "2026-11-16 23:35:30.205153+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "R-B1:eth1 administrative status 1, operational status 1."
+    },
+    {
+      "evidence_id": "rate:a5610067-fdfb-4235-9534-675dacc051c6:R-B1:eth1",
+      "device_id": "R-B1",
+      "kind": "rate",
+      "observed_at": "2026-11-16 23:35:30.205153+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "Measured R-B1 eth1 traffic: ingress 8157 bps, egress 1741627 bps. Configured effective capacity 2000000 bps; utilization at least 80 percent."
+    },
+    {
+      "evidence_id": "rate:a84240da-4fd7-4964-9bf0-6bdaa0b0b52f:R-B1:eth1",
+      "device_id": "R-B1",
+      "kind": "rate",
+      "observed_at": "2026-11-16 23:35:19.865500+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "Measured R-B1 eth1 traffic: ingress 5199 bps, egress 2392251 bps. Configured effective capacity 2000000 bps; utilization at least 80 percent."
+    },
+    {
+      "evidence_id": "rate:8d556dda-504a-40ae-8d1b-8be68fef278a:R-B1:eth1",
+      "device_id": "R-B1",
+      "kind": "rate",
+      "observed_at": "2026-11-16 23:35:09.828759+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "Measured R-B1 eth1 traffic: ingress 6898 bps, egress 1746468 bps. Configured effective capacity 2000000 bps; utilization at least 80 percent."
+    }
+  ],
+  "candidate_hypotheses": [
+    {
+      "fault_class": "high_utilization",
+      "device_id": "R-B1",
+      "interface": "eth1",
+      "affected_devices": [],
+      "topology_path": [
+        "MON-HQ",
+        "SW-HQ-2",
+        "MLS-HQ",
+        "R-HQ",
+        "SW-WAN",
+        "R-B1"
+      ]
+    }
+  ],
+  "status": "ok",
+  "interpretation": {
+    "disposition": "supported",
+    "fault_class": "high_utilization",
+    "device_id": "R-B1",
+    "interface": "eth1",
+    "summary": "R-B1 eth1 shows sustained high egress traffic utilization exceeding 80 percent of its effective capacity over multiple consecutive observations.",
+    "supporting_evidence_ids": [
+      "rate:a5610067-fdfb-4235-9534-675dacc051c6:R-B1:eth1",
+      "rate:a84240da-4fd7-4964-9bf0-6bdaa0b0b52f:R-B1:eth1",
+      "rate:8d556dda-504a-40ae-8d1b-8be68fef278a:R-B1:eth1"
+    ],
+    "alternative_checks": [],
+    "uncertainty": "Traffic rates are derived from SNMP counters against a configured effective capacity; queue depth and packet drop metrics were not directly observed.",
+    "missing_evidence": []
+  },
+  "read_only_checks": [],
+  "actual_diagnostic_input": {
+    "as_of": "2026-11-16 23:35:41.417817+00:00",
+    "observations": [
+      {
+        "evidence_id": "sample:a5610067-fdfb-4235-9534-675dacc051c6:R-B1:eth1",
+        "device_id": "R-B1",
+        "kind": "interface",
+        "observed_at": "2026-11-16 23:35:30.205153+00:00",
+        "source": "snmp",
+        "is_stale": false,
+        "summary": "R-B1:eth1 administrative status 1, operational status 1."
+      },
+      {
+        "evidence_id": "rate:a5610067-fdfb-4235-9534-675dacc051c6:R-B1:eth1",
+        "device_id": "R-B1",
+        "kind": "rate",
+        "observed_at": "2026-11-16 23:35:30.205153+00:00",
+        "source": "snmp",
+        "is_stale": false,
+        "summary": "Measured R-B1 eth1 traffic: ingress 8157 bps, egress 1741627 bps. Configured effective capacity 2000000 bps; utilization at least 80 percent."
+      },
+      {
+        "evidence_id": "rate:a84240da-4fd7-4964-9bf0-6bdaa0b0b52f:R-B1:eth1",
+        "device_id": "R-B1",
+        "kind": "rate",
+        "observed_at": "2026-11-16 23:35:19.865500+00:00",
+        "source": "snmp",
+        "is_stale": false,
+        "summary": "Measured R-B1 eth1 traffic: ingress 5199 bps, egress 2392251 bps. Configured effective capacity 2000000 bps; utilization at least 80 percent."
+      },
+      {
+        "evidence_id": "rate:8d556dda-504a-40ae-8d1b-8be68fef278a:R-B1:eth1",
+        "device_id": "R-B1",
+        "kind": "rate",
+        "observed_at": "2026-11-16 23:35:09.828759+00:00",
+        "source": "snmp",
+        "is_stale": false,
+        "summary": "Measured R-B1 eth1 traffic: ingress 6898 bps, egress 1746468 bps. Configured effective capacity 2000000 bps; utilization at least 80 percent."
+      }
+    ],
+    "candidate_hypotheses": [
+      {
+        "fault_class": "high_utilization",
+        "device_id": "R-B1",
+        "interface": "eth1",
+        "affected_devices": [],
+        "topology_path": [
+          "MON-HQ",
+          "SW-HQ-2",
+          "MLS-HQ",
+          "R-HQ",
+          "SW-WAN",
+          "R-B1"
+        ]
+      }
+    ],
+    "health_counts": {
+      "healthy": 28,
+      "unknown": 0,
+      "unreachable": 2
+    },
+    "allowed_devices": [
+      "MLS-B1",
+      "MLS-B2",
+      "MLS-B3",
+      "MLS-HQ",
+      "MON-HQ",
+      "PC-B1-ADMIN",
+      "PC-B1-IT",
+      "PC-B1-STAFF",
+      "PC-B2-ADMIN",
+      "PC-B2-IT",
+      "PC-B2-STAFF",
+      "PC-B3-ADMIN",
+      "PC-B3-IT",
+      "PC-B3-STAFF",
+      "PC-HQ-ADMIN",
+      "PC-HQ-IT",
+      "PC-HQ-STAFF",
+      "R-B1",
+      "R-B2",
+      "R-B3",
+      "R-HQ",
+      "SW-B1-1",
+      "SW-B1-2",
+      "SW-B2-1",
+      "SW-B2-2",
+      "SW-B3-1",
+      "SW-B3-2",
+      "SW-HQ-1",
+      "SW-HQ-2",
+      "SW-WAN"
+    ],
+    "curated_guidance": [
+      {
+        "id": "KB-LINK",
+        "faults": [
+          "interface_shutdown",
+          "unreachability"
+        ],
+        "title": "Distinguish administrative state from reachability symptoms",
+        "guidance": "Compare the named interface's observed administrative state and link events. Downstream probe failures establish impact, not the physical or configuration cause by themselves.",
+        "source": "https://github.com/iproute2/iproute2/blob/main/man/man8/ip-link.8.in",
+        "command_ids": [
+          "link_state",
+          "addresses",
+          "routes"
+        ]
+      },
+      {
+        "id": "KB-OSPF",
+        "faults": [
+          "ospf_loss",
+          "interface_shutdown"
+        ],
+        "title": "Check the expected adjacency and underlying interface",
+        "guidance": "Inspect FRR neighbors and interface configuration. Point-to-point uplinks require the expected neighbor. On a broadcast network a 2-Way DROther relationship may be normal; do not label every non-Full pair a fault.",
+        "source": "https://docs.frrouting.org/en/stable-8.4/ospfd.html",
+        "command_ids": [
+          "ospf_neighbors",
+          "ospf_interfaces",
+          "routes"
+        ]
+      },
+      {
+        "id": "KB-ACL",
+        "faults": [
+          "acl_fault"
+        ],
+        "title": "Attribute a failed flow using rule matches and counter changes",
+        "guidance": "Compare the actual source, destination and incoming interface against the rule. Require a positive deny-counter change over an observation interval. Existing intended policy blocks are healthy behavior.",
+        "source": "https://netfilter.org/projects/nftables/manpage.html",
+        "command_ids": [
+          "acl_rules",
+          "routes"
+        ]
+      },
+      {
+        "id": "KB-RATE",
+        "faults": [
+          "high_utilization"
+        ],
+        "title": "Use sustained counter deltas and effective capacity",
+        "guidance": "Rates require elapsed time, usable consecutive counters and reset handling. Virtual NIC speed is not a validated bottleneck capacity. Inspect the configured shaping and repeat measurements before interpreting a high percentage.",
+        "source": "https://www.rfc-editor.org/rfc/rfc2863",
+        "command_ids": [
+          "link_counters",
+          "traffic_control"
+        ]
+      },
+      {
+        "id": "KB-MISSING",
+        "faults": [
+          "interface_shutdown",
+          "ospf_loss",
+          "acl_fault",
+          "high_utilization",
+          "unreachability"
+        ],
+        "title": "Abstain when distinguishing evidence is unavailable",
+        "guidance": "A lost management path can remove several signals at once. Preserve last observations and their age. Missing, stale or contradictory critical evidence requires an inconclusive outcome and further read-only checks.",
+        "source": "local:FYP Proposal.docx:5.4-5.6",
+        "command_ids": [
+          "link_state",
+          "routes"
+        ]
+      }
+    ],
+    "allowed_check_ids": [
+      "addresses",
+      "routes",
+      "ospf_neighbors",
+      "ospf_interfaces",
+      "acl_rules"
+    ]
+  },
+  "local_source_observations": "source-bf8e33ee04f1aff075f0.json",
+  "review_boundary": "Support is relative to the actual diagnostic input. The masked source bundle is available only to verify derived observations; it must not give credit for information absent from the diagnostic input."
+}

@@ -1,0 +1,48 @@
+{
+  "case_id": "0b720fda-1cbf-4a8f-1707-1795845565f3",
+  "category": "insufficient",
+  "underlying_class": "acl_fault",
+  "branch": "B3",
+  "device_id": "MLS-B3",
+  "interface": "",
+  "target_host": "PC-B3-IT",
+  "load_mbps": 3,
+  "sequence": 70,
+  "started_at": "2026-11-17T00:15:39.578102+00:00",
+  "complete": true,
+  "intervention": {
+    "exit_code": 0,
+    "at": "2026-11-17T00:15:39.656140+00:00",
+    "stdout": "",
+    "stderr": ""
+  },
+  "captured_at": "2026-11-17T00:16:29.714982+00:00",
+  "observed_as_of": "2026-11-17 00:16:25.233383+00:00",
+  "capture_lag_seconds": 4.481599,
+  "observed_candidates": [
+    {
+      "class": "unreachability",
+      "device": "PC-B3-IT",
+      "gate": "sufficient",
+      "missing": [
+        "fresh_poll_outcome"
+      ]
+    },
+    {
+      "class": "acl_fault",
+      "device": "MLS-B3",
+      "gate": "inconclusive",
+      "missing": [
+        "deny_counter_delta"
+      ]
+    }
+  ],
+  "restoration": {
+    "exit_code": 0,
+    "at": "2026-11-17T00:16:29.792636+00:00",
+    "stdout": "",
+    "stderr": ""
+  },
+  "restored_at": "2026-11-17T00:16:29.792636+00:00",
+  "restoration_verified": true
+}

@@ -1,0 +1,23 @@
+{
+  "recorded_at": "2026-11-17T11:50:06.033586+00:00",
+  "live_dashboard_visual_verified": true,
+  "checks": [
+    "overview 30/30 healthy and zero open incidents",
+    "four-site topology rendered",
+    "R-B1 evidence filter",
+    "raw selected evidence shown",
+    "labelled insufficient-evidence replay: missing Link Event; inconclusive; model withheld"
+  ],
+  "screenshots": [
+    "dashboard.jpg",
+    "topology.jpg",
+    "evidence.jpg",
+    "evidence-gate.jpg"
+  ],
+  "study_viewer_visual_verified": false,
+  "study_viewer_block": "Saved browser permission denied origin on port 8766. No alternate route or synthetic screenshot used.",
+  "study_API_records": 280,
+  "incident_to_display_latency_measured": false,
+  "real_reviewer_ratings_generated": false,
+  "new_cloud_calls": 0
+}

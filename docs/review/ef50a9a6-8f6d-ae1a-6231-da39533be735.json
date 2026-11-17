@@ -1,0 +1,108 @@
+{
+  "review_id": "ef50a9a6-8f6d-ae1a-6231-da39533be735",
+  "observations": [
+    {
+      "evidence_id": "snapshot:0f37b505-80dc-451e-bd21-08dc1e6ce7d2:link:eth0",
+      "device_id": "R-B1",
+      "kind": "console_interface",
+      "observed_at": "2026-11-16 23:43:10.430601+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Console shows eth0 administratively up."
+    },
+    {
+      "evidence_id": "snapshot:0f37b505-80dc-451e-bd21-08dc1e6ce7d2:ospf",
+      "device_id": "R-B1",
+      "kind": "ospf_neighbors",
+      "observed_at": "2026-11-16 23:43:10.430601+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Read-only FRR OSPF neighbor snapshot."
+    },
+    {
+      "evidence_id": "snapshot:0f37b505-80dc-451e-bd21-08dc1e6ce7d2:ospf_config:eth0",
+      "device_id": "R-B1",
+      "kind": "ospf_config",
+      "observed_at": "2026-11-16 23:43:10.430601+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "OSPF interface eth0 is passive; verified healthy reference mode is active."
+    },
+    {
+      "evidence_id": "snapshot:4dabe864-2f9f-4df4-a5d8-6b21f8725b32:ospf",
+      "device_id": "R-B1",
+      "kind": "ospf_neighbors",
+      "observed_at": "2026-11-16 23:42:50.444806+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Previous missing-neighbor observation with underlying interface up."
+    }
+  ],
+  "candidate_hypotheses": [
+    {
+      "fault_class": "ospf_loss",
+      "device_id": "R-B1",
+      "interface": "eth0",
+      "affected_devices": [
+        "MLS-B1",
+        "PC-B1-ADMIN",
+        "PC-B1-IT",
+        "PC-B1-STAFF",
+        "SW-B1-1",
+        "SW-B1-2"
+      ],
+      "topology_path": [
+        "MON-HQ",
+        "SW-HQ-2",
+        "MLS-HQ",
+        "R-HQ",
+        "SW-WAN",
+        "R-B1"
+      ]
+    }
+  ],
+  "status": "ok",
+  "interpretation": {
+    "fault_class": "inconclusive",
+    "device_id": "",
+    "interface": "",
+    "disposition": "inconclusive",
+    "incident_detected": true
+  },
+  "read_only_checks": [],
+  "actual_diagnostic_input": {
+    "gate": {
+      "status": "inconclusive",
+      "score": 0.8,
+      "threshold": 0.8,
+      "available_weight": 8,
+      "total_required_weight": 10,
+      "missing": [
+        "ospf_event"
+      ],
+      "missing_critical": [
+        "ospf_event"
+      ],
+      "contradictions": [],
+      "signals": {
+        "neighbor_loss": [
+          "snapshot:0f37b505-80dc-451e-bd21-08dc1e6ce7d2:ospf",
+          "snapshot:4dabe864-2f9f-4df4-a5d8-6b21f8725b32:ospf"
+        ],
+        "ospf_event": [],
+        "underlying_link_up": [
+          "snapshot:0f37b505-80dc-451e-bd21-08dc1e6ce7d2:link:eth0"
+        ],
+        "configuration_change": [
+          "snapshot:0f37b505-80dc-451e-bd21-08dc1e6ce7d2:ospf_config:eth0"
+        ]
+      },
+      "matrix_version": "study-final-1",
+      "matrix_sha256": "4da2280e4c017f523116384f4b7dff6138e59bd22091a5294b335a1493ff6c1a",
+      "score_is_probability": false
+    },
+    "meaning": "No model was called. Assess only the displayed deterministic result and its available observations."
+  },
+  "local_source_observations": "source-dd850cc30a06e8e9e1bb.json",
+  "review_boundary": "Support is relative to the actual diagnostic input. The masked source bundle is available only to verify derived observations; it must not give credit for information absent from the diagnostic input."
+}

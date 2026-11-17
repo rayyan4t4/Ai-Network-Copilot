@@ -1,0 +1,156 @@
+{
+  "frozen_at": "2026-11-16T22:23:03.534380+00:00",
+  "seed": 20261117,
+  "cases": 70,
+  "approaches": [
+    "B1",
+    "B2",
+    "no_gate",
+    "full"
+  ],
+  "pilot_checks": [
+    {
+      "category": "interface_shutdown",
+      "valid_live_pilot_ids": [
+        "f8ba1161-063f-397e-2549-14f2dbf2e264"
+      ],
+      "passed": true
+    },
+    {
+      "category": "ospf_loss",
+      "valid_live_pilot_ids": [
+        "9bcd9caf-1352-4846-ba48-fb2a367553e7"
+      ],
+      "passed": true
+    },
+    {
+      "category": "acl_fault",
+      "valid_live_pilot_ids": [
+        "770c9a0d-583e-3a62-376c-73aa4cfd2ddd"
+      ],
+      "passed": true
+    },
+    {
+      "category": "high_utilization",
+      "valid_live_pilot_ids": [
+        "bec507e1-e437-67e5-02c4-e1b20f8fc64f"
+      ],
+      "passed": true
+    },
+    {
+      "category": "unreachability",
+      "valid_live_pilot_ids": [
+        "7b49e838-48d2-e1dc-4b16-016e5a860581"
+      ],
+      "passed": true
+    },
+    {
+      "category": "healthy",
+      "valid_live_pilot_ids": [
+        "8264d419-ebf5-3727-1e4c-ac4eb4ef54f3"
+      ],
+      "passed": true
+    },
+    {
+      "category": "insufficient",
+      "valid_live_pilot_ids": [
+        "2c264cc9-7890-ea5d-6626-f868bbfd200f"
+      ],
+      "passed": true
+    },
+    {
+      "mask_for": "interface_shutdown",
+      "passed": true
+    },
+    {
+      "mask_for": "ospf_loss",
+      "passed": true
+    },
+    {
+      "mask_for": "acl_fault",
+      "passed": true
+    },
+    {
+      "mask_for": "high_utilization",
+      "passed": true
+    },
+    {
+      "mask_for": "unreachability",
+      "passed": true
+    }
+  ],
+  "sha256": {
+    "evaluation/engine.py": "241cda4a798812459af2e1314d6b0c48fed397630637d31d782193462bd2dd76",
+    "evaluation/protocol.py": "9f800f0456208e10ec3c6850dc2888349bbb3343d3e308844699135bbc22d596",
+    "evaluation/model.py": "cd61d19e7fcbaeb089b6247719a4034d76204d000916f249bfdf06ab649c4366",
+    "evaluation/freeze.py": "685b2e9655bb307cd254e298d820f06668615ecde37ff7fa71ed35f95f0c6501",
+    "evaluation/matrix.json": "9a9348ea6ef9cd1436216a051e364d950a8a783a9a72e1c38cbf5bdc2fe25306",
+    "evaluation/profile.json": "3bcabb5e14472159265ccddd81cadf4380410bc1798e50f0009a49b382d33cbe",
+    "evaluation/baseline.json": "494a57f9c4bb0a46e918dedc050186792c60ae48b0a17364130a3ea77b8d20aa",
+    "evaluation/methods.md": "44bbd02c82b06cfe2c2610249f10de0e09bb613a8f0add3df3cad3c93aebb9c3",
+    "tools/run_study.py": "8abe67276d54a47bd5356e74c97c7603861340a06bc771fb60f52636ed4f4123",
+    "tools/compare_study.py": "0ad81c40184d62d1e5953717aadf9912911c30ec1d3e712a32d74522b619a43c",
+    "tools/analyze_study.py": "89fb2af26f9e3f26541a002127e802bb561ec74cc4720d8add327ab6c5f13b2a",
+    "week2/knowledge.json": "abda827a65ddd349b715a20b9efe3ab8c8ab314c07b9996bb14914eda92cbd89",
+    "week2/monitor_export.py": "2c01927cfbdca1026713c3d4a3f5330918888c6f6cd60c098e853340b884f1e3",
+    "week2/worker.py": "75deaf4ffd51a0b0117b25d7a30c85a22401b049f888df176eb211fdef0c5695",
+    "monitoring/collector.py": "cd5488a510ecf53111669dbd291d47b88e256f4b614d84de9cef5bdc282235a3",
+    ".local/evaluation/control/final-schedule.json": "576baff25d008574c1130a180a2287a8dcf5c34ce68e6590ac78751f6e225911",
+    "lab/configs/MLS-B1.sh": "fd5b94cb11bd86a2fc2cafabfe244f2a7ac69e8a7d099f330377cf113702f5bd",
+    "lab/configs/MLS-B2.sh": "6639876600fdddce862cabce7143d30e65273cf8d8099826c68161395e6e5043",
+    "lab/configs/MLS-B3.sh": "3422ab28a831d72ae2e52e09a9a04aaa3cf58940e9f9a68f7058efdb5e99453f",
+    "lab/configs/MLS-HQ.sh": "9acdc9373798d8c3b9f8e4940ab6f0e34fdeca10715a439b93d47ed3a15364ae",
+    "lab/configs/MON-HQ.sh": "51dbf717686c2e1034b83bfb9638a9df30cd3589da84b6f6e7b9ed933be9301b",
+    "lab/configs/PC-B1-ADMIN.sh": "fe29f4dc6264342574dee873dfd976718ab1f77f80e715512bacb99e4d01655e",
+    "lab/configs/PC-B1-IT.sh": "bb7c7f9c7f5d059e5d626ee57a8bae237121404930cf8d3f20ebee24a66b3343",
+    "lab/configs/PC-B1-STAFF.sh": "f7e684776f5bb0e72595c5abed1c6c8a70a721f0bf7ac9d7d0697bce6f4e7b9b",
+    "lab/configs/PC-B2-ADMIN.sh": "5f37933d7cbdf4446f559c3315121996352ec6ad7d6b7bc353c0a0feaf755096",
+    "lab/configs/PC-B2-IT.sh": "8bea59366b936ff5a9df2a8caca9eb3732e23549bcb1cbf167aa21b5ad6d5de7",
+    "lab/configs/PC-B2-STAFF.sh": "4c340e4a5bb08aded7d20dc964aaab5ac368976053623fe3b70a944888fc8cbf",
+    "lab/configs/PC-B3-ADMIN.sh": "7de642a21981538142f9ded97a975600779938d44a44176aac9cc4c0ee7b4222",
+    "lab/configs/PC-B3-IT.sh": "8e2a1a23cc6123733b25dba2aa151d8dc04535362f024d183eb32fee08c28ec0",
+    "lab/configs/PC-B3-STAFF.sh": "d233e14ed6f809249258e052ae1bbc92367388b251734fee5ed80597ac4a4640",
+    "lab/configs/PC-HQ-ADMIN.sh": "dbcf28a3af93e386a0040440040123dbb8f4f47473573050273483856f8fd736",
+    "lab/configs/PC-HQ-IT.sh": "b5f0b3457bc1cf200ea8564e8761e34035270487d104577701adc31ad920249c",
+    "lab/configs/PC-HQ-STAFF.sh": "589748d77db4c611dd072589d71657a4c665bd14752c164b9256839ec921441e",
+    "lab/configs/R-B1.sh": "ff35409c5a253953b228275c3b631879b52b00de05a26ec1b3d18dc6bbb1a663",
+    "lab/configs/R-B2.sh": "818c4616b99240fd82b5f8078ea590b88996411d4e5e3105a279c73025f10fc8",
+    "lab/configs/R-B3.sh": "bdafa288eb4f0b94e70fca8952cbded24e43081712497db81ba9cbc0cb7adfa8",
+    "lab/configs/R-HQ.sh": "030be25db8250e5bcf15d66af3160e5709bf3e702ccf6eed4d31874264c262f4",
+    "lab/configs/SW-B1-1.sh": "6ca8c80dd69b3a1cb5225c9a0cf1f6587e6b67b401fc24b9e81592a9e03ac7c6",
+    "lab/configs/SW-B1-2.sh": "4a03a341ad83cd631f5ab4e1effe9e864cac1d8bd388f2061a495b35a7647079",
+    "lab/configs/SW-B2-1.sh": "1a0a8730b8102541ac1b71d18b3d4f55e1a5efd38e629e03e54688c8a6682bb3",
+    "lab/configs/SW-B2-2.sh": "b12d823815b12a11cbc1e407f71239380b89082c4214b7073448f0c6eea9ac83",
+    "lab/configs/SW-B3-1.sh": "18c5fa4d8e74923e591bc7ff1d78afb6f696bc3c76ea79821f1f053694c43770",
+    "lab/configs/SW-B3-2.sh": "22064a42f90dafd42c23f666ee43d5752e4b496b33cacead2e06ddd1231bd36f",
+    "lab/configs/SW-HQ-1.sh": "553306e46b2282cbb3e61586615dac54a55f741c900d84177b5486b8f2624867",
+    "lab/configs/SW-HQ-2.sh": "e052913a60199501ce13b0c41614184387e9ff09317c9c375611ab8b4e28b88a",
+    "lab/configs/SW-WAN.sh": "09ba3473712f8744713600b5d61d5aaf9a46f5bcfa5eed4bb0cc272d09e60579"
+  },
+  "ground_truth_location": "Private control directory, excluded from diagnostic adapters",
+  "reviewers": "Two real independent human reviewers required; not supplied by agents",
+  "browser_display_latency": "Unverified after browser origin access rejection; no synthetic acknowledgements",
+  "resource_amendments": [
+    {
+      "recorded_at": "2026-11-17T00:09:30.612467+00:00",
+      "kind": "resource_only",
+      "old_attempt_cap": 260,
+      "new_attempt_cap": 300,
+      "attempts_already_recorded": 250,
+      "acquisitions_complete_at_amendment": 65,
+      "reason": "Retained provider service-error retries made the original allowance too close to the remaining prespecified evaluations. A bounded resource reserve completes the same 70 cases without rerunning completed outputs. The comparison was paused between requests, after its last response was archived.",
+      "changes": [
+        "maximum_study_generation_attempts only"
+      ],
+      "diagnostic_code_changed": false,
+      "model_or_prompt_changed": false,
+      "capture_or_scoring_changed": false,
+      "billing_settings_changed": false,
+      "original_profile_sha256": "a538694ff444da0a9030af085ec9a5be4956e5afe54ac7485661a219b2bfdb1e",
+      "amended_profile_sha256": "3bcabb5e14472159265ccddd81cadf4380410bc1798e50f0009a49b382d33cbe",
+      "original_freeze_sha256": "70fa48b904d5960590f67b9de77cfefc728fda7ad19a6e1dc3f8760d94413159",
+      "original_records_retained": true,
+      "completed_outputs_to_be_rerun": 0
+    }
+  ]
+}

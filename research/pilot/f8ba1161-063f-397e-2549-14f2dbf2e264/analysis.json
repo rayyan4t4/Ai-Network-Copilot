@@ -1,0 +1,391 @@
+{
+  "as_of": "2026-11-16 22:09:23.669568+00:00",
+  "facts": [
+    {
+      "evidence_id": "sample:6289663d-6e24-4d43-a5e8-de89c526d4cb:R-B1:eth0",
+      "device_id": "R-B1",
+      "kind": "interface",
+      "observed_at": "2026-11-16 22:09:19.550250+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "R-B1:eth0 administrative status 2, operational status 2."
+    },
+    {
+      "evidence_id": "probe:bc0846f3-1b89-4377-b272-8495008407e0",
+      "device_id": "SW-B1-1",
+      "kind": "probe",
+      "observed_at": "2026-11-16 22:09:20.279769+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:e9de9db3-1d23-4576-99b2-18aa4ca19e40",
+      "device_id": "MLS-B1",
+      "kind": "probe",
+      "observed_at": "2026-11-16 22:09:20.272246+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:e03a579f-1ff1-4f3b-8c33-3f5ce8bf54c6",
+      "device_id": "PC-B1-IT",
+      "kind": "probe",
+      "observed_at": "2026-11-16 22:09:18.176433+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:305470c4-c59d-4fee-9a54-5fd7a544a53a",
+      "device_id": "PC-B1-STAFF",
+      "kind": "probe",
+      "observed_at": "2026-11-16 22:09:17.159440+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:1bd4dcf8-9a5b-4d54-b165-cd7adcd4e081",
+      "device_id": "PC-B1-ADMIN",
+      "kind": "probe",
+      "observed_at": "2026-11-16 22:09:17.156325+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:451b18ae-7b45-4bb4-b995-8bf795bc7ec1",
+      "device_id": "SW-B1-2",
+      "kind": "probe",
+      "observed_at": "2026-11-16 22:09:16.142212+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "snapshot:bbf2d7bf-b325-47d2-80b1-35062f8da61b:link:eth0",
+      "device_id": "R-B1",
+      "kind": "console_interface",
+      "observed_at": "2026-11-16 22:09:11.853108+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Console shows eth0 administratively down."
+    },
+    {
+      "evidence_id": "event:71e72e32-6e94-54d6-b8ca-44cfb37c60a5",
+      "device_id": "R-B1",
+      "kind": "ospf_loss_event",
+      "observed_at": "2026-11-16 22:08:34.024499+00:00",
+      "source": "syslog",
+      "is_stale": false,
+      "summary": "Identified ospfd event: ospf_loss_event on eth0."
+    },
+    {
+      "evidence_id": "event:91b529ff-e15e-5205-845b-7aac3417d987",
+      "device_id": "R-B1",
+      "kind": "link_down",
+      "observed_at": "2026-11-16 22:08:34.024499+00:00",
+      "source": "syslog",
+      "is_stale": false,
+      "summary": "Identified link-state event: link_down on eth0."
+    }
+  ],
+  "devices": [
+    "MLS-B1",
+    "MLS-B2",
+    "MLS-B3",
+    "MLS-HQ",
+    "MON-HQ",
+    "PC-B1-ADMIN",
+    "PC-B1-IT",
+    "PC-B1-STAFF",
+    "PC-B2-ADMIN",
+    "PC-B2-IT",
+    "PC-B2-STAFF",
+    "PC-B3-ADMIN",
+    "PC-B3-IT",
+    "PC-B3-STAFF",
+    "PC-HQ-ADMIN",
+    "PC-HQ-IT",
+    "PC-HQ-STAFF",
+    "R-B1",
+    "R-B2",
+    "R-B3",
+    "R-HQ",
+    "SW-B1-1",
+    "SW-B1-2",
+    "SW-B2-1",
+    "SW-B2-2",
+    "SW-B3-1",
+    "SW-B3-2",
+    "SW-HQ-1",
+    "SW-HQ-2",
+    "SW-WAN"
+  ],
+  "candidates": [
+    {
+      "fault_class": "interface_shutdown",
+      "device_id": "R-B1",
+      "interface": "eth0",
+      "affected_devices": [
+        "MLS-B1",
+        "PC-B1-ADMIN",
+        "PC-B1-IT",
+        "PC-B1-STAFF",
+        "SW-B1-1",
+        "SW-B1-2"
+      ],
+      "topology_path": [
+        "MON-HQ",
+        "SW-HQ-2",
+        "MLS-HQ",
+        "R-HQ",
+        "SW-WAN",
+        "R-B1"
+      ]
+    }
+  ],
+  "primary": {
+    "fingerprint": "interface_shutdown|R-B1|eth0",
+    "fault_class": "interface_shutdown",
+    "device_id": "R-B1",
+    "interface": "eth0",
+    "site": "B1",
+    "rules_applied": [
+      "R1_LINKED_INTERFACE_DOWN",
+      "R2_OSPF_EVENT_ON_SAME_INTERFACE",
+      "R2_TOPOLOGY_DEPENDENT_PROBE_FAILURES"
+    ],
+    "affected_devices": [
+      "MLS-B1",
+      "PC-B1-ADMIN",
+      "PC-B1-IT",
+      "PC-B1-STAFF",
+      "SW-B1-1",
+      "SW-B1-2"
+    ],
+    "related_evidence_ids": [
+      "event:71e72e32-6e94-54d6-b8ca-44cfb37c60a5"
+    ],
+    "topology_path": [
+      "MON-HQ",
+      "SW-HQ-2",
+      "MLS-HQ",
+      "R-HQ",
+      "SW-WAN",
+      "R-B1"
+    ],
+    "gate": {
+      "status": "sufficient",
+      "score": 1.0,
+      "threshold": 0.8,
+      "available_weight": 10,
+      "total_required_weight": 10,
+      "missing": [],
+      "missing_critical": [],
+      "contradictions": [],
+      "signals": {
+        "interface_down": [
+          "sample:6289663d-6e24-4d43-a5e8-de89c526d4cb:R-B1:eth0",
+          "snapshot:bbf2d7bf-b325-47d2-80b1-35062f8da61b:link:eth0"
+        ],
+        "link_event": [
+          "event:91b529ff-e15e-5205-845b-7aac3417d987"
+        ],
+        "console_down": [
+          "snapshot:bbf2d7bf-b325-47d2-80b1-35062f8da61b:link:eth0"
+        ],
+        "downstream_failure": [
+          "probe:e9de9db3-1d23-4576-99b2-18aa4ca19e40",
+          "probe:1bd4dcf8-9a5b-4d54-b165-cd7adcd4e081",
+          "probe:e03a579f-1ff1-4f3b-8c33-3f5ce8bf54c6",
+          "probe:305470c4-c59d-4fee-9a54-5fd7a544a53a",
+          "probe:bc0846f3-1b89-4377-b272-8495008407e0",
+          "probe:451b18ae-7b45-4bb4-b995-8bf795bc7ec1"
+        ]
+      },
+      "matrix_version": "study-pilot-1",
+      "matrix_sha256": "0edf6ea5dc8ae6a60f8f4b3afd669cf7ec47417aac8d320139ac3a25b4234f3a",
+      "score_is_probability": false
+    },
+    "facts": [
+      {
+        "evidence_id": "event:71e72e32-6e94-54d6-b8ca-44cfb37c60a5",
+        "device_id": "R-B1",
+        "kind": "ospf_loss_event",
+        "observed_at": "2026-11-16 22:08:34.024499+00:00",
+        "source": "syslog",
+        "age_seconds": 49.645,
+        "is_stale": false,
+        "value": {
+          "interface": "eth0",
+          "program": "ospfd",
+          "raw_message": " [Y05P2-YJVXY] AdjChg: Nbr 22.22.22.22, NbrIP 10.11.0.2 (default) on eth0:10.11.0.1: Full -> Deleted (KillNbr)"
+        },
+        "summary": "Identified ospfd event: ospf_loss_event on eth0."
+      },
+      {
+        "evidence_id": "event:91b529ff-e15e-5205-845b-7aac3417d987",
+        "device_id": "R-B1",
+        "kind": "link_down",
+        "observed_at": "2026-11-16 22:08:34.024499+00:00",
+        "source": "syslog",
+        "age_seconds": 49.645,
+        "is_stale": false,
+        "value": {
+          "interface": "eth0",
+          "program": "link-state",
+          "raw_message": " [2026-11-16T22:08:33.992440] 12: eth0: <BROADCAST,MULTICAST> mtu 1500 qdisc fq_codel state DOWN group default "
+        },
+        "summary": "Identified link-state event: link_down on eth0."
+      },
+      {
+        "evidence_id": "probe:1bd4dcf8-9a5b-4d54-b165-cd7adcd4e081",
+        "device_id": "PC-B1-ADMIN",
+        "kind": "probe",
+        "observed_at": "2026-11-16 22:09:17.156325+00:00",
+        "source": "icmp",
+        "age_seconds": 6.513,
+        "is_stale": false,
+        "value": {
+          "status": "timeout",
+          "source_ip": "192.168.30.10",
+          "rtt_ms": null
+        },
+        "summary": "ICMP probe returned timeout."
+      },
+      {
+        "evidence_id": "probe:305470c4-c59d-4fee-9a54-5fd7a544a53a",
+        "device_id": "PC-B1-STAFF",
+        "kind": "probe",
+        "observed_at": "2026-11-16 22:09:17.159440+00:00",
+        "source": "icmp",
+        "age_seconds": 6.51,
+        "is_stale": false,
+        "value": {
+          "status": "timeout",
+          "source_ip": "192.168.30.10",
+          "rtt_ms": null
+        },
+        "summary": "ICMP probe returned timeout."
+      },
+      {
+        "evidence_id": "probe:451b18ae-7b45-4bb4-b995-8bf795bc7ec1",
+        "device_id": "SW-B1-2",
+        "kind": "probe",
+        "observed_at": "2026-11-16 22:09:16.142212+00:00",
+        "source": "icmp",
+        "age_seconds": 7.527,
+        "is_stale": false,
+        "value": {
+          "status": "timeout",
+          "source_ip": "192.168.30.10",
+          "rtt_ms": null
+        },
+        "summary": "ICMP probe returned timeout."
+      },
+      {
+        "evidence_id": "probe:bc0846f3-1b89-4377-b272-8495008407e0",
+        "device_id": "SW-B1-1",
+        "kind": "probe",
+        "observed_at": "2026-11-16 22:09:20.279769+00:00",
+        "source": "icmp",
+        "age_seconds": 3.39,
+        "is_stale": false,
+        "value": {
+          "status": "timeout",
+          "source_ip": "192.168.30.10",
+          "rtt_ms": null
+        },
+        "summary": "ICMP probe returned timeout."
+      },
+      {
+        "evidence_id": "probe:e03a579f-1ff1-4f3b-8c33-3f5ce8bf54c6",
+        "device_id": "PC-B1-IT",
+        "kind": "probe",
+        "observed_at": "2026-11-16 22:09:18.176433+00:00",
+        "source": "icmp",
+        "age_seconds": 5.493,
+        "is_stale": false,
+        "value": {
+          "status": "timeout",
+          "source_ip": "192.168.30.10",
+          "rtt_ms": null
+        },
+        "summary": "ICMP probe returned timeout."
+      },
+      {
+        "evidence_id": "probe:e9de9db3-1d23-4576-99b2-18aa4ca19e40",
+        "device_id": "MLS-B1",
+        "kind": "probe",
+        "observed_at": "2026-11-16 22:09:20.272246+00:00",
+        "source": "icmp",
+        "age_seconds": 3.397,
+        "is_stale": false,
+        "value": {
+          "status": "timeout",
+          "source_ip": "192.168.30.10",
+          "rtt_ms": null
+        },
+        "summary": "ICMP probe returned timeout."
+      },
+      {
+        "evidence_id": "sample:6289663d-6e24-4d43-a5e8-de89c526d4cb:R-B1:eth0",
+        "device_id": "R-B1",
+        "kind": "interface",
+        "observed_at": "2026-11-16 22:09:19.550250+00:00",
+        "source": "snmp",
+        "age_seconds": 4.119,
+        "is_stale": false,
+        "value": {
+          "interface_id": "R-B1:eth0",
+          "admin_status": 2,
+          "oper_status": 2,
+          "in_bps": 0.0,
+          "out_bps": 0.0,
+          "in_utilization_pct": 0.0,
+          "out_utilization_pct": 0.0,
+          "rate_status": "valid",
+          "speed_bps": 10000000000
+        },
+        "summary": "R-B1:eth0 administrative status 2, operational status 2."
+      },
+      {
+        "evidence_id": "snapshot:bbf2d7bf-b325-47d2-80b1-35062f8da61b:link:eth0",
+        "device_id": "R-B1",
+        "kind": "console_interface",
+        "observed_at": "2026-11-16 22:09:11.853108+00:00",
+        "source": "authorized_readonly_console",
+        "age_seconds": 11.816,
+        "is_stale": false,
+        "value": {
+          "interface": "eth0",
+          "admin_up": false,
+          "operstate": "DOWN",
+          "addresses": [
+            {
+              "family": "inet",
+              "local": "10.11.0.1",
+              "prefixlen": 30,
+              "scope": "global",
+              "label": "eth0",
+              "valid_life_time": 4294967295,
+              "preferred_life_time": 4294967295
+            }
+          ]
+        },
+        "summary": "Console shows eth0 administratively down."
+      }
+    ],
+    "missing_observations": [],
+    "as_of": "2026-11-16 22:09:23.669568+00:00",
+    "evidence_digest": "e65a57c22cb284403ef274e020b1d3eb3cb7e115cc42d837c6c327d0a82576bb"
+  },
+  "health_counts": {
+    "healthy": 24,
+    "unknown": 0,
+    "unreachable": 6
+  }
+}

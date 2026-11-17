@@ -1,0 +1,133 @@
+{
+  "review_id": "f5b219a5-a8f7-3192-5ad3-3e0794115019",
+  "observations": [
+    {
+      "evidence_id": "sample:6f43fd96-c8c8-4b01-a5d6-ecda586a6865:R-B2:eth0",
+      "device_id": "R-B2",
+      "kind": "interface",
+      "observed_at": "2026-11-16 23:58:09.390642+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "R-B2:eth0 administrative status 2, operational status 2."
+    },
+    {
+      "evidence_id": "probe:f586e5f4-729e-4f7f-bbca-e9f140537bbd",
+      "device_id": "MLS-B2",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:58:12.558828+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:7adb685e-f019-4217-a82d-5e66f5c4cb41",
+      "device_id": "PC-B2-IT",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:58:09.010903+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:7e0ae7cc-c368-4c45-aecd-7a80cf74d2eb",
+      "device_id": "PC-B2-STAFF",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:58:08.004501+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:9a0b3a45-fcd5-4926-94c7-fe1fb7f6af6b",
+      "device_id": "PC-B2-ADMIN",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:58:07.983898+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:19475aa3-04f2-462e-80c0-213d1ad32abf",
+      "device_id": "SW-B2-2",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:58:06.986601+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:fabbac94-3081-4816-971a-db98496e6d58",
+      "device_id": "SW-B2-1",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:58:06.967794+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "snapshot:2cdd235b-f7bb-4b74-9098-9f3ab2ae7c4b:link:eth0",
+      "device_id": "R-B2",
+      "kind": "console_interface",
+      "observed_at": "2026-11-16 23:58:01.921193+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Console shows eth0 administratively down."
+    },
+    {
+      "evidence_id": "event:41eff15a-4e00-562f-9af9-bf332bb9b031",
+      "device_id": "R-B2",
+      "kind": "link_down",
+      "observed_at": "2026-11-16 23:57:24.288734+00:00",
+      "source": "syslog",
+      "is_stale": false,
+      "summary": "Identified link-state event: link_down on eth0."
+    },
+    {
+      "evidence_id": "event:558dec3a-4347-5a72-a20d-24268c949f27",
+      "device_id": "R-B2",
+      "kind": "ospf_loss_event",
+      "observed_at": "2026-11-16 23:57:24.201177+00:00",
+      "source": "syslog",
+      "is_stale": false,
+      "summary": "Identified ospfd event: ospf_loss_event on eth0."
+    }
+  ],
+  "candidate_hypotheses": [
+    {
+      "fault_class": "interface_shutdown",
+      "device_id": "R-B2",
+      "interface": "eth0",
+      "affected_devices": [
+        "MLS-B2",
+        "PC-B2-ADMIN",
+        "PC-B2-IT",
+        "PC-B2-STAFF",
+        "SW-B2-1",
+        "SW-B2-2"
+      ],
+      "topology_path": [
+        "MON-HQ",
+        "SW-HQ-2",
+        "MLS-HQ",
+        "R-HQ",
+        "SW-WAN",
+        "R-B2"
+      ]
+    }
+  ],
+  "status": "ok",
+  "interpretation": {
+    "fault_class": "interface_shutdown",
+    "device_id": "R-B2",
+    "interface": "eth0",
+    "disposition": "supported",
+    "incident_detected": true
+  },
+  "read_only_checks": [],
+  "actual_diagnostic_input": {
+    "gate": null,
+    "meaning": "No model was called. Assess only the displayed deterministic result and its available observations."
+  },
+  "local_source_observations": "source-713f8090e3441bcf44d3.json",
+  "review_boundary": "Support is relative to the actual diagnostic input. The masked source bundle is available only to verify derived observations; it must not give credit for information absent from the diagnostic input."
+}

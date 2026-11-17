@@ -1,0 +1,6 @@
+{
+  "vm_host": "192.168.157.128",
+  "vm_username": "gns3",
+  "vm_password": "SET_ONLY_IN_IGNORED_LOCAL_CONFIG",
+  "controller_url": "http://127.0.0.1:3080/v2"
+}

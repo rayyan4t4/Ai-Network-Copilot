@@ -1,0 +1,2008 @@
+{
+  "auto_close": false,
+  "auto_open": false,
+  "auto_start": false,
+  "drawing_grid_size": 25,
+  "grid_size": 75,
+  "name": "AI Network Copilot",
+  "project_id": "ebcedd31-248c-4e7d-8837-883cd5cba4c8",
+  "revision": 9,
+  "scene_height": 1000,
+  "scene_width": 2000,
+  "show_grid": false,
+  "show_interface_labels": false,
+  "show_layers": false,
+  "snap_to_grid": false,
+  "supplier": null,
+  "topology": {
+    "computes": [
+      {
+        "compute_id": "12cb4414-0c4d-4324-b8dc-3cf694585295",
+        "host": "192.168.157.128",
+        "name": "FYP GNS3 VM Direct",
+        "port": 80,
+        "protocol": "http"
+      }
+    ],
+    "drawings": [],
+    "links": [
+      {
+        "filters": {},
+        "link_id": "f1d5fa2b-1dac-4557-b8e4-11d673c84711",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 1,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "1/0"
+            },
+            "node_id": "f4e790ac-7b19-4580-b28a-00ad8eeda35d",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "b64d445d-c306-4b40-bb81-f10ad5cc5a8f",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "42414437-9100-48ac-906c-5fe07a7270fe",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "f4e790ac-7b19-4580-b28a-00ad8eeda35d",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "8a0cec5c-2aa4-4e8d-a450-67c7345d7323",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "1584de32-015b-4a52-8039-a47a295bd4f2",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 1,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "1/0"
+            },
+            "node_id": "8a0cec5c-2aa4-4e8d-a450-67c7345d7323",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "7b3500db-8fcd-4be1-be9a-c6db0f580bca",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "66f8df61-739d-431e-a985-b753b717f9f2",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 2,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "2/0"
+            },
+            "node_id": "8a0cec5c-2aa4-4e8d-a450-67c7345d7323",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 1,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "1/0"
+            },
+            "node_id": "7b3500db-8fcd-4be1-be9a-c6db0f580bca",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "fbfba42e-7341-4a9e-abd9-726cfb0a62ad",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 3,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "3/0"
+            },
+            "node_id": "8a0cec5c-2aa4-4e8d-a450-67c7345d7323",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "fdc8341f-b45d-4019-9b33-500425ad666d",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "2eda38ee-2db9-47a0-a131-f65f4bac9f1b",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 2,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "2/0"
+            },
+            "node_id": "7b3500db-8fcd-4be1-be9a-c6db0f580bca",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "ab2a5319-75e7-4621-8ae8-e9e31c11cbac",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "62e77557-ec98-462b-a272-a11629dc5cb4",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 3,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "3/0"
+            },
+            "node_id": "7b3500db-8fcd-4be1-be9a-c6db0f580bca",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "1243db1d-bfd8-4ea1-b55d-9e8cbbb9c7a3",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "7aede16c-fa38-483f-9206-ce65d5057ef5",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 1,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "1/0"
+            },
+            "node_id": "fdc8341f-b45d-4019-9b33-500425ad666d",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "cbfd9fca-41ff-4356-9c73-5485b4316e08",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "96c2abdd-9748-42ce-8171-6010ed01d80f",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 1,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "1/0"
+            },
+            "node_id": "d188e179-b3db-429e-8e18-f39c7584d08f",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 1,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "1/0"
+            },
+            "node_id": "b64d445d-c306-4b40-bb81-f10ad5cc5a8f",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "1f22a31d-9e99-48ba-9ef4-2cbc36749811",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "d188e179-b3db-429e-8e18-f39c7584d08f",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "eef25d6a-be52-49d3-a0c1-67a8999a0771",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "e20fd81d-2526-4284-82df-d414bccbade8",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 1,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "1/0"
+            },
+            "node_id": "eef25d6a-be52-49d3-a0c1-67a8999a0771",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "c0d77a0d-862c-449b-a9cb-60eda5187138",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "000c82dd-788b-4260-a8be-f724bb511fa1",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 2,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "2/0"
+            },
+            "node_id": "eef25d6a-be52-49d3-a0c1-67a8999a0771",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 1,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "1/0"
+            },
+            "node_id": "c0d77a0d-862c-449b-a9cb-60eda5187138",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "5d1cd3f2-5bd9-47f6-9476-59533dbb42b7",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 3,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "3/0"
+            },
+            "node_id": "eef25d6a-be52-49d3-a0c1-67a8999a0771",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "10c2860d-1d84-4ebf-8615-1ec803f3740d",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "e4c9b984-bf27-43a1-a025-7678a47f80e2",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 2,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "2/0"
+            },
+            "node_id": "c0d77a0d-862c-449b-a9cb-60eda5187138",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "e13b4ded-e991-4af7-8f89-a65640cb6288",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "ea6e4cc0-bd85-4d11-944f-26b24bb12071",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 3,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "3/0"
+            },
+            "node_id": "c0d77a0d-862c-449b-a9cb-60eda5187138",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "3ebe686c-5fba-400c-9477-93764dcddfa0",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "d6774a30-9026-42e5-85ad-f994a73fbcc5",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 1,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "1/0"
+            },
+            "node_id": "10c2860d-1d84-4ebf-8615-1ec803f3740d",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "5931d23f-9d6a-4f0e-9cee-ce34475fc6d4",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "7948dee7-e626-4b25-ba34-75da812139a5",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 1,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "1/0"
+            },
+            "node_id": "17458ef9-b374-40a0-8a39-2c77de794188",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 2,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "2/0"
+            },
+            "node_id": "b64d445d-c306-4b40-bb81-f10ad5cc5a8f",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "29bebafc-f749-4ff0-8cfc-ec02cadb1971",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "17458ef9-b374-40a0-8a39-2c77de794188",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "eb823865-4a8a-4628-b5b9-c5460427cab9",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "98a39402-99f3-4800-85ee-c86fe08e95dc",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 1,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "1/0"
+            },
+            "node_id": "eb823865-4a8a-4628-b5b9-c5460427cab9",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "79693b3b-4a26-45bf-a1fd-126cbaffd72e",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "476a3d15-109b-4d4f-9995-8338588f4179",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 2,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "2/0"
+            },
+            "node_id": "eb823865-4a8a-4628-b5b9-c5460427cab9",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 1,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "1/0"
+            },
+            "node_id": "79693b3b-4a26-45bf-a1fd-126cbaffd72e",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "a36bc75b-0eec-4c46-8c24-086a3e0acc6f",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 3,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "3/0"
+            },
+            "node_id": "eb823865-4a8a-4628-b5b9-c5460427cab9",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "35038d47-048b-47b5-9ed8-4d9e94d4e84c",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "4c5cd0c0-be52-4e6a-9b74-54e3706fe3dc",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 2,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "2/0"
+            },
+            "node_id": "79693b3b-4a26-45bf-a1fd-126cbaffd72e",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "df21ce7b-2d3c-4cd5-9303-f568630edf24",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "f27ccea8-ef61-4f8a-8d02-a515a6e6cacb",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 3,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "3/0"
+            },
+            "node_id": "79693b3b-4a26-45bf-a1fd-126cbaffd72e",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "dd101bb0-8e8c-4c6a-a17f-d81dca3a6bff",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "2f2b708e-1c2d-4a62-a801-543b90d3cafe",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 1,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "1/0"
+            },
+            "node_id": "35038d47-048b-47b5-9ed8-4d9e94d4e84c",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "fdcd0015-2667-47cc-8b3f-2420300e0573",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "782580ee-e43a-42e6-aa63-0a60daf2ef89",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 1,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "1/0"
+            },
+            "node_id": "07d8948f-ff33-4292-bd86-e9bdcfaa82ba",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 3,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "3/0"
+            },
+            "node_id": "b64d445d-c306-4b40-bb81-f10ad5cc5a8f",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "3c0c859b-0f7a-4659-8eba-629c3f7b55a7",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "07d8948f-ff33-4292-bd86-e9bdcfaa82ba",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "71a6ea8e-2fc5-474d-9fb3-7f63a965fef8",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "b238de4a-b5f7-4036-be50-cab24122154a",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 1,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "1/0"
+            },
+            "node_id": "71a6ea8e-2fc5-474d-9fb3-7f63a965fef8",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "fbf5694e-d5e8-445d-afa7-d5503f01521e",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "3c46c8ce-5941-43b0-9853-b66bc7ef0c77",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 2,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "2/0"
+            },
+            "node_id": "71a6ea8e-2fc5-474d-9fb3-7f63a965fef8",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 1,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "1/0"
+            },
+            "node_id": "fbf5694e-d5e8-445d-afa7-d5503f01521e",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "e8f4bf5f-7df5-4dbf-89d2-27e84c337061",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 3,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "3/0"
+            },
+            "node_id": "71a6ea8e-2fc5-474d-9fb3-7f63a965fef8",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "f76607fe-7f67-469a-aedb-bfea682febf2",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "e73a197f-afc2-4b5c-84b1-89e8a97eabec",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 2,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "2/0"
+            },
+            "node_id": "fbf5694e-d5e8-445d-afa7-d5503f01521e",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "5b60488c-9a35-493a-9b26-ec58b5c46a58",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "96c94027-9a0e-419b-ade1-97f9fc743d39",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 3,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "3/0"
+            },
+            "node_id": "fbf5694e-d5e8-445d-afa7-d5503f01521e",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "48c53875-20ec-45e0-b77d-677371c96c79",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "e285fcbe-c187-4e4c-a570-83a8a23e7f45",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 1,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "1/0"
+            },
+            "node_id": "f76607fe-7f67-469a-aedb-bfea682febf2",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "4c43c3b1-5c88-4eb2-bff4-a709384df8db",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      },
+      {
+        "filters": {},
+        "link_id": "097b5cc4-2fe0-42ac-99d6-e5a9df973a32",
+        "link_style": {},
+        "nodes": [
+          {
+            "adapter_number": 2,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "2/0"
+            },
+            "node_id": "fdc8341f-b45d-4019-9b33-500425ad666d",
+            "port_number": 0
+          },
+          {
+            "adapter_number": 0,
+            "label": {
+              "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+              "text": "0/0"
+            },
+            "node_id": "8d7f78b9-3843-4489-ae3b-b0c4c1c8d90c",
+            "port_number": 0
+          }
+        ],
+        "suspend": false
+      }
+    ],
+    "nodes": [
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 32,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "SW-WAN",
+          "x": -7,
+          "y": -39
+        },
+        "locked": false,
+        "name": "SW-WAN",
+        "node_id": "b64d445d-c306-4b40-bb81-f10ad5cc5a8f",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 4,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:ea:68:73:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/ethernet_switch.svg",
+        "template_id": null,
+        "width": 72,
+        "x": -22,
+        "y": -547,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 45,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "R-HQ",
+          "x": 11,
+          "y": -25
+        },
+        "locked": false,
+        "name": "R-HQ",
+        "node_id": "f4e790ac-7b19-4580-b28a-00ad8eeda35d",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 2,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:9d:f5:f4:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/router.svg",
+        "template_id": null,
+        "width": 66,
+        "x": -900,
+        "y": -380,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 48,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "MLS-HQ",
+          "x": -4,
+          "y": -25
+        },
+        "locked": false,
+        "name": "MLS-HQ",
+        "node_id": "8a0cec5c-2aa4-4e8d-a450-67c7345d7323",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 4,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:93:c8:6d:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/multilayer_switch.svg",
+        "template_id": null,
+        "width": 51,
+        "x": -900,
+        "y": -180,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 32,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "SW-HQ-1",
+          "x": 1,
+          "y": -25
+        },
+        "locked": false,
+        "name": "SW-HQ-1",
+        "node_id": "7b3500db-8fcd-4be1-be9a-c6db0f580bca",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 4,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:f1:03:e6:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/ethernet_switch.svg",
+        "template_id": null,
+        "width": 72,
+        "x": -1010,
+        "y": 40,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 32,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "SW-HQ-2",
+          "x": 1,
+          "y": -25
+        },
+        "locked": false,
+        "name": "SW-HQ-2",
+        "node_id": "fdc8341f-b45d-4019-9b33-500425ad666d",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 3,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:57:17:ee:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/ethernet_switch.svg",
+        "template_id": null,
+        "width": 72,
+        "x": -770,
+        "y": 40,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 59,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "PC-HQ-ADMIN",
+          "x": -18,
+          "y": -25
+        },
+        "locked": false,
+        "name": "PC-HQ-ADMIN",
+        "node_id": "ab2a5319-75e7-4621-8ae8-e9e31c11cbac",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 1,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:1e:b0:49:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/computer.svg",
+        "template_id": null,
+        "width": 65,
+        "x": -1100,
+        "y": 230,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 59,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "PC-HQ-STAFF",
+          "x": -15,
+          "y": -25
+        },
+        "locked": false,
+        "name": "PC-HQ-STAFF",
+        "node_id": "1243db1d-bfd8-4ea1-b55d-9e8cbbb9c7a3",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 1,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:66:f8:5a:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/computer.svg",
+        "template_id": null,
+        "width": 65,
+        "x": -930,
+        "y": 230,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 59,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "PC-HQ-IT",
+          "x": -2,
+          "y": -25
+        },
+        "locked": false,
+        "name": "PC-HQ-IT",
+        "node_id": "cbfd9fca-41ff-4356-9c73-5485b4316e08",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 1,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:f0:0b:b9:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/computer.svg",
+        "template_id": null,
+        "width": 65,
+        "x": -790,
+        "y": 235,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 45,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "R-B1",
+          "x": 12,
+          "y": -25
+        },
+        "locked": false,
+        "name": "R-B1",
+        "node_id": "d188e179-b3db-429e-8e18-f39c7584d08f",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 2,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:b7:4f:ea:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/router.svg",
+        "template_id": null,
+        "width": 66,
+        "x": -303,
+        "y": -379,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 48,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "MLS-B1",
+          "x": -3,
+          "y": -25
+        },
+        "locked": false,
+        "name": "MLS-B1",
+        "node_id": "eef25d6a-be52-49d3-a0c1-67a8999a0771",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 4,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:ff:f2:e1:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/multilayer_switch.svg",
+        "template_id": null,
+        "width": 51,
+        "x": -300,
+        "y": -180,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 32,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "SW-B1-1",
+          "x": 2,
+          "y": -25
+        },
+        "locked": false,
+        "name": "SW-B1-1",
+        "node_id": "c0d77a0d-862c-449b-a9cb-60eda5187138",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 4,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:61:18:f7:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/ethernet_switch.svg",
+        "template_id": null,
+        "width": 72,
+        "x": -410,
+        "y": 40,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 32,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "SW-B1-2",
+          "x": 2,
+          "y": -25
+        },
+        "locked": false,
+        "name": "SW-B1-2",
+        "node_id": "10c2860d-1d84-4ebf-8615-1ec803f3740d",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 2,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:c5:61:29:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/ethernet_switch.svg",
+        "template_id": null,
+        "width": 72,
+        "x": -170,
+        "y": 40,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 59,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "PC-B1-ADMIN",
+          "x": -17,
+          "y": -25
+        },
+        "locked": false,
+        "name": "PC-B1-ADMIN",
+        "node_id": "e13b4ded-e991-4af7-8f89-a65640cb6288",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 1,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:17:14:ca:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/computer.svg",
+        "template_id": null,
+        "width": 65,
+        "x": -500,
+        "y": 230,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 59,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "PC-B1-STAFF",
+          "x": -14,
+          "y": -25
+        },
+        "locked": false,
+        "name": "PC-B1-STAFF",
+        "node_id": "3ebe686c-5fba-400c-9477-93764dcddfa0",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 1,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:09:c0:c8:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/computer.svg",
+        "template_id": null,
+        "width": 65,
+        "x": -330,
+        "y": 230,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 59,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "PC-B1-IT",
+          "x": -1,
+          "y": -25
+        },
+        "locked": false,
+        "name": "PC-B1-IT",
+        "node_id": "5931d23f-9d6a-4f0e-9cee-ce34475fc6d4",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 1,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:7f:ee:08:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/computer.svg",
+        "template_id": null,
+        "width": 65,
+        "x": -140,
+        "y": 230,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 45,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "R-B2",
+          "x": 12,
+          "y": -25
+        },
+        "locked": false,
+        "name": "R-B2",
+        "node_id": "17458ef9-b374-40a0-8a39-2c77de794188",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 2,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:8d:65:f5:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/router.svg",
+        "template_id": null,
+        "width": 66,
+        "x": 300,
+        "y": -380,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 48,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "MLS-B2",
+          "x": -3,
+          "y": -25
+        },
+        "locked": false,
+        "name": "MLS-B2",
+        "node_id": "eb823865-4a8a-4628-b5b9-c5460427cab9",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 4,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:ba:3a:4a:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/multilayer_switch.svg",
+        "template_id": null,
+        "width": 51,
+        "x": 300,
+        "y": -180,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 32,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "SW-B2-1",
+          "x": 2,
+          "y": -25
+        },
+        "locked": false,
+        "name": "SW-B2-1",
+        "node_id": "79693b3b-4a26-45bf-a1fd-126cbaffd72e",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 4,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:2c:45:36:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/ethernet_switch.svg",
+        "template_id": null,
+        "width": 72,
+        "x": 190,
+        "y": 40,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 32,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "SW-B2-2",
+          "x": 2,
+          "y": -25
+        },
+        "locked": false,
+        "name": "SW-B2-2",
+        "node_id": "35038d47-048b-47b5-9ed8-4d9e94d4e84c",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 2,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:53:ea:18:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/ethernet_switch.svg",
+        "template_id": null,
+        "width": 72,
+        "x": 430,
+        "y": 40,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 59,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "PC-B2-ADMIN",
+          "x": -17,
+          "y": -25
+        },
+        "locked": false,
+        "name": "PC-B2-ADMIN",
+        "node_id": "df21ce7b-2d3c-4cd5-9303-f568630edf24",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 1,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:97:5a:a1:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/computer.svg",
+        "template_id": null,
+        "width": 65,
+        "x": 100,
+        "y": 230,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 59,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "PC-B2-STAFF",
+          "x": -14,
+          "y": -25
+        },
+        "locked": false,
+        "name": "PC-B2-STAFF",
+        "node_id": "dd101bb0-8e8c-4c6a-a17f-d81dca3a6bff",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 1,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:9c:e0:e6:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/computer.svg",
+        "template_id": null,
+        "width": 65,
+        "x": 270,
+        "y": 230,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 59,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "PC-B2-IT",
+          "x": -1,
+          "y": -25
+        },
+        "locked": false,
+        "name": "PC-B2-IT",
+        "node_id": "fdcd0015-2667-47cc-8b3f-2420300e0573",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 1,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:67:7b:18:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/computer.svg",
+        "template_id": null,
+        "width": 65,
+        "x": 460,
+        "y": 230,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 45,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "R-B3",
+          "x": 12,
+          "y": -25
+        },
+        "locked": false,
+        "name": "R-B3",
+        "node_id": "07d8948f-ff33-4292-bd86-e9bdcfaa82ba",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 2,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:23:4a:84:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/router.svg",
+        "template_id": null,
+        "width": 66,
+        "x": 900,
+        "y": -380,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 48,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "MLS-B3",
+          "x": -3,
+          "y": -25
+        },
+        "locked": false,
+        "name": "MLS-B3",
+        "node_id": "71a6ea8e-2fc5-474d-9fb3-7f63a965fef8",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 4,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:51:84:1f:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/multilayer_switch.svg",
+        "template_id": null,
+        "width": 51,
+        "x": 900,
+        "y": -180,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 32,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "SW-B3-1",
+          "x": 2,
+          "y": -25
+        },
+        "locked": false,
+        "name": "SW-B3-1",
+        "node_id": "fbf5694e-d5e8-445d-afa7-d5503f01521e",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 4,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:13:be:e0:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/ethernet_switch.svg",
+        "template_id": null,
+        "width": 72,
+        "x": 790,
+        "y": 40,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 32,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "SW-B3-2",
+          "x": 2,
+          "y": -25
+        },
+        "locked": false,
+        "name": "SW-B3-2",
+        "node_id": "f76607fe-7f67-469a-aedb-bfea682febf2",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 2,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:b0:de:37:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/ethernet_switch.svg",
+        "template_id": null,
+        "width": 72,
+        "x": 1030,
+        "y": 40,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 59,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "PC-B3-ADMIN",
+          "x": -17,
+          "y": -25
+        },
+        "locked": false,
+        "name": "PC-B3-ADMIN",
+        "node_id": "5b60488c-9a35-493a-9b26-ec58b5c46a58",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 1,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:8a:d1:bc:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/computer.svg",
+        "template_id": null,
+        "width": 65,
+        "x": 700,
+        "y": 230,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 59,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "PC-B3-STAFF",
+          "x": -14,
+          "y": -25
+        },
+        "locked": false,
+        "name": "PC-B3-STAFF",
+        "node_id": "48c53875-20ec-45e0-b77d-677371c96c79",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 1,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:c1:72:1a:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/computer.svg",
+        "template_id": null,
+        "width": 65,
+        "x": 870,
+        "y": 230,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 59,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "PC-B3-IT",
+          "x": -1,
+          "y": -25
+        },
+        "locked": false,
+        "name": "PC-B3-IT",
+        "node_id": "4c43c3b1-5c88-4eb2-bff4-a709384df8db",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 1,
+          "extra_volumes": [
+            "/etc/fyp"
+          ],
+          "mac_address": "02:42:6c:9f:9a:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-network-node:1.0"
+        },
+        "symbol": ":/symbols/computer.svg",
+        "template_id": null,
+        "width": 65,
+        "x": 1060,
+        "y": 230,
+        "z": 1
+      },
+      {
+        "compute_id": "vm",
+        "console": null,
+        "console_auto_start": false,
+        "console_type": "telnet",
+        "custom_adapters": [],
+        "first_port_name": null,
+        "height": 70,
+        "label": {
+          "rotation": 0,
+          "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+          "text": "MON-HQ",
+          "x": -8,
+          "y": -25
+        },
+        "locked": false,
+        "name": "MON-HQ",
+        "node_id": "8d7f78b9-3843-4489-ae3b-b0c4c1c8d90c",
+        "node_type": "docker",
+        "port_name_format": "Ethernet{0}",
+        "port_segment_size": 0,
+        "properties": {
+          "adapters": 1,
+          "extra_volumes": [
+            "/etc/fyp",
+            "/var/log/fyp",
+            "/var/lib/postgresql/fyp",
+            "/opt/copilot"
+          ],
+          "mac_address": "02:42:0b:70:d7:00",
+          "start_command": "/bin/bash -c 'if test -f /etc/fyp/node.sh; then /bin/bash /etc/fyp/node.sh >> /etc/fyp/boot.log 2>&1; fi; exec /bin/bash'",
+          "image": "fyp-monitor:1.0"
+        },
+        "symbol": ":/symbols/server.svg",
+        "template_id": null,
+        "width": 49,
+        "x": -683,
+        "y": 318,
+        "z": 1
+      }
+    ]
+  },
+  "type": "topology",
+  "variables": [],
+  "version": "2.2.61",
+  "zoom": 35
+}

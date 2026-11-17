@@ -1,0 +1,4596 @@
+{
+  "schema_version": "week2.1",
+  "as_of": "2026-11-16 22:37:07.624838+00:00",
+  "source": "postgresql_repeatable_read",
+  "devices": [
+    {
+      "device_id": "MLS-B1",
+      "hostname": "MLS-B1",
+      "site": "B1",
+      "role": "mls",
+      "management_ip": "192.168.130.1",
+      "aliases": [
+        "10.11.0.2",
+        "192.168.110.1",
+        "192.168.120.1",
+        "192.168.130.1"
+      ],
+      "monitored": true,
+      "metadata": {
+        "x": -300,
+        "y": -180,
+        "name": "MLS-B1",
+        "role": "mls",
+        "site": "B1",
+        "adapters": 4,
+        "management_ip": "192.168.130.1"
+      }
+    },
+    {
+      "device_id": "MLS-B2",
+      "hostname": "MLS-B2",
+      "site": "B2",
+      "role": "mls",
+      "management_ip": "192.168.230.1",
+      "aliases": [
+        "10.12.0.2",
+        "192.168.210.1",
+        "192.168.220.1",
+        "192.168.230.1"
+      ],
+      "monitored": true,
+      "metadata": {
+        "x": 300,
+        "y": -180,
+        "name": "MLS-B2",
+        "role": "mls",
+        "site": "B2",
+        "adapters": 4,
+        "management_ip": "192.168.230.1"
+      }
+    },
+    {
+      "device_id": "MLS-B3",
+      "hostname": "MLS-B3",
+      "site": "B3",
+      "role": "mls",
+      "management_ip": "192.168.33.1",
+      "aliases": [
+        "10.13.0.2",
+        "192.168.31.1",
+        "192.168.32.1",
+        "192.168.33.1"
+      ],
+      "monitored": true,
+      "metadata": {
+        "x": 900,
+        "y": -180,
+        "name": "MLS-B3",
+        "role": "mls",
+        "site": "B3",
+        "adapters": 4,
+        "management_ip": "192.168.33.1"
+      }
+    },
+    {
+      "device_id": "MLS-HQ",
+      "hostname": "MLS-HQ",
+      "site": "HQ",
+      "role": "mls",
+      "management_ip": "192.168.30.1",
+      "aliases": [
+        "10.10.0.2",
+        "192.168.10.1",
+        "192.168.20.1",
+        "192.168.30.1"
+      ],
+      "monitored": true,
+      "metadata": {
+        "x": -900,
+        "y": -180,
+        "name": "MLS-HQ",
+        "role": "mls",
+        "site": "HQ",
+        "adapters": 4,
+        "management_ip": "192.168.30.1"
+      }
+    },
+    {
+      "device_id": "MON-HQ",
+      "hostname": "MON-HQ",
+      "site": "HQ",
+      "role": "monitor",
+      "management_ip": "192.168.30.10",
+      "aliases": [
+        "192.168.30.10"
+      ],
+      "monitored": false,
+      "metadata": {
+        "x": -650,
+        "y": 350,
+        "name": "MON-HQ",
+        "role": "monitor",
+        "site": "HQ",
+        "image": "fyp-monitor:week1",
+        "gateway": "192.168.30.1",
+        "adapters": 1,
+        "management_ip": "192.168.30.10"
+      }
+    },
+    {
+      "device_id": "PC-B1-ADMIN",
+      "hostname": "PC-B1-ADMIN",
+      "site": "B1",
+      "role": "host",
+      "management_ip": "192.168.110.101",
+      "aliases": [
+        "192.168.110.101"
+      ],
+      "monitored": false,
+      "metadata": {
+        "x": -500,
+        "y": 230,
+        "name": "PC-B1-ADMIN",
+        "role": "host",
+        "site": "B1",
+        "vlan": 10,
+        "gateway": "192.168.110.1",
+        "adapters": 1,
+        "expected_ip": "192.168.110.101"
+      }
+    },
+    {
+      "device_id": "PC-B1-IT",
+      "hostname": "PC-B1-IT",
+      "site": "B1",
+      "role": "host",
+      "management_ip": "192.168.130.101",
+      "aliases": [
+        "192.168.130.101"
+      ],
+      "monitored": false,
+      "metadata": {
+        "x": -140,
+        "y": 230,
+        "name": "PC-B1-IT",
+        "role": "host",
+        "site": "B1",
+        "vlan": 30,
+        "gateway": "192.168.130.1",
+        "adapters": 1,
+        "expected_ip": "192.168.130.101"
+      }
+    },
+    {
+      "device_id": "PC-B1-STAFF",
+      "hostname": "PC-B1-STAFF",
+      "site": "B1",
+      "role": "host",
+      "management_ip": "192.168.120.101",
+      "aliases": [
+        "192.168.120.101"
+      ],
+      "monitored": false,
+      "metadata": {
+        "x": -330,
+        "y": 230,
+        "name": "PC-B1-STAFF",
+        "role": "host",
+        "site": "B1",
+        "vlan": 20,
+        "gateway": "192.168.120.1",
+        "adapters": 1,
+        "expected_ip": "192.168.120.101"
+      }
+    },
+    {
+      "device_id": "PC-B2-ADMIN",
+      "hostname": "PC-B2-ADMIN",
+      "site": "B2",
+      "role": "host",
+      "management_ip": "192.168.210.101",
+      "aliases": [
+        "192.168.210.101"
+      ],
+      "monitored": false,
+      "metadata": {
+        "x": 100,
+        "y": 230,
+        "name": "PC-B2-ADMIN",
+        "role": "host",
+        "site": "B2",
+        "vlan": 10,
+        "gateway": "192.168.210.1",
+        "adapters": 1,
+        "expected_ip": "192.168.210.101"
+      }
+    },
+    {
+      "device_id": "PC-B2-IT",
+      "hostname": "PC-B2-IT",
+      "site": "B2",
+      "role": "host",
+      "management_ip": "192.168.230.101",
+      "aliases": [
+        "192.168.230.101"
+      ],
+      "monitored": false,
+      "metadata": {
+        "x": 460,
+        "y": 230,
+        "name": "PC-B2-IT",
+        "role": "host",
+        "site": "B2",
+        "vlan": 30,
+        "gateway": "192.168.230.1",
+        "adapters": 1,
+        "expected_ip": "192.168.230.101"
+      }
+    },
+    {
+      "device_id": "PC-B2-STAFF",
+      "hostname": "PC-B2-STAFF",
+      "site": "B2",
+      "role": "host",
+      "management_ip": "192.168.220.101",
+      "aliases": [
+        "192.168.220.101"
+      ],
+      "monitored": false,
+      "metadata": {
+        "x": 270,
+        "y": 230,
+        "name": "PC-B2-STAFF",
+        "role": "host",
+        "site": "B2",
+        "vlan": 20,
+        "gateway": "192.168.220.1",
+        "adapters": 1,
+        "expected_ip": "192.168.220.101"
+      }
+    },
+    {
+      "device_id": "PC-B3-ADMIN",
+      "hostname": "PC-B3-ADMIN",
+      "site": "B3",
+      "role": "host",
+      "management_ip": "192.168.31.101",
+      "aliases": [
+        "192.168.31.101"
+      ],
+      "monitored": false,
+      "metadata": {
+        "x": 700,
+        "y": 230,
+        "name": "PC-B3-ADMIN",
+        "role": "host",
+        "site": "B3",
+        "vlan": 10,
+        "gateway": "192.168.31.1",
+        "adapters": 1,
+        "expected_ip": "192.168.31.101"
+      }
+    },
+    {
+      "device_id": "PC-B3-IT",
+      "hostname": "PC-B3-IT",
+      "site": "B3",
+      "role": "host",
+      "management_ip": "192.168.33.101",
+      "aliases": [
+        "192.168.33.101"
+      ],
+      "monitored": false,
+      "metadata": {
+        "x": 1060,
+        "y": 230,
+        "name": "PC-B3-IT",
+        "role": "host",
+        "site": "B3",
+        "vlan": 30,
+        "gateway": "192.168.33.1",
+        "adapters": 1,
+        "expected_ip": "192.168.33.101"
+      }
+    },
+    {
+      "device_id": "PC-B3-STAFF",
+      "hostname": "PC-B3-STAFF",
+      "site": "B3",
+      "role": "host",
+      "management_ip": "192.168.32.101",
+      "aliases": [
+        "192.168.32.101"
+      ],
+      "monitored": false,
+      "metadata": {
+        "x": 870,
+        "y": 230,
+        "name": "PC-B3-STAFF",
+        "role": "host",
+        "site": "B3",
+        "vlan": 20,
+        "gateway": "192.168.32.1",
+        "adapters": 1,
+        "expected_ip": "192.168.32.101"
+      }
+    },
+    {
+      "device_id": "PC-HQ-ADMIN",
+      "hostname": "PC-HQ-ADMIN",
+      "site": "HQ",
+      "role": "host",
+      "management_ip": "192.168.10.101",
+      "aliases": [
+        "192.168.10.101"
+      ],
+      "monitored": false,
+      "metadata": {
+        "x": -1100,
+        "y": 230,
+        "name": "PC-HQ-ADMIN",
+        "role": "host",
+        "site": "HQ",
+        "vlan": 10,
+        "gateway": "192.168.10.1",
+        "adapters": 1,
+        "expected_ip": "192.168.10.101"
+      }
+    },
+    {
+      "device_id": "PC-HQ-IT",
+      "hostname": "PC-HQ-IT",
+      "site": "HQ",
+      "role": "host",
+      "management_ip": "192.168.30.101",
+      "aliases": [
+        "192.168.30.101"
+      ],
+      "monitored": false,
+      "metadata": {
+        "x": -740,
+        "y": 230,
+        "name": "PC-HQ-IT",
+        "role": "host",
+        "site": "HQ",
+        "vlan": 30,
+        "gateway": "192.168.30.1",
+        "adapters": 1,
+        "expected_ip": "192.168.30.101"
+      }
+    },
+    {
+      "device_id": "PC-HQ-STAFF",
+      "hostname": "PC-HQ-STAFF",
+      "site": "HQ",
+      "role": "host",
+      "management_ip": "192.168.20.101",
+      "aliases": [
+        "192.168.20.101"
+      ],
+      "monitored": false,
+      "metadata": {
+        "x": -930,
+        "y": 230,
+        "name": "PC-HQ-STAFF",
+        "role": "host",
+        "site": "HQ",
+        "vlan": 20,
+        "gateway": "192.168.20.1",
+        "adapters": 1,
+        "expected_ip": "192.168.20.101"
+      }
+    },
+    {
+      "device_id": "R-B1",
+      "hostname": "R-B1",
+      "site": "B1",
+      "role": "router",
+      "management_ip": "10.0.0.2",
+      "aliases": [
+        "10.0.0.2",
+        "10.11.0.1"
+      ],
+      "monitored": true,
+      "metadata": {
+        "x": -300,
+        "y": -380,
+        "name": "R-B1",
+        "role": "router",
+        "site": "B1",
+        "adapters": 2,
+        "management_ip": "10.0.0.2"
+      }
+    },
+    {
+      "device_id": "R-B2",
+      "hostname": "R-B2",
+      "site": "B2",
+      "role": "router",
+      "management_ip": "10.0.0.3",
+      "aliases": [
+        "10.0.0.3",
+        "10.12.0.1"
+      ],
+      "monitored": true,
+      "metadata": {
+        "x": 300,
+        "y": -380,
+        "name": "R-B2",
+        "role": "router",
+        "site": "B2",
+        "adapters": 2,
+        "management_ip": "10.0.0.3"
+      }
+    },
+    {
+      "device_id": "R-B3",
+      "hostname": "R-B3",
+      "site": "B3",
+      "role": "router",
+      "management_ip": "10.0.0.4",
+      "aliases": [
+        "10.0.0.4",
+        "10.13.0.1"
+      ],
+      "monitored": true,
+      "metadata": {
+        "x": 900,
+        "y": -380,
+        "name": "R-B3",
+        "role": "router",
+        "site": "B3",
+        "adapters": 2,
+        "management_ip": "10.0.0.4"
+      }
+    },
+    {
+      "device_id": "R-HQ",
+      "hostname": "R-HQ",
+      "site": "HQ",
+      "role": "router",
+      "management_ip": "10.0.0.1",
+      "aliases": [
+        "10.0.0.1",
+        "10.10.0.1"
+      ],
+      "monitored": true,
+      "metadata": {
+        "x": -900,
+        "y": -380,
+        "name": "R-HQ",
+        "role": "router",
+        "site": "HQ",
+        "adapters": 2,
+        "management_ip": "10.0.0.1"
+      }
+    },
+    {
+      "device_id": "SW-B1-1",
+      "hostname": "SW-B1-1",
+      "site": "B1",
+      "role": "access1",
+      "management_ip": "192.168.130.2",
+      "aliases": [
+        "192.168.130.2"
+      ],
+      "monitored": true,
+      "metadata": {
+        "x": -410,
+        "y": 40,
+        "name": "SW-B1-1",
+        "role": "access1",
+        "site": "B1",
+        "adapters": 4,
+        "management_ip": "192.168.130.2"
+      }
+    },
+    {
+      "device_id": "SW-B1-2",
+      "hostname": "SW-B1-2",
+      "site": "B1",
+      "role": "access2",
+      "management_ip": "192.168.130.3",
+      "aliases": [
+        "192.168.130.3"
+      ],
+      "monitored": true,
+      "metadata": {
+        "x": -170,
+        "y": 40,
+        "name": "SW-B1-2",
+        "role": "access2",
+        "site": "B1",
+        "adapters": 2,
+        "management_ip": "192.168.130.3"
+      }
+    },
+    {
+      "device_id": "SW-B2-1",
+      "hostname": "SW-B2-1",
+      "site": "B2",
+      "role": "access1",
+      "management_ip": "192.168.230.2",
+      "aliases": [
+        "192.168.230.2"
+      ],
+      "monitored": true,
+      "metadata": {
+        "x": 190,
+        "y": 40,
+        "name": "SW-B2-1",
+        "role": "access1",
+        "site": "B2",
+        "adapters": 4,
+        "management_ip": "192.168.230.2"
+      }
+    },
+    {
+      "device_id": "SW-B2-2",
+      "hostname": "SW-B2-2",
+      "site": "B2",
+      "role": "access2",
+      "management_ip": "192.168.230.3",
+      "aliases": [
+        "192.168.230.3"
+      ],
+      "monitored": true,
+      "metadata": {
+        "x": 430,
+        "y": 40,
+        "name": "SW-B2-2",
+        "role": "access2",
+        "site": "B2",
+        "adapters": 2,
+        "management_ip": "192.168.230.3"
+      }
+    },
+    {
+      "device_id": "SW-B3-1",
+      "hostname": "SW-B3-1",
+      "site": "B3",
+      "role": "access1",
+      "management_ip": "192.168.33.2",
+      "aliases": [
+        "192.168.33.2"
+      ],
+      "monitored": true,
+      "metadata": {
+        "x": 790,
+        "y": 40,
+        "name": "SW-B3-1",
+        "role": "access1",
+        "site": "B3",
+        "adapters": 4,
+        "management_ip": "192.168.33.2"
+      }
+    },
+    {
+      "device_id": "SW-B3-2",
+      "hostname": "SW-B3-2",
+      "site": "B3",
+      "role": "access2",
+      "management_ip": "192.168.33.3",
+      "aliases": [
+        "192.168.33.3"
+      ],
+      "monitored": true,
+      "metadata": {
+        "x": 1030,
+        "y": 40,
+        "name": "SW-B3-2",
+        "role": "access2",
+        "site": "B3",
+        "adapters": 2,
+        "management_ip": "192.168.33.3"
+      }
+    },
+    {
+      "device_id": "SW-HQ-1",
+      "hostname": "SW-HQ-1",
+      "site": "HQ",
+      "role": "access1",
+      "management_ip": "192.168.30.2",
+      "aliases": [
+        "192.168.30.2"
+      ],
+      "monitored": true,
+      "metadata": {
+        "x": -1010,
+        "y": 40,
+        "name": "SW-HQ-1",
+        "role": "access1",
+        "site": "HQ",
+        "adapters": 4,
+        "management_ip": "192.168.30.2"
+      }
+    },
+    {
+      "device_id": "SW-HQ-2",
+      "hostname": "SW-HQ-2",
+      "site": "HQ",
+      "role": "access2",
+      "management_ip": "192.168.30.3",
+      "aliases": [
+        "192.168.30.3"
+      ],
+      "monitored": true,
+      "metadata": {
+        "x": -770,
+        "y": 40,
+        "name": "SW-HQ-2",
+        "role": "access2",
+        "site": "HQ",
+        "adapters": 3,
+        "management_ip": "192.168.30.3"
+      }
+    },
+    {
+      "device_id": "SW-WAN",
+      "hostname": "SW-WAN",
+      "site": "WAN",
+      "role": "wan",
+      "management_ip": "10.0.0.254",
+      "aliases": [
+        "10.0.0.254"
+      ],
+      "monitored": true,
+      "metadata": {
+        "x": 0,
+        "y": -550,
+        "name": "SW-WAN",
+        "role": "wan",
+        "gateway": "10.0.0.1",
+        "adapters": 4,
+        "management_ip": "10.0.0.254"
+      }
+    }
+  ],
+  "links": [
+    {
+      "link_id": "01f85dc1-6e2c-5cd0-a5a2-e8cdd0561bb0",
+      "a_device": "MLS-B1",
+      "a_interface": "eth1",
+      "b_device": "SW-B1-1",
+      "b_interface": "eth0",
+      "purpose": "LACP member 1"
+    },
+    {
+      "link_id": "094601d3-7898-5d65-980c-477010c87280",
+      "a_device": "MLS-B2",
+      "a_interface": "eth2",
+      "b_device": "SW-B2-1",
+      "b_interface": "eth1",
+      "purpose": "LACP member 2"
+    },
+    {
+      "link_id": "09659786-65e0-52ef-9f02-73224e99aec4",
+      "a_device": "SW-B1-1",
+      "a_interface": "eth2",
+      "b_device": "PC-B1-ADMIN",
+      "b_interface": "eth0",
+      "purpose": "Access VLAN 10"
+    },
+    {
+      "link_id": "0b6d8ca8-de3d-56fb-a7b6-f432e586a045",
+      "a_device": "SW-B2-1",
+      "a_interface": "eth2",
+      "b_device": "PC-B2-ADMIN",
+      "b_interface": "eth0",
+      "purpose": "Access VLAN 10"
+    },
+    {
+      "link_id": "1f4970e6-b7ee-5ba4-8549-32db24edce7b",
+      "a_device": "R-B2",
+      "a_interface": "eth0",
+      "b_device": "MLS-B2",
+      "b_interface": "eth0",
+      "purpose": "Routed /30 uplink"
+    },
+    {
+      "link_id": "29c0cd79-f62c-5677-b600-3784c3fe0b17",
+      "a_device": "R-B1",
+      "a_interface": "eth0",
+      "b_device": "MLS-B1",
+      "b_interface": "eth0",
+      "purpose": "Routed /30 uplink"
+    },
+    {
+      "link_id": "2ad10a44-737a-538f-a86c-549293791ab3",
+      "a_device": "SW-B3-2",
+      "a_interface": "eth1",
+      "b_device": "PC-B3-IT",
+      "b_interface": "eth0",
+      "purpose": "Access VLAN 30"
+    },
+    {
+      "link_id": "2b42de4c-c8be-5d76-9ce8-fa7c6010b234",
+      "a_device": "R-B2",
+      "a_interface": "eth1",
+      "b_device": "SW-WAN",
+      "b_interface": "eth2",
+      "purpose": "Shared OSPF WAN"
+    },
+    {
+      "link_id": "33e2473c-962a-55de-8acf-390893669f7a",
+      "a_device": "MLS-B2",
+      "a_interface": "eth3",
+      "b_device": "SW-B2-2",
+      "b_interface": "eth0",
+      "purpose": "VLAN trunk 10 20 30"
+    },
+    {
+      "link_id": "52c663eb-67b8-5b44-be79-ffafc828cfa7",
+      "a_device": "MLS-B1",
+      "a_interface": "eth2",
+      "b_device": "SW-B1-1",
+      "b_interface": "eth1",
+      "purpose": "LACP member 2"
+    },
+    {
+      "link_id": "5fba005c-1f3d-5c0c-af8a-daabb294be5f",
+      "a_device": "SW-HQ-2",
+      "a_interface": "eth2",
+      "b_device": "MON-HQ",
+      "b_interface": "eth0",
+      "purpose": "Monitoring server VLAN 30"
+    },
+    {
+      "link_id": "63a46d99-b889-5d52-b407-938bc39e9179",
+      "a_device": "SW-HQ-1",
+      "a_interface": "eth2",
+      "b_device": "PC-HQ-ADMIN",
+      "b_interface": "eth0",
+      "purpose": "Access VLAN 10"
+    },
+    {
+      "link_id": "6b792c94-f23d-5271-9119-a2d41528cdf2",
+      "a_device": "MLS-HQ",
+      "a_interface": "eth2",
+      "b_device": "SW-HQ-1",
+      "b_interface": "eth1",
+      "purpose": "LACP member 2"
+    },
+    {
+      "link_id": "6cf73b04-1336-534f-91c0-2491de0e8820",
+      "a_device": "MLS-B1",
+      "a_interface": "eth3",
+      "b_device": "SW-B1-2",
+      "b_interface": "eth0",
+      "purpose": "VLAN trunk 10 20 30"
+    },
+    {
+      "link_id": "74a5f57e-d07a-5091-9df9-2554455a27fd",
+      "a_device": "R-B3",
+      "a_interface": "eth1",
+      "b_device": "SW-WAN",
+      "b_interface": "eth3",
+      "purpose": "Shared OSPF WAN"
+    },
+    {
+      "link_id": "7e4a5448-a9b7-58b0-ac8e-bcd53064a3ba",
+      "a_device": "SW-B2-1",
+      "a_interface": "eth3",
+      "b_device": "PC-B2-STAFF",
+      "b_interface": "eth0",
+      "purpose": "Access VLAN 20"
+    },
+    {
+      "link_id": "7f57d4c4-83ac-5e47-abfe-95a0adba6ebc",
+      "a_device": "MLS-HQ",
+      "a_interface": "eth3",
+      "b_device": "SW-HQ-2",
+      "b_interface": "eth0",
+      "purpose": "VLAN trunk 10 20 30"
+    },
+    {
+      "link_id": "82bfa6db-6245-5c75-b14a-961ee7754d90",
+      "a_device": "MLS-B3",
+      "a_interface": "eth3",
+      "b_device": "SW-B3-2",
+      "b_interface": "eth0",
+      "purpose": "VLAN trunk 10 20 30"
+    },
+    {
+      "link_id": "87782d03-5a11-546e-9fa4-a50e449b9387",
+      "a_device": "R-B3",
+      "a_interface": "eth0",
+      "b_device": "MLS-B3",
+      "b_interface": "eth0",
+      "purpose": "Routed /30 uplink"
+    },
+    {
+      "link_id": "906f92ca-fa87-52e9-afbc-7eb9304e2a31",
+      "a_device": "SW-HQ-1",
+      "a_interface": "eth3",
+      "b_device": "PC-HQ-STAFF",
+      "b_interface": "eth0",
+      "purpose": "Access VLAN 20"
+    },
+    {
+      "link_id": "95062962-ee66-5c82-957b-a355bb5f93fa",
+      "a_device": "MLS-B3",
+      "a_interface": "eth1",
+      "b_device": "SW-B3-1",
+      "b_interface": "eth0",
+      "purpose": "LACP member 1"
+    },
+    {
+      "link_id": "99e4c910-d109-5f2a-a6f8-45b317cfb885",
+      "a_device": "SW-B1-1",
+      "a_interface": "eth3",
+      "b_device": "PC-B1-STAFF",
+      "b_interface": "eth0",
+      "purpose": "Access VLAN 20"
+    },
+    {
+      "link_id": "99fce1ea-b942-5066-81a6-6d3ca8aced8a",
+      "a_device": "SW-B3-1",
+      "a_interface": "eth3",
+      "b_device": "PC-B3-STAFF",
+      "b_interface": "eth0",
+      "purpose": "Access VLAN 20"
+    },
+    {
+      "link_id": "9f3aa6ba-8f3d-5618-a722-2ecb07710d8a",
+      "a_device": "SW-B2-2",
+      "a_interface": "eth1",
+      "b_device": "PC-B2-IT",
+      "b_interface": "eth0",
+      "purpose": "Access VLAN 30"
+    },
+    {
+      "link_id": "a614db05-f0ad-5336-9cda-be33a4ddd237",
+      "a_device": "MLS-HQ",
+      "a_interface": "eth1",
+      "b_device": "SW-HQ-1",
+      "b_interface": "eth0",
+      "purpose": "LACP member 1"
+    },
+    {
+      "link_id": "ca4aa109-b7a1-5629-b6ab-2d623e6fcf21",
+      "a_device": "MLS-B3",
+      "a_interface": "eth2",
+      "b_device": "SW-B3-1",
+      "b_interface": "eth1",
+      "purpose": "LACP member 2"
+    },
+    {
+      "link_id": "d601e7c0-e4b4-5e37-9019-d24c245a65a2",
+      "a_device": "R-B1",
+      "a_interface": "eth1",
+      "b_device": "SW-WAN",
+      "b_interface": "eth1",
+      "purpose": "Shared OSPF WAN"
+    },
+    {
+      "link_id": "daee3ec2-ad2a-5773-9017-de71953c8c6b",
+      "a_device": "MLS-B2",
+      "a_interface": "eth1",
+      "b_device": "SW-B2-1",
+      "b_interface": "eth0",
+      "purpose": "LACP member 1"
+    },
+    {
+      "link_id": "e37bc087-54ee-55c2-99db-1f3000f9b8a8",
+      "a_device": "R-HQ",
+      "a_interface": "eth0",
+      "b_device": "MLS-HQ",
+      "b_interface": "eth0",
+      "purpose": "Routed /30 uplink"
+    },
+    {
+      "link_id": "e51a4c2b-c823-5dca-84d0-27f5f268ce41",
+      "a_device": "SW-B1-2",
+      "a_interface": "eth1",
+      "b_device": "PC-B1-IT",
+      "b_interface": "eth0",
+      "purpose": "Access VLAN 30"
+    },
+    {
+      "link_id": "e64541ab-14d5-5f98-993d-291e2933ccb0",
+      "a_device": "R-HQ",
+      "a_interface": "eth1",
+      "b_device": "SW-WAN",
+      "b_interface": "eth0",
+      "purpose": "Shared OSPF WAN"
+    },
+    {
+      "link_id": "f1ec7252-8eab-570f-9f60-1cc5efd1e1a6",
+      "a_device": "SW-B3-1",
+      "a_interface": "eth2",
+      "b_device": "PC-B3-ADMIN",
+      "b_interface": "eth0",
+      "purpose": "Access VLAN 10"
+    },
+    {
+      "link_id": "fb3d4d5b-ada8-51f1-9f67-cf07d11962a0",
+      "a_device": "SW-HQ-2",
+      "a_interface": "eth1",
+      "b_device": "PC-HQ-IT",
+      "b_interface": "eth0",
+      "purpose": "Access VLAN 30"
+    }
+  ],
+  "interfaces": [
+    {
+      "interface_id": "MLS-B1:br-lan",
+      "device_id": "MLS-B1",
+      "name": "br-lan",
+      "current_ifindex": 5,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B1:eth0",
+      "device_id": "MLS-B1",
+      "name": "eth0",
+      "current_ifindex": 22,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B1:eth1",
+      "device_id": "MLS-B1",
+      "name": "eth1",
+      "current_ifindex": 23,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B1:eth2",
+      "device_id": "MLS-B1",
+      "name": "eth2",
+      "current_ifindex": 24,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B1:eth3",
+      "device_id": "MLS-B1",
+      "name": "eth3",
+      "current_ifindex": 25,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B1:lo",
+      "device_id": "MLS-B1",
+      "name": "lo",
+      "current_ifindex": 1,
+      "capacity_bps": 10000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B1:ovs-netdev",
+      "device_id": "MLS-B1",
+      "name": "ovs-netdev",
+      "current_ifindex": 4,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B1:vlan10",
+      "device_id": "MLS-B1",
+      "name": "vlan10",
+      "current_ifindex": 6,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B1:vlan20",
+      "device_id": "MLS-B1",
+      "name": "vlan20",
+      "current_ifindex": 7,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B1:vlan30",
+      "device_id": "MLS-B1",
+      "name": "vlan30",
+      "current_ifindex": 8,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B2:br-lan",
+      "device_id": "MLS-B2",
+      "name": "br-lan",
+      "current_ifindex": 5,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B2:eth0",
+      "device_id": "MLS-B2",
+      "name": "eth0",
+      "current_ifindex": 26,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B2:eth1",
+      "device_id": "MLS-B2",
+      "name": "eth1",
+      "current_ifindex": 27,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B2:eth2",
+      "device_id": "MLS-B2",
+      "name": "eth2",
+      "current_ifindex": 28,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B2:eth3",
+      "device_id": "MLS-B2",
+      "name": "eth3",
+      "current_ifindex": 29,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B2:lo",
+      "device_id": "MLS-B2",
+      "name": "lo",
+      "current_ifindex": 1,
+      "capacity_bps": 10000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B2:ovs-netdev",
+      "device_id": "MLS-B2",
+      "name": "ovs-netdev",
+      "current_ifindex": 4,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B2:vlan10",
+      "device_id": "MLS-B2",
+      "name": "vlan10",
+      "current_ifindex": 6,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B2:vlan20",
+      "device_id": "MLS-B2",
+      "name": "vlan20",
+      "current_ifindex": 7,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B2:vlan30",
+      "device_id": "MLS-B2",
+      "name": "vlan30",
+      "current_ifindex": 8,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B3:br-lan",
+      "device_id": "MLS-B3",
+      "name": "br-lan",
+      "current_ifindex": 5,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B3:eth0",
+      "device_id": "MLS-B3",
+      "name": "eth0",
+      "current_ifindex": 30,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B3:eth1",
+      "device_id": "MLS-B3",
+      "name": "eth1",
+      "current_ifindex": 31,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B3:eth2",
+      "device_id": "MLS-B3",
+      "name": "eth2",
+      "current_ifindex": 32,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B3:eth3",
+      "device_id": "MLS-B3",
+      "name": "eth3",
+      "current_ifindex": 33,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B3:lo",
+      "device_id": "MLS-B3",
+      "name": "lo",
+      "current_ifindex": 1,
+      "capacity_bps": 10000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B3:ovs-netdev",
+      "device_id": "MLS-B3",
+      "name": "ovs-netdev",
+      "current_ifindex": 4,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B3:vlan10",
+      "device_id": "MLS-B3",
+      "name": "vlan10",
+      "current_ifindex": 6,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B3:vlan20",
+      "device_id": "MLS-B3",
+      "name": "vlan20",
+      "current_ifindex": 7,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-B3:vlan30",
+      "device_id": "MLS-B3",
+      "name": "vlan30",
+      "current_ifindex": 8,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-HQ:br-lan",
+      "device_id": "MLS-HQ",
+      "name": "br-lan",
+      "current_ifindex": 5,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-HQ:eth0",
+      "device_id": "MLS-HQ",
+      "name": "eth0",
+      "current_ifindex": 18,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-HQ:eth1",
+      "device_id": "MLS-HQ",
+      "name": "eth1",
+      "current_ifindex": 19,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-HQ:eth2",
+      "device_id": "MLS-HQ",
+      "name": "eth2",
+      "current_ifindex": 20,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-HQ:eth3",
+      "device_id": "MLS-HQ",
+      "name": "eth3",
+      "current_ifindex": 21,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-HQ:lo",
+      "device_id": "MLS-HQ",
+      "name": "lo",
+      "current_ifindex": 1,
+      "capacity_bps": 10000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-HQ:ovs-netdev",
+      "device_id": "MLS-HQ",
+      "name": "ovs-netdev",
+      "current_ifindex": 4,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-HQ:vlan10",
+      "device_id": "MLS-HQ",
+      "name": "vlan10",
+      "current_ifindex": 6,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-HQ:vlan20",
+      "device_id": "MLS-HQ",
+      "name": "vlan20",
+      "current_ifindex": 7,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "MLS-HQ:vlan30",
+      "device_id": "MLS-HQ",
+      "name": "vlan30",
+      "current_ifindex": 8,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "R-B1:eth0",
+      "device_id": "R-B1",
+      "name": "eth0",
+      "current_ifindex": 12,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "R-B1:eth1",
+      "device_id": "R-B1",
+      "name": "eth1",
+      "current_ifindex": 13,
+      "capacity_bps": 2000000,
+      "capacity_source": "configured_effective_capacity"
+    },
+    {
+      "interface_id": "R-B1:lo",
+      "device_id": "R-B1",
+      "name": "lo",
+      "current_ifindex": 1,
+      "capacity_bps": 10000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "R-B2:eth0",
+      "device_id": "R-B2",
+      "name": "eth0",
+      "current_ifindex": 14,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "R-B2:eth1",
+      "device_id": "R-B2",
+      "name": "eth1",
+      "current_ifindex": 15,
+      "capacity_bps": 2000000,
+      "capacity_source": "configured_effective_capacity"
+    },
+    {
+      "interface_id": "R-B2:lo",
+      "device_id": "R-B2",
+      "name": "lo",
+      "current_ifindex": 1,
+      "capacity_bps": 10000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "R-B3:eth0",
+      "device_id": "R-B3",
+      "name": "eth0",
+      "current_ifindex": 16,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "R-B3:eth1",
+      "device_id": "R-B3",
+      "name": "eth1",
+      "current_ifindex": 17,
+      "capacity_bps": 2000000,
+      "capacity_source": "configured_effective_capacity"
+    },
+    {
+      "interface_id": "R-B3:lo",
+      "device_id": "R-B3",
+      "name": "lo",
+      "current_ifindex": 1,
+      "capacity_bps": 10000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "R-HQ:eth0",
+      "device_id": "R-HQ",
+      "name": "eth0",
+      "current_ifindex": 10,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "R-HQ:eth1",
+      "device_id": "R-HQ",
+      "name": "eth1",
+      "current_ifindex": 11,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "R-HQ:lo",
+      "device_id": "R-HQ",
+      "name": "lo",
+      "current_ifindex": 1,
+      "capacity_bps": 10000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B1-1:br-lan",
+      "device_id": "SW-B1-1",
+      "name": "br-lan",
+      "current_ifindex": 5,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B1-1:eth0",
+      "device_id": "SW-B1-1",
+      "name": "eth0",
+      "current_ifindex": 41,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B1-1:eth1",
+      "device_id": "SW-B1-1",
+      "name": "eth1",
+      "current_ifindex": 42,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B1-1:eth2",
+      "device_id": "SW-B1-1",
+      "name": "eth2",
+      "current_ifindex": 43,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B1-1:eth3",
+      "device_id": "SW-B1-1",
+      "name": "eth3",
+      "current_ifindex": 44,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B1-1:lo",
+      "device_id": "SW-B1-1",
+      "name": "lo",
+      "current_ifindex": 1,
+      "capacity_bps": 10000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B1-1:ovs-netdev",
+      "device_id": "SW-B1-1",
+      "name": "ovs-netdev",
+      "current_ifindex": 4,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B1-1:vlan30",
+      "device_id": "SW-B1-1",
+      "name": "vlan30",
+      "current_ifindex": 6,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B1-2:br-lan",
+      "device_id": "SW-B1-2",
+      "name": "br-lan",
+      "current_ifindex": 5,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B1-2:eth0",
+      "device_id": "SW-B1-2",
+      "name": "eth0",
+      "current_ifindex": 45,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B1-2:eth1",
+      "device_id": "SW-B1-2",
+      "name": "eth1",
+      "current_ifindex": 46,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B1-2:lo",
+      "device_id": "SW-B1-2",
+      "name": "lo",
+      "current_ifindex": 1,
+      "capacity_bps": 10000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B1-2:ovs-netdev",
+      "device_id": "SW-B1-2",
+      "name": "ovs-netdev",
+      "current_ifindex": 4,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B1-2:vlan30",
+      "device_id": "SW-B1-2",
+      "name": "vlan30",
+      "current_ifindex": 6,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B2-1:br-lan",
+      "device_id": "SW-B2-1",
+      "name": "br-lan",
+      "current_ifindex": 5,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B2-1:eth0",
+      "device_id": "SW-B2-1",
+      "name": "eth0",
+      "current_ifindex": 47,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B2-1:eth1",
+      "device_id": "SW-B2-1",
+      "name": "eth1",
+      "current_ifindex": 48,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B2-1:eth2",
+      "device_id": "SW-B2-1",
+      "name": "eth2",
+      "current_ifindex": 49,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B2-1:eth3",
+      "device_id": "SW-B2-1",
+      "name": "eth3",
+      "current_ifindex": 50,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B2-1:lo",
+      "device_id": "SW-B2-1",
+      "name": "lo",
+      "current_ifindex": 1,
+      "capacity_bps": 10000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B2-1:ovs-netdev",
+      "device_id": "SW-B2-1",
+      "name": "ovs-netdev",
+      "current_ifindex": 4,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B2-1:vlan30",
+      "device_id": "SW-B2-1",
+      "name": "vlan30",
+      "current_ifindex": 6,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B2-2:br-lan",
+      "device_id": "SW-B2-2",
+      "name": "br-lan",
+      "current_ifindex": 5,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B2-2:eth0",
+      "device_id": "SW-B2-2",
+      "name": "eth0",
+      "current_ifindex": 51,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B2-2:eth1",
+      "device_id": "SW-B2-2",
+      "name": "eth1",
+      "current_ifindex": 52,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B2-2:lo",
+      "device_id": "SW-B2-2",
+      "name": "lo",
+      "current_ifindex": 1,
+      "capacity_bps": 10000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B2-2:ovs-netdev",
+      "device_id": "SW-B2-2",
+      "name": "ovs-netdev",
+      "current_ifindex": 4,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B2-2:vlan30",
+      "device_id": "SW-B2-2",
+      "name": "vlan30",
+      "current_ifindex": 6,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B3-1:br-lan",
+      "device_id": "SW-B3-1",
+      "name": "br-lan",
+      "current_ifindex": 5,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B3-1:eth0",
+      "device_id": "SW-B3-1",
+      "name": "eth0",
+      "current_ifindex": 53,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B3-1:eth1",
+      "device_id": "SW-B3-1",
+      "name": "eth1",
+      "current_ifindex": 54,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B3-1:eth2",
+      "device_id": "SW-B3-1",
+      "name": "eth2",
+      "current_ifindex": 55,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B3-1:eth3",
+      "device_id": "SW-B3-1",
+      "name": "eth3",
+      "current_ifindex": 56,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B3-1:lo",
+      "device_id": "SW-B3-1",
+      "name": "lo",
+      "current_ifindex": 1,
+      "capacity_bps": 10000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B3-1:ovs-netdev",
+      "device_id": "SW-B3-1",
+      "name": "ovs-netdev",
+      "current_ifindex": 4,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B3-1:vlan30",
+      "device_id": "SW-B3-1",
+      "name": "vlan30",
+      "current_ifindex": 6,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B3-2:br-lan",
+      "device_id": "SW-B3-2",
+      "name": "br-lan",
+      "current_ifindex": 5,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B3-2:eth0",
+      "device_id": "SW-B3-2",
+      "name": "eth0",
+      "current_ifindex": 57,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B3-2:eth1",
+      "device_id": "SW-B3-2",
+      "name": "eth1",
+      "current_ifindex": 58,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B3-2:lo",
+      "device_id": "SW-B3-2",
+      "name": "lo",
+      "current_ifindex": 1,
+      "capacity_bps": 10000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B3-2:ovs-netdev",
+      "device_id": "SW-B3-2",
+      "name": "ovs-netdev",
+      "current_ifindex": 4,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-B3-2:vlan30",
+      "device_id": "SW-B3-2",
+      "name": "vlan30",
+      "current_ifindex": 6,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-HQ-1:br-lan",
+      "device_id": "SW-HQ-1",
+      "name": "br-lan",
+      "current_ifindex": 5,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-HQ-1:eth0",
+      "device_id": "SW-HQ-1",
+      "name": "eth0",
+      "current_ifindex": 34,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-HQ-1:eth1",
+      "device_id": "SW-HQ-1",
+      "name": "eth1",
+      "current_ifindex": 35,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-HQ-1:eth2",
+      "device_id": "SW-HQ-1",
+      "name": "eth2",
+      "current_ifindex": 36,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-HQ-1:eth3",
+      "device_id": "SW-HQ-1",
+      "name": "eth3",
+      "current_ifindex": 37,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-HQ-1:lo",
+      "device_id": "SW-HQ-1",
+      "name": "lo",
+      "current_ifindex": 1,
+      "capacity_bps": 10000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-HQ-1:ovs-netdev",
+      "device_id": "SW-HQ-1",
+      "name": "ovs-netdev",
+      "current_ifindex": 4,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-HQ-1:vlan30",
+      "device_id": "SW-HQ-1",
+      "name": "vlan30",
+      "current_ifindex": 6,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-HQ-2:br-lan",
+      "device_id": "SW-HQ-2",
+      "name": "br-lan",
+      "current_ifindex": 5,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-HQ-2:eth0",
+      "device_id": "SW-HQ-2",
+      "name": "eth0",
+      "current_ifindex": 38,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-HQ-2:eth1",
+      "device_id": "SW-HQ-2",
+      "name": "eth1",
+      "current_ifindex": 39,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-HQ-2:eth2",
+      "device_id": "SW-HQ-2",
+      "name": "eth2",
+      "current_ifindex": 40,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-HQ-2:lo",
+      "device_id": "SW-HQ-2",
+      "name": "lo",
+      "current_ifindex": 1,
+      "capacity_bps": 10000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-HQ-2:ovs-netdev",
+      "device_id": "SW-HQ-2",
+      "name": "ovs-netdev",
+      "current_ifindex": 4,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-HQ-2:vlan30",
+      "device_id": "SW-HQ-2",
+      "name": "vlan30",
+      "current_ifindex": 6,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-WAN:br-lan",
+      "device_id": "SW-WAN",
+      "name": "br-lan",
+      "current_ifindex": 5,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-WAN:eth0",
+      "device_id": "SW-WAN",
+      "name": "eth0",
+      "current_ifindex": 6,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-WAN:eth1",
+      "device_id": "SW-WAN",
+      "name": "eth1",
+      "current_ifindex": 7,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-WAN:eth2",
+      "device_id": "SW-WAN",
+      "name": "eth2",
+      "current_ifindex": 8,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-WAN:eth3",
+      "device_id": "SW-WAN",
+      "name": "eth3",
+      "current_ifindex": 9,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-WAN:lo",
+      "device_id": "SW-WAN",
+      "name": "lo",
+      "current_ifindex": 1,
+      "capacity_bps": 10000000,
+      "capacity_source": "snmp"
+    },
+    {
+      "interface_id": "SW-WAN:ovs-netdev",
+      "device_id": "SW-WAN",
+      "name": "ovs-netdev",
+      "current_ifindex": 4,
+      "capacity_bps": 10000000000,
+      "capacity_source": "snmp"
+    }
+  ],
+  "polls": [
+    {
+      "poll_id": "f35ea6b8-1a66-4405-83d1-1e91eb78d579",
+      "device_id": "MLS-B1",
+      "observed_at": "2026-11-16 22:37:01.708298+00:00",
+      "received_at": "2026-11-16 22:37:01.800240+00:00",
+      "status": "ok",
+      "error": null,
+      "collector_version": "week1.1"
+    },
+    {
+      "poll_id": "63883f43-f646-4e25-86ac-df43c8ad4904",
+      "device_id": "MLS-B2",
+      "observed_at": "2026-11-16 22:37:01.904389+00:00",
+      "received_at": "2026-11-16 22:37:02.039241+00:00",
+      "status": "ok",
+      "error": null,
+      "collector_version": "week1.1"
+    },
+    {
+      "poll_id": "25b16cf7-eb64-400c-86ba-ce89a57d309c",
+      "device_id": "MLS-B3",
+      "observed_at": "2026-11-16 22:37:02.159474+00:00",
+      "received_at": "2026-11-16 22:37:02.394200+00:00",
+      "status": "ok",
+      "error": null,
+      "collector_version": "week1.1"
+    },
+    {
+      "poll_id": "6b9a0096-299c-431f-b08e-ebd6e6b94646",
+      "device_id": "MLS-HQ",
+      "observed_at": "2026-11-16 22:37:01.551768+00:00",
+      "received_at": "2026-11-16 22:37:01.624894+00:00",
+      "status": "ok",
+      "error": null,
+      "collector_version": "week1.1"
+    },
+    {
+      "poll_id": "439a59f5-6c49-4577-a725-adea962bff28",
+      "device_id": "R-B1",
+      "observed_at": "2026-11-16 22:37:01.655564+00:00",
+      "received_at": "2026-11-16 22:37:01.701473+00:00",
+      "status": "ok",
+      "error": null,
+      "collector_version": "week1.1"
+    },
+    {
+      "poll_id": "23a2b1ee-fa50-4711-9def-5e7810a6453a",
+      "device_id": "R-B2",
+      "observed_at": "2026-11-16 22:37:01.821841+00:00",
+      "received_at": "2026-11-16 22:37:01.891530+00:00",
+      "status": "ok",
+      "error": null,
+      "collector_version": "week1.1"
+    },
+    {
+      "poll_id": "233c71f8-48ae-4eb9-b3a4-f08d145d6368",
+      "device_id": "R-B3",
+      "observed_at": "2026-11-16 22:37:02.094165+00:00",
+      "received_at": "2026-11-16 22:37:02.151905+00:00",
+      "status": "ok",
+      "error": null,
+      "collector_version": "week1.1"
+    },
+    {
+      "poll_id": "55a70160-c353-4aef-8ebb-d4d0bd61cbca",
+      "device_id": "R-HQ",
+      "observed_at": "2026-11-16 22:37:01.492294+00:00",
+      "received_at": "2026-11-16 22:37:01.540421+00:00",
+      "status": "ok",
+      "error": null,
+      "collector_version": "week1.1"
+    },
+    {
+      "poll_id": "7254209e-54d3-4926-9d27-2a4f3a763c9b",
+      "device_id": "SW-B1-1",
+      "observed_at": "2026-11-16 22:37:01.712867+00:00",
+      "received_at": "2026-11-16 22:37:01.805798+00:00",
+      "status": "ok",
+      "error": null,
+      "collector_version": "week1.1"
+    },
+    {
+      "poll_id": "6a06dd81-beb3-4d21-9f98-004c9837afaf",
+      "device_id": "SW-B1-2",
+      "observed_at": "2026-11-16 22:37:01.813902+00:00",
+      "received_at": "2026-11-16 22:37:01.922442+00:00",
+      "status": "ok",
+      "error": null,
+      "collector_version": "week1.1"
+    },
+    {
+      "poll_id": "2ab48199-8dcb-4345-b9f7-e05a62978694",
+      "device_id": "SW-B2-1",
+      "observed_at": "2026-11-16 22:37:01.934087+00:00",
+      "received_at": "2026-11-16 22:37:02.081655+00:00",
+      "status": "ok",
+      "error": null,
+      "collector_version": "week1.1"
+    },
+    {
+      "poll_id": "42a22201-0562-419c-9bd4-8e62fcc3f86c",
+      "device_id": "SW-B2-2",
+      "observed_at": "2026-11-16 22:37:02.071079+00:00",
+      "received_at": "2026-11-16 22:37:02.158418+00:00",
+      "status": "ok",
+      "error": null,
+      "collector_version": "week1.1"
+    },
+    {
+      "poll_id": "caab5cac-8769-4687-8285-fb5736dd64a4",
+      "device_id": "SW-B3-1",
+      "observed_at": "2026-11-16 22:37:02.195686+00:00",
+      "received_at": "2026-11-16 22:37:02.458189+00:00",
+      "status": "ok",
+      "error": null,
+      "collector_version": "week1.1"
+    },
+    {
+      "poll_id": "eeae9a3a-aadd-4de8-8068-34693e5a49b3",
+      "device_id": "SW-B3-2",
+      "observed_at": "2026-11-16 22:37:02.456353+00:00",
+      "received_at": "2026-11-16 22:37:02.548561+00:00",
+      "status": "ok",
+      "error": null,
+      "collector_version": "week1.1"
+    },
+    {
+      "poll_id": "4da06650-a4c7-43d5-b7fa-9f5b083b6ead",
+      "device_id": "SW-HQ-1",
+      "observed_at": "2026-11-16 22:37:01.571194+00:00",
+      "received_at": "2026-11-16 22:37:01.641600+00:00",
+      "status": "ok",
+      "error": null,
+      "collector_version": "week1.1"
+    },
+    {
+      "poll_id": "fddb5f24-6c6f-42a0-b735-dbed6f3ea947",
+      "device_id": "SW-HQ-2",
+      "observed_at": "2026-11-16 22:37:01.642916+00:00",
+      "received_at": "2026-11-16 22:37:01.698847+00:00",
+      "status": "ok",
+      "error": null,
+      "collector_version": "week1.1"
+    },
+    {
+      "poll_id": "8b730043-e2f3-445f-95f9-c4a334052064",
+      "device_id": "SW-WAN",
+      "observed_at": "2026-11-16 22:37:01.490495+00:00",
+      "received_at": "2026-11-16 22:37:01.558496+00:00",
+      "status": "ok",
+      "error": null,
+      "collector_version": "week1.1"
+    }
+  ],
+  "samples": [],
+  "probes": [
+    {
+      "probe_id": "b5f2d75f-9fd9-4941-9757-53114b219328",
+      "device_id": "MLS-B1",
+      "observed_at": "2026-11-16 22:37:05.387926+00:00",
+      "received_at": "2026-11-16 22:37:05.400067+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.76,
+      "raw": "PING 192.168.130.1 (192.168.130.1) 56(84) bytes of data.\n64 bytes from 192.168.130.1: icmp_seq=1 ttl=61 time=1.76 ms\n\n--- 192.168.130.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.761/1.761/1.761/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "05fd10b7-a1ef-407a-8024-fe6c9af95c4d",
+      "device_id": "MLS-B1",
+      "observed_at": "2026-11-16 22:37:01.184691+00:00",
+      "received_at": "2026-11-16 22:37:01.197163+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.33,
+      "raw": "PING 192.168.130.1 (192.168.130.1) 56(84) bytes of data.\n64 bytes from 192.168.130.1: icmp_seq=1 ttl=61 time=2.33 ms\n\n--- 192.168.130.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.333/2.333/2.333/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "07191d34-01c9-4c63-8241-7ddc2905013d",
+      "device_id": "MLS-B1",
+      "observed_at": "2026-11-16 22:36:58.298221+00:00",
+      "received_at": "2026-11-16 22:36:58.361669+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 13.1,
+      "raw": "PING 192.168.130.1 (192.168.130.1) 56(84) bytes of data.\n64 bytes from 192.168.130.1: icmp_seq=1 ttl=61 time=13.1 ms\n\n--- 192.168.130.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 13.133/13.133/13.133/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "74f4b913-774a-4e44-bc1a-15928cd16798",
+      "device_id": "MLS-B1",
+      "observed_at": "2026-11-16 22:36:55.207797+00:00",
+      "received_at": "2026-11-16 22:36:55.224678+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.31,
+      "raw": "PING 192.168.130.1 (192.168.130.1) 56(84) bytes of data.\n64 bytes from 192.168.130.1: icmp_seq=1 ttl=61 time=1.31 ms\n\n--- 192.168.130.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.312/1.312/1.312/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "8e8c7e79-5f4c-441b-8ccf-ba66ff192c91",
+      "device_id": "MLS-B1",
+      "observed_at": "2026-11-16 22:36:52.518878+00:00",
+      "received_at": "2026-11-16 22:36:52.595745+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 4.87,
+      "raw": "PING 192.168.130.1 (192.168.130.1) 56(84) bytes of data.\n64 bytes from 192.168.130.1: icmp_seq=1 ttl=61 time=4.87 ms\n\n--- 192.168.130.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 4.871/4.871/4.871/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "9783fd8f-e6c3-4614-9a20-cd6131eb2ca1",
+      "device_id": "MLS-B1",
+      "observed_at": "2026-11-16 22:36:49.186880+00:00",
+      "received_at": "2026-11-16 22:36:49.198578+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.9,
+      "raw": "PING 192.168.130.1 (192.168.130.1) 56(84) bytes of data.\n64 bytes from 192.168.130.1: icmp_seq=1 ttl=61 time=1.90 ms\n\n--- 192.168.130.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.900/1.900/1.900/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "43a834a6-dd3f-4e9f-8cfe-d754392538b8",
+      "device_id": "MLS-B1",
+      "observed_at": "2026-11-16 22:36:46.187839+00:00",
+      "received_at": "2026-11-16 22:36:46.200615+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.21,
+      "raw": "PING 192.168.130.1 (192.168.130.1) 56(84) bytes of data.\n64 bytes from 192.168.130.1: icmp_seq=1 ttl=61 time=1.21 ms\n\n--- 192.168.130.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.208/1.208/1.208/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "e0caa528-ed68-4587-9983-2527e5b988d9",
+      "device_id": "MLS-B1",
+      "observed_at": "2026-11-16 22:36:43.210194+00:00",
+      "received_at": "2026-11-16 22:36:43.229341+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.45,
+      "raw": "PING 192.168.130.1 (192.168.130.1) 56(84) bytes of data.\n64 bytes from 192.168.130.1: icmp_seq=1 ttl=61 time=1.45 ms\n\n--- 192.168.130.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.447/1.447/1.447/0.000 ms\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "36e4cb64-5533-4a6f-a78b-1e62ff703f91",
+      "device_id": "MLS-B2",
+      "observed_at": "2026-11-16 22:37:05.458526+00:00",
+      "received_at": "2026-11-16 22:37:05.473174+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.3,
+      "raw": "PING 192.168.230.1 (192.168.230.1) 56(84) bytes of data.\n64 bytes from 192.168.230.1: icmp_seq=1 ttl=61 time=2.30 ms\n\n--- 192.168.230.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.301/2.301/2.301/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "8554a4e7-d3f1-43e3-8044-a7413f7f1813",
+      "device_id": "MLS-B2",
+      "observed_at": "2026-11-16 22:37:01.249074+00:00",
+      "received_at": "2026-11-16 22:37:01.263845+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.68,
+      "raw": "PING 192.168.230.1 (192.168.230.1) 56(84) bytes of data.\n64 bytes from 192.168.230.1: icmp_seq=1 ttl=61 time=1.68 ms\n\n--- 192.168.230.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.678/1.678/1.678/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "06f7538a-17e6-4abe-ac93-6ee10f5f2c4f",
+      "device_id": "MLS-B2",
+      "observed_at": "2026-11-16 22:36:58.465453+00:00",
+      "received_at": "2026-11-16 22:36:58.483572+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.87,
+      "raw": "PING 192.168.230.1 (192.168.230.1) 56(84) bytes of data.\n64 bytes from 192.168.230.1: icmp_seq=1 ttl=61 time=1.87 ms\n\n--- 192.168.230.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.874/1.874/1.874/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "9165f5c4-f4a0-476d-ab88-ea1fc7dfd9d5",
+      "device_id": "MLS-B2",
+      "observed_at": "2026-11-16 22:36:55.296381+00:00",
+      "received_at": "2026-11-16 22:36:55.310393+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.33,
+      "raw": "PING 192.168.230.1 (192.168.230.1) 56(84) bytes of data.\n64 bytes from 192.168.230.1: icmp_seq=1 ttl=61 time=2.33 ms\n\n--- 192.168.230.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.327/2.327/2.327/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "58d914cc-46ea-415d-8e77-a95d166536d3",
+      "device_id": "MLS-B2",
+      "observed_at": "2026-11-16 22:36:52.832343+00:00",
+      "received_at": "2026-11-16 22:36:52.878965+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.34,
+      "raw": "PING 192.168.230.1 (192.168.230.1) 56(84) bytes of data.\n64 bytes from 192.168.230.1: icmp_seq=1 ttl=61 time=1.34 ms\n\n--- 192.168.230.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.339/1.339/1.339/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "cf80d541-86dd-4070-b062-3a581c0d3654",
+      "device_id": "MLS-B2",
+      "observed_at": "2026-11-16 22:36:49.257573+00:00",
+      "received_at": "2026-11-16 22:36:49.275221+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.86,
+      "raw": "PING 192.168.230.1 (192.168.230.1) 56(84) bytes of data.\n64 bytes from 192.168.230.1: icmp_seq=1 ttl=61 time=1.86 ms\n\n--- 192.168.230.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.855/1.855/1.855/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "c05d045b-2207-4314-86ff-af99c76d26c8",
+      "device_id": "MLS-B2",
+      "observed_at": "2026-11-16 22:36:46.261935+00:00",
+      "received_at": "2026-11-16 22:36:46.276888+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.11,
+      "raw": "PING 192.168.230.1 (192.168.230.1) 56(84) bytes of data.\n64 bytes from 192.168.230.1: icmp_seq=1 ttl=61 time=2.11 ms\n\n--- 192.168.230.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.110/2.110/2.110/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "255c194f-d2d2-452b-a9b8-566c36fa38e5",
+      "device_id": "MLS-B2",
+      "observed_at": "2026-11-16 22:36:43.307635+00:00",
+      "received_at": "2026-11-16 22:36:43.327760+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.5,
+      "raw": "PING 192.168.230.1 (192.168.230.1) 56(84) bytes of data.\n64 bytes from 192.168.230.1: icmp_seq=1 ttl=61 time=1.50 ms\n\n--- 192.168.230.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.504/1.504/1.504/0.000 ms\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "949aef87-9f92-4ccd-a047-169235f54d53",
+      "device_id": "MLS-B3",
+      "observed_at": "2026-11-16 22:37:05.524428+00:00",
+      "received_at": "2026-11-16 22:37:05.533548+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.55,
+      "raw": "PING 192.168.33.1 (192.168.33.1) 56(84) bytes of data.\n64 bytes from 192.168.33.1: icmp_seq=1 ttl=61 time=1.55 ms\n\n--- 192.168.33.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.554/1.554/1.554/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "71f66a84-e5dd-4f21-a19b-da6c909ffe1a",
+      "device_id": "MLS-B3",
+      "observed_at": "2026-11-16 22:37:01.307656+00:00",
+      "received_at": "2026-11-16 22:37:01.315815+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.09,
+      "raw": "PING 192.168.33.1 (192.168.33.1) 56(84) bytes of data.\n64 bytes from 192.168.33.1: icmp_seq=1 ttl=61 time=1.09 ms\n\n--- 192.168.33.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.093/1.093/1.093/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "9b096880-c58e-45f1-94e4-64e0ad06b323",
+      "device_id": "MLS-B3",
+      "observed_at": "2026-11-16 22:36:58.541613+00:00",
+      "received_at": "2026-11-16 22:36:58.554420+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.04,
+      "raw": "PING 192.168.33.1 (192.168.33.1) 56(84) bytes of data.\n64 bytes from 192.168.33.1: icmp_seq=1 ttl=61 time=2.04 ms\n\n--- 192.168.33.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.038/2.038/2.038/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "67a1aeff-86b4-4dec-8fc2-8f93dbdf60d2",
+      "device_id": "MLS-B3",
+      "observed_at": "2026-11-16 22:36:55.357420+00:00",
+      "received_at": "2026-11-16 22:36:55.366635+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.58,
+      "raw": "PING 192.168.33.1 (192.168.33.1) 56(84) bytes of data.\n64 bytes from 192.168.33.1: icmp_seq=1 ttl=61 time=2.58 ms\n\n--- 192.168.33.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.577/2.577/2.577/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "59eae5b2-03b5-4757-a468-f7b739019880",
+      "device_id": "MLS-B3",
+      "observed_at": "2026-11-16 22:36:53.110182+00:00",
+      "received_at": "2026-11-16 22:36:53.142205+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.05,
+      "raw": "PING 192.168.33.1 (192.168.33.1) 56(84) bytes of data.\n64 bytes from 192.168.33.1: icmp_seq=1 ttl=61 time=3.05 ms\n\n--- 192.168.33.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.053/3.053/3.053/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "3a0616cb-e2ae-4476-82c9-f6aa97c1a242",
+      "device_id": "MLS-B3",
+      "observed_at": "2026-11-16 22:36:49.329257+00:00",
+      "received_at": "2026-11-16 22:36:49.338154+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.46,
+      "raw": "PING 192.168.33.1 (192.168.33.1) 56(84) bytes of data.\n64 bytes from 192.168.33.1: icmp_seq=1 ttl=61 time=1.46 ms\n\n--- 192.168.33.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.458/1.458/1.458/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "9d148b93-dac9-4b67-83e1-b9775313d234",
+      "device_id": "MLS-B3",
+      "observed_at": "2026-11-16 22:36:46.328303+00:00",
+      "received_at": "2026-11-16 22:36:46.337192+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.1,
+      "raw": "PING 192.168.33.1 (192.168.33.1) 56(84) bytes of data.\n64 bytes from 192.168.33.1: icmp_seq=1 ttl=61 time=1.10 ms\n\n--- 192.168.33.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.098/1.098/1.098/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "ee85b5b2-39a2-4958-a298-20b758e08bc1",
+      "device_id": "MLS-B3",
+      "observed_at": "2026-11-16 22:36:43.398936+00:00",
+      "received_at": "2026-11-16 22:36:43.412444+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.63,
+      "raw": "PING 192.168.33.1 (192.168.33.1) 56(84) bytes of data.\n64 bytes from 192.168.33.1: icmp_seq=1 ttl=61 time=2.63 ms\n\n--- 192.168.33.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.626/2.626/2.626/0.000 ms\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "26d42c95-8199-4554-94a6-c0843f6b82c0",
+      "device_id": "MLS-HQ",
+      "observed_at": "2026-11-16 22:37:05.333124+00:00",
+      "received_at": "2026-11-16 22:37:05.346848+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 0.576,
+      "raw": "PING 192.168.30.1 (192.168.30.1) 56(84) bytes of data.\n64 bytes from 192.168.30.1: icmp_seq=1 ttl=64 time=0.576 ms\n\n--- 192.168.30.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.576/0.576/0.576/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "19a32dc5-cf76-4267-bcf5-6d105437de7f",
+      "device_id": "MLS-HQ",
+      "observed_at": "2026-11-16 22:37:01.133754+00:00",
+      "received_at": "2026-11-16 22:37:01.147545+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 0.746,
+      "raw": "PING 192.168.30.1 (192.168.30.1) 56(84) bytes of data.\n64 bytes from 192.168.30.1: icmp_seq=1 ttl=64 time=0.746 ms\n\n--- 192.168.30.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.746/0.746/0.746/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "be139b3c-8b40-414f-96f3-46d1d73e13d4",
+      "device_id": "MLS-HQ",
+      "observed_at": "2026-11-16 22:36:58.147897+00:00",
+      "received_at": "2026-11-16 22:36:58.174589+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.41,
+      "raw": "PING 192.168.30.1 (192.168.30.1) 56(84) bytes of data.\n64 bytes from 192.168.30.1: icmp_seq=1 ttl=64 time=1.41 ms\n\n--- 192.168.30.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.412/1.412/1.412/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "27da4dfc-7293-4a3a-9201-0dd8207f5b00",
+      "device_id": "MLS-HQ",
+      "observed_at": "2026-11-16 22:36:55.140676+00:00",
+      "received_at": "2026-11-16 22:36:55.159660+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 0.701,
+      "raw": "PING 192.168.30.1 (192.168.30.1) 56(84) bytes of data.\n64 bytes from 192.168.30.1: icmp_seq=1 ttl=64 time=0.701 ms\n\n--- 192.168.30.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.701/0.701/0.701/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "f6e12d63-878a-45a3-99d7-b9bdfc175dc3",
+      "device_id": "MLS-HQ",
+      "observed_at": "2026-11-16 22:36:52.287105+00:00",
+      "received_at": "2026-11-16 22:36:52.355224+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 0.596,
+      "raw": "PING 192.168.30.1 (192.168.30.1) 56(84) bytes of data.\n64 bytes from 192.168.30.1: icmp_seq=1 ttl=64 time=0.596 ms\n\n--- 192.168.30.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 1ms\nrtt min/avg/max/mdev = 0.596/0.596/0.596/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "348bac4b-2c52-4a27-93c4-88575ef74e6b",
+      "device_id": "MLS-HQ",
+      "observed_at": "2026-11-16 22:36:49.129712+00:00",
+      "received_at": "2026-11-16 22:36:49.143930+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.51,
+      "raw": "PING 192.168.30.1 (192.168.30.1) 56(84) bytes of data.\n64 bytes from 192.168.30.1: icmp_seq=1 ttl=64 time=2.51 ms\n\n--- 192.168.30.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.508/2.508/2.508/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "a920a403-1369-47e3-baf2-d0de193e88bc",
+      "device_id": "MLS-HQ",
+      "observed_at": "2026-11-16 22:36:46.129189+00:00",
+      "received_at": "2026-11-16 22:36:46.144581+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 0.706,
+      "raw": "PING 192.168.30.1 (192.168.30.1) 56(84) bytes of data.\n64 bytes from 192.168.30.1: icmp_seq=1 ttl=64 time=0.706 ms\n\n--- 192.168.30.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.706/0.706/0.706/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "5e6e84a9-76b3-47de-b2b1-6140aeed51e7",
+      "device_id": "MLS-HQ",
+      "observed_at": "2026-11-16 22:36:43.138408+00:00",
+      "received_at": "2026-11-16 22:36:43.158307+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.53,
+      "raw": "PING 192.168.30.1 (192.168.30.1) 56(84) bytes of data.\n64 bytes from 192.168.30.1: icmp_seq=1 ttl=64 time=3.53 ms\n\n--- 192.168.30.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.531/3.531/3.531/0.000 ms\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "bf549e57-8e7e-4f65-9ec7-a4e0290d434c",
+      "device_id": "PC-B1-ADMIN",
+      "observed_at": "2026-11-16 22:37:05.418516+00:00",
+      "received_at": "2026-11-16 22:37:05.435582+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.74,
+      "raw": "PING 192.168.110.101 (192.168.110.101) 56(84) bytes of data.\n64 bytes from 192.168.110.101: icmp_seq=1 ttl=60 time=3.74 ms\n\n--- 192.168.110.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.742/3.742/3.742/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "f527e2a8-2bba-476b-843b-30fa1dc63812",
+      "device_id": "PC-B1-ADMIN",
+      "observed_at": "2026-11-16 22:37:01.213871+00:00",
+      "received_at": "2026-11-16 22:37:01.226872+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.99,
+      "raw": "PING 192.168.110.101 (192.168.110.101) 56(84) bytes of data.\n64 bytes from 192.168.110.101: icmp_seq=1 ttl=60 time=2.99 ms\n\n--- 192.168.110.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.989/2.989/2.989/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "a9619360-5ae4-4bce-a108-fc6959a8c9fb",
+      "device_id": "PC-B1-ADMIN",
+      "observed_at": "2026-11-16 22:36:58.400667+00:00",
+      "received_at": "2026-11-16 22:36:58.435639+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 7.07,
+      "raw": "PING 192.168.110.101 (192.168.110.101) 56(84) bytes of data.\n64 bytes from 192.168.110.101: icmp_seq=1 ttl=60 time=7.07 ms\n\n--- 192.168.110.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 7.068/7.068/7.068/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "ce262c01-d881-4aeb-8d21-86997646ba03",
+      "device_id": "PC-B1-ADMIN",
+      "observed_at": "2026-11-16 22:36:55.264286+00:00",
+      "received_at": "2026-11-16 22:36:55.281099+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.8,
+      "raw": "PING 192.168.110.101 (192.168.110.101) 56(84) bytes of data.\n64 bytes from 192.168.110.101: icmp_seq=1 ttl=60 time=2.80 ms\n\n--- 192.168.110.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.799/2.799/2.799/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "4f42ff4e-0758-47e3-9e4c-c11d8a4b7c8f",
+      "device_id": "PC-B1-ADMIN",
+      "observed_at": "2026-11-16 22:36:52.690373+00:00",
+      "received_at": "2026-11-16 22:36:52.747811+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.63,
+      "raw": "PING 192.168.110.101 (192.168.110.101) 56(84) bytes of data.\n64 bytes from 192.168.110.101: icmp_seq=1 ttl=60 time=2.63 ms\n\n--- 192.168.110.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.627/2.627/2.627/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "9a97c20f-4104-4ec3-a930-e98ce4a0bb3d",
+      "device_id": "PC-B1-ADMIN",
+      "observed_at": "2026-11-16 22:36:49.217432+00:00",
+      "received_at": "2026-11-16 22:36:49.235685+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.94,
+      "raw": "PING 192.168.110.101 (192.168.110.101) 56(84) bytes of data.\n64 bytes from 192.168.110.101: icmp_seq=1 ttl=60 time=3.94 ms\n\n--- 192.168.110.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.938/3.938/3.938/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "74e00a3f-32a1-49c5-856b-80622997057e",
+      "device_id": "PC-B1-ADMIN",
+      "observed_at": "2026-11-16 22:36:46.223330+00:00",
+      "received_at": "2026-11-16 22:36:46.243126+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.18,
+      "raw": "PING 192.168.110.101 (192.168.110.101) 56(84) bytes of data.\n64 bytes from 192.168.110.101: icmp_seq=1 ttl=60 time=3.18 ms\n\n--- 192.168.110.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.179/3.179/3.179/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "a6ba1785-710c-4072-9954-c1e7e7428d35",
+      "device_id": "PC-B1-ADMIN",
+      "observed_at": "2026-11-16 22:36:43.254242+00:00",
+      "received_at": "2026-11-16 22:36:43.273937+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.15,
+      "raw": "PING 192.168.110.101 (192.168.110.101) 56(84) bytes of data.\n64 bytes from 192.168.110.101: icmp_seq=1 ttl=60 time=3.15 ms\n\n--- 192.168.110.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.153/3.153/3.153/0.000 ms\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "4f311f53-ccbb-4df6-828c-d3bd7b5dc9d2",
+      "device_id": "PC-B1-IT",
+      "observed_at": "2026-11-16 22:37:05.437836+00:00",
+      "received_at": "2026-11-16 22:37:05.457446+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.69,
+      "raw": "PING 192.168.130.101 (192.168.130.101) 56(84) bytes of data.\n64 bytes from 192.168.130.101: icmp_seq=1 ttl=60 time=3.69 ms\n\n--- 192.168.130.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.688/3.688/3.688/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "496f41a1-6b29-4874-a7e5-915ef44830d6",
+      "device_id": "PC-B1-IT",
+      "observed_at": "2026-11-16 22:37:01.229706+00:00",
+      "received_at": "2026-11-16 22:37:01.246466+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.78,
+      "raw": "PING 192.168.130.101 (192.168.130.101) 56(84) bytes of data.\n64 bytes from 192.168.130.101: icmp_seq=1 ttl=60 time=3.78 ms\n\n--- 192.168.130.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.775/3.775/3.775/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "a7585eb3-d319-4546-b042-b3fbc419d8b2",
+      "device_id": "PC-B1-IT",
+      "observed_at": "2026-11-16 22:36:58.439722+00:00",
+      "received_at": "2026-11-16 22:36:58.461602+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.67,
+      "raw": "PING 192.168.130.101 (192.168.130.101) 56(84) bytes of data.\n64 bytes from 192.168.130.101: icmp_seq=1 ttl=60 time=1.67 ms\n\n--- 192.168.130.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.672/1.672/1.672/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "0ddfe544-2837-4b33-9c4e-493ac9f10cd3",
+      "device_id": "PC-B1-IT",
+      "observed_at": "2026-11-16 22:36:55.283095+00:00",
+      "received_at": "2026-11-16 22:36:55.294728+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.33,
+      "raw": "PING 192.168.130.101 (192.168.130.101) 56(84) bytes of data.\n64 bytes from 192.168.130.101: icmp_seq=1 ttl=60 time=2.33 ms\n\n--- 192.168.130.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.327/2.327/2.327/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "6525cbc0-8b4b-4a80-b3da-c7538ac5147f",
+      "device_id": "PC-B1-IT",
+      "observed_at": "2026-11-16 22:36:52.759697+00:00",
+      "received_at": "2026-11-16 22:36:52.808411+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 5.2,
+      "raw": "PING 192.168.130.101 (192.168.130.101) 56(84) bytes of data.\n64 bytes from 192.168.130.101: icmp_seq=1 ttl=60 time=5.20 ms\n\n--- 192.168.130.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 5.200/5.200/5.200/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "fa2eeaf6-447e-4c4d-b390-99dab856c549",
+      "device_id": "PC-B1-IT",
+      "observed_at": "2026-11-16 22:36:49.240919+00:00",
+      "received_at": "2026-11-16 22:36:49.255457+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.01,
+      "raw": "PING 192.168.130.101 (192.168.130.101) 56(84) bytes of data.\n64 bytes from 192.168.130.101: icmp_seq=1 ttl=60 time=3.01 ms\n\n--- 192.168.130.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.006/3.006/3.006/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "61948878-380e-4149-9df3-4b224ebdfe21",
+      "device_id": "PC-B1-IT",
+      "observed_at": "2026-11-16 22:36:46.244082+00:00",
+      "received_at": "2026-11-16 22:36:46.259749+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.85,
+      "raw": "PING 192.168.130.101 (192.168.130.101) 56(84) bytes of data.\n64 bytes from 192.168.130.101: icmp_seq=1 ttl=60 time=3.85 ms\n\n--- 192.168.130.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.852/3.852/3.852/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "9138d02d-7d5b-4cdb-a23d-9ff22199c0b7",
+      "device_id": "PC-B1-IT",
+      "observed_at": "2026-11-16 22:36:43.279911+00:00",
+      "received_at": "2026-11-16 22:36:43.300427+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.86,
+      "raw": "PING 192.168.130.101 (192.168.130.101) 56(84) bytes of data.\n64 bytes from 192.168.130.101: icmp_seq=1 ttl=60 time=2.86 ms\n\n--- 192.168.130.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.856/2.856/2.856/0.000 ms\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "29216629-0f02-4e56-ab61-ca4d9bf0ccbd",
+      "device_id": "PC-B1-STAFF",
+      "observed_at": "2026-11-16 22:37:05.423210+00:00",
+      "received_at": "2026-11-16 22:37:05.436560+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.27,
+      "raw": "PING 192.168.120.101 (192.168.120.101) 56(84) bytes of data.\n64 bytes from 192.168.120.101: icmp_seq=1 ttl=60 time=3.27 ms\n\n--- 192.168.120.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.273/3.273/3.273/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "2ca68659-b14e-4ac4-9c3b-c28eb3ffc4b1",
+      "device_id": "PC-B1-STAFF",
+      "observed_at": "2026-11-16 22:37:01.217719+00:00",
+      "received_at": "2026-11-16 22:37:01.233421+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.12,
+      "raw": "PING 192.168.120.101 (192.168.120.101) 56(84) bytes of data.\n64 bytes from 192.168.120.101: icmp_seq=1 ttl=60 time=2.12 ms\n\n--- 192.168.120.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.123/2.123/2.123/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "30308205-724a-4758-b8f0-a39ee7fb5cdb",
+      "device_id": "PC-B1-STAFF",
+      "observed_at": "2026-11-16 22:36:58.419698+00:00",
+      "received_at": "2026-11-16 22:36:58.442336+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.84,
+      "raw": "PING 192.168.120.101 (192.168.120.101) 56(84) bytes of data.\n64 bytes from 192.168.120.101: icmp_seq=1 ttl=60 time=1.84 ms\n\n--- 192.168.120.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.838/1.838/1.838/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "b1fff7d3-9846-49df-9ba9-1bace208c5f8",
+      "device_id": "PC-B1-STAFF",
+      "observed_at": "2026-11-16 22:36:55.269845+00:00",
+      "received_at": "2026-11-16 22:36:55.282340+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.97,
+      "raw": "PING 192.168.120.101 (192.168.120.101) 56(84) bytes of data.\n64 bytes from 192.168.120.101: icmp_seq=1 ttl=60 time=1.97 ms\n\n--- 192.168.120.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.969/1.969/1.969/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "5da48f9b-2e34-4b9a-8e51-ed1e4be086c8",
+      "device_id": "PC-B1-STAFF",
+      "observed_at": "2026-11-16 22:36:52.698354+00:00",
+      "received_at": "2026-11-16 22:36:52.753481+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 7.25,
+      "raw": "PING 192.168.120.101 (192.168.120.101) 56(84) bytes of data.\n64 bytes from 192.168.120.101: icmp_seq=1 ttl=60 time=7.25 ms\n\n--- 192.168.120.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 7.252/7.252/7.252/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "5398c008-80c9-41ed-b242-b099a5ab9d3c",
+      "device_id": "PC-B1-STAFF",
+      "observed_at": "2026-11-16 22:36:49.226960+00:00",
+      "received_at": "2026-11-16 22:36:49.244743+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.69,
+      "raw": "PING 192.168.120.101 (192.168.120.101) 56(84) bytes of data.\n64 bytes from 192.168.120.101: icmp_seq=1 ttl=60 time=3.69 ms\n\n--- 192.168.120.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.690/3.690/3.690/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "f00ec3ee-cf97-4a99-a903-761751133d20",
+      "device_id": "PC-B1-STAFF",
+      "observed_at": "2026-11-16 22:36:46.226708+00:00",
+      "received_at": "2026-11-16 22:36:46.242087+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.4,
+      "raw": "PING 192.168.120.101 (192.168.120.101) 56(84) bytes of data.\n64 bytes from 192.168.120.101: icmp_seq=1 ttl=60 time=3.40 ms\n\n--- 192.168.120.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.402/3.402/3.402/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "4b09358a-d79d-46a8-8c1e-157ad868c9ac",
+      "device_id": "PC-B1-STAFF",
+      "observed_at": "2026-11-16 22:36:43.265766+00:00",
+      "received_at": "2026-11-16 22:36:43.286784+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.75,
+      "raw": "PING 192.168.120.101 (192.168.120.101) 56(84) bytes of data.\n64 bytes from 192.168.120.101: icmp_seq=1 ttl=60 time=3.75 ms\n\n--- 192.168.120.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.746/3.746/3.746/0.000 ms\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "7f59563b-2895-460e-a3cc-3239c4cca68b",
+      "device_id": "PC-B2-ADMIN",
+      "observed_at": "2026-11-16 22:37:05.482825+00:00",
+      "received_at": "2026-11-16 22:37:05.504041+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.96,
+      "raw": "PING 192.168.210.101 (192.168.210.101) 56(84) bytes of data.\n64 bytes from 192.168.210.101: icmp_seq=1 ttl=60 time=3.96 ms\n\n--- 192.168.210.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.958/3.958/3.958/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "18106f21-d134-4613-9213-c02e2a1602a5",
+      "device_id": "PC-B2-ADMIN",
+      "observed_at": "2026-11-16 22:37:01.269828+00:00",
+      "received_at": "2026-11-16 22:37:01.282532+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.89,
+      "raw": "PING 192.168.210.101 (192.168.210.101) 56(84) bytes of data.\n64 bytes from 192.168.210.101: icmp_seq=1 ttl=60 time=3.89 ms\n\n--- 192.168.210.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.886/3.886/3.886/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "d246b7f4-459a-492a-929c-8dde9e585f3d",
+      "device_id": "PC-B2-ADMIN",
+      "observed_at": "2026-11-16 22:36:58.493926+00:00",
+      "received_at": "2026-11-16 22:36:58.507956+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.06,
+      "raw": "PING 192.168.210.101 (192.168.210.101) 56(84) bytes of data.\n64 bytes from 192.168.210.101: icmp_seq=1 ttl=60 time=3.06 ms\n\n--- 192.168.210.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.058/3.058/3.058/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "318d08ae-a5b6-4990-ad86-3d9967d94f58",
+      "device_id": "PC-B2-ADMIN",
+      "observed_at": "2026-11-16 22:36:55.325442+00:00",
+      "received_at": "2026-11-16 22:36:55.340809+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.75,
+      "raw": "PING 192.168.210.101 (192.168.210.101) 56(84) bytes of data.\n64 bytes from 192.168.210.101: icmp_seq=1 ttl=60 time=3.75 ms\n\n--- 192.168.210.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.754/3.754/3.754/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "e40bbed7-eddc-4edb-9b66-950f1d5a4fc9",
+      "device_id": "PC-B2-ADMIN",
+      "observed_at": "2026-11-16 22:36:52.900661+00:00",
+      "received_at": "2026-11-16 22:36:52.979799+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 9.93,
+      "raw": "PING 192.168.210.101 (192.168.210.101) 56(84) bytes of data.\n64 bytes from 192.168.210.101: icmp_seq=1 ttl=60 time=9.93 ms\n\n--- 192.168.210.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 9.926/9.926/9.926/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "93fa530c-9a8e-4162-9c6b-91796e58ae03",
+      "device_id": "PC-B2-ADMIN",
+      "observed_at": "2026-11-16 22:36:49.290154+00:00",
+      "received_at": "2026-11-16 22:36:49.310570+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.15,
+      "raw": "PING 192.168.210.101 (192.168.210.101) 56(84) bytes of data.\n64 bytes from 192.168.210.101: icmp_seq=1 ttl=60 time=3.15 ms\n\n--- 192.168.210.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.147/3.147/3.147/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "bf216368-1849-4e39-a458-ec09857c4f94",
+      "device_id": "PC-B2-ADMIN",
+      "observed_at": "2026-11-16 22:36:46.281254+00:00",
+      "received_at": "2026-11-16 22:36:46.297345+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.3,
+      "raw": "PING 192.168.210.101 (192.168.210.101) 56(84) bytes of data.\n64 bytes from 192.168.210.101: icmp_seq=1 ttl=60 time=3.30 ms\n\n--- 192.168.210.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.302/3.302/3.302/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "e401eff1-d4aa-4e2c-bd99-e55ed4b0a7fa",
+      "device_id": "PC-B2-ADMIN",
+      "observed_at": "2026-11-16 22:36:43.346314+00:00",
+      "received_at": "2026-11-16 22:36:43.365624+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.36,
+      "raw": "PING 192.168.210.101 (192.168.210.101) 56(84) bytes of data.\n64 bytes from 192.168.210.101: icmp_seq=1 ttl=60 time=3.36 ms\n\n--- 192.168.210.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.364/3.364/3.364/0.000 ms\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "6c928bce-e6f3-4e9b-b601-83edd3e0fc6f",
+      "device_id": "PC-B2-IT",
+      "observed_at": "2026-11-16 22:37:05.506082+00:00",
+      "received_at": "2026-11-16 22:37:06.517452+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "timeout",
+      "rtt_ms": null,
+      "raw": "PING 192.168.230.101 (192.168.230.101) 56(84) bytes of data.\n\n--- 192.168.230.101 ping statistics ---\n1 packets transmitted, 0 received, 100% packet loss, time 0ms\n\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "2de9fbc5-55e2-442f-b663-7a76853a4498",
+      "device_id": "PC-B2-IT",
+      "observed_at": "2026-11-16 22:37:01.290020+00:00",
+      "received_at": "2026-11-16 22:37:02.328013+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "timeout",
+      "rtt_ms": null,
+      "raw": "PING 192.168.230.101 (192.168.230.101) 56(84) bytes of data.\n\n--- 192.168.230.101 ping statistics ---\n1 packets transmitted, 0 received, 100% packet loss, time 0ms\n\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "c884016a-0ea1-4464-84ad-6404d66bc201",
+      "device_id": "PC-B2-IT",
+      "observed_at": "2026-11-16 22:36:58.516917+00:00",
+      "received_at": "2026-11-16 22:36:59.527961+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "timeout",
+      "rtt_ms": null,
+      "raw": "PING 192.168.230.101 (192.168.230.101) 56(84) bytes of data.\n\n--- 192.168.230.101 ping statistics ---\n1 packets transmitted, 0 received, 100% packet loss, time 0ms\n\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "dcfb5939-b8b3-4f26-bc6c-60c91c9cf959",
+      "device_id": "PC-B2-IT",
+      "observed_at": "2026-11-16 22:36:55.343224+00:00",
+      "received_at": "2026-11-16 22:36:56.354015+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "timeout",
+      "rtt_ms": null,
+      "raw": "PING 192.168.230.101 (192.168.230.101) 56(84) bytes of data.\n\n--- 192.168.230.101 ping statistics ---\n1 packets transmitted, 0 received, 100% packet loss, time 0ms\n\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "30d82cfd-c493-482a-a82c-7472b1d6d481",
+      "device_id": "PC-B2-IT",
+      "observed_at": "2026-11-16 22:36:52.996995+00:00",
+      "received_at": "2026-11-16 22:36:54.035387+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "timeout",
+      "rtt_ms": null,
+      "raw": "PING 192.168.230.101 (192.168.230.101) 56(84) bytes of data.\n\n--- 192.168.230.101 ping statistics ---\n1 packets transmitted, 0 received, 100% packet loss, time 15ms\n\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "5297322a-34e5-4c5f-9393-5adfa2289273",
+      "device_id": "PC-B2-IT",
+      "observed_at": "2026-11-16 22:36:49.313906+00:00",
+      "received_at": "2026-11-16 22:36:50.329730+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "timeout",
+      "rtt_ms": null,
+      "raw": "PING 192.168.230.101 (192.168.230.101) 56(84) bytes of data.\n\n--- 192.168.230.101 ping statistics ---\n1 packets transmitted, 0 received, 100% packet loss, time 0ms\n\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "e481012e-2db1-47a4-8d6e-6f9fc2fb73ed",
+      "device_id": "PC-B2-IT",
+      "observed_at": "2026-11-16 22:36:46.302965+00:00",
+      "received_at": "2026-11-16 22:36:47.319187+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "timeout",
+      "rtt_ms": null,
+      "raw": "PING 192.168.230.101 (192.168.230.101) 56(84) bytes of data.\n\n--- 192.168.230.101 ping statistics ---\n1 packets transmitted, 0 received, 100% packet loss, time 0ms\n\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "2900da56-76a4-480e-b745-244abea972f9",
+      "device_id": "PC-B2-IT",
+      "observed_at": "2026-11-16 22:36:43.371595+00:00",
+      "received_at": "2026-11-16 22:36:44.385705+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "timeout",
+      "rtt_ms": null,
+      "raw": "PING 192.168.230.101 (192.168.230.101) 56(84) bytes of data.\n\n--- 192.168.230.101 ping statistics ---\n1 packets transmitted, 0 received, 100% packet loss, time 0ms\n\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "05434862-1529-4202-a407-d0d7498574c5",
+      "device_id": "PC-B2-STAFF",
+      "observed_at": "2026-11-16 22:37:05.497136+00:00",
+      "received_at": "2026-11-16 22:37:05.511889+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.57,
+      "raw": "PING 192.168.220.101 (192.168.220.101) 56(84) bytes of data.\n64 bytes from 192.168.220.101: icmp_seq=1 ttl=60 time=2.57 ms\n\n--- 192.168.220.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.571/2.571/2.571/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "c169e497-38f0-449f-9f45-b07df7972f98",
+      "device_id": "PC-B2-STAFF",
+      "observed_at": "2026-11-16 22:37:01.284513+00:00",
+      "received_at": "2026-11-16 22:37:01.296294+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.92,
+      "raw": "PING 192.168.220.101 (192.168.220.101) 56(84) bytes of data.\n64 bytes from 192.168.220.101: icmp_seq=1 ttl=60 time=2.92 ms\n\n--- 192.168.220.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.916/2.916/2.916/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "cc3ca896-6e3f-4a09-a770-0e157aa45885",
+      "device_id": "PC-B2-STAFF",
+      "observed_at": "2026-11-16 22:36:58.508695+00:00",
+      "received_at": "2026-11-16 22:36:58.526265+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.67,
+      "raw": "PING 192.168.220.101 (192.168.220.101) 56(84) bytes of data.\n64 bytes from 192.168.220.101: icmp_seq=1 ttl=60 time=2.67 ms\n\n--- 192.168.220.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.666/2.666/2.666/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "b9c5bc1a-dbf4-4b80-9a06-57228ceeae39",
+      "device_id": "PC-B2-STAFF",
+      "observed_at": "2026-11-16 22:36:55.329572+00:00",
+      "received_at": "2026-11-16 22:36:55.346490+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.53,
+      "raw": "PING 192.168.220.101 (192.168.220.101) 56(84) bytes of data.\n64 bytes from 192.168.220.101: icmp_seq=1 ttl=60 time=1.53 ms\n\n--- 192.168.220.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.526/1.526/1.526/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "7747d4a2-c91a-49c1-ada1-0a83a8cb0dd3",
+      "device_id": "PC-B2-STAFF",
+      "observed_at": "2026-11-16 22:36:52.983547+00:00",
+      "received_at": "2026-11-16 22:36:53.049386+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 7.38,
+      "raw": "PING 192.168.220.101 (192.168.220.101) 56(84) bytes of data.\n64 bytes from 192.168.220.101: icmp_seq=1 ttl=60 time=7.38 ms\n\n--- 192.168.220.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 7.380/7.380/7.380/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "93e52c6d-01d0-4aa3-826b-1826d6f08e77",
+      "device_id": "PC-B2-STAFF",
+      "observed_at": "2026-11-16 22:36:49.297302+00:00",
+      "received_at": "2026-11-16 22:36:49.313375+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 4.42,
+      "raw": "PING 192.168.220.101 (192.168.220.101) 56(84) bytes of data.\n64 bytes from 192.168.220.101: icmp_seq=1 ttl=60 time=4.42 ms\n\n--- 192.168.220.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 4.418/4.418/4.418/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "81b276c3-8bba-4f29-b03b-a789022f492a",
+      "device_id": "PC-B2-STAFF",
+      "observed_at": "2026-11-16 22:36:46.299210+00:00",
+      "received_at": "2026-11-16 22:36:46.316491+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 5.13,
+      "raw": "PING 192.168.220.101 (192.168.220.101) 56(84) bytes of data.\n64 bytes from 192.168.220.101: icmp_seq=1 ttl=60 time=5.13 ms\n\n--- 192.168.220.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 5.126/5.126/5.126/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "795755d6-2db0-4d47-8740-1427fd4dae09",
+      "device_id": "PC-B2-STAFF",
+      "observed_at": "2026-11-16 22:36:43.360836+00:00",
+      "received_at": "2026-11-16 22:36:43.380923+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 5.52,
+      "raw": "PING 192.168.220.101 (192.168.220.101) 56(84) bytes of data.\n64 bytes from 192.168.220.101: icmp_seq=1 ttl=60 time=5.52 ms\n\n--- 192.168.220.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 5.522/5.522/5.522/0.000 ms\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "42fd0ffd-6e86-4867-b5ba-b15307d6d19f",
+      "device_id": "PC-B3-ADMIN",
+      "observed_at": "2026-11-16 22:37:05.557062+00:00",
+      "received_at": "2026-11-16 22:37:05.567531+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.29,
+      "raw": "PING 192.168.31.101 (192.168.31.101) 56(84) bytes of data.\n64 bytes from 192.168.31.101: icmp_seq=1 ttl=60 time=2.29 ms\n\n--- 192.168.31.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.294/2.294/2.294/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "23724d3c-851e-4db8-8a8c-36d56949badc",
+      "device_id": "PC-B3-ADMIN",
+      "observed_at": "2026-11-16 22:37:01.346374+00:00",
+      "received_at": "2026-11-16 22:37:01.357246+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.47,
+      "raw": "PING 192.168.31.101 (192.168.31.101) 56(84) bytes of data.\n64 bytes from 192.168.31.101: icmp_seq=1 ttl=60 time=2.47 ms\n\n--- 192.168.31.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.467/2.467/2.467/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "ac7cf2fc-eef2-4707-916f-a99bac420f93",
+      "device_id": "PC-B3-ADMIN",
+      "observed_at": "2026-11-16 22:36:58.588186+00:00",
+      "received_at": "2026-11-16 22:36:58.600676+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.9,
+      "raw": "PING 192.168.31.101 (192.168.31.101) 56(84) bytes of data.\n64 bytes from 192.168.31.101: icmp_seq=1 ttl=60 time=2.90 ms\n\n--- 192.168.31.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.901/2.901/2.901/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "33a51bbe-05aa-4d24-b1c2-2138e265b26a",
+      "device_id": "PC-B3-ADMIN",
+      "observed_at": "2026-11-16 22:36:55.392383+00:00",
+      "received_at": "2026-11-16 22:36:55.401648+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.94,
+      "raw": "PING 192.168.31.101 (192.168.31.101) 56(84) bytes of data.\n64 bytes from 192.168.31.101: icmp_seq=1 ttl=60 time=1.94 ms\n\n--- 192.168.31.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.939/1.939/1.939/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "f7819d79-6fc1-4ee0-bcb0-20e96f996098",
+      "device_id": "PC-B3-ADMIN",
+      "observed_at": "2026-11-16 22:36:53.270103+00:00",
+      "received_at": "2026-11-16 22:36:53.322237+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 6.73,
+      "raw": "PING 192.168.31.101 (192.168.31.101) 56(84) bytes of data.\n64 bytes from 192.168.31.101: icmp_seq=1 ttl=60 time=6.73 ms\n\n--- 192.168.31.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 6.729/6.729/6.729/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "aac5b682-b05e-4370-963e-de7c9d11abde",
+      "device_id": "PC-B3-ADMIN",
+      "observed_at": "2026-11-16 22:36:49.363533+00:00",
+      "received_at": "2026-11-16 22:36:49.372099+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.76,
+      "raw": "PING 192.168.31.101 (192.168.31.101) 56(84) bytes of data.\n64 bytes from 192.168.31.101: icmp_seq=1 ttl=60 time=3.76 ms\n\n--- 192.168.31.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.759/3.759/3.759/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "560f74da-024f-4ae8-b4a9-e312174dfa63",
+      "device_id": "PC-B3-ADMIN",
+      "observed_at": "2026-11-16 22:36:46.361955+00:00",
+      "received_at": "2026-11-16 22:36:46.372820+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.14,
+      "raw": "PING 192.168.31.101 (192.168.31.101) 56(84) bytes of data.\n64 bytes from 192.168.31.101: icmp_seq=1 ttl=60 time=2.14 ms\n\n--- 192.168.31.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.143/2.143/2.143/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "5c53afe4-7d1d-455d-b26a-8a0cfb5a8061",
+      "device_id": "PC-B3-ADMIN",
+      "observed_at": "2026-11-16 22:36:43.450175+00:00",
+      "received_at": "2026-11-16 22:36:43.467515+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 5.14,
+      "raw": "PING 192.168.31.101 (192.168.31.101) 56(84) bytes of data.\n64 bytes from 192.168.31.101: icmp_seq=1 ttl=60 time=5.14 ms\n\n--- 192.168.31.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 5.135/5.135/5.135/0.000 ms\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "a3518e2b-5a4b-4fca-9167-be218e958639",
+      "device_id": "PC-B3-IT",
+      "observed_at": "2026-11-16 22:37:05.584252+00:00",
+      "received_at": "2026-11-16 22:37:05.596060+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.21,
+      "raw": "PING 192.168.33.101 (192.168.33.101) 56(84) bytes of data.\n64 bytes from 192.168.33.101: icmp_seq=1 ttl=60 time=2.21 ms\n\n--- 192.168.33.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.210/2.210/2.210/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "2d1102fb-293d-48d8-9836-b7b33f421ffe",
+      "device_id": "PC-B3-IT",
+      "observed_at": "2026-11-16 22:37:01.368465+00:00",
+      "received_at": "2026-11-16 22:37:01.379444+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.89,
+      "raw": "PING 192.168.33.101 (192.168.33.101) 56(84) bytes of data.\n64 bytes from 192.168.33.101: icmp_seq=1 ttl=60 time=1.89 ms\n\n--- 192.168.33.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.893/1.893/1.893/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "071b572b-773b-41ba-ae99-b141d127d4cb",
+      "device_id": "PC-B3-IT",
+      "observed_at": "2026-11-16 22:36:58.618914+00:00",
+      "received_at": "2026-11-16 22:36:58.632296+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.66,
+      "raw": "PING 192.168.33.101 (192.168.33.101) 56(84) bytes of data.\n64 bytes from 192.168.33.101: icmp_seq=1 ttl=60 time=2.66 ms\n\n--- 192.168.33.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.664/2.664/2.664/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "ae191dbb-a1c4-46bc-815b-5046d0ba9d7a",
+      "device_id": "PC-B3-IT",
+      "observed_at": "2026-11-16 22:36:55.413318+00:00",
+      "received_at": "2026-11-16 22:36:55.422808+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.02,
+      "raw": "PING 192.168.33.101 (192.168.33.101) 56(84) bytes of data.\n64 bytes from 192.168.33.101: icmp_seq=1 ttl=60 time=2.02 ms\n\n--- 192.168.33.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.016/2.016/2.016/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "6b3a8033-1b0a-4cf1-8618-9c94fa2889ad",
+      "device_id": "PC-B3-IT",
+      "observed_at": "2026-11-16 22:36:53.379513+00:00",
+      "received_at": "2026-11-16 22:36:53.416687+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 5.78,
+      "raw": "PING 192.168.33.101 (192.168.33.101) 56(84) bytes of data.\n64 bytes from 192.168.33.101: icmp_seq=1 ttl=60 time=5.78 ms\n\n--- 192.168.33.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 5.781/5.781/5.781/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "11a2f3a8-7f0d-4eef-bcd0-7bedb04fb446",
+      "device_id": "PC-B3-IT",
+      "observed_at": "2026-11-16 22:36:49.384375+00:00",
+      "received_at": "2026-11-16 22:36:49.393869+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.53,
+      "raw": "PING 192.168.33.101 (192.168.33.101) 56(84) bytes of data.\n64 bytes from 192.168.33.101: icmp_seq=1 ttl=60 time=3.53 ms\n\n--- 192.168.33.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.525/3.525/3.525/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "cc00dcdb-3eda-4654-826f-ed58039724b5",
+      "device_id": "PC-B3-IT",
+      "observed_at": "2026-11-16 22:36:46.385861+00:00",
+      "received_at": "2026-11-16 22:36:46.398005+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.17,
+      "raw": "PING 192.168.33.101 (192.168.33.101) 56(84) bytes of data.\n64 bytes from 192.168.33.101: icmp_seq=1 ttl=60 time=2.17 ms\n\n--- 192.168.33.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.167/2.167/2.167/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "0e21eebf-ea9d-4f2b-a24f-701d2ca3cf04",
+      "device_id": "PC-B3-IT",
+      "observed_at": "2026-11-16 22:36:43.489082+00:00",
+      "received_at": "2026-11-16 22:36:43.509043+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.73,
+      "raw": "PING 192.168.33.101 (192.168.33.101) 56(84) bytes of data.\n64 bytes from 192.168.33.101: icmp_seq=1 ttl=60 time=2.73 ms\n\n--- 192.168.33.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.731/2.731/2.731/0.000 ms\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "cf42ffbf-e454-4282-bdd9-9f9766b49dd5",
+      "device_id": "PC-B3-STAFF",
+      "observed_at": "2026-11-16 22:37:05.568812+00:00",
+      "received_at": "2026-11-16 22:37:05.582687+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 4.57,
+      "raw": "PING 192.168.32.101 (192.168.32.101) 56(84) bytes of data.\n64 bytes from 192.168.32.101: icmp_seq=1 ttl=60 time=4.57 ms\n\n--- 192.168.32.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 4.572/4.572/4.572/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "35daf968-ecbf-445e-85b0-e02043d61202",
+      "device_id": "PC-B3-STAFF",
+      "observed_at": "2026-11-16 22:37:01.358317+00:00",
+      "received_at": "2026-11-16 22:37:01.367503+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.74,
+      "raw": "PING 192.168.32.101 (192.168.32.101) 56(84) bytes of data.\n64 bytes from 192.168.32.101: icmp_seq=1 ttl=60 time=1.74 ms\n\n--- 192.168.32.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.742/1.742/1.742/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "488b2872-1422-49c0-bbc6-c5e038a1212a",
+      "device_id": "PC-B3-STAFF",
+      "observed_at": "2026-11-16 22:36:58.602592+00:00",
+      "received_at": "2026-11-16 22:36:58.615670+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.49,
+      "raw": "PING 192.168.32.101 (192.168.32.101) 56(84) bytes of data.\n64 bytes from 192.168.32.101: icmp_seq=1 ttl=60 time=3.49 ms\n\n--- 192.168.32.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.485/3.485/3.485/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "ca0ef4b6-21b5-44d6-8221-cc6de74c7572",
+      "device_id": "PC-B3-STAFF",
+      "observed_at": "2026-11-16 22:36:55.402689+00:00",
+      "received_at": "2026-11-16 22:36:55.412446+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.9,
+      "raw": "PING 192.168.32.101 (192.168.32.101) 56(84) bytes of data.\n64 bytes from 192.168.32.101: icmp_seq=1 ttl=60 time=1.90 ms\n\n--- 192.168.32.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.899/1.899/1.899/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "f4a00ae9-34a5-455d-9383-cf6dc15fe60b",
+      "device_id": "PC-B3-STAFF",
+      "observed_at": "2026-11-16 22:36:53.326989+00:00",
+      "received_at": "2026-11-16 22:36:53.372602+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 6.86,
+      "raw": "PING 192.168.32.101 (192.168.32.101) 56(84) bytes of data.\n64 bytes from 192.168.32.101: icmp_seq=1 ttl=60 time=6.86 ms\n\n--- 192.168.32.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 6.860/6.860/6.860/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "f5ec8bbc-4835-42cc-81d2-a9d270287d6d",
+      "device_id": "PC-B3-STAFF",
+      "observed_at": "2026-11-16 22:36:49.373210+00:00",
+      "received_at": "2026-11-16 22:36:49.383408+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.14,
+      "raw": "PING 192.168.32.101 (192.168.32.101) 56(84) bytes of data.\n64 bytes from 192.168.32.101: icmp_seq=1 ttl=60 time=2.14 ms\n\n--- 192.168.32.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.139/2.139/2.139/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "f93f80f2-e94e-4170-82c6-bf570fca0f34",
+      "device_id": "PC-B3-STAFF",
+      "observed_at": "2026-11-16 22:36:46.374029+00:00",
+      "received_at": "2026-11-16 22:36:46.384720+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.21,
+      "raw": "PING 192.168.32.101 (192.168.32.101) 56(84) bytes of data.\n64 bytes from 192.168.32.101: icmp_seq=1 ttl=60 time=2.21 ms\n\n--- 192.168.32.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.210/2.210/2.210/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "d9b9520e-3ed0-4bb9-b4dd-99580d683c8b",
+      "device_id": "PC-B3-STAFF",
+      "observed_at": "2026-11-16 22:36:43.469932+00:00",
+      "received_at": "2026-11-16 22:36:43.484849+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.6,
+      "raw": "PING 192.168.32.101 (192.168.32.101) 56(84) bytes of data.\n64 bytes from 192.168.32.101: icmp_seq=1 ttl=60 time=3.60 ms\n\n--- 192.168.32.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.599/3.599/3.599/0.000 ms\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "19b834a4-7419-4769-8ff5-702e832bec68",
+      "device_id": "PC-HQ-ADMIN",
+      "observed_at": "2026-11-16 22:37:05.353085+00:00",
+      "received_at": "2026-11-16 22:37:05.364875+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.17,
+      "raw": "PING 192.168.10.101 (192.168.10.101) 56(84) bytes of data.\n64 bytes from 192.168.10.101: icmp_seq=1 ttl=63 time=2.17 ms\n\n--- 192.168.10.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.172/2.172/2.172/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "a66c9bf8-1070-40e6-b562-92ec13694527",
+      "device_id": "PC-HQ-ADMIN",
+      "observed_at": "2026-11-16 22:37:01.150298+00:00",
+      "received_at": "2026-11-16 22:37:01.162737+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.6,
+      "raw": "PING 192.168.10.101 (192.168.10.101) 56(84) bytes of data.\n64 bytes from 192.168.10.101: icmp_seq=1 ttl=63 time=1.60 ms\n\n--- 192.168.10.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.604/1.604/1.604/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "6b00b467-d0db-4979-a18b-2dbc92315706",
+      "device_id": "PC-HQ-ADMIN",
+      "observed_at": "2026-11-16 22:36:58.191931+00:00",
+      "received_at": "2026-11-16 22:36:58.222700+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 4.5,
+      "raw": "PING 192.168.10.101 (192.168.10.101) 56(84) bytes of data.\n64 bytes from 192.168.10.101: icmp_seq=1 ttl=63 time=4.50 ms\n\n--- 192.168.10.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 4.497/4.497/4.497/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "1dc5e76b-03fd-497a-aa60-b73705f9f724",
+      "device_id": "PC-HQ-ADMIN",
+      "observed_at": "2026-11-16 22:36:55.164091+00:00",
+      "received_at": "2026-11-16 22:36:55.179630+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.77,
+      "raw": "PING 192.168.10.101 (192.168.10.101) 56(84) bytes of data.\n64 bytes from 192.168.10.101: icmp_seq=1 ttl=63 time=1.77 ms\n\n--- 192.168.10.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.765/1.765/1.765/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "122c583c-3aef-4b47-8dc1-52b713d844d5",
+      "device_id": "PC-HQ-ADMIN",
+      "observed_at": "2026-11-16 22:36:52.376032+00:00",
+      "received_at": "2026-11-16 22:36:52.424574+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 4.21,
+      "raw": "PING 192.168.10.101 (192.168.10.101) 56(84) bytes of data.\n64 bytes from 192.168.10.101: icmp_seq=1 ttl=63 time=4.21 ms\n\n--- 192.168.10.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 4.213/4.213/4.213/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "ce02c3c5-3020-4f14-a772-bd303561d78c",
+      "device_id": "PC-HQ-ADMIN",
+      "observed_at": "2026-11-16 22:36:49.154278+00:00",
+      "received_at": "2026-11-16 22:36:49.164450+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.89,
+      "raw": "PING 192.168.10.101 (192.168.10.101) 56(84) bytes of data.\n64 bytes from 192.168.10.101: icmp_seq=1 ttl=63 time=1.89 ms\n\n--- 192.168.10.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.885/1.885/1.885/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "2b4234da-1cee-4afe-8514-88ae13995c43",
+      "device_id": "PC-HQ-ADMIN",
+      "observed_at": "2026-11-16 22:36:46.150087+00:00",
+      "received_at": "2026-11-16 22:36:46.164741+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.34,
+      "raw": "PING 192.168.10.101 (192.168.10.101) 56(84) bytes of data.\n64 bytes from 192.168.10.101: icmp_seq=1 ttl=63 time=2.34 ms\n\n--- 192.168.10.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.341/2.341/2.341/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "1161c088-e674-4641-a086-6c92b84a01c5",
+      "device_id": "PC-HQ-ADMIN",
+      "observed_at": "2026-11-16 22:36:43.165056+00:00",
+      "received_at": "2026-11-16 22:36:43.182308+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.2,
+      "raw": "PING 192.168.10.101 (192.168.10.101) 56(84) bytes of data.\n64 bytes from 192.168.10.101: icmp_seq=1 ttl=63 time=1.20 ms\n\n--- 192.168.10.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.201/1.201/1.201/0.000 ms\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "86373022-8336-4782-8961-00e782b5424c",
+      "device_id": "PC-HQ-IT",
+      "observed_at": "2026-11-16 22:37:05.368852+00:00",
+      "received_at": "2026-11-16 22:37:05.380930+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 0.328,
+      "raw": "PING 192.168.30.101 (192.168.30.101) 56(84) bytes of data.\n64 bytes from 192.168.30.101: icmp_seq=1 ttl=64 time=0.328 ms\n\n--- 192.168.30.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.328/0.328/0.328/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "cd1db87e-6411-470c-91e9-27828440e3d5",
+      "device_id": "PC-HQ-IT",
+      "observed_at": "2026-11-16 22:37:01.166225+00:00",
+      "received_at": "2026-11-16 22:37:01.177370+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 0.44,
+      "raw": "PING 192.168.30.101 (192.168.30.101) 56(84) bytes of data.\n64 bytes from 192.168.30.101: icmp_seq=1 ttl=64 time=0.440 ms\n\n--- 192.168.30.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.440/0.440/0.440/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "aca42246-aeb2-4e60-b322-709081bf7a59",
+      "device_id": "PC-HQ-IT",
+      "observed_at": "2026-11-16 22:36:58.229852+00:00",
+      "received_at": "2026-11-16 22:36:58.288369+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.24,
+      "raw": "PING 192.168.30.101 (192.168.30.101) 56(84) bytes of data.\n64 bytes from 192.168.30.101: icmp_seq=1 ttl=64 time=3.24 ms\n\n--- 192.168.30.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.238/3.238/3.238/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "5584756c-a64e-4ad1-a9e9-a44809147362",
+      "device_id": "PC-HQ-IT",
+      "observed_at": "2026-11-16 22:36:55.184812+00:00",
+      "received_at": "2026-11-16 22:36:55.201289+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 0.57,
+      "raw": "PING 192.168.30.101 (192.168.30.101) 56(84) bytes of data.\n64 bytes from 192.168.30.101: icmp_seq=1 ttl=64 time=0.570 ms\n\n--- 192.168.30.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.570/0.570/0.570/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "f45c26c7-608e-4a8e-b559-5ce2ddc89a10",
+      "device_id": "PC-HQ-IT",
+      "observed_at": "2026-11-16 22:36:52.442313+00:00",
+      "received_at": "2026-11-16 22:36:52.498719+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.27,
+      "raw": "PING 192.168.30.101 (192.168.30.101) 56(84) bytes of data.\n64 bytes from 192.168.30.101: icmp_seq=1 ttl=64 time=1.27 ms\n\n--- 192.168.30.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.274/1.274/1.274/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "1bc031a0-ce53-4cd4-b709-03b9e744ae52",
+      "device_id": "PC-HQ-IT",
+      "observed_at": "2026-11-16 22:36:49.170432+00:00",
+      "received_at": "2026-11-16 22:36:49.181248+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.16,
+      "raw": "PING 192.168.30.101 (192.168.30.101) 56(84) bytes of data.\n64 bytes from 192.168.30.101: icmp_seq=1 ttl=64 time=1.16 ms\n\n--- 192.168.30.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.162/1.162/1.162/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "29f3fa93-c70f-4fcb-8c0b-92e9c46eb539",
+      "device_id": "PC-HQ-IT",
+      "observed_at": "2026-11-16 22:36:46.169210+00:00",
+      "received_at": "2026-11-16 22:36:46.182090+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.44,
+      "raw": "PING 192.168.30.101 (192.168.30.101) 56(84) bytes of data.\n64 bytes from 192.168.30.101: icmp_seq=1 ttl=64 time=1.44 ms\n\n--- 192.168.30.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.442/1.442/1.442/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "98379af1-029c-48d9-abd3-005f47f496fb",
+      "device_id": "PC-HQ-IT",
+      "observed_at": "2026-11-16 22:36:43.186231+00:00",
+      "received_at": "2026-11-16 22:36:43.202618+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 0.599,
+      "raw": "PING 192.168.30.101 (192.168.30.101) 56(84) bytes of data.\n64 bytes from 192.168.30.101: icmp_seq=1 ttl=64 time=0.599 ms\n\n--- 192.168.30.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.599/0.599/0.599/0.000 ms\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "2e0ad03c-4703-4c4b-b2b5-1a287df606e6",
+      "device_id": "PC-HQ-STAFF",
+      "observed_at": "2026-11-16 22:37:05.365432+00:00",
+      "received_at": "2026-11-16 22:37:05.382501+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.63,
+      "raw": "PING 192.168.20.101 (192.168.20.101) 56(84) bytes of data.\n64 bytes from 192.168.20.101: icmp_seq=1 ttl=63 time=1.63 ms\n\n--- 192.168.20.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.626/1.626/1.626/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "1550306c-dd50-4baf-8cd4-351d5f90fd64",
+      "device_id": "PC-HQ-STAFF",
+      "observed_at": "2026-11-16 22:37:01.163589+00:00",
+      "received_at": "2026-11-16 22:37:01.176707+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.13,
+      "raw": "PING 192.168.20.101 (192.168.20.101) 56(84) bytes of data.\n64 bytes from 192.168.20.101: icmp_seq=1 ttl=63 time=3.13 ms\n\n--- 192.168.20.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.125/3.125/3.125/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "2fe285e9-9d38-48ce-942f-65ecab45f22d",
+      "device_id": "PC-HQ-STAFF",
+      "observed_at": "2026-11-16 22:36:58.211204+00:00",
+      "received_at": "2026-11-16 22:36:58.243689+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 4.85,
+      "raw": "PING 192.168.20.101 (192.168.20.101) 56(84) bytes of data.\n64 bytes from 192.168.20.101: icmp_seq=1 ttl=63 time=4.85 ms\n\n--- 192.168.20.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 4.848/4.848/4.848/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "82010ac1-8479-41ae-be37-d4b005b78d68",
+      "device_id": "PC-HQ-STAFF",
+      "observed_at": "2026-11-16 22:36:55.182803+00:00",
+      "received_at": "2026-11-16 22:36:55.200281+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.66,
+      "raw": "PING 192.168.20.101 (192.168.20.101) 56(84) bytes of data.\n64 bytes from 192.168.20.101: icmp_seq=1 ttl=63 time=1.66 ms\n\n--- 192.168.20.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.660/1.660/1.660/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "b970bd03-398f-4580-962b-b385bbad6d56",
+      "device_id": "PC-HQ-STAFF",
+      "observed_at": "2026-11-16 22:36:52.434486+00:00",
+      "received_at": "2026-11-16 22:36:52.494706+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.62,
+      "raw": "PING 192.168.20.101 (192.168.20.101) 56(84) bytes of data.\n64 bytes from 192.168.20.101: icmp_seq=1 ttl=63 time=2.62 ms\n\n--- 192.168.20.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.615/2.615/2.615/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "ab9f6837-7261-4cd4-aed7-703e030e16b0",
+      "device_id": "PC-HQ-STAFF",
+      "observed_at": "2026-11-16 22:36:49.165188+00:00",
+      "received_at": "2026-11-16 22:36:49.180655+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.0,
+      "raw": "PING 192.168.20.101 (192.168.20.101) 56(84) bytes of data.\n64 bytes from 192.168.20.101: icmp_seq=1 ttl=63 time=2.00 ms\n\n--- 192.168.20.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.003/2.003/2.003/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "d6cc7329-a443-4556-b891-f89fe6a434d7",
+      "device_id": "PC-HQ-STAFF",
+      "observed_at": "2026-11-16 22:36:46.165769+00:00",
+      "received_at": "2026-11-16 22:36:46.183195+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.29,
+      "raw": "PING 192.168.20.101 (192.168.20.101) 56(84) bytes of data.\n64 bytes from 192.168.20.101: icmp_seq=1 ttl=63 time=1.29 ms\n\n--- 192.168.20.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.285/1.285/1.285/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "20191ba9-1e91-43a5-8bed-4510a4676e38",
+      "device_id": "PC-HQ-STAFF",
+      "observed_at": "2026-11-16 22:36:43.183207+00:00",
+      "received_at": "2026-11-16 22:36:43.201370+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.71,
+      "raw": "PING 192.168.20.101 (192.168.20.101) 56(84) bytes of data.\n64 bytes from 192.168.20.101: icmp_seq=1 ttl=63 time=2.71 ms\n\n--- 192.168.20.101 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.708/2.708/2.708/0.000 ms\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "8f156df2-7e0e-4b72-baed-623cdfb856ae",
+      "device_id": "R-B1",
+      "observed_at": "2026-11-16 22:37:05.382716+00:00",
+      "received_at": "2026-11-16 22:37:05.399187+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.89,
+      "raw": "PING 10.0.0.2 (10.0.0.2) 56(84) bytes of data.\n64 bytes from 10.0.0.2: icmp_seq=1 ttl=62 time=2.89 ms\n\n--- 10.0.0.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.892/2.892/2.892/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "30e7fb50-b343-477c-98f1-6230f6fbc4f6",
+      "device_id": "R-B1",
+      "observed_at": "2026-11-16 22:37:01.178430+00:00",
+      "received_at": "2026-11-16 22:37:01.192438+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.15,
+      "raw": "PING 10.0.0.2 (10.0.0.2) 56(84) bytes of data.\n64 bytes from 10.0.0.2: icmp_seq=1 ttl=62 time=1.15 ms\n\n--- 10.0.0.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.149/1.149/1.149/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "5ba16db6-6fd3-43f4-95fb-e17c93834309",
+      "device_id": "R-B1",
+      "observed_at": "2026-11-16 22:36:58.248718+00:00",
+      "received_at": "2026-11-16 22:36:58.332379+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 7.16,
+      "raw": "PING 10.0.0.2 (10.0.0.2) 56(84) bytes of data.\n64 bytes from 10.0.0.2: icmp_seq=1 ttl=62 time=7.16 ms\n\n--- 10.0.0.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 7.156/7.156/7.156/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "47a64a21-441e-40a9-b63e-0b7c3c0cbdd5",
+      "device_id": "R-B1",
+      "observed_at": "2026-11-16 22:36:55.203015+00:00",
+      "received_at": "2026-11-16 22:36:55.222344+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.78,
+      "raw": "PING 10.0.0.2 (10.0.0.2) 56(84) bytes of data.\n64 bytes from 10.0.0.2: icmp_seq=1 ttl=62 time=1.78 ms\n\n--- 10.0.0.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.782/1.782/1.782/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "4f1cc8da-9745-4978-98c2-fcf7608f35c2",
+      "device_id": "R-B1",
+      "observed_at": "2026-11-16 22:36:52.509431+00:00",
+      "received_at": "2026-11-16 22:36:52.586885+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.85,
+      "raw": "PING 10.0.0.2 (10.0.0.2) 56(84) bytes of data.\n64 bytes from 10.0.0.2: icmp_seq=1 ttl=62 time=1.85 ms\n\n--- 10.0.0.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.845/1.845/1.845/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "394ee465-1507-4ceb-9e25-72e05c9e8ff0",
+      "device_id": "R-B1",
+      "observed_at": "2026-11-16 22:36:49.182600+00:00",
+      "received_at": "2026-11-16 22:36:49.197019+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.15,
+      "raw": "PING 10.0.0.2 (10.0.0.2) 56(84) bytes of data.\n64 bytes from 10.0.0.2: icmp_seq=1 ttl=62 time=1.15 ms\n\n--- 10.0.0.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.154/1.154/1.154/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "00ebdb6e-dfdd-4b02-8dd2-ae8022d12a7d",
+      "device_id": "R-B1",
+      "observed_at": "2026-11-16 22:36:46.185058+00:00",
+      "received_at": "2026-11-16 22:36:46.199810+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.73,
+      "raw": "PING 10.0.0.2 (10.0.0.2) 56(84) bytes of data.\n64 bytes from 10.0.0.2: icmp_seq=1 ttl=62 time=1.73 ms\n\n--- 10.0.0.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.731/1.731/1.731/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "306e4261-62e8-46d7-aaff-88d69e6b1bff",
+      "device_id": "R-B1",
+      "observed_at": "2026-11-16 22:36:43.204462+00:00",
+      "received_at": "2026-11-16 22:36:43.226632+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.9,
+      "raw": "PING 10.0.0.2 (10.0.0.2) 56(84) bytes of data.\n64 bytes from 10.0.0.2: icmp_seq=1 ttl=62 time=1.90 ms\n\n--- 10.0.0.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.898/1.898/1.898/0.000 ms\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "3d532c25-eac9-45eb-a99d-e5011a35b172",
+      "device_id": "R-B2",
+      "observed_at": "2026-11-16 22:37:05.441936+00:00",
+      "received_at": "2026-11-16 22:37:05.456154+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.13,
+      "raw": "PING 10.0.0.3 (10.0.0.3) 56(84) bytes of data.\n64 bytes from 10.0.0.3: icmp_seq=1 ttl=62 time=2.13 ms\n\n--- 10.0.0.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.129/2.129/2.129/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "06ff4354-ebe3-4dc8-830b-45c5853ae4c8",
+      "device_id": "R-B2",
+      "observed_at": "2026-11-16 22:37:01.235910+00:00",
+      "received_at": "2026-11-16 22:37:01.248131+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.55,
+      "raw": "PING 10.0.0.3 (10.0.0.3) 56(84) bytes of data.\n64 bytes from 10.0.0.3: icmp_seq=1 ttl=62 time=1.55 ms\n\n--- 10.0.0.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.546/1.546/1.546/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "d53ea85a-7f17-4e4c-bb54-04ec2eb956d6",
+      "device_id": "R-B2",
+      "observed_at": "2026-11-16 22:36:58.450240+00:00",
+      "received_at": "2026-11-16 22:36:58.468089+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.63,
+      "raw": "PING 10.0.0.3 (10.0.0.3) 56(84) bytes of data.\n64 bytes from 10.0.0.3: icmp_seq=1 ttl=62 time=1.63 ms\n\n--- 10.0.0.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.625/1.625/1.625/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "fba7f2f3-52c9-4a7f-9fa9-d38d141c346e",
+      "device_id": "R-B2",
+      "observed_at": "2026-11-16 22:36:55.288716+00:00",
+      "received_at": "2026-11-16 22:36:55.302597+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.4,
+      "raw": "PING 10.0.0.3 (10.0.0.3) 56(84) bytes of data.\n64 bytes from 10.0.0.3: icmp_seq=1 ttl=62 time=1.40 ms\n\n--- 10.0.0.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.402/1.402/1.402/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "d366d668-9b1a-44b8-8359-3bf73e090c64",
+      "device_id": "R-B2",
+      "observed_at": "2026-11-16 22:36:52.765528+00:00",
+      "received_at": "2026-11-16 22:36:52.811966+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.21,
+      "raw": "PING 10.0.0.3 (10.0.0.3) 56(84) bytes of data.\n64 bytes from 10.0.0.3: icmp_seq=1 ttl=62 time=3.21 ms\n\n--- 10.0.0.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.211/3.211/3.211/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "db8863bd-1aed-4313-9fc8-8c42b48a0e9d",
+      "device_id": "R-B2",
+      "observed_at": "2026-11-16 22:36:49.248698+00:00",
+      "received_at": "2026-11-16 22:36:49.265764+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.75,
+      "raw": "PING 10.0.0.3 (10.0.0.3) 56(84) bytes of data.\n64 bytes from 10.0.0.3: icmp_seq=1 ttl=62 time=2.75 ms\n\n--- 10.0.0.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.748/2.748/2.748/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "bc18ec28-5b46-4711-97e6-faca9c3011d4",
+      "device_id": "R-B2",
+      "observed_at": "2026-11-16 22:36:46.244915+00:00",
+      "received_at": "2026-11-16 22:36:46.260619+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 0.878,
+      "raw": "PING 10.0.0.3 (10.0.0.3) 56(84) bytes of data.\n64 bytes from 10.0.0.3: icmp_seq=1 ttl=62 time=0.878 ms\n\n--- 10.0.0.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.878/0.878/0.878/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "ca7fe75a-3036-44c6-a83e-97d07f0965c7",
+      "device_id": "R-B2",
+      "observed_at": "2026-11-16 22:36:43.292729+00:00",
+      "received_at": "2026-11-16 22:36:43.315487+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.1,
+      "raw": "PING 10.0.0.3 (10.0.0.3) 56(84) bytes of data.\n64 bytes from 10.0.0.3: icmp_seq=1 ttl=62 time=2.10 ms\n\n--- 10.0.0.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.104/2.104/2.104/0.000 ms\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "541f502d-388d-431a-a482-23691d7ccbae",
+      "device_id": "R-B3",
+      "observed_at": "2026-11-16 22:37:05.513273+00:00",
+      "received_at": "2026-11-16 22:37:05.523312+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.54,
+      "raw": "PING 10.0.0.4 (10.0.0.4) 56(84) bytes of data.\n64 bytes from 10.0.0.4: icmp_seq=1 ttl=62 time=1.54 ms\n\n--- 10.0.0.4 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.543/1.543/1.543/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "779a0485-f840-47fd-98c0-71f89b2bd84f",
+      "device_id": "R-B3",
+      "observed_at": "2026-11-16 22:37:01.297166+00:00",
+      "received_at": "2026-11-16 22:37:01.304848+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.03,
+      "raw": "PING 10.0.0.4 (10.0.0.4) 56(84) bytes of data.\n64 bytes from 10.0.0.4: icmp_seq=1 ttl=62 time=2.03 ms\n\n--- 10.0.0.4 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.027/2.027/2.027/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "75012680-84f1-4e6f-a949-fbc70cfddca9",
+      "device_id": "R-B3",
+      "observed_at": "2026-11-16 22:36:58.527280+00:00",
+      "received_at": "2026-11-16 22:36:58.539785+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.69,
+      "raw": "PING 10.0.0.4 (10.0.0.4) 56(84) bytes of data.\n64 bytes from 10.0.0.4: icmp_seq=1 ttl=62 time=1.69 ms\n\n--- 10.0.0.4 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.691/1.691/1.691/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "ed7d62ec-e81f-434e-9c5f-a2840e35f3ce",
+      "device_id": "R-B3",
+      "observed_at": "2026-11-16 22:36:55.348744+00:00",
+      "received_at": "2026-11-16 22:36:55.356478+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 0.949,
+      "raw": "PING 10.0.0.4 (10.0.0.4) 56(84) bytes of data.\n64 bytes from 10.0.0.4: icmp_seq=1 ttl=62 time=0.949 ms\n\n--- 10.0.0.4 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.949/0.949/0.949/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "deb254e9-0d1f-403f-92f3-3926ecf2294f",
+      "device_id": "R-B3",
+      "observed_at": "2026-11-16 22:36:53.059565+00:00",
+      "received_at": "2026-11-16 22:36:53.100621+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 7.89,
+      "raw": "PING 10.0.0.4 (10.0.0.4) 56(84) bytes of data.\n64 bytes from 10.0.0.4: icmp_seq=1 ttl=62 time=7.89 ms\n\n--- 10.0.0.4 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 7.891/7.891/7.891/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "3a743121-5a70-44a8-b112-45ba1cd61465",
+      "device_id": "R-B3",
+      "observed_at": "2026-11-16 22:36:49.316511+00:00",
+      "received_at": "2026-11-16 22:36:49.328256+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 4.77,
+      "raw": "PING 10.0.0.4 (10.0.0.4) 56(84) bytes of data.\n64 bytes from 10.0.0.4: icmp_seq=1 ttl=62 time=4.77 ms\n\n--- 10.0.0.4 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 4.774/4.774/4.774/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "3de20921-37a1-4921-ad99-5d4d1125ba08",
+      "device_id": "R-B3",
+      "observed_at": "2026-11-16 22:36:46.317514+00:00",
+      "received_at": "2026-11-16 22:36:46.327287+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.82,
+      "raw": "PING 10.0.0.4 (10.0.0.4) 56(84) bytes of data.\n64 bytes from 10.0.0.4: icmp_seq=1 ttl=62 time=1.82 ms\n\n--- 10.0.0.4 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.815/1.815/1.815/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "18499cea-0086-41db-9d69-59b415bac917",
+      "device_id": "R-B3",
+      "observed_at": "2026-11-16 22:36:43.383621+00:00",
+      "received_at": "2026-11-16 22:36:43.396688+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.94,
+      "raw": "PING 10.0.0.4 (10.0.0.4) 56(84) bytes of data.\n64 bytes from 10.0.0.4: icmp_seq=1 ttl=62 time=2.94 ms\n\n--- 10.0.0.4 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.937/2.937/2.937/0.000 ms\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "aab01207-4a7c-4c6c-a163-fcf172044219",
+      "device_id": "R-HQ",
+      "observed_at": "2026-11-16 22:37:05.318891+00:00",
+      "received_at": "2026-11-16 22:37:05.333882+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.41,
+      "raw": "PING 10.0.0.1 (10.0.0.1) 56(84) bytes of data.\n64 bytes from 10.0.0.1: icmp_seq=1 ttl=63 time=1.41 ms\n\n--- 10.0.0.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.406/1.406/1.406/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "069c0197-b8e5-448d-bf43-f798543d6108",
+      "device_id": "R-HQ",
+      "observed_at": "2026-11-16 22:37:01.118074+00:00",
+      "received_at": "2026-11-16 22:37:01.130711+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.33,
+      "raw": "PING 10.0.0.1 (10.0.0.1) 56(84) bytes of data.\n64 bytes from 10.0.0.1: icmp_seq=1 ttl=63 time=1.33 ms\n\n--- 10.0.0.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.331/1.331/1.331/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "5f0e3e8f-ec7b-4192-ab3f-501786dbaf4e",
+      "device_id": "R-HQ",
+      "observed_at": "2026-11-16 22:36:58.121459+00:00",
+      "received_at": "2026-11-16 22:36:58.146846+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 0.647,
+      "raw": "PING 10.0.0.1 (10.0.0.1) 56(84) bytes of data.\n64 bytes from 10.0.0.1: icmp_seq=1 ttl=63 time=0.647 ms\n\n--- 10.0.0.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.647/0.647/0.647/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "f05cea84-f188-486a-88d3-12efa6824c8b",
+      "device_id": "R-HQ",
+      "observed_at": "2026-11-16 22:36:55.120087+00:00",
+      "received_at": "2026-11-16 22:36:55.134536+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.2,
+      "raw": "PING 10.0.0.1 (10.0.0.1) 56(84) bytes of data.\n64 bytes from 10.0.0.1: icmp_seq=1 ttl=63 time=1.20 ms\n\n--- 10.0.0.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.199/1.199/1.199/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "8e664836-b676-45d9-a735-928621acf204",
+      "device_id": "R-HQ",
+      "observed_at": "2026-11-16 22:36:52.183383+00:00",
+      "received_at": "2026-11-16 22:36:52.280307+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.9,
+      "raw": "PING 10.0.0.1 (10.0.0.1) 56(84) bytes of data.\n64 bytes from 10.0.0.1: icmp_seq=1 ttl=63 time=1.90 ms\n\n--- 10.0.0.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.898/1.898/1.898/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "4d98c362-0020-4466-bdf7-2ed0245a07c3",
+      "device_id": "R-HQ",
+      "observed_at": "2026-11-16 22:36:49.113310+00:00",
+      "received_at": "2026-11-16 22:36:49.128414+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.19,
+      "raw": "PING 10.0.0.1 (10.0.0.1) 56(84) bytes of data.\n64 bytes from 10.0.0.1: icmp_seq=1 ttl=63 time=1.19 ms\n\n--- 10.0.0.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.192/1.192/1.192/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "8f21d55a-eca8-4a9a-8d53-14eed96826ac",
+      "device_id": "R-HQ",
+      "observed_at": "2026-11-16 22:36:46.114406+00:00",
+      "received_at": "2026-11-16 22:36:46.127121+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 0.644,
+      "raw": "PING 10.0.0.1 (10.0.0.1) 56(84) bytes of data.\n64 bytes from 10.0.0.1: icmp_seq=1 ttl=63 time=0.644 ms\n\n--- 10.0.0.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.644/0.644/0.644/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "1d2832e7-eeef-4fb4-8e19-a734d837a3ac",
+      "device_id": "R-HQ",
+      "observed_at": "2026-11-16 22:36:43.117022+00:00",
+      "received_at": "2026-11-16 22:36:43.133751+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 0.565,
+      "raw": "PING 10.0.0.1 (10.0.0.1) 56(84) bytes of data.\n64 bytes from 10.0.0.1: icmp_seq=1 ttl=63 time=0.565 ms\n\n--- 10.0.0.1 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.565/0.565/0.565/0.000 ms\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "6b3dbfca-c80a-41b8-b315-e31e87f8dbfd",
+      "device_id": "SW-B1-1",
+      "observed_at": "2026-11-16 22:37:05.401212+00:00",
+      "received_at": "2026-11-16 22:37:05.417429+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.9,
+      "raw": "PING 192.168.130.2 (192.168.130.2) 56(84) bytes of data.\n64 bytes from 192.168.130.2: icmp_seq=1 ttl=60 time=2.90 ms\n\n--- 192.168.130.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.898/2.898/2.898/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "869c277f-cebf-4bf0-a4f5-fe1985c579dc",
+      "device_id": "SW-B1-1",
+      "observed_at": "2026-11-16 22:37:01.195210+00:00",
+      "received_at": "2026-11-16 22:37:01.210654+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.95,
+      "raw": "PING 192.168.130.2 (192.168.130.2) 56(84) bytes of data.\n64 bytes from 192.168.130.2: icmp_seq=1 ttl=60 time=2.95 ms\n\n--- 192.168.130.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.952/2.952/2.952/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "32ed83d5-e7f1-45fe-a6c7-d3fd80ca433f",
+      "device_id": "SW-B1-1",
+      "observed_at": "2026-11-16 22:36:58.345556+00:00",
+      "received_at": "2026-11-16 22:36:58.388082+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 6.13,
+      "raw": "PING 192.168.130.2 (192.168.130.2) 56(84) bytes of data.\n64 bytes from 192.168.130.2: icmp_seq=1 ttl=60 time=6.13 ms\n\n--- 192.168.130.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 6.131/6.131/6.131/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "cf0e79c9-bc01-4f0d-a9ee-27ff48317cb8",
+      "device_id": "SW-B1-1",
+      "observed_at": "2026-11-16 22:36:55.225287+00:00",
+      "received_at": "2026-11-16 22:36:55.255710+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.54,
+      "raw": "PING 192.168.130.2 (192.168.130.2) 56(84) bytes of data.\n64 bytes from 192.168.130.2: icmp_seq=1 ttl=60 time=2.54 ms\n\n--- 192.168.130.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.538/2.538/2.538/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "1d3c5d06-4047-46a5-a576-580de40ee09b",
+      "device_id": "SW-B1-1",
+      "observed_at": "2026-11-16 22:36:52.615597+00:00",
+      "received_at": "2026-11-16 22:36:52.679542+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 6.19,
+      "raw": "PING 192.168.130.2 (192.168.130.2) 56(84) bytes of data.\n64 bytes from 192.168.130.2: icmp_seq=1 ttl=60 time=6.19 ms\n\n--- 192.168.130.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 6.192/6.192/6.192/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "b5b8fcab-1364-4af2-8c47-f799acf3c647",
+      "device_id": "SW-B1-1",
+      "observed_at": "2026-11-16 22:36:49.199478+00:00",
+      "received_at": "2026-11-16 22:36:49.215045+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.86,
+      "raw": "PING 192.168.130.2 (192.168.130.2) 56(84) bytes of data.\n64 bytes from 192.168.130.2: icmp_seq=1 ttl=60 time=2.86 ms\n\n--- 192.168.130.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.860/2.860/2.860/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "542b76b7-a4e9-4545-a020-9242ceef025c",
+      "device_id": "SW-B1-1",
+      "observed_at": "2026-11-16 22:36:46.201757+00:00",
+      "received_at": "2026-11-16 22:36:46.220971+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 4.15,
+      "raw": "PING 192.168.130.2 (192.168.130.2) 56(84) bytes of data.\n64 bytes from 192.168.130.2: icmp_seq=1 ttl=60 time=4.15 ms\n\n--- 192.168.130.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 4.152/4.152/4.152/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "c718b422-581f-4f48-9c6d-84316a313666",
+      "device_id": "SW-B1-1",
+      "observed_at": "2026-11-16 22:36:43.230267+00:00",
+      "received_at": "2026-11-16 22:36:43.249781+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.99,
+      "raw": "PING 192.168.130.2 (192.168.130.2) 56(84) bytes of data.\n64 bytes from 192.168.130.2: icmp_seq=1 ttl=60 time=2.99 ms\n\n--- 192.168.130.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.991/2.991/2.991/0.000 ms\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "07667e88-7b8c-4ed8-a33a-236292ea666a",
+      "device_id": "SW-B1-2",
+      "observed_at": "2026-11-16 22:37:05.403544+00:00",
+      "received_at": "2026-11-16 22:37:05.416754+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.44,
+      "raw": "PING 192.168.130.3 (192.168.130.3) 56(84) bytes of data.\n64 bytes from 192.168.130.3: icmp_seq=1 ttl=60 time=1.44 ms\n\n--- 192.168.130.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.443/1.443/1.443/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "04fcbc04-4baf-4300-826d-b16fd3c5f38e",
+      "device_id": "SW-B1-2",
+      "observed_at": "2026-11-16 22:37:01.202141+00:00",
+      "received_at": "2026-11-16 22:37:01.212667+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.4,
+      "raw": "PING 192.168.130.3 (192.168.130.3) 56(84) bytes of data.\n64 bytes from 192.168.130.3: icmp_seq=1 ttl=60 time=1.40 ms\n\n--- 192.168.130.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.398/1.398/1.398/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "1456d6fd-7642-4de9-b3db-bfe8231a207d",
+      "device_id": "SW-B1-2",
+      "observed_at": "2026-11-16 22:36:58.376482+00:00",
+      "received_at": "2026-11-16 22:36:58.414549+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 8.22,
+      "raw": "PING 192.168.130.3 (192.168.130.3) 56(84) bytes of data.\n64 bytes from 192.168.130.3: icmp_seq=1 ttl=60 time=8.22 ms\n\n--- 192.168.130.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 8.221/8.221/8.221/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "eb71e88b-7445-4593-9540-b7fbb8320a13",
+      "device_id": "SW-B1-2",
+      "observed_at": "2026-11-16 22:36:55.233299+00:00",
+      "received_at": "2026-11-16 22:36:55.258331+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.84,
+      "raw": "PING 192.168.130.3 (192.168.130.3) 56(84) bytes of data.\n64 bytes from 192.168.130.3: icmp_seq=1 ttl=60 time=2.84 ms\n\n--- 192.168.130.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.840/2.840/2.840/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "98614b01-3328-4e33-8408-13d6603224a4",
+      "device_id": "SW-B1-2",
+      "observed_at": "2026-11-16 22:36:52.624730+00:00",
+      "received_at": "2026-11-16 22:36:52.680504+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 4.39,
+      "raw": "PING 192.168.130.3 (192.168.130.3) 56(84) bytes of data.\n64 bytes from 192.168.130.3: icmp_seq=1 ttl=60 time=4.39 ms\n\n--- 192.168.130.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 4.390/4.390/4.390/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "b949197c-9ab7-4c67-a1a4-a8da1669d4c5",
+      "device_id": "SW-B1-2",
+      "observed_at": "2026-11-16 22:36:49.206003+00:00",
+      "received_at": "2026-11-16 22:36:49.224598+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.86,
+      "raw": "PING 192.168.130.3 (192.168.130.3) 56(84) bytes of data.\n64 bytes from 192.168.130.3: icmp_seq=1 ttl=60 time=2.86 ms\n\n--- 192.168.130.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.864/2.864/2.864/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "d46ddd93-3c54-4f18-a9c3-30bf37e78464",
+      "device_id": "SW-B1-2",
+      "observed_at": "2026-11-16 22:36:46.206052+00:00",
+      "received_at": "2026-11-16 22:36:46.221982+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.71,
+      "raw": "PING 192.168.130.3 (192.168.130.3) 56(84) bytes of data.\n64 bytes from 192.168.130.3: icmp_seq=1 ttl=60 time=2.71 ms\n\n--- 192.168.130.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.709/2.709/2.709/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "c3fcd6a4-4e6a-4338-861a-11da8a437bc7",
+      "device_id": "SW-B1-2",
+      "observed_at": "2026-11-16 22:36:43.235064+00:00",
+      "received_at": "2026-11-16 22:36:43.259378+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.12,
+      "raw": "PING 192.168.130.3 (192.168.130.3) 56(84) bytes of data.\n64 bytes from 192.168.130.3: icmp_seq=1 ttl=60 time=3.12 ms\n\n--- 192.168.130.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.120/3.120/3.120/0.000 ms\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "29b8501e-488c-4b9e-9d0a-2457b4349c00",
+      "device_id": "SW-B2-1",
+      "observed_at": "2026-11-16 22:37:05.462359+00:00",
+      "received_at": "2026-11-16 22:37:05.478968+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.21,
+      "raw": "PING 192.168.230.2 (192.168.230.2) 56(84) bytes of data.\n64 bytes from 192.168.230.2: icmp_seq=1 ttl=60 time=2.21 ms\n\n--- 192.168.230.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.206/2.206/2.206/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "1ee0d98f-8ed4-4daf-9ab6-ddf791fd1459",
+      "device_id": "SW-B2-1",
+      "observed_at": "2026-11-16 22:37:01.253365+00:00",
+      "received_at": "2026-11-16 22:37:01.266194+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.33,
+      "raw": "PING 192.168.230.2 (192.168.230.2) 56(84) bytes of data.\n64 bytes from 192.168.230.2: icmp_seq=1 ttl=60 time=3.33 ms\n\n--- 192.168.230.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.329/3.329/3.329/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "d12a2c87-eee1-49e5-85fc-95d64d0f0214",
+      "device_id": "SW-B2-1",
+      "observed_at": "2026-11-16 22:36:58.473618+00:00",
+      "received_at": "2026-11-16 22:36:58.491636+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.4,
+      "raw": "PING 192.168.230.2 (192.168.230.2) 56(84) bytes of data.\n64 bytes from 192.168.230.2: icmp_seq=1 ttl=60 time=2.40 ms\n\n--- 192.168.230.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.401/2.401/2.401/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "061251a7-8b9e-4e6c-9da8-e3f1e1967868",
+      "device_id": "SW-B2-1",
+      "observed_at": "2026-11-16 22:36:55.305588+00:00",
+      "received_at": "2026-11-16 22:36:55.323877+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.18,
+      "raw": "PING 192.168.230.2 (192.168.230.2) 56(84) bytes of data.\n64 bytes from 192.168.230.2: icmp_seq=1 ttl=60 time=3.18 ms\n\n--- 192.168.230.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.181/3.181/3.181/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "d02071ac-6c7d-4b5b-9ca0-9ccc9a65101e",
+      "device_id": "SW-B2-1",
+      "observed_at": "2026-11-16 22:36:52.838285+00:00",
+      "received_at": "2026-11-16 22:36:52.883771+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.27,
+      "raw": "PING 192.168.230.2 (192.168.230.2) 56(84) bytes of data.\n64 bytes from 192.168.230.2: icmp_seq=1 ttl=60 time=3.27 ms\n\n--- 192.168.230.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.273/3.273/3.273/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "66127f03-3026-4e02-a44c-dd4069cefebc",
+      "device_id": "SW-B2-1",
+      "observed_at": "2026-11-16 22:36:49.267956+00:00",
+      "received_at": "2026-11-16 22:36:49.285651+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.59,
+      "raw": "PING 192.168.230.2 (192.168.230.2) 56(84) bytes of data.\n64 bytes from 192.168.230.2: icmp_seq=1 ttl=60 time=2.59 ms\n\n--- 192.168.230.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.587/2.587/2.587/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "d8c116e9-125b-49b7-bf65-888ce1753f68",
+      "device_id": "SW-B2-1",
+      "observed_at": "2026-11-16 22:36:46.262971+00:00",
+      "received_at": "2026-11-16 22:36:46.278013+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.57,
+      "raw": "PING 192.168.230.2 (192.168.230.2) 56(84) bytes of data.\n64 bytes from 192.168.230.2: icmp_seq=1 ttl=60 time=2.57 ms\n\n--- 192.168.230.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.571/2.571/2.571/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "7d3c9336-48cc-4936-a5a4-38c303b9ffed",
+      "device_id": "SW-B2-1",
+      "observed_at": "2026-11-16 22:36:43.319838+00:00",
+      "received_at": "2026-11-16 22:36:43.341885+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 4.29,
+      "raw": "PING 192.168.230.2 (192.168.230.2) 56(84) bytes of data.\n64 bytes from 192.168.230.2: icmp_seq=1 ttl=60 time=4.29 ms\n\n--- 192.168.230.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 4.290/4.290/4.290/0.000 ms\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "2af58ad7-72c3-4402-a83e-3db7f22ff64e",
+      "device_id": "SW-B2-2",
+      "observed_at": "2026-11-16 22:37:05.475770+00:00",
+      "received_at": "2026-11-16 22:37:05.493161+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.23,
+      "raw": "PING 192.168.230.3 (192.168.230.3) 56(84) bytes of data.\n64 bytes from 192.168.230.3: icmp_seq=1 ttl=60 time=3.23 ms\n\n--- 192.168.230.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.225/3.225/3.225/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "9a5dfb34-e33e-43b0-9f76-40db90a070fd",
+      "device_id": "SW-B2-2",
+      "observed_at": "2026-11-16 22:37:01.266712+00:00",
+      "received_at": "2026-11-16 22:37:01.283688+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.56,
+      "raw": "PING 192.168.230.3 (192.168.230.3) 56(84) bytes of data.\n64 bytes from 192.168.230.3: icmp_seq=1 ttl=60 time=1.56 ms\n\n--- 192.168.230.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.560/1.560/1.560/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "27d00faf-02cd-4e1e-b122-4903bf771e7c",
+      "device_id": "SW-B2-2",
+      "observed_at": "2026-11-16 22:36:58.486190+00:00",
+      "received_at": "2026-11-16 22:36:58.505764+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.57,
+      "raw": "PING 192.168.230.3 (192.168.230.3) 56(84) bytes of data.\n64 bytes from 192.168.230.3: icmp_seq=1 ttl=60 time=2.57 ms\n\n--- 192.168.230.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.573/2.573/2.573/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "f83fd295-ddc4-49c7-894e-b24187f32438",
+      "device_id": "SW-B2-2",
+      "observed_at": "2026-11-16 22:36:55.314170+00:00",
+      "received_at": "2026-11-16 22:36:55.324783+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.8,
+      "raw": "PING 192.168.230.3 (192.168.230.3) 56(84) bytes of data.\n64 bytes from 192.168.230.3: icmp_seq=1 ttl=60 time=1.80 ms\n\n--- 192.168.230.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.803/1.803/1.803/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "f5a37c23-4360-4706-8a84-10850798f886",
+      "device_id": "SW-B2-2",
+      "observed_at": "2026-11-16 22:36:52.891686+00:00",
+      "received_at": "2026-11-16 22:36:52.969767+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.49,
+      "raw": "PING 192.168.230.3 (192.168.230.3) 56(84) bytes of data.\n64 bytes from 192.168.230.3: icmp_seq=1 ttl=60 time=3.49 ms\n\n--- 192.168.230.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.494/3.494/3.494/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "5ff394b1-8b16-4e0e-a026-bb2882bc9838",
+      "device_id": "SW-B2-2",
+      "observed_at": "2026-11-16 22:36:49.278004+00:00",
+      "received_at": "2026-11-16 22:36:49.291759+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.0,
+      "raw": "PING 192.168.230.3 (192.168.230.3) 56(84) bytes of data.\n64 bytes from 192.168.230.3: icmp_seq=1 ttl=60 time=3.00 ms\n\n--- 192.168.230.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.000/3.000/3.000/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "9fa69397-3f14-4500-9466-a160d848b113",
+      "device_id": "SW-B2-2",
+      "observed_at": "2026-11-16 22:36:46.279124+00:00",
+      "received_at": "2026-11-16 22:36:46.295377+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.67,
+      "raw": "PING 192.168.230.3 (192.168.230.3) 56(84) bytes of data.\n64 bytes from 192.168.230.3: icmp_seq=1 ttl=60 time=3.67 ms\n\n--- 192.168.230.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.668/3.668/3.668/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "81d3b477-81aa-457a-a6ae-c716fbda5c60",
+      "device_id": "SW-B2-2",
+      "observed_at": "2026-11-16 22:36:43.333969+00:00",
+      "received_at": "2026-11-16 22:36:43.355146+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.6,
+      "raw": "PING 192.168.230.3 (192.168.230.3) 56(84) bytes of data.\n64 bytes from 192.168.230.3: icmp_seq=1 ttl=60 time=2.60 ms\n\n--- 192.168.230.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.603/2.603/2.603/0.000 ms\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "af0e0fe2-36ea-4322-b5a7-ec6e400cf8d9",
+      "device_id": "SW-B3-1",
+      "observed_at": "2026-11-16 22:37:05.534469+00:00",
+      "received_at": "2026-11-16 22:37:05.544727+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.19,
+      "raw": "PING 192.168.33.2 (192.168.33.2) 56(84) bytes of data.\n64 bytes from 192.168.33.2: icmp_seq=1 ttl=60 time=3.19 ms\n\n--- 192.168.33.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.191/3.191/3.191/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "3c800094-89c8-4e2f-963c-e03df3d02374",
+      "device_id": "SW-B3-1",
+      "observed_at": "2026-11-16 22:37:01.316677+00:00",
+      "received_at": "2026-11-16 22:37:01.329616+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.94,
+      "raw": "PING 192.168.33.2 (192.168.33.2) 56(84) bytes of data.\n64 bytes from 192.168.33.2: icmp_seq=1 ttl=60 time=1.94 ms\n\n--- 192.168.33.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.943/1.943/1.943/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "da95dd30-8435-4b21-a7f1-eacbf88127ca",
+      "device_id": "SW-B3-1",
+      "observed_at": "2026-11-16 22:36:58.557151+00:00",
+      "received_at": "2026-11-16 22:36:58.570384+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.77,
+      "raw": "PING 192.168.33.2 (192.168.33.2) 56(84) bytes of data.\n64 bytes from 192.168.33.2: icmp_seq=1 ttl=60 time=1.77 ms\n\n--- 192.168.33.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.770/1.770/1.770/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "7aa85d1c-994f-450e-a8b8-da4b7e02e7bc",
+      "device_id": "SW-B3-1",
+      "observed_at": "2026-11-16 22:36:55.370195+00:00",
+      "received_at": "2026-11-16 22:36:55.381167+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.66,
+      "raw": "PING 192.168.33.2 (192.168.33.2) 56(84) bytes of data.\n64 bytes from 192.168.33.2: icmp_seq=1 ttl=60 time=1.66 ms\n\n--- 192.168.33.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.659/1.659/1.659/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "a8598d95-c681-43f8-a0da-bb769f31d32c",
+      "device_id": "SW-B3-1",
+      "observed_at": "2026-11-16 22:36:53.151269+00:00",
+      "received_at": "2026-11-16 22:36:53.193737+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.5,
+      "raw": "PING 192.168.33.2 (192.168.33.2) 56(84) bytes of data.\n64 bytes from 192.168.33.2: icmp_seq=1 ttl=60 time=2.50 ms\n\n--- 192.168.33.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.495/2.495/2.495/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "d5b40dd4-8c6a-4063-875e-8900feb8964d",
+      "device_id": "SW-B3-1",
+      "observed_at": "2026-11-16 22:36:49.339195+00:00",
+      "received_at": "2026-11-16 22:36:49.349407+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.16,
+      "raw": "PING 192.168.33.2 (192.168.33.2) 56(84) bytes of data.\n64 bytes from 192.168.33.2: icmp_seq=1 ttl=60 time=2.16 ms\n\n--- 192.168.33.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.156/2.156/2.156/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "73bca8fc-4920-4dfa-b664-3ec12fd00038",
+      "device_id": "SW-B3-1",
+      "observed_at": "2026-11-16 22:36:46.338325+00:00",
+      "received_at": "2026-11-16 22:36:46.350797+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.77,
+      "raw": "PING 192.168.33.2 (192.168.33.2) 56(84) bytes of data.\n64 bytes from 192.168.33.2: icmp_seq=1 ttl=60 time=2.77 ms\n\n--- 192.168.33.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.768/2.768/2.768/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "2e826d7c-5bb0-4ada-9baf-4a82f9864b8e",
+      "device_id": "SW-B3-1",
+      "observed_at": "2026-11-16 22:36:43.414787+00:00",
+      "received_at": "2026-11-16 22:36:43.428840+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.93,
+      "raw": "PING 192.168.33.2 (192.168.33.2) 56(84) bytes of data.\n64 bytes from 192.168.33.2: icmp_seq=1 ttl=60 time=2.93 ms\n\n--- 192.168.33.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.932/2.932/2.932/0.000 ms\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "b1d8595f-9f13-4548-a668-aa1011959bb8",
+      "device_id": "SW-B3-2",
+      "observed_at": "2026-11-16 22:37:05.545711+00:00",
+      "received_at": "2026-11-16 22:37:05.555860+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.69,
+      "raw": "PING 192.168.33.3 (192.168.33.3) 56(84) bytes of data.\n64 bytes from 192.168.33.3: icmp_seq=1 ttl=60 time=1.69 ms\n\n--- 192.168.33.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.685/1.685/1.685/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "4a6a0d59-a9c9-4e24-bcb1-4354b007567a",
+      "device_id": "SW-B3-2",
+      "observed_at": "2026-11-16 22:37:01.332949+00:00",
+      "received_at": "2026-11-16 22:37:01.345405+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.67,
+      "raw": "PING 192.168.33.3 (192.168.33.3) 56(84) bytes of data.\n64 bytes from 192.168.33.3: icmp_seq=1 ttl=60 time=2.67 ms\n\n--- 192.168.33.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.665/2.665/2.665/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "ac5b26d0-4039-45b1-ba5b-740d8e6af735",
+      "device_id": "SW-B3-2",
+      "observed_at": "2026-11-16 22:36:58.572052+00:00",
+      "received_at": "2026-11-16 22:36:58.584451+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.62,
+      "raw": "PING 192.168.33.3 (192.168.33.3) 56(84) bytes of data.\n64 bytes from 192.168.33.3: icmp_seq=1 ttl=60 time=2.62 ms\n\n--- 192.168.33.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.620/2.620/2.620/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "e1e00b88-e36a-404c-a646-bfe13190dc8b",
+      "device_id": "SW-B3-2",
+      "observed_at": "2026-11-16 22:36:55.383731+00:00",
+      "received_at": "2026-11-16 22:36:55.391451+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.96,
+      "raw": "PING 192.168.33.3 (192.168.33.3) 56(84) bytes of data.\n64 bytes from 192.168.33.3: icmp_seq=1 ttl=60 time=1.96 ms\n\n--- 192.168.33.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.959/1.959/1.959/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "44c225dd-1bdd-49cb-8f17-58a549714f45",
+      "device_id": "SW-B3-2",
+      "observed_at": "2026-11-16 22:36:53.211667+00:00",
+      "received_at": "2026-11-16 22:36:53.261748+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 10.1,
+      "raw": "PING 192.168.33.3 (192.168.33.3) 56(84) bytes of data.\n64 bytes from 192.168.33.3: icmp_seq=1 ttl=60 time=10.1 ms\n\n--- 192.168.33.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 10.091/10.091/10.091/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "3c60826a-6d37-4cdd-b846-2312cc8378d6",
+      "device_id": "SW-B3-2",
+      "observed_at": "2026-11-16 22:36:49.350409+00:00",
+      "received_at": "2026-11-16 22:36:49.362503+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.44,
+      "raw": "PING 192.168.33.3 (192.168.33.3) 56(84) bytes of data.\n64 bytes from 192.168.33.3: icmp_seq=1 ttl=60 time=2.44 ms\n\n--- 192.168.33.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.437/2.437/2.437/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "d1c1371c-2406-4c26-bf9b-f4466ccf4158",
+      "device_id": "SW-B3-2",
+      "observed_at": "2026-11-16 22:36:46.351930+00:00",
+      "received_at": "2026-11-16 22:36:46.360892+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.5,
+      "raw": "PING 192.168.33.3 (192.168.33.3) 56(84) bytes of data.\n64 bytes from 192.168.33.3: icmp_seq=1 ttl=60 time=3.50 ms\n\n--- 192.168.33.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.502/3.502/3.502/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "ba6ed530-e67a-427f-b883-2931eb072dfe",
+      "device_id": "SW-B3-2",
+      "observed_at": "2026-11-16 22:36:43.431971+00:00",
+      "received_at": "2026-11-16 22:36:43.446893+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.09,
+      "raw": "PING 192.168.33.3 (192.168.33.3) 56(84) bytes of data.\n64 bytes from 192.168.33.3: icmp_seq=1 ttl=60 time=3.09 ms\n\n--- 192.168.33.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.088/3.088/3.088/0.000 ms\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "ad054829-f30d-462e-8512-0268c191c47a",
+      "device_id": "SW-HQ-1",
+      "observed_at": "2026-11-16 22:37:05.338579+00:00",
+      "received_at": "2026-11-16 22:37:05.349731+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.29,
+      "raw": "PING 192.168.30.2 (192.168.30.2) 56(84) bytes of data.\n64 bytes from 192.168.30.2: icmp_seq=1 ttl=64 time=1.29 ms\n\n--- 192.168.30.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.288/1.288/1.288/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "d6dcf338-15a2-4f33-907e-737c6dfc6168",
+      "device_id": "SW-HQ-1",
+      "observed_at": "2026-11-16 22:37:01.136008+00:00",
+      "received_at": "2026-11-16 22:37:01.148426+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.84,
+      "raw": "PING 192.168.30.2 (192.168.30.2) 56(84) bytes of data.\n64 bytes from 192.168.30.2: icmp_seq=1 ttl=64 time=1.84 ms\n\n--- 192.168.30.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.844/1.844/1.844/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "c69ee834-560d-4ec4-b79f-dde067d8e1ed",
+      "device_id": "SW-HQ-1",
+      "observed_at": "2026-11-16 22:36:58.156892+00:00",
+      "received_at": "2026-11-16 22:36:58.182511+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.78,
+      "raw": "PING 192.168.30.2 (192.168.30.2) 56(84) bytes of data.\n64 bytes from 192.168.30.2: icmp_seq=1 ttl=64 time=3.78 ms\n\n--- 192.168.30.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.784/3.784/3.784/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "3c9814b5-8161-4fb9-8b65-097b237bcb2d",
+      "device_id": "SW-HQ-1",
+      "observed_at": "2026-11-16 22:36:55.144649+00:00",
+      "received_at": "2026-11-16 22:36:55.160998+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.8,
+      "raw": "PING 192.168.30.2 (192.168.30.2) 56(84) bytes of data.\n64 bytes from 192.168.30.2: icmp_seq=1 ttl=64 time=1.80 ms\n\n--- 192.168.30.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.801/1.801/1.801/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "41a6797d-27df-4191-929c-df85c0146fe2",
+      "device_id": "SW-HQ-1",
+      "observed_at": "2026-11-16 22:36:52.301270+00:00",
+      "received_at": "2026-11-16 22:36:52.361948+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 7.82,
+      "raw": "PING 192.168.30.2 (192.168.30.2) 56(84) bytes of data.\n64 bytes from 192.168.30.2: icmp_seq=1 ttl=64 time=7.82 ms\n\n--- 192.168.30.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 7.822/7.822/7.822/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "d54c1902-4717-4e9d-8655-d3c4b93ea163",
+      "device_id": "SW-HQ-1",
+      "observed_at": "2026-11-16 22:36:49.133709+00:00",
+      "received_at": "2026-11-16 22:36:49.151396+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 0.993,
+      "raw": "PING 192.168.30.2 (192.168.30.2) 56(84) bytes of data.\n64 bytes from 192.168.30.2: icmp_seq=1 ttl=64 time=0.993 ms\n\n--- 192.168.30.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.993/0.993/0.993/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "3ed949a5-04bf-45f2-8d66-db55251a6422",
+      "device_id": "SW-HQ-1",
+      "observed_at": "2026-11-16 22:36:46.132055+00:00",
+      "received_at": "2026-11-16 22:36:46.145582+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.27,
+      "raw": "PING 192.168.30.2 (192.168.30.2) 56(84) bytes of data.\n64 bytes from 192.168.30.2: icmp_seq=1 ttl=64 time=1.27 ms\n\n--- 192.168.30.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.265/1.265/1.265/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "a2078ab0-5048-4801-acb4-3bc7afd477dd",
+      "device_id": "SW-HQ-1",
+      "observed_at": "2026-11-16 22:36:43.141479+00:00",
+      "received_at": "2026-11-16 22:36:43.159379+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.96,
+      "raw": "PING 192.168.30.2 (192.168.30.2) 56(84) bytes of data.\n64 bytes from 192.168.30.2: icmp_seq=1 ttl=64 time=1.96 ms\n\n--- 192.168.30.2 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.961/1.961/1.961/0.000 ms\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "26b7a52d-7531-4526-9276-2b778c59664b",
+      "device_id": "SW-HQ-2",
+      "observed_at": "2026-11-16 22:37:05.348839+00:00",
+      "received_at": "2026-11-16 22:37:05.363257+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 0.66,
+      "raw": "PING 192.168.30.3 (192.168.30.3) 56(84) bytes of data.\n64 bytes from 192.168.30.3: icmp_seq=1 ttl=64 time=0.660 ms\n\n--- 192.168.30.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.660/0.660/0.660/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "e2ba86aa-29b8-47e0-a500-4338c954dc54",
+      "device_id": "SW-HQ-2",
+      "observed_at": "2026-11-16 22:37:01.149255+00:00",
+      "received_at": "2026-11-16 22:37:01.161916+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 0.721,
+      "raw": "PING 192.168.30.3 (192.168.30.3) 56(84) bytes of data.\n64 bytes from 192.168.30.3: icmp_seq=1 ttl=64 time=0.721 ms\n\n--- 192.168.30.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.721/0.721/0.721/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "1d0bf9a2-75c4-4270-9f9a-f2f503a354f8",
+      "device_id": "SW-HQ-2",
+      "observed_at": "2026-11-16 22:36:58.178358+00:00",
+      "received_at": "2026-11-16 22:36:58.203972+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 0.672,
+      "raw": "PING 192.168.30.3 (192.168.30.3) 56(84) bytes of data.\n64 bytes from 192.168.30.3: icmp_seq=1 ttl=64 time=0.672 ms\n\n--- 192.168.30.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.672/0.672/0.672/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "bab856a8-053f-44eb-9971-8d180a5f4116",
+      "device_id": "SW-HQ-2",
+      "observed_at": "2026-11-16 22:36:55.162702+00:00",
+      "received_at": "2026-11-16 22:36:55.179961+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 0.337,
+      "raw": "PING 192.168.30.3 (192.168.30.3) 56(84) bytes of data.\n64 bytes from 192.168.30.3: icmp_seq=1 ttl=64 time=0.337 ms\n\n--- 192.168.30.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.337/0.337/0.337/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "057f2149-f808-44a2-b454-655b96c5b7f8",
+      "device_id": "SW-HQ-2",
+      "observed_at": "2026-11-16 22:36:52.365779+00:00",
+      "received_at": "2026-11-16 22:36:52.420849+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 0.397,
+      "raw": "PING 192.168.30.3 (192.168.30.3) 56(84) bytes of data.\n64 bytes from 192.168.30.3: icmp_seq=1 ttl=64 time=0.397 ms\n\n--- 192.168.30.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.397/0.397/0.397/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "36e76c68-a577-4645-bda4-8cf6e6a1ba77",
+      "device_id": "SW-HQ-2",
+      "observed_at": "2026-11-16 22:36:49.146685+00:00",
+      "received_at": "2026-11-16 22:36:49.162682+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 0.231,
+      "raw": "PING 192.168.30.3 (192.168.30.3) 56(84) bytes of data.\n64 bytes from 192.168.30.3: icmp_seq=1 ttl=64 time=0.231 ms\n\n--- 192.168.30.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.231/0.231/0.231/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "5bca46f9-a540-4b82-8e9d-47ee616f1b85",
+      "device_id": "SW-HQ-2",
+      "observed_at": "2026-11-16 22:36:46.146623+00:00",
+      "received_at": "2026-11-16 22:36:46.163691+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 0.678,
+      "raw": "PING 192.168.30.3 (192.168.30.3) 56(84) bytes of data.\n64 bytes from 192.168.30.3: icmp_seq=1 ttl=64 time=0.678 ms\n\n--- 192.168.30.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.678/0.678/0.678/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "dc99eefe-0045-4439-a691-4d0a90592f20",
+      "device_id": "SW-HQ-2",
+      "observed_at": "2026-11-16 22:36:43.161531+00:00",
+      "received_at": "2026-11-16 22:36:43.179670+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 0.217,
+      "raw": "PING 192.168.30.3 (192.168.30.3) 56(84) bytes of data.\n64 bytes from 192.168.30.3: icmp_seq=1 ttl=64 time=0.217 ms\n\n--- 192.168.30.3 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 0.217/0.217/0.217/0.000 ms\n",
+      "rn": 8
+    },
+    {
+      "probe_id": "3086d1d9-0114-4749-8066-a55e6202f365",
+      "device_id": "SW-WAN",
+      "observed_at": "2026-11-16 22:37:05.316794+00:00",
+      "received_at": "2026-11-16 22:37:05.331885+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.89,
+      "raw": "PING 10.0.0.254 (10.0.0.254) 56(84) bytes of data.\n64 bytes from 10.0.0.254: icmp_seq=1 ttl=62 time=1.89 ms\n\n--- 10.0.0.254 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.887/1.887/1.887/0.000 ms\n",
+      "rn": 1
+    },
+    {
+      "probe_id": "4039adb5-5510-4f2c-b5f5-769060df9151",
+      "device_id": "SW-WAN",
+      "observed_at": "2026-11-16 22:37:01.117167+00:00",
+      "received_at": "2026-11-16 22:37:01.131872+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.28,
+      "raw": "PING 10.0.0.254 (10.0.0.254) 56(84) bytes of data.\n64 bytes from 10.0.0.254: icmp_seq=1 ttl=62 time=2.28 ms\n\n--- 10.0.0.254 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.280/2.280/2.280/0.000 ms\n",
+      "rn": 2
+    },
+    {
+      "probe_id": "f4f026f7-f6bb-4f32-b83d-b22821dcf179",
+      "device_id": "SW-WAN",
+      "observed_at": "2026-11-16 22:36:58.117897+00:00",
+      "received_at": "2026-11-16 22:36:58.145099+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.85,
+      "raw": "PING 10.0.0.254 (10.0.0.254) 56(84) bytes of data.\n64 bytes from 10.0.0.254: icmp_seq=1 ttl=62 time=2.85 ms\n\n--- 10.0.0.254 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.845/2.845/2.845/0.000 ms\n",
+      "rn": 3
+    },
+    {
+      "probe_id": "4b789c21-04ca-43d3-b78b-45f9aec5c854",
+      "device_id": "SW-WAN",
+      "observed_at": "2026-11-16 22:36:55.118136+00:00",
+      "received_at": "2026-11-16 22:36:55.135393+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.11,
+      "raw": "PING 10.0.0.254 (10.0.0.254) 56(84) bytes of data.\n64 bytes from 10.0.0.254: icmp_seq=1 ttl=62 time=2.11 ms\n\n--- 10.0.0.254 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.114/2.114/2.114/0.000 ms\n",
+      "rn": 4
+    },
+    {
+      "probe_id": "97f9e34c-dbea-4968-9175-ece0beaa1b56",
+      "device_id": "SW-WAN",
+      "observed_at": "2026-11-16 22:36:52.165315+00:00",
+      "received_at": "2026-11-16 22:36:52.272049+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 1.62,
+      "raw": "PING 10.0.0.254 (10.0.0.254) 56(84) bytes of data.\n64 bytes from 10.0.0.254: icmp_seq=1 ttl=62 time=1.62 ms\n\n--- 10.0.0.254 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 1.619/1.619/1.619/0.000 ms\n",
+      "rn": 5
+    },
+    {
+      "probe_id": "6cdc93c2-5c2c-4317-9dd7-ccbd656874b9",
+      "device_id": "SW-WAN",
+      "observed_at": "2026-11-16 22:36:49.113179+00:00",
+      "received_at": "2026-11-16 22:36:49.126770+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.59,
+      "raw": "PING 10.0.0.254 (10.0.0.254) 56(84) bytes of data.\n64 bytes from 10.0.0.254: icmp_seq=1 ttl=62 time=2.59 ms\n\n--- 10.0.0.254 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.585/2.585/2.585/0.000 ms\n",
+      "rn": 6
+    },
+    {
+      "probe_id": "70e65183-96e4-490c-98b7-9814c49072bb",
+      "device_id": "SW-WAN",
+      "observed_at": "2026-11-16 22:36:46.113007+00:00",
+      "received_at": "2026-11-16 22:36:46.128198+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 2.4,
+      "raw": "PING 10.0.0.254 (10.0.0.254) 56(84) bytes of data.\n64 bytes from 10.0.0.254: icmp_seq=1 ttl=62 time=2.40 ms\n\n--- 10.0.0.254 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 2.400/2.400/2.400/0.000 ms\n",
+      "rn": 7
+    },
+    {
+      "probe_id": "c06574fa-c56a-4936-880e-2fabc3d3e921",
+      "device_id": "SW-WAN",
+      "observed_at": "2026-11-16 22:36:43.114404+00:00",
+      "received_at": "2026-11-16 22:36:43.136247+00:00",
+      "source_ip": "192.168.30.10",
+      "status": "ok",
+      "rtt_ms": 3.01,
+      "raw": "PING 10.0.0.254 (10.0.0.254) 56(84) bytes of data.\n64 bytes from 10.0.0.254: icmp_seq=1 ttl=62 time=3.01 ms\n\n--- 10.0.0.254 ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 3.012/3.012/3.012/0.000 ms\n",
+      "rn": 8
+    }
+  ],
+  "events": [],
+  "snapshots": [],
+  "heartbeats": [
+    {
+      "service": "probes",
+      "updated_at": "2026-11-16 22:37:06.524877+00:00",
+      "status": "ok",
+      "detail": {
+        "targets": 29,
+        "elapsed_s": 1.207,
+        "observed_ok": 28,
+        "observed_unavailable": 1
+      }
+    },
+    {
+      "service": "snmp",
+      "updated_at": "2026-11-16 22:37:02.568108+00:00",
+      "status": "ok",
+      "detail": {
+        "targets": 17,
+        "elapsed_s": 1.076,
+        "observed_ok": 17,
+        "observed_unavailable": 0
+      }
+    },
+    {
+      "service": "syslog",
+      "updated_at": "2026-11-16 22:37:05.676751+00:00",
+      "status": "ok",
+      "detail": {
+        "ingested": 2
+      }
+    }
+  ],
+  "counts": {
+    "polls": 7446,
+    "samples": 48731,
+    "probes": 38773,
+    "events": 3229,
+    "snapshots": 3094
+  }
+}

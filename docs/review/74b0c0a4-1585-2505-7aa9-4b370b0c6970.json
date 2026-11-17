@@ -1,0 +1,84 @@
+{
+  "review_id": "74b0c0a4-1585-2505-7aa9-4b370b0c6970",
+  "observations": [
+    {
+      "evidence_id": "sample:19049266-9b9d-4de4-8773-fc754f2d9ecc:SW-B2-2:eth1",
+      "device_id": "SW-B2-2",
+      "kind": "interface",
+      "observed_at": "2026-11-16 22:48:23.578274+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "SW-B2-2:eth1 administrative status 1, operational status 1."
+    },
+    {
+      "evidence_id": "probe:fa0c6d92-d439-4032-9155-8c57ad772a71",
+      "device_id": "PC-B2-IT",
+      "kind": "probe",
+      "observed_at": "2026-11-16 22:48:25.739508+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:95fb9c4d-85c3-4738-9bd3-4b10f30c4ccf",
+      "device_id": "PC-B2-IT",
+      "kind": "probe",
+      "observed_at": "2026-11-16 22:48:23.295763+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "snapshot:768fc783-233e-48fe-bf85-c08553d04a13:link:eth1",
+      "device_id": "SW-B2-2",
+      "kind": "console_interface",
+      "observed_at": "2026-11-16 22:48:24.096570+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Console shows eth1 administratively up."
+    },
+    {
+      "evidence_id": "topology:64593eb85708fccb",
+      "device_id": "PC-B2-IT",
+      "kind": "topology",
+      "observed_at": "2026-11-16 22:48:29.509712+00:00",
+      "source": "inventory",
+      "is_stale": false,
+      "summary": "Inventory path from monitoring server to target."
+    }
+  ],
+  "candidate_hypotheses": [
+    {
+      "fault_class": "unreachability",
+      "device_id": "PC-B2-IT",
+      "interface": null,
+      "affected_devices": [],
+      "topology_path": [
+        "MON-HQ",
+        "SW-HQ-2",
+        "MLS-HQ",
+        "R-HQ",
+        "SW-WAN",
+        "R-B2",
+        "MLS-B2",
+        "SW-B2-2",
+        "PC-B2-IT"
+      ]
+    }
+  ],
+  "status": "ok",
+  "interpretation": {
+    "fault_class": "unreachability",
+    "device_id": "PC-B2-IT",
+    "interface": "",
+    "disposition": "supported",
+    "incident_detected": true
+  },
+  "read_only_checks": [],
+  "actual_diagnostic_input": {
+    "gate": null,
+    "meaning": "No model was called. Assess only the displayed deterministic result and its available observations."
+  },
+  "local_source_observations": "source-c85bb6f802ec71927d2f.json",
+  "review_boundary": "Support is relative to the actual diagnostic input. The masked source bundle is available only to verify derived observations; it must not give credit for information absent from the diagnostic input."
+}

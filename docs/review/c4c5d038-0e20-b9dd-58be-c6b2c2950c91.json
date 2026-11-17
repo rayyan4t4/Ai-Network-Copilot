@@ -1,0 +1,88 @@
+{
+  "review_id": "c4c5d038-0e20-b9dd-58be-c6b2c2950c91",
+  "observations": [
+    {
+      "evidence_id": "snapshot:f45a9330-ae7e-4955-8600-3ffe0f82b2d0:link:eth0",
+      "device_id": "R-B3",
+      "kind": "console_interface",
+      "observed_at": "2026-11-16 23:09:10.722555+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Console shows eth0 administratively up."
+    },
+    {
+      "evidence_id": "snapshot:f45a9330-ae7e-4955-8600-3ffe0f82b2d0:ospf",
+      "device_id": "R-B3",
+      "kind": "ospf_neighbors",
+      "observed_at": "2026-11-16 23:09:10.722555+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Read-only FRR OSPF neighbor snapshot."
+    },
+    {
+      "evidence_id": "snapshot:f45a9330-ae7e-4955-8600-3ffe0f82b2d0:ospf_config:eth0",
+      "device_id": "R-B3",
+      "kind": "ospf_config",
+      "observed_at": "2026-11-16 23:09:10.722555+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "OSPF interface eth0 is passive; verified healthy reference mode is active."
+    },
+    {
+      "evidence_id": "event:5ea762fe-579a-5ed1-b7bf-aa8d7b92e8ed",
+      "device_id": "R-B3",
+      "kind": "ospf_loss_event",
+      "observed_at": "2026-11-16 23:08:22.872264+00:00",
+      "source": "syslog",
+      "is_stale": false,
+      "summary": "Identified ospfd event: ospf_loss_event on eth0."
+    },
+    {
+      "evidence_id": "snapshot:8bb706cd-f842-4ee6-bcab-c0087e60cea5:ospf",
+      "device_id": "R-B3",
+      "kind": "ospf_neighbors",
+      "observed_at": "2026-11-16 23:08:48.946565+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Previous missing-neighbor observation with underlying interface up."
+    }
+  ],
+  "candidate_hypotheses": [
+    {
+      "fault_class": "ospf_loss",
+      "device_id": "R-B3",
+      "interface": "eth0",
+      "affected_devices": [
+        "MLS-B3",
+        "PC-B3-ADMIN",
+        "PC-B3-IT",
+        "PC-B3-STAFF",
+        "SW-B3-1",
+        "SW-B3-2"
+      ],
+      "topology_path": [
+        "MON-HQ",
+        "SW-HQ-2",
+        "MLS-HQ",
+        "R-HQ",
+        "SW-WAN",
+        "R-B3"
+      ]
+    }
+  ],
+  "status": "ok",
+  "interpretation": {
+    "fault_class": "ospf_loss",
+    "device_id": "MLS-B3",
+    "interface": "eth0",
+    "disposition": "supported",
+    "incident_detected": true
+  },
+  "read_only_checks": [],
+  "actual_diagnostic_input": {
+    "gate": null,
+    "meaning": "No model was called. Assess only the displayed deterministic result and its available observations."
+  },
+  "local_source_observations": "source-aa2b5e6e5e9f9c905254.json",
+  "review_boundary": "Support is relative to the actual diagnostic input. The masked source bundle is available only to verify derived observations; it must not give credit for information absent from the diagnostic input."
+}

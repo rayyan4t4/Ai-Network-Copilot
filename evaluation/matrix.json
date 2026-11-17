@@ -1,0 +1,67 @@
+{
+  "version": "study-final-1",
+  "frozen_for_final_trials": true,
+  "threshold": 0.8,
+  "freshness_seconds": {
+    "snmp": 35,
+    "probe": 12,
+    "snapshot": 40,
+    "event": 90
+  },
+  "minimum_snapshot_separation_seconds": 10,
+  "link_recovery_grace_seconds": 20,
+  "faults": {
+    "interface_shutdown": {
+      "interface_down": 4,
+      "link_event": 3,
+      "console_down": 2,
+      "downstream_failure": 1,
+      "critical": [
+        "interface_down",
+        "link_event"
+      ]
+    },
+    "ospf_loss": {
+      "neighbor_loss": 3,
+      "ospf_event": 2,
+      "underlying_link_up": 2,
+      "configuration_change": 3,
+      "critical": [
+        "neighbor_loss",
+        "ospf_event",
+        "underlying_link_up",
+        "configuration_change"
+      ]
+    },
+    "acl_fault": {
+      "failed_flow": 3,
+      "matching_rule": 3,
+      "deny_counter_delta": 3,
+      "upstream_healthy": 1,
+      "critical": [
+        "failed_flow",
+        "matching_rule",
+        "deny_counter_delta"
+      ]
+    },
+    "high_utilization": {
+      "sustained_rates": 5,
+      "effective_capacity": 3,
+      "fresh_counters": 2,
+      "critical": [
+        "sustained_rates",
+        "effective_capacity"
+      ]
+    },
+    "unreachability": {
+      "repeated_probe_failure": 4,
+      "upstream_status": 3,
+      "fresh_poll_outcome": 2,
+      "topology_path": 1,
+      "critical": [
+        "repeated_probe_failure",
+        "upstream_status"
+      ]
+    }
+  }
+}

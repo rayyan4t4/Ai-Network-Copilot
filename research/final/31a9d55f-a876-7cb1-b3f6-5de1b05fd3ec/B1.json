@@ -1,0 +1,30 @@
+{
+  "result_id": "ee94357e-c717-496a-8952-8aa558a5957b",
+  "case_id": "31a9d55f-a876-7cb1-b3f6-5de1b05fd3ec",
+  "phase": "final",
+  "approach": "B1",
+  "started_at": "2026-11-16T22:43:11.197259+00:00",
+  "observation_sha256": "d858ae4cdd52c0cb66e9e5ea08e91642dc9a40feb026efcd33375d02da484d05",
+  "status": "ok",
+  "prediction": {
+    "fault_class": "ospf_loss",
+    "device_id": "MLS-B3",
+    "interface": "eth0",
+    "disposition": "supported",
+    "incident_detected": true
+  },
+  "pipeline_latency_ms": 31,
+  "available_at": "2026-11-16T22:43:11.218550+00:00",
+  "scores": {
+    "fault_instance": true,
+    "healthy_instance": false,
+    "insufficient_instance": false,
+    "detection_tp": true,
+    "detection_fn": false,
+    "detection_fp": false,
+    "detection_tn": false,
+    "exact_root_correct": false,
+    "correct_abstention": null,
+    "error": false
+  }
+}

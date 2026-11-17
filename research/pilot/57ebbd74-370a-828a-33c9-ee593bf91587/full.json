@@ -1,0 +1,60 @@
+{
+  "result_id": "a9fa95d3-404c-4785-bc47-3f8617f79485",
+  "case_id": "57ebbd74-370a-828a-33c9-ee593bf91587",
+  "phase": "pilot",
+  "approach": "full",
+  "started_at": "2026-11-16T22:18:31.788703+00:00",
+  "observation_sha256": "2156bd7e3a3a6bea259c0937a93a7597513e1e1e8b6e4536ba8171ed8f48f8fd",
+  "status": "ok",
+  "prediction": {
+    "fault_class": "inconclusive",
+    "device_id": "",
+    "interface": "",
+    "disposition": "inconclusive",
+    "incident_detected": true
+  },
+  "model_called": false,
+  "gate": {
+    "status": "inconclusive",
+    "score": 0.4,
+    "threshold": 0.8,
+    "available_weight": 4,
+    "total_required_weight": 10,
+    "missing": [
+      "neighbor_loss",
+      "configuration_change"
+    ],
+    "missing_critical": [
+      "neighbor_loss",
+      "configuration_change"
+    ],
+    "contradictions": [],
+    "signals": {
+      "neighbor_loss": [],
+      "ospf_event": [
+        "event:7e55f537-7ea2-5040-b6e6-23384b9472e3"
+      ],
+      "underlying_link_up": [
+        "snapshot:af2fe1f9-41cd-4fae-b1f5-5a1be479111c:link:eth0"
+      ],
+      "configuration_change": []
+    },
+    "matrix_version": "study-pilot-1",
+    "matrix_sha256": "0edf6ea5dc8ae6a60f8f4b3afd669cf7ec47417aac8d320139ac3a25b4234f3a",
+    "score_is_probability": false
+  },
+  "pipeline_latency_ms": 16,
+  "available_at": "2026-11-16T22:18:31.801814+00:00",
+  "scores": {
+    "fault_instance": true,
+    "healthy_instance": false,
+    "insufficient_instance": false,
+    "detection_tp": true,
+    "detection_fn": false,
+    "detection_fp": false,
+    "detection_tn": false,
+    "exact_root_correct": false,
+    "correct_abstention": null,
+    "error": false
+  }
+}

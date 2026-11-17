@@ -1,0 +1,30 @@
+{
+  "result_id": "4e6f92b6-581e-4f12-b68b-900a3e6e9685",
+  "case_id": "7e1d0cc4-b132-5b34-810a-551c1955c5f8",
+  "phase": "final",
+  "approach": "B1",
+  "started_at": "2026-11-16T22:57:06.432345+00:00",
+  "observation_sha256": "e2d50b4efbd1126a4813bf934ccbd1a4e50a72e743eaf3506faa25e42d9da999",
+  "status": "ok",
+  "prediction": {
+    "fault_class": "high_utilization",
+    "device_id": "R-B3",
+    "interface": "eth1",
+    "disposition": "supported",
+    "incident_detected": true
+  },
+  "pipeline_latency_ms": 31,
+  "available_at": "2026-11-16T22:57:06.452947+00:00",
+  "scores": {
+    "fault_instance": false,
+    "healthy_instance": false,
+    "insufficient_instance": true,
+    "detection_tp": false,
+    "detection_fn": false,
+    "detection_fp": false,
+    "detection_tn": false,
+    "exact_root_correct": null,
+    "correct_abstention": false,
+    "error": false
+  }
+}

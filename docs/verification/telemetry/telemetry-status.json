@@ -1,0 +1,325 @@
+{
+  "counts": [
+    {
+      "devices": 30,
+      "links": 33,
+      "interfaces": 116,
+      "polls": 42204,
+      "samples": 280016,
+      "probes": 225533,
+      "events": 11072
+    }
+  ],
+  "heartbeats": [
+    {
+      "service": "probes",
+      "updated_at": "2026-11-17 11:28:14.137059+00:00",
+      "status": "ok",
+      "detail": {
+        "targets": 29,
+        "elapsed_s": 0.588,
+        "observed_ok": 29,
+        "observed_unavailable": 0
+      }
+    },
+    {
+      "service": "snmp",
+      "updated_at": "2026-11-17 11:28:09.226362+00:00",
+      "status": "ok",
+      "detail": {
+        "targets": 17,
+        "elapsed_s": 2.377,
+        "observed_ok": 17,
+        "observed_unavailable": 0
+      }
+    },
+    {
+      "service": "syslog",
+      "updated_at": "2026-11-17 11:28:14.251781+00:00",
+      "status": "ok",
+      "detail": {
+        "ingested": 11
+      }
+    }
+  ],
+  "latest_polls": [
+    {
+      "device_id": "MLS-B1",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:07.614497+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "MLS-B2",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:08.277858+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "MLS-B3",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:08.780298+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "MLS-HQ",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:06.861549+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "R-B1",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:07.434339+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "R-B2",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:07.994813+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "R-B3",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:08.628497+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "R-HQ",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:07.432478+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "SW-B1-1",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:07.620054+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "SW-B1-2",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:07.945824+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "SW-B2-1",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:08.291652+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "SW-B2-2",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:08.621758+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "SW-B3-1",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:08.806460+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "SW-B3-2",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:09.008404+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "SW-HQ-1",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:06.866529+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "SW-HQ-2",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:07.207252+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "SW-WAN",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:07.200284+00:00",
+      "is_stale": false
+    }
+  ],
+  "latest_probes": [
+    {
+      "device_id": "MLS-B1",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:13.742076+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "MLS-B2",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:13.917311+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "MLS-B3",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:14.016359+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "MLS-HQ",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:13.552679+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "PC-B1-ADMIN",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:13.854141+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "PC-B1-IT",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:13.886518+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "PC-B1-STAFF",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:13.871670+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "PC-B2-ADMIN",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:13.957785+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "PC-B2-IT",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:13.986651+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "PC-B2-STAFF",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:13.968688+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "PC-B3-ADMIN",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:14.045293+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "PC-B3-IT",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:14.082136+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "PC-B3-STAFF",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:14.069013+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "PC-HQ-ADMIN",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:13.645748+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "PC-HQ-IT",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:13.701807+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "PC-HQ-STAFF",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:13.684312+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "R-B1",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:13.731575+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "R-B2",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:13.903010+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "R-B3",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:13.993567+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "R-HQ",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:13.647406+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "SW-B1-1",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:13.781223+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "SW-B1-2",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:13.824422+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "SW-B2-1",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:13.931579+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "SW-B2-2",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:13.941484+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "SW-B3-1",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:14.018682+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "SW-B3-2",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:14.042333+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "SW-HQ-1",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:13.554478+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "SW-HQ-2",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:13.605134+00:00",
+      "is_stale": false
+    },
+    {
+      "device_id": "SW-WAN",
+      "status": "ok",
+      "observed_at": "2026-11-17 11:28:13.592576+00:00",
+      "is_stale": false
+    }
+  ]
+}

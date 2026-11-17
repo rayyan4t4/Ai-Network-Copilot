@@ -1,0 +1,75 @@
+{
+  "review_id": "c3a770c3-0ca7-f844-7ad8-1ceb250bb2d9",
+  "observations": [
+    {
+      "evidence_id": "probe:6fec39f1-7523-4286-8bfa-44484b8eb09a",
+      "device_id": "PC-B1-IT",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:59:52.201944+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:2a612a77-8972-43a3-beae-0398ec6fcba0",
+      "device_id": "MLS-B1",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:59:52.151568+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "snapshot:7aac06c8-b7d6-4f17-87f8-20283ca406b0:acl",
+      "device_id": "MLS-B1",
+      "kind": "acl",
+      "observed_at": "2026-11-16 23:59:42.747431+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Read-only nftables rules and counters."
+    },
+    {
+      "evidence_id": "acl-delta:snapshot:7aac06c8-b7d6-4f17-87f8-20283ca406b0:acl:6",
+      "device_id": "MLS-B1",
+      "kind": "acl_counter_delta",
+      "observed_at": "2026-11-16 23:59:42.747431+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Matching deny counter increased between two snapshots."
+    }
+  ],
+  "candidate_hypotheses": [
+    {
+      "fault_class": "acl_fault",
+      "device_id": "MLS-B1",
+      "interface": null,
+      "affected_devices": [
+        "PC-B1-IT"
+      ],
+      "topology_path": [
+        "MON-HQ",
+        "SW-HQ-2",
+        "MLS-HQ",
+        "R-HQ",
+        "SW-WAN",
+        "R-B1",
+        "MLS-B1"
+      ]
+    }
+  ],
+  "status": "ok",
+  "interpretation": {
+    "fault_class": "unreachability",
+    "device_id": "PC-B1-IT",
+    "interface": "",
+    "disposition": "supported",
+    "incident_detected": true
+  },
+  "read_only_checks": [],
+  "actual_diagnostic_input": {
+    "gate": null,
+    "meaning": "No model was called. Assess only the displayed deterministic result and its available observations."
+  },
+  "local_source_observations": "source-16543955e24877c487c8.json",
+  "review_boundary": "Support is relative to the actual diagnostic input. The masked source bundle is available only to verify derived observations; it must not give credit for information absent from the diagnostic input."
+}

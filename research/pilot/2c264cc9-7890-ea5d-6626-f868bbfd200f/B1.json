@@ -1,0 +1,30 @@
+{
+  "result_id": "5d55b45c-36c6-494d-b111-be3520c0d0bd",
+  "case_id": "2c264cc9-7890-ea5d-6626-f868bbfd200f",
+  "phase": "pilot",
+  "approach": "B1",
+  "started_at": "2026-11-16T22:12:53.990944+00:00",
+  "observation_sha256": "6d04eab442d8409a867f0c35c05950fc244465e439eb4ee5ccc3672c865224e7",
+  "status": "ok",
+  "prediction": {
+    "fault_class": "interface_shutdown",
+    "device_id": "R-B1",
+    "interface": "eth0",
+    "disposition": "supported",
+    "incident_detected": true
+  },
+  "pipeline_latency_ms": 32,
+  "available_at": "2026-11-16T22:12:54.011898+00:00",
+  "scores": {
+    "fault_instance": false,
+    "healthy_instance": false,
+    "insufficient_instance": true,
+    "detection_tp": false,
+    "detection_fn": false,
+    "detection_fp": false,
+    "detection_tn": false,
+    "exact_root_correct": null,
+    "correct_abstention": false,
+    "error": false
+  }
+}

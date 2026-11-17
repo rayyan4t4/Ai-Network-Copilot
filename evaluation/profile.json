@@ -1,0 +1,34 @@
+{
+  "version": "study-final-1",
+  "poll_interval_seconds": 10,
+  "probe_interval_seconds": 3,
+  "snapshot_interval_seconds": 15,
+  "export_interval_seconds": 3,
+  "effective_wan_capacity_bps": 2000000,
+  "capture_seconds": {
+    "interface_shutdown": 50,
+    "ospf_loss": 90,
+    "acl_fault": 50,
+    "high_utilization": 55,
+    "unreachability": 35,
+    "healthy": 35
+  },
+  "restore_minimum_seconds": 20,
+  "restore_timeout_seconds": 120,
+  "model": "gemini-3.5-flash-lite",
+  "model_minimum_spacing_seconds": 15,
+  "model_timeout_seconds": 45,
+  "maximum_study_generation_attempts": 300,
+  "billing_changes_permitted": false,
+  "retry_policy": {
+    "maximum_attempts": 2,
+    "retry_http_status": [
+      429,
+      503
+    ],
+    "backoff_seconds": {
+      "429": 60,
+      "503": 30
+    }
+  }
+}

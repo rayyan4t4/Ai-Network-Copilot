@@ -1,0 +1,25 @@
+{
+  "recorded_at": "2026-11-17T11:55:07.922501+00:00",
+  "passed": true,
+  "unit_tests": 91,
+  "clean_checkout_verified": true,
+  "private_configuration_absent_in_clean_check": true,
+  "release_source_lock_files": 120,
+  "original_final_case_files_verified": 490,
+  "final_cases": 70,
+  "approach_outputs": 280,
+  "network_checks": 243,
+  "telemetry_checks": 11,
+  "latest_120_second_observation": {
+    "passed": true,
+    "samples": 60,
+    "distinct_exports": 21,
+    "max_age_seconds": 10.7
+  },
+  "earlier_observation_retained": "live/freshness-during-validation.json; all samples fresh, two samples 29/30 healthy, overall failed",
+  "staged_credential_scan_passed": true,
+  "private_paths_ignored": true,
+  "new_Gemini_calls": 0,
+  "independent_human_reviews_completed": false,
+  "browser_scope": "Live overview, topology, filter, raw evidence and recorded insufficient replay verified. Port 8766 browser origin denied; API separately verified. Incident-to-display timing not measured."
+}

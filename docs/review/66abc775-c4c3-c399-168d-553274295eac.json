@@ -1,0 +1,1237 @@
+{
+  "review_id": "66abc775-c4c3-c399-168d-553274295eac",
+  "observations": [
+    {
+      "evidence_id": "poll:6fa09864-f9fb-49fa-926e-2a77f7f4de6b",
+      "device_id": "MLS-B1",
+      "kind": "poll",
+      "observed_at": "2026-11-16 23:27:15.699962+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "SNMP poll returned ok."
+    },
+    {
+      "evidence_id": "poll:a7bc2d4e-b798-4ba0-b5b2-158fdad9f8a3",
+      "device_id": "MLS-B2",
+      "kind": "poll",
+      "observed_at": "2026-11-16 23:27:15.908970+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "SNMP poll returned ok."
+    },
+    {
+      "evidence_id": "poll:d5748ae3-544d-495d-93c2-31fd283239c8",
+      "device_id": "MLS-B3",
+      "kind": "poll",
+      "observed_at": "2026-11-16 23:27:16.121154+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "SNMP poll returned ok."
+    },
+    {
+      "evidence_id": "poll:74251174-d610-4df4-a5f8-41b37c327f5c",
+      "device_id": "MLS-HQ",
+      "kind": "poll",
+      "observed_at": "2026-11-16 23:27:15.524884+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "SNMP poll returned ok."
+    },
+    {
+      "evidence_id": "poll:153d58c1-d645-4aed-bc2c-533251eccc21",
+      "device_id": "R-B1",
+      "kind": "poll",
+      "observed_at": "2026-11-16 23:27:15.641539+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "SNMP poll returned ok."
+    },
+    {
+      "evidence_id": "poll:7ff158e4-3d3f-4687-a68c-f5b03c31620e",
+      "device_id": "R-B2",
+      "kind": "poll",
+      "observed_at": "2026-11-16 23:27:15.837508+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "SNMP poll returned ok."
+    },
+    {
+      "evidence_id": "poll:bc7818b7-68ce-46e4-b0e5-5caa686cc1cd",
+      "device_id": "R-B3",
+      "kind": "poll",
+      "observed_at": "2026-11-16 23:27:16.043870+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "SNMP poll returned ok."
+    },
+    {
+      "evidence_id": "poll:e4323b22-e9ff-47c8-bb06-c4c75369071e",
+      "device_id": "R-HQ",
+      "kind": "poll",
+      "observed_at": "2026-11-16 23:27:15.450825+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "SNMP poll returned ok."
+    },
+    {
+      "evidence_id": "poll:a78420cb-5986-4cba-aebc-a0889f80ada8",
+      "device_id": "SW-B1-1",
+      "kind": "poll",
+      "observed_at": "2026-11-16 23:27:15.713719+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "SNMP poll returned ok."
+    },
+    {
+      "evidence_id": "poll:8f44becc-dba8-462d-b9dc-c788d304fab9",
+      "device_id": "SW-B1-2",
+      "kind": "poll",
+      "observed_at": "2026-11-16 23:27:15.818750+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "SNMP poll returned ok."
+    },
+    {
+      "evidence_id": "poll:6540fd4c-495e-481d-8e3a-86ef5e25b46b",
+      "device_id": "SW-B2-1",
+      "kind": "poll",
+      "observed_at": "2026-11-16 23:27:15.923096+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "SNMP poll returned ok."
+    },
+    {
+      "evidence_id": "poll:08fd6e03-0f70-42d2-b690-bc38f5072ba0",
+      "device_id": "SW-B2-2",
+      "kind": "poll",
+      "observed_at": "2026-11-16 23:27:16.027219+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "SNMP poll returned ok."
+    },
+    {
+      "evidence_id": "poll:b4cddaad-600b-41d5-9027-fe0208391034",
+      "device_id": "SW-B3-1",
+      "kind": "poll",
+      "observed_at": "2026-11-16 23:27:16.133380+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "SNMP poll returned ok."
+    },
+    {
+      "evidence_id": "poll:bd3622d5-cbab-41b1-9db0-63ce70963de7",
+      "device_id": "SW-B3-2",
+      "kind": "poll",
+      "observed_at": "2026-11-16 23:27:16.238283+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "SNMP poll returned ok."
+    },
+    {
+      "evidence_id": "poll:e77fc374-45ad-4dfa-8d40-cfeb3367371d",
+      "device_id": "SW-HQ-1",
+      "kind": "poll",
+      "observed_at": "2026-11-16 23:27:15.541066+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "SNMP poll returned ok."
+    },
+    {
+      "evidence_id": "poll:2067bb3e-34c9-497a-9bd3-eeac6267fdac",
+      "device_id": "SW-HQ-2",
+      "kind": "poll",
+      "observed_at": "2026-11-16 23:27:15.624121+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "SNMP poll returned ok."
+    },
+    {
+      "evidence_id": "poll:6a0fe714-5618-4b7b-9407-da997a17f90e",
+      "device_id": "SW-WAN",
+      "kind": "poll",
+      "observed_at": "2026-11-16 23:27:15.450111+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "SNMP poll returned ok."
+    },
+    {
+      "evidence_id": "probe:c0d01d2f-f685-4ebd-885b-6337f1a3323a",
+      "device_id": "PC-B3-IT",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.527363+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:a64614de-1511-468c-9911-8825556febd6",
+      "device_id": "PC-B3-STAFF",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.515041+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:4fde2d2b-b00b-46b7-8285-2593cc2b41a9",
+      "device_id": "PC-B3-ADMIN",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.506875+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:be7c9c8d-0fc6-44a4-859a-8ec43bc7f1f3",
+      "device_id": "SW-B3-2",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.493428+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:7b6efcfc-98b3-4ce1-97ea-b4ae08b1c3df",
+      "device_id": "SW-B3-1",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.489666+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:724dacf6-e95d-45ae-995c-e1dbb5435046",
+      "device_id": "MLS-B3",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.471534+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:54084395-f1cf-4cc1-bfad-fdc25da52187",
+      "device_id": "R-B3",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.470982+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:e1505672-66a1-4084-a08a-8f860f784b2b",
+      "device_id": "PC-B2-IT",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.456187+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:fb207fab-4eaf-40ab-8e4c-50b86322bac1",
+      "device_id": "PC-B2-STAFF",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.450362+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:01118d2d-3585-4614-9a66-2079a34b9f95",
+      "device_id": "PC-B2-ADMIN",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.438330+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:f19d04d1-a566-45ed-8c86-a52a19678b2a",
+      "device_id": "SW-B2-2",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.428399+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:437e1593-a025-425e-9b5b-252a690dca95",
+      "device_id": "SW-B2-1",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.417093+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:a1a2ea8c-063c-456f-9c3b-3930b5d52c37",
+      "device_id": "MLS-B2",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.409549+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:e9b5e44d-1bc8-4ea8-9a1c-e4c378252d15",
+      "device_id": "R-B2",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.394298+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:b33611a4-74ee-4bf3-a062-b930800c2f8b",
+      "device_id": "PC-B1-IT",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.392803+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:4e96c7ad-2adc-4773-9fb6-a55348d7649d",
+      "device_id": "PC-B1-STAFF",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.375177+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:50a32fb2-c106-4a55-8fee-e75e73b38718",
+      "device_id": "PC-B1-ADMIN",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.372234+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:b2ef71ee-61b8-4ea7-ab4f-5aad19031a3c",
+      "device_id": "SW-B1-2",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.360878+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:2bab5adf-a6a4-4e55-801b-e746859a916f",
+      "device_id": "SW-B1-1",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.353846+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:ebedf839-1d8d-4f81-a860-04149919cf29",
+      "device_id": "MLS-B1",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.339158+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:86197976-225e-4f98-b9e2-0bb15a742e44",
+      "device_id": "R-B1",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.336722+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:bc835061-3fce-4815-9acd-5b5b7adf432a",
+      "device_id": "PC-HQ-IT",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.318371+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:6f9a7cb0-f7b9-4b28-8b09-a0b38169cdbe",
+      "device_id": "PC-HQ-STAFF",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.315104+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:df7e5a09-c325-4001-9c5f-cfdb4f42ddd8",
+      "device_id": "PC-HQ-ADMIN",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.301989+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:6595292d-3193-434b-a269-67c00f169343",
+      "device_id": "SW-HQ-2",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.297868+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:7b1fa64e-cba4-4103-9e98-5181235d880a",
+      "device_id": "SW-HQ-1",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.282542+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:100d8d78-6571-48bf-ad91-e540947bbf42",
+      "device_id": "MLS-HQ",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.281411+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:4f72ac9f-cee0-4024-b824-9c0e691aa878",
+      "device_id": "R-HQ",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.266382+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:6eb2a870-b3f9-4519-b61a-79b93f0cf7a2",
+      "device_id": "SW-WAN",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:24.264903+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:3086a4e8-c66b-4ed1-895f-e6fb0a8fb845",
+      "device_id": "PC-B3-IT",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:21.626056+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:33ede4e3-d5ec-4cd0-8f18-64bda966c6e0",
+      "device_id": "PC-B3-STAFF",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:21.603301+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:6b5b1ca2-ef7e-40f4-85ea-cf3277e3ce7d",
+      "device_id": "PC-B3-ADMIN",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:21.599733+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:afe8513a-f3f9-4609-a737-f107d334d217",
+      "device_id": "SW-B3-2",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:21.575690+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:27651db7-678a-456d-925b-77a55ba5b268",
+      "device_id": "SW-B3-1",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:21.572011+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:caf43115-0f90-461e-909f-f16b2763995a",
+      "device_id": "MLS-B3",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:21.546354+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:588ceae0-d47b-4135-8d9a-fe60afd93f38",
+      "device_id": "R-B3",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:21.546223+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:ed943dfd-8fc7-40df-9616-3c95f703bf03",
+      "device_id": "PC-B2-IT",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:21.525576+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:fe5d4b5d-1ee6-47d1-97bc-bcc9b8ade4ad",
+      "device_id": "PC-B2-STAFF",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:21.520688+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:13794e54-37df-482e-b038-b9e3c0504d38",
+      "device_id": "PC-B2-ADMIN",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:21.498092+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:f38eca7b-f0e2-49e0-8303-857974f24b76",
+      "device_id": "SW-B2-2",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:21.494098+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:9a44660d-3f48-4f15-965e-ddd37ed1724e",
+      "device_id": "SW-B2-1",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:21.473411+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:7f04a844-f84b-484d-bcbf-b2e54b651278",
+      "device_id": "MLS-B2",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:21.465247+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:979c9a2b-5c32-4b10-bc17-3d370aadf3cf",
+      "device_id": "R-B2",
+      "kind": "probe",
+      "observed_at": "2026-11-16 23:27:21.444403+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    }
+  ],
+  "candidate_hypotheses": [],
+  "status": "ok",
+  "interpretation": {
+    "disposition": "supported",
+    "fault_class": "healthy",
+    "device_id": "",
+    "interface": "",
+    "summary": "All network devices and probes across branches and HQ are returning successful SNMP polls and responding normally to ICMP probes with no signs of reachability or performance faults.",
+    "supporting_evidence_ids": [
+      "poll:6fa09864-f9fb-49fa-926e-2a77f7f4de6b",
+      "poll:a7bc2d4e-b798-4ba0-b5b2-158fdad9f8a3",
+      "poll:d5748ae3-544d-495d-93c2-31fd283239c8",
+      "poll:74251174-d610-4df4-a5f8-41b37c327f5c",
+      "poll:153d58c1-d645-4aed-bc2c-533251eccc21",
+      "poll:7ff158e4-3d3f-4687-a68c-f5b03c31620e",
+      "poll:bc7818b7-68ce-46e4-b0e5-5caa686cc1cd",
+      "poll:e4323b22-e9ff-47c8-bb06-c4c75369071e",
+      "probe:c0d01d2f-f685-4ebd-885b-6337f1a3323a",
+      "probe:a64614de-1511-468c-9911-8825556febd6"
+    ],
+    "alternative_checks": [],
+    "uncertainty": "All currently available telemetry indicates a fully operational healthy network baseline.",
+    "missing_evidence": []
+  },
+  "read_only_checks": [],
+  "actual_diagnostic_input": {
+    "as_of": "2026-11-16 23:27:25.269316+00:00",
+    "observations": [
+      {
+        "evidence_id": "poll:6fa09864-f9fb-49fa-926e-2a77f7f4de6b",
+        "device_id": "MLS-B1",
+        "kind": "poll",
+        "observed_at": "2026-11-16 23:27:15.699962+00:00",
+        "source": "snmp",
+        "is_stale": false,
+        "summary": "SNMP poll returned ok."
+      },
+      {
+        "evidence_id": "poll:a7bc2d4e-b798-4ba0-b5b2-158fdad9f8a3",
+        "device_id": "MLS-B2",
+        "kind": "poll",
+        "observed_at": "2026-11-16 23:27:15.908970+00:00",
+        "source": "snmp",
+        "is_stale": false,
+        "summary": "SNMP poll returned ok."
+      },
+      {
+        "evidence_id": "poll:d5748ae3-544d-495d-93c2-31fd283239c8",
+        "device_id": "MLS-B3",
+        "kind": "poll",
+        "observed_at": "2026-11-16 23:27:16.121154+00:00",
+        "source": "snmp",
+        "is_stale": false,
+        "summary": "SNMP poll returned ok."
+      },
+      {
+        "evidence_id": "poll:74251174-d610-4df4-a5f8-41b37c327f5c",
+        "device_id": "MLS-HQ",
+        "kind": "poll",
+        "observed_at": "2026-11-16 23:27:15.524884+00:00",
+        "source": "snmp",
+        "is_stale": false,
+        "summary": "SNMP poll returned ok."
+      },
+      {
+        "evidence_id": "poll:153d58c1-d645-4aed-bc2c-533251eccc21",
+        "device_id": "R-B1",
+        "kind": "poll",
+        "observed_at": "2026-11-16 23:27:15.641539+00:00",
+        "source": "snmp",
+        "is_stale": false,
+        "summary": "SNMP poll returned ok."
+      },
+      {
+        "evidence_id": "poll:7ff158e4-3d3f-4687-a68c-f5b03c31620e",
+        "device_id": "R-B2",
+        "kind": "poll",
+        "observed_at": "2026-11-16 23:27:15.837508+00:00",
+        "source": "snmp",
+        "is_stale": false,
+        "summary": "SNMP poll returned ok."
+      },
+      {
+        "evidence_id": "poll:bc7818b7-68ce-46e4-b0e5-5caa686cc1cd",
+        "device_id": "R-B3",
+        "kind": "poll",
+        "observed_at": "2026-11-16 23:27:16.043870+00:00",
+        "source": "snmp",
+        "is_stale": false,
+        "summary": "SNMP poll returned ok."
+      },
+      {
+        "evidence_id": "poll:e4323b22-e9ff-47c8-bb06-c4c75369071e",
+        "device_id": "R-HQ",
+        "kind": "poll",
+        "observed_at": "2026-11-16 23:27:15.450825+00:00",
+        "source": "snmp",
+        "is_stale": false,
+        "summary": "SNMP poll returned ok."
+      },
+      {
+        "evidence_id": "poll:a78420cb-5986-4cba-aebc-a0889f80ada8",
+        "device_id": "SW-B1-1",
+        "kind": "poll",
+        "observed_at": "2026-11-16 23:27:15.713719+00:00",
+        "source": "snmp",
+        "is_stale": false,
+        "summary": "SNMP poll returned ok."
+      },
+      {
+        "evidence_id": "poll:8f44becc-dba8-462d-b9dc-c788d304fab9",
+        "device_id": "SW-B1-2",
+        "kind": "poll",
+        "observed_at": "2026-11-16 23:27:15.818750+00:00",
+        "source": "snmp",
+        "is_stale": false,
+        "summary": "SNMP poll returned ok."
+      },
+      {
+        "evidence_id": "poll:6540fd4c-495e-481d-8e3a-86ef5e25b46b",
+        "device_id": "SW-B2-1",
+        "kind": "poll",
+        "observed_at": "2026-11-16 23:27:15.923096+00:00",
+        "source": "snmp",
+        "is_stale": false,
+        "summary": "SNMP poll returned ok."
+      },
+      {
+        "evidence_id": "poll:08fd6e03-0f70-42d2-b690-bc38f5072ba0",
+        "device_id": "SW-B2-2",
+        "kind": "poll",
+        "observed_at": "2026-11-16 23:27:16.027219+00:00",
+        "source": "snmp",
+        "is_stale": false,
+        "summary": "SNMP poll returned ok."
+      },
+      {
+        "evidence_id": "poll:b4cddaad-600b-41d5-9027-fe0208391034",
+        "device_id": "SW-B3-1",
+        "kind": "poll",
+        "observed_at": "2026-11-16 23:27:16.133380+00:00",
+        "source": "snmp",
+        "is_stale": false,
+        "summary": "SNMP poll returned ok."
+      },
+      {
+        "evidence_id": "poll:bd3622d5-cbab-41b1-9db0-63ce70963de7",
+        "device_id": "SW-B3-2",
+        "kind": "poll",
+        "observed_at": "2026-11-16 23:27:16.238283+00:00",
+        "source": "snmp",
+        "is_stale": false,
+        "summary": "SNMP poll returned ok."
+      },
+      {
+        "evidence_id": "poll:e77fc374-45ad-4dfa-8d40-cfeb3367371d",
+        "device_id": "SW-HQ-1",
+        "kind": "poll",
+        "observed_at": "2026-11-16 23:27:15.541066+00:00",
+        "source": "snmp",
+        "is_stale": false,
+        "summary": "SNMP poll returned ok."
+      },
+      {
+        "evidence_id": "poll:2067bb3e-34c9-497a-9bd3-eeac6267fdac",
+        "device_id": "SW-HQ-2",
+        "kind": "poll",
+        "observed_at": "2026-11-16 23:27:15.624121+00:00",
+        "source": "snmp",
+        "is_stale": false,
+        "summary": "SNMP poll returned ok."
+      },
+      {
+        "evidence_id": "poll:6a0fe714-5618-4b7b-9407-da997a17f90e",
+        "device_id": "SW-WAN",
+        "kind": "poll",
+        "observed_at": "2026-11-16 23:27:15.450111+00:00",
+        "source": "snmp",
+        "is_stale": false,
+        "summary": "SNMP poll returned ok."
+      },
+      {
+        "evidence_id": "probe:c0d01d2f-f685-4ebd-885b-6337f1a3323a",
+        "device_id": "PC-B3-IT",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.527363+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:a64614de-1511-468c-9911-8825556febd6",
+        "device_id": "PC-B3-STAFF",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.515041+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:4fde2d2b-b00b-46b7-8285-2593cc2b41a9",
+        "device_id": "PC-B3-ADMIN",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.506875+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:be7c9c8d-0fc6-44a4-859a-8ec43bc7f1f3",
+        "device_id": "SW-B3-2",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.493428+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:7b6efcfc-98b3-4ce1-97ea-b4ae08b1c3df",
+        "device_id": "SW-B3-1",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.489666+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:724dacf6-e95d-45ae-995c-e1dbb5435046",
+        "device_id": "MLS-B3",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.471534+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:54084395-f1cf-4cc1-bfad-fdc25da52187",
+        "device_id": "R-B3",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.470982+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:e1505672-66a1-4084-a08a-8f860f784b2b",
+        "device_id": "PC-B2-IT",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.456187+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:fb207fab-4eaf-40ab-8e4c-50b86322bac1",
+        "device_id": "PC-B2-STAFF",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.450362+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:01118d2d-3585-4614-9a66-2079a34b9f95",
+        "device_id": "PC-B2-ADMIN",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.438330+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:f19d04d1-a566-45ed-8c86-a52a19678b2a",
+        "device_id": "SW-B2-2",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.428399+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:437e1593-a025-425e-9b5b-252a690dca95",
+        "device_id": "SW-B2-1",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.417093+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:a1a2ea8c-063c-456f-9c3b-3930b5d52c37",
+        "device_id": "MLS-B2",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.409549+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:e9b5e44d-1bc8-4ea8-9a1c-e4c378252d15",
+        "device_id": "R-B2",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.394298+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:b33611a4-74ee-4bf3-a062-b930800c2f8b",
+        "device_id": "PC-B1-IT",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.392803+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:4e96c7ad-2adc-4773-9fb6-a55348d7649d",
+        "device_id": "PC-B1-STAFF",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.375177+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:50a32fb2-c106-4a55-8fee-e75e73b38718",
+        "device_id": "PC-B1-ADMIN",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.372234+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:b2ef71ee-61b8-4ea7-ab4f-5aad19031a3c",
+        "device_id": "SW-B1-2",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.360878+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:2bab5adf-a6a4-4e55-801b-e746859a916f",
+        "device_id": "SW-B1-1",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.353846+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:ebedf839-1d8d-4f81-a860-04149919cf29",
+        "device_id": "MLS-B1",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.339158+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:86197976-225e-4f98-b9e2-0bb15a742e44",
+        "device_id": "R-B1",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.336722+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:bc835061-3fce-4815-9acd-5b5b7adf432a",
+        "device_id": "PC-HQ-IT",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.318371+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:6f9a7cb0-f7b9-4b28-8b09-a0b38169cdbe",
+        "device_id": "PC-HQ-STAFF",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.315104+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:df7e5a09-c325-4001-9c5f-cfdb4f42ddd8",
+        "device_id": "PC-HQ-ADMIN",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.301989+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:6595292d-3193-434b-a269-67c00f169343",
+        "device_id": "SW-HQ-2",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.297868+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:7b1fa64e-cba4-4103-9e98-5181235d880a",
+        "device_id": "SW-HQ-1",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.282542+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:100d8d78-6571-48bf-ad91-e540947bbf42",
+        "device_id": "MLS-HQ",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.281411+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:4f72ac9f-cee0-4024-b824-9c0e691aa878",
+        "device_id": "R-HQ",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.266382+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:6eb2a870-b3f9-4519-b61a-79b93f0cf7a2",
+        "device_id": "SW-WAN",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:24.264903+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:3086a4e8-c66b-4ed1-895f-e6fb0a8fb845",
+        "device_id": "PC-B3-IT",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:21.626056+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:33ede4e3-d5ec-4cd0-8f18-64bda966c6e0",
+        "device_id": "PC-B3-STAFF",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:21.603301+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:6b5b1ca2-ef7e-40f4-85ea-cf3277e3ce7d",
+        "device_id": "PC-B3-ADMIN",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:21.599733+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:afe8513a-f3f9-4609-a737-f107d334d217",
+        "device_id": "SW-B3-2",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:21.575690+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:27651db7-678a-456d-925b-77a55ba5b268",
+        "device_id": "SW-B3-1",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:21.572011+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:caf43115-0f90-461e-909f-f16b2763995a",
+        "device_id": "MLS-B3",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:21.546354+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:588ceae0-d47b-4135-8d9a-fe60afd93f38",
+        "device_id": "R-B3",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:21.546223+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:ed943dfd-8fc7-40df-9616-3c95f703bf03",
+        "device_id": "PC-B2-IT",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:21.525576+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:fe5d4b5d-1ee6-47d1-97bc-bcc9b8ade4ad",
+        "device_id": "PC-B2-STAFF",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:21.520688+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:13794e54-37df-482e-b038-b9e3c0504d38",
+        "device_id": "PC-B2-ADMIN",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:21.498092+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:f38eca7b-f0e2-49e0-8303-857974f24b76",
+        "device_id": "SW-B2-2",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:21.494098+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:9a44660d-3f48-4f15-965e-ddd37ed1724e",
+        "device_id": "SW-B2-1",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:21.473411+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:7f04a844-f84b-484d-bcbf-b2e54b651278",
+        "device_id": "MLS-B2",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:21.465247+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:979c9a2b-5c32-4b10-bc17-3d370aadf3cf",
+        "device_id": "R-B2",
+        "kind": "probe",
+        "observed_at": "2026-11-16 23:27:21.444403+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      }
+    ],
+    "candidate_hypotheses": [],
+    "health_counts": {
+      "healthy": 30,
+      "unknown": 0,
+      "unreachable": 0
+    },
+    "allowed_devices": [
+      "MLS-B1",
+      "MLS-B2",
+      "MLS-B3",
+      "MLS-HQ",
+      "MON-HQ",
+      "PC-B1-ADMIN",
+      "PC-B1-IT",
+      "PC-B1-STAFF",
+      "PC-B2-ADMIN",
+      "PC-B2-IT",
+      "PC-B2-STAFF",
+      "PC-B3-ADMIN",
+      "PC-B3-IT",
+      "PC-B3-STAFF",
+      "PC-HQ-ADMIN",
+      "PC-HQ-IT",
+      "PC-HQ-STAFF",
+      "R-B1",
+      "R-B2",
+      "R-B3",
+      "R-HQ",
+      "SW-B1-1",
+      "SW-B1-2",
+      "SW-B2-1",
+      "SW-B2-2",
+      "SW-B3-1",
+      "SW-B3-2",
+      "SW-HQ-1",
+      "SW-HQ-2",
+      "SW-WAN"
+    ],
+    "curated_guidance": [
+      {
+        "id": "KB-LINK",
+        "faults": [
+          "interface_shutdown",
+          "unreachability"
+        ],
+        "title": "Distinguish administrative state from reachability symptoms",
+        "guidance": "Compare the named interface's observed administrative state and link events. Downstream probe failures establish impact, not the physical or configuration cause by themselves.",
+        "source": "https://github.com/iproute2/iproute2/blob/main/man/man8/ip-link.8.in",
+        "command_ids": [
+          "link_state",
+          "addresses",
+          "routes"
+        ]
+      },
+      {
+        "id": "KB-OSPF",
+        "faults": [
+          "ospf_loss",
+          "interface_shutdown"
+        ],
+        "title": "Check the expected adjacency and underlying interface",
+        "guidance": "Inspect FRR neighbors and interface configuration. Point-to-point uplinks require the expected neighbor. On a broadcast network a 2-Way DROther relationship may be normal; do not label every non-Full pair a fault.",
+        "source": "https://docs.frrouting.org/en/stable-8.4/ospfd.html",
+        "command_ids": [
+          "ospf_neighbors",
+          "ospf_interfaces",
+          "routes"
+        ]
+      },
+      {
+        "id": "KB-ACL",
+        "faults": [
+          "acl_fault"
+        ],
+        "title": "Attribute a failed flow using rule matches and counter changes",
+        "guidance": "Compare the actual source, destination and incoming interface against the rule. Require a positive deny-counter change over an observation interval. Existing intended policy blocks are healthy behavior.",
+        "source": "https://netfilter.org/projects/nftables/manpage.html",
+        "command_ids": [
+          "acl_rules",
+          "routes"
+        ]
+      },
+      {
+        "id": "KB-RATE",
+        "faults": [
+          "high_utilization"
+        ],
+        "title": "Use sustained counter deltas and effective capacity",
+        "guidance": "Rates require elapsed time, usable consecutive counters and reset handling. Virtual NIC speed is not a validated bottleneck capacity. Inspect the configured shaping and repeat measurements before interpreting a high percentage.",
+        "source": "https://www.rfc-editor.org/rfc/rfc2863",
+        "command_ids": [
+          "link_counters",
+          "traffic_control"
+        ]
+      },
+      {
+        "id": "KB-MISSING",
+        "faults": [
+          "interface_shutdown",
+          "ospf_loss",
+          "acl_fault",
+          "high_utilization",
+          "unreachability"
+        ],
+        "title": "Abstain when distinguishing evidence is unavailable",
+        "guidance": "A lost management path can remove several signals at once. Preserve last observations and their age. Missing, stale or contradictory critical evidence requires an inconclusive outcome and further read-only checks.",
+        "source": "local:FYP Proposal.docx:5.4-5.6",
+        "command_ids": [
+          "link_state",
+          "routes"
+        ]
+      }
+    ],
+    "allowed_check_ids": [
+      "addresses",
+      "routes",
+      "ospf_neighbors",
+      "ospf_interfaces",
+      "acl_rules"
+    ]
+  },
+  "local_source_observations": "source-15178d69758e948c5c2d.json",
+  "review_boundary": "Support is relative to the actual diagnostic input. The masked source bundle is available only to verify derived observations; it must not give credit for information absent from the diagnostic input."
+}

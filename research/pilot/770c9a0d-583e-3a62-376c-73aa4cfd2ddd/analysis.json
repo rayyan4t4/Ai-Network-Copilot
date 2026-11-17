@@ -1,0 +1,346 @@
+{
+  "as_of": "2026-11-16 22:15:55.698181+00:00",
+  "facts": [
+    {
+      "evidence_id": "probe:f79572a1-6650-47c5-9996-4639ec5deca2",
+      "device_id": "PC-B1-IT",
+      "kind": "probe",
+      "observed_at": "2026-11-16 22:15:53.636986+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:2937d633-9ab1-4961-951d-cc6ac763a302",
+      "device_id": "MLS-B1",
+      "kind": "probe",
+      "observed_at": "2026-11-16 22:15:53.538729+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "snapshot:124a6d9c-fff1-4c88-a8b1-46c32d5f25d8:acl",
+      "device_id": "MLS-B1",
+      "kind": "acl",
+      "observed_at": "2026-11-16 22:15:40.962442+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Read-only nftables rules and counters."
+    },
+    {
+      "evidence_id": "acl-delta:snapshot:124a6d9c-fff1-4c88-a8b1-46c32d5f25d8:acl:3",
+      "device_id": "MLS-B1",
+      "kind": "acl_counter_delta",
+      "observed_at": "2026-11-16 22:15:40.962442+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Matching deny counter increased between two snapshots."
+    }
+  ],
+  "devices": [
+    "MLS-B1",
+    "MLS-B2",
+    "MLS-B3",
+    "MLS-HQ",
+    "MON-HQ",
+    "PC-B1-ADMIN",
+    "PC-B1-IT",
+    "PC-B1-STAFF",
+    "PC-B2-ADMIN",
+    "PC-B2-IT",
+    "PC-B2-STAFF",
+    "PC-B3-ADMIN",
+    "PC-B3-IT",
+    "PC-B3-STAFF",
+    "PC-HQ-ADMIN",
+    "PC-HQ-IT",
+    "PC-HQ-STAFF",
+    "R-B1",
+    "R-B2",
+    "R-B3",
+    "R-HQ",
+    "SW-B1-1",
+    "SW-B1-2",
+    "SW-B2-1",
+    "SW-B2-2",
+    "SW-B3-1",
+    "SW-B3-2",
+    "SW-HQ-1",
+    "SW-HQ-2",
+    "SW-WAN"
+  ],
+  "candidates": [
+    {
+      "fault_class": "acl_fault",
+      "device_id": "MLS-B1",
+      "interface": null,
+      "affected_devices": [
+        "PC-B1-IT"
+      ],
+      "topology_path": [
+        "MON-HQ",
+        "SW-HQ-2",
+        "MLS-HQ",
+        "R-HQ",
+        "SW-WAN",
+        "R-B1",
+        "MLS-B1"
+      ]
+    }
+  ],
+  "primary": {
+    "fingerprint": "acl_fault|MLS-B1|",
+    "fault_class": "acl_fault",
+    "device_id": "MLS-B1",
+    "interface": null,
+    "site": "B1",
+    "rules_applied": [
+      "R6_EXACT_MONITOR_FLOW_MATCHES_DENY_RULE"
+    ],
+    "affected_devices": [
+      "PC-B1-IT"
+    ],
+    "related_evidence_ids": [],
+    "topology_path": [
+      "MON-HQ",
+      "SW-HQ-2",
+      "MLS-HQ",
+      "R-HQ",
+      "SW-WAN",
+      "R-B1",
+      "MLS-B1"
+    ],
+    "gate": {
+      "status": "sufficient",
+      "score": 1.0,
+      "threshold": 0.8,
+      "available_weight": 10,
+      "total_required_weight": 10,
+      "missing": [],
+      "missing_critical": [],
+      "contradictions": [],
+      "signals": {
+        "failed_flow": [
+          "probe:f79572a1-6650-47c5-9996-4639ec5deca2"
+        ],
+        "matching_rule": [
+          "snapshot:124a6d9c-fff1-4c88-a8b1-46c32d5f25d8:acl"
+        ],
+        "deny_counter_delta": [
+          "acl-delta:snapshot:124a6d9c-fff1-4c88-a8b1-46c32d5f25d8:acl:3"
+        ],
+        "upstream_healthy": [
+          "probe:2937d633-9ab1-4961-951d-cc6ac763a302"
+        ]
+      },
+      "matrix_version": "study-pilot-1",
+      "matrix_sha256": "0edf6ea5dc8ae6a60f8f4b3afd669cf7ec47417aac8d320139ac3a25b4234f3a",
+      "score_is_probability": false
+    },
+    "facts": [
+      {
+        "evidence_id": "acl-delta:snapshot:124a6d9c-fff1-4c88-a8b1-46c32d5f25d8:acl:3",
+        "device_id": "MLS-B1",
+        "kind": "acl_counter_delta",
+        "observed_at": "2026-11-16 22:15:40.962442+00:00",
+        "source": "authorized_readonly_console",
+        "age_seconds": 14.736,
+        "is_stale": false,
+        "value": {
+          "handle": 3,
+          "packets_delta": 6,
+          "source": "192.168.30.10",
+          "destination": "192.168.130.101"
+        },
+        "summary": "Matching deny counter increased between two snapshots."
+      },
+      {
+        "evidence_id": "probe:2937d633-9ab1-4961-951d-cc6ac763a302",
+        "device_id": "MLS-B1",
+        "kind": "probe",
+        "observed_at": "2026-11-16 22:15:53.538729+00:00",
+        "source": "icmp",
+        "age_seconds": 2.159,
+        "is_stale": false,
+        "value": {
+          "status": "ok",
+          "source_ip": "192.168.30.10",
+          "rtt_ms": 1.68
+        },
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:f79572a1-6650-47c5-9996-4639ec5deca2",
+        "device_id": "PC-B1-IT",
+        "kind": "probe",
+        "observed_at": "2026-11-16 22:15:53.636986+00:00",
+        "source": "icmp",
+        "age_seconds": 2.061,
+        "is_stale": false,
+        "value": {
+          "status": "timeout",
+          "source_ip": "192.168.30.10",
+          "rtt_ms": null
+        },
+        "summary": "ICMP probe returned timeout."
+      },
+      {
+        "evidence_id": "snapshot:124a6d9c-fff1-4c88-a8b1-46c32d5f25d8:acl",
+        "device_id": "MLS-B1",
+        "kind": "acl",
+        "observed_at": "2026-11-16 22:15:40.962442+00:00",
+        "source": "authorized_readonly_console",
+        "age_seconds": 14.736,
+        "is_stale": false,
+        "value": {
+          "nftables": [
+            {
+              "metainfo": {
+                "version": "1.0.6",
+                "release_name": "Lester Gooch #5",
+                "json_schema_version": 1
+              }
+            },
+            {
+              "table": {
+                "family": "inet",
+                "name": "fyp_policy",
+                "handle": 1
+              }
+            },
+            {
+              "chain": {
+                "family": "inet",
+                "table": "fyp_policy",
+                "name": "forward",
+                "handle": 1,
+                "type": "filter",
+                "hook": "forward",
+                "prio": 0,
+                "policy": "accept"
+              }
+            },
+            {
+              "rule": {
+                "family": "inet",
+                "table": "fyp_policy",
+                "chain": "forward",
+                "handle": 2,
+                "expr": [
+                  {
+                    "match": {
+                      "op": "==",
+                      "left": {
+                        "meta": {
+                          "key": "iifname"
+                        }
+                      },
+                      "right": "vlan10"
+                    }
+                  },
+                  {
+                    "match": {
+                      "op": "==",
+                      "left": {
+                        "payload": {
+                          "protocol": "ip",
+                          "field": "saddr"
+                        }
+                      },
+                      "right": {
+                        "prefix": {
+                          "addr": "192.168.110.0",
+                          "len": 24
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "match": {
+                      "op": "==",
+                      "left": {
+                        "payload": {
+                          "protocol": "ip",
+                          "field": "daddr"
+                        }
+                      },
+                      "right": {
+                        "prefix": {
+                          "addr": "192.168.120.0",
+                          "len": 24
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "counter": {
+                      "packets": 0,
+                      "bytes": 0
+                    }
+                  },
+                  {
+                    "drop": null
+                  }
+                ]
+              }
+            },
+            {
+              "rule": {
+                "family": "inet",
+                "table": "fyp_policy",
+                "chain": "forward",
+                "handle": 3,
+                "comment": "study-owned",
+                "expr": [
+                  {
+                    "match": {
+                      "op": "==",
+                      "left": {
+                        "payload": {
+                          "protocol": "ip",
+                          "field": "saddr"
+                        }
+                      },
+                      "right": "192.168.30.10"
+                    }
+                  },
+                  {
+                    "match": {
+                      "op": "==",
+                      "left": {
+                        "payload": {
+                          "protocol": "ip",
+                          "field": "daddr"
+                        }
+                      },
+                      "right": "192.168.130.101"
+                    }
+                  },
+                  {
+                    "counter": {
+                      "packets": 10,
+                      "bytes": 840
+                    }
+                  },
+                  {
+                    "drop": null
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "summary": "Read-only nftables rules and counters."
+      }
+    ],
+    "missing_observations": [],
+    "as_of": "2026-11-16 22:15:55.698181+00:00",
+    "evidence_digest": "2b284bad8634f98ff16fd27a8f991a310cdf83f9a8e11391cecdbba0b9dbe9a2"
+  },
+  "health_counts": {
+    "healthy": 29,
+    "unknown": 0,
+    "unreachable": 1
+  }
+}

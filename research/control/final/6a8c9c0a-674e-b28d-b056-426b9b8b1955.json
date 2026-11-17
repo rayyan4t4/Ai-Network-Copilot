@@ -1,0 +1,48 @@
+{
+  "case_id": "6a8c9c0a-674e-b28d-b056-426b9b8b1955",
+  "category": "insufficient",
+  "underlying_class": "acl_fault",
+  "branch": "B2",
+  "device_id": "MLS-B2",
+  "interface": "",
+  "target_host": "PC-B2-IT",
+  "load_mbps": 4,
+  "sequence": 68,
+  "started_at": "2026-11-17T00:12:30.035579+00:00",
+  "complete": true,
+  "intervention": {
+    "exit_code": 0,
+    "at": "2026-11-17T00:12:30.115888+00:00",
+    "stdout": "",
+    "stderr": ""
+  },
+  "captured_at": "2026-11-17T00:13:20.171899+00:00",
+  "observed_as_of": "2026-11-17 00:13:18.267524+00:00",
+  "capture_lag_seconds": 1.904375,
+  "observed_candidates": [
+    {
+      "class": "unreachability",
+      "device": "PC-B2-IT",
+      "gate": "sufficient",
+      "missing": [
+        "fresh_poll_outcome"
+      ]
+    },
+    {
+      "class": "acl_fault",
+      "device": "MLS-B2",
+      "gate": "inconclusive",
+      "missing": [
+        "deny_counter_delta"
+      ]
+    }
+  ],
+  "restoration": {
+    "exit_code": 0,
+    "at": "2026-11-17T00:13:20.262857+00:00",
+    "stdout": "",
+    "stderr": ""
+  },
+  "restored_at": "2026-11-17T00:13:20.262857+00:00",
+  "restoration_verified": true
+}

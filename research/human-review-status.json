@@ -1,0 +1,19 @@
+{
+  "recorded_at": "2026-11-17T06:45:41.339118+00:00",
+  "status": "pending_human_reviews",
+  "counts": [
+    {
+      "reviewer": 1,
+      "applicable_outputs": 260,
+      "completed": 0
+    },
+    {
+      "reviewer": 2,
+      "applicable_outputs": 260,
+      "completed": 0
+    }
+  ],
+  "validation_issues": [],
+  "metrics": null,
+  "provenance_boundary": "Calculations use supplied CSV judgments. Software cannot verify human identity or reviewer independence. Team confirmation is required before research claims. No ratings are generated, imputed or learned."
+}

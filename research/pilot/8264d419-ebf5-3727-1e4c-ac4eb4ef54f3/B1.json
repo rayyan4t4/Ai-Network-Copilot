@@ -1,0 +1,30 @@
+{
+  "result_id": "a7d1c3ec-36da-4391-91f1-9a31c8e40657",
+  "case_id": "8264d419-ebf5-3727-1e4c-ac4eb4ef54f3",
+  "phase": "pilot",
+  "approach": "B1",
+  "started_at": "2026-11-16T22:11:32.343408+00:00",
+  "observation_sha256": "76aef63256d12b70eb704d28622c2be90e7fae675a24ebf0e978a38db63c5b83",
+  "status": "ok",
+  "prediction": {
+    "fault_class": "healthy",
+    "device_id": "",
+    "interface": "",
+    "disposition": "supported",
+    "incident_detected": false
+  },
+  "pipeline_latency_ms": 15,
+  "available_at": "2026-11-16T22:11:32.357373+00:00",
+  "scores": {
+    "fault_instance": false,
+    "healthy_instance": true,
+    "insufficient_instance": false,
+    "detection_tp": false,
+    "detection_fn": false,
+    "detection_fp": false,
+    "detection_tn": true,
+    "exact_root_correct": null,
+    "correct_abstention": null,
+    "error": false
+  }
+}

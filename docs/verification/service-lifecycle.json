@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-11-17T11:50:06.033586+00:00",
+  "passed": true,
+  "observed": [
+    "idempotent startup with Windows venv redirector pairs",
+    "identity-checked process-tree stop released application ports",
+    "restart with fresh 30-node health"
+  ],
+  "live_health_at_check": 30
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "case_id": "770c9a0d-583e-3a62-376c-73aa4cfd2ddd",
+    "category": "acl_fault",
+    "underlying_class": "acl_fault",
+    "branch": "B1",
+    "device_id": "MLS-B1",
+    "interface": "",
+    "target_host": "PC-B1-IT",
+    "load_mbps": 3,
+    "sequence": 6,
+    "started_at": "2026-11-16T22:14:28.884011+00:00",
+    "complete": false
+  }
+]

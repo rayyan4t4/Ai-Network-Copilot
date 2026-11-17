@@ -1,0 +1,30 @@
+{
+  "result_id": "c2c45859-ef2a-4656-bd63-4f2d16059101",
+  "case_id": "0b720fda-1cbf-4a8f-1707-1795845565f3",
+  "phase": "final",
+  "approach": "B1",
+  "started_at": "2026-11-17T00:16:52.525588+00:00",
+  "observation_sha256": "76414e5bb2c64175882d9f826d8c93ff82f52c1046dc9969eda7e16b5fac9412",
+  "status": "ok",
+  "prediction": {
+    "fault_class": "unreachability",
+    "device_id": "PC-B3-IT",
+    "interface": "",
+    "disposition": "supported",
+    "incident_detected": true
+  },
+  "pipeline_latency_ms": 15,
+  "available_at": "2026-11-17T00:16:52.536467+00:00",
+  "scores": {
+    "fault_instance": false,
+    "healthy_instance": false,
+    "insufficient_instance": true,
+    "detection_tp": false,
+    "detection_fn": false,
+    "detection_fp": false,
+    "detection_tn": false,
+    "exact_root_correct": null,
+    "correct_abstention": false,
+    "error": false
+  }
+}

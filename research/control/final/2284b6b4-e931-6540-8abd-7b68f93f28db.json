@@ -1,0 +1,38 @@
+{
+  "case_id": "2284b6b4-e931-6540-8abd-7b68f93f28db",
+  "category": "interface_shutdown",
+  "underlying_class": "interface_shutdown",
+  "branch": "B1",
+  "device_id": "R-B1",
+  "interface": "eth0",
+  "target_host": "PC-B1-IT",
+  "load_mbps": 4,
+  "sequence": 27,
+  "started_at": "2026-11-16T23:04:25.820042+00:00",
+  "complete": true,
+  "intervention": {
+    "exit_code": 0,
+    "at": "2026-11-16T23:04:25.943178+00:00",
+    "stdout": "",
+    "stderr": ""
+  },
+  "captured_at": "2026-11-16T23:05:16.002092+00:00",
+  "observed_as_of": "2026-11-16 23:05:13.276881+00:00",
+  "capture_lag_seconds": 2.725211,
+  "observed_candidates": [
+    {
+      "class": "interface_shutdown",
+      "device": "R-B1",
+      "gate": "sufficient",
+      "missing": []
+    }
+  ],
+  "restoration": {
+    "exit_code": 0,
+    "at": "2026-11-16T23:05:16.145617+00:00",
+    "stdout": "",
+    "stderr": ""
+  },
+  "restored_at": "2026-11-16T23:05:16.145617+00:00",
+  "restoration_verified": true
+}

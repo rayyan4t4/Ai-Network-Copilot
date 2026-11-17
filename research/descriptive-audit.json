@@ -1,0 +1,88 @@
+{
+  "recorded_at": "2026-11-17T00:17:36.207108+00:00",
+  "scope": "Post-study descriptive breakdown. Primary metrics and frozen scoring unchanged. No semantic or human ratings inferred.",
+  "approaches": {
+    "B1": {
+      "root_miss_reasons": {
+        "wrong_class": 10,
+        "wrong_device": 7
+      },
+      "errors_by_condition": {},
+      "validation_errors": {},
+      "provider_http_attempt_errors": {},
+      "model_evaluations_requested": 0,
+      "provider_attempts_including_retries": 0
+    },
+    "B2": {
+      "root_miss_reasons": {
+        "valid_abstention_on_diagnosable_fault": 49
+      },
+      "errors_by_condition": {
+        "insufficient:provider_error": 1
+      },
+      "validation_errors": {},
+      "provider_http_attempt_errors": {
+        "503": 11
+      },
+      "model_evaluations_requested": 70,
+      "provider_attempts_including_retries": 80
+    },
+    "no_gate": {
+      "root_miss_reasons": {
+        "valid_abstention_on_diagnosable_fault": 9
+      },
+      "errors_by_condition": {
+        "healthy:rejected": 7,
+        "healthy:provider_error": 1
+      },
+      "validation_errors": {
+        "Unknown device": 4,
+        "Invalid interface": 4
+      },
+      "provider_http_attempt_errors": {
+        "503": 19
+      },
+      "model_evaluations_requested": 70,
+      "provider_attempts_including_retries": 88
+    },
+    "full": {
+      "root_miss_reasons": {
+        "valid_abstention_on_diagnosable_fault": 9,
+        "provider_error": 2
+      },
+      "errors_by_condition": {
+        "healthy:rejected": 6,
+        "healthy:provider_error": 1,
+        "ospf_loss:provider_error": 1,
+        "insufficient:provider_error": 2,
+        "unreachability:provider_error": 1
+      },
+      "validation_errors": {
+        "Unknown device": 4,
+        "Invalid interface": 3
+      },
+      "provider_http_attempt_errors": {
+        "503": 20
+      },
+      "model_evaluations_requested": 62,
+      "provider_attempts_including_retries": 77
+    }
+  },
+  "capture_lag_seconds": {
+    "median": 3.020295,
+    "maximum": 8.588178
+  },
+  "observed_valid_counter_interval_seconds_median": 10.013969,
+  "observed_snapshot_separation_seconds_median": 20.159171999999998,
+  "primary_gate_by_condition": {
+    "healthy:no_candidate": 10,
+    "interface_shutdown:sufficient": 10,
+    "acl_fault:sufficient": 10,
+    "unreachability:sufficient": 10,
+    "insufficient:inconclusive": 8,
+    "high_utilization:sufficient": 9,
+    "ospf_loss:sufficient": 10,
+    "insufficient:no_candidate": 2,
+    "high_utilization:no_candidate": 1
+  }
+}

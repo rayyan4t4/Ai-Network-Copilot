@@ -1,0 +1,90 @@
+[
+  {
+    "case_id": "bec507e1-e437-67e5-02c4-e1b20f8fc64f",
+    "category": "high_utilization",
+    "underlying_class": "high_utilization",
+    "branch": "B1",
+    "device_id": "R-B1",
+    "interface": "eth1",
+    "target_host": "PC-B1-IT",
+    "load_mbps": 3,
+    "sequence": 1
+  },
+  {
+    "case_id": "f8ba1161-063f-397e-2549-14f2dbf2e264",
+    "category": "interface_shutdown",
+    "underlying_class": "interface_shutdown",
+    "branch": "B1",
+    "device_id": "R-B1",
+    "interface": "eth0",
+    "target_host": "PC-B1-IT",
+    "load_mbps": 3,
+    "sequence": 2
+  },
+  {
+    "case_id": "8264d419-ebf5-3727-1e4c-ac4eb4ef54f3",
+    "category": "healthy",
+    "underlying_class": "healthy",
+    "branch": "B1",
+    "device_id": "",
+    "interface": "",
+    "target_host": "PC-B1-IT",
+    "load_mbps": 3,
+    "sequence": 3
+  },
+  {
+    "case_id": "2c264cc9-7890-ea5d-6626-f868bbfd200f",
+    "category": "insufficient",
+    "underlying_class": "interface_shutdown",
+    "branch": "B1",
+    "device_id": "R-B1",
+    "interface": "eth0",
+    "target_host": "PC-B1-IT",
+    "load_mbps": 3,
+    "sequence": 4
+  },
+  {
+    "case_id": "7b49e838-48d2-e1dc-4b16-016e5a860581",
+    "category": "unreachability",
+    "underlying_class": "unreachability",
+    "branch": "B1",
+    "device_id": "PC-B1-IT",
+    "interface": "",
+    "target_host": "PC-B1-IT",
+    "load_mbps": 3,
+    "sequence": 5
+  },
+  {
+    "case_id": "770c9a0d-583e-3a62-376c-73aa4cfd2ddd",
+    "category": "acl_fault",
+    "underlying_class": "acl_fault",
+    "branch": "B1",
+    "device_id": "MLS-B1",
+    "interface": "",
+    "target_host": "PC-B1-IT",
+    "load_mbps": 3,
+    "sequence": 6
+  },
+  {
+    "case_id": "57ebbd74-370a-828a-33c9-ee593bf91587",
+    "category": "ospf_loss",
+    "underlying_class": "ospf_loss",
+    "branch": "B1",
+    "device_id": "R-B1",
+    "interface": "eth0",
+    "target_host": "PC-B1-IT",
+    "load_mbps": 3,
+    "sequence": 7
+  },
+  {
+    "case_id": "9bcd9caf-1352-4846-ba48-fb2a367553e7",
+    "category": "ospf_loss",
+    "underlying_class": "ospf_loss",
+    "branch": "B1",
+    "device_id": "R-B1",
+    "interface": "eth0",
+    "target_host": "PC-B1-IT",
+    "load_mbps": 3,
+    "sequence": 8
+  }
+]

@@ -1,0 +1,274 @@
+{
+  "review_id": "42074d3f-4089-1328-3ac4-6f53a6ade4b7",
+  "observations": [
+    {
+      "evidence_id": "probe:00e69192-20f7-44fa-b46f-4b41941fd06a",
+      "device_id": "MLS-B1",
+      "kind": "probe",
+      "observed_at": "2026-11-16 22:29:10.358589+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "probe:170d4a47-1f65-48a7-b2f1-30f120058458",
+      "device_id": "PC-B1-IT",
+      "kind": "probe",
+      "observed_at": "2026-11-16 22:29:07.414867+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "snapshot:b2715816-e872-4663-bd16-4d220264d8d8:acl",
+      "device_id": "MLS-B1",
+      "kind": "acl",
+      "observed_at": "2026-11-16 22:29:00.383385+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Read-only nftables rules and counters."
+    },
+    {
+      "evidence_id": "acl-delta:snapshot:b2715816-e872-4663-bd16-4d220264d8d8:acl:4",
+      "device_id": "MLS-B1",
+      "kind": "acl_counter_delta",
+      "observed_at": "2026-11-16 22:29:00.383385+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Matching deny counter increased between two snapshots."
+    }
+  ],
+  "candidate_hypotheses": [
+    {
+      "fault_class": "acl_fault",
+      "device_id": "MLS-B1",
+      "interface": null,
+      "affected_devices": [
+        "PC-B1-IT"
+      ],
+      "topology_path": [
+        "MON-HQ",
+        "SW-HQ-2",
+        "MLS-HQ",
+        "R-HQ",
+        "SW-WAN",
+        "R-B1",
+        "MLS-B1"
+      ]
+    }
+  ],
+  "status": "ok",
+  "interpretation": {
+    "disposition": "supported",
+    "fault_class": "acl_fault",
+    "device_id": "MLS-B1",
+    "interface": "",
+    "summary": "An ACL deny counter delta increased on device MLS-B1 while a probe to PC-B1-IT timed out, indicating an active traffic drop by an access control list.",
+    "supporting_evidence_ids": [
+      "snapshot:b2715816-e872-4663-bd16-4d220264d8d8:acl",
+      "acl-delta:snapshot:b2715816-e872-4663-bd16-4d220264d8d8:acl:4",
+      "probe:170d4a47-1f65-48a7-b2f1-30f120058458"
+    ],
+    "alternative_checks": [
+      "acl_rules",
+      "routes"
+    ],
+    "uncertainty": "Exact matching rule identifiers and packet flow parameters require inspection of rule counters and rulesets to determine if the drop is intended security policy or an unintended misconfiguration.",
+    "missing_evidence": []
+  },
+  "read_only_checks": [
+    {
+      "id": "acl_rules",
+      "command": "nft -j list table inet fyp_policy",
+      "device_id": "MLS-B1",
+      "executable": false
+    },
+    {
+      "id": "routes",
+      "command": "ip -j route show",
+      "device_id": "MLS-B1",
+      "executable": false
+    }
+  ],
+  "actual_diagnostic_input": {
+    "as_of": "2026-11-16 22:29:11.496152+00:00",
+    "observations": [
+      {
+        "evidence_id": "probe:00e69192-20f7-44fa-b46f-4b41941fd06a",
+        "device_id": "MLS-B1",
+        "kind": "probe",
+        "observed_at": "2026-11-16 22:29:10.358589+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned ok."
+      },
+      {
+        "evidence_id": "probe:170d4a47-1f65-48a7-b2f1-30f120058458",
+        "device_id": "PC-B1-IT",
+        "kind": "probe",
+        "observed_at": "2026-11-16 22:29:07.414867+00:00",
+        "source": "icmp",
+        "is_stale": false,
+        "summary": "ICMP probe returned timeout."
+      },
+      {
+        "evidence_id": "snapshot:b2715816-e872-4663-bd16-4d220264d8d8:acl",
+        "device_id": "MLS-B1",
+        "kind": "acl",
+        "observed_at": "2026-11-16 22:29:00.383385+00:00",
+        "source": "authorized_readonly_console",
+        "is_stale": false,
+        "summary": "Read-only nftables rules and counters."
+      },
+      {
+        "evidence_id": "acl-delta:snapshot:b2715816-e872-4663-bd16-4d220264d8d8:acl:4",
+        "device_id": "MLS-B1",
+        "kind": "acl_counter_delta",
+        "observed_at": "2026-11-16 22:29:00.383385+00:00",
+        "source": "authorized_readonly_console",
+        "is_stale": false,
+        "summary": "Matching deny counter increased between two snapshots."
+      }
+    ],
+    "candidate_hypotheses": [
+      {
+        "fault_class": "acl_fault",
+        "device_id": "MLS-B1",
+        "interface": null,
+        "affected_devices": [
+          "PC-B1-IT"
+        ],
+        "topology_path": [
+          "MON-HQ",
+          "SW-HQ-2",
+          "MLS-HQ",
+          "R-HQ",
+          "SW-WAN",
+          "R-B1",
+          "MLS-B1"
+        ]
+      }
+    ],
+    "health_counts": {
+      "healthy": 29,
+      "unknown": 0,
+      "unreachable": 1
+    },
+    "allowed_devices": [
+      "MLS-B1",
+      "MLS-B2",
+      "MLS-B3",
+      "MLS-HQ",
+      "MON-HQ",
+      "PC-B1-ADMIN",
+      "PC-B1-IT",
+      "PC-B1-STAFF",
+      "PC-B2-ADMIN",
+      "PC-B2-IT",
+      "PC-B2-STAFF",
+      "PC-B3-ADMIN",
+      "PC-B3-IT",
+      "PC-B3-STAFF",
+      "PC-HQ-ADMIN",
+      "PC-HQ-IT",
+      "PC-HQ-STAFF",
+      "R-B1",
+      "R-B2",
+      "R-B3",
+      "R-HQ",
+      "SW-B1-1",
+      "SW-B1-2",
+      "SW-B2-1",
+      "SW-B2-2",
+      "SW-B3-1",
+      "SW-B3-2",
+      "SW-HQ-1",
+      "SW-HQ-2",
+      "SW-WAN"
+    ],
+    "curated_guidance": [
+      {
+        "id": "KB-LINK",
+        "faults": [
+          "interface_shutdown",
+          "unreachability"
+        ],
+        "title": "Distinguish administrative state from reachability symptoms",
+        "guidance": "Compare the named interface's observed administrative state and link events. Downstream probe failures establish impact, not the physical or configuration cause by themselves.",
+        "source": "https://github.com/iproute2/iproute2/blob/main/man/man8/ip-link.8.in",
+        "command_ids": [
+          "link_state",
+          "addresses",
+          "routes"
+        ]
+      },
+      {
+        "id": "KB-OSPF",
+        "faults": [
+          "ospf_loss",
+          "interface_shutdown"
+        ],
+        "title": "Check the expected adjacency and underlying interface",
+        "guidance": "Inspect FRR neighbors and interface configuration. Point-to-point uplinks require the expected neighbor. On a broadcast network a 2-Way DROther relationship may be normal; do not label every non-Full pair a fault.",
+        "source": "https://docs.frrouting.org/en/stable-8.4/ospfd.html",
+        "command_ids": [
+          "ospf_neighbors",
+          "ospf_interfaces",
+          "routes"
+        ]
+      },
+      {
+        "id": "KB-ACL",
+        "faults": [
+          "acl_fault"
+        ],
+        "title": "Attribute a failed flow using rule matches and counter changes",
+        "guidance": "Compare the actual source, destination and incoming interface against the rule. Require a positive deny-counter change over an observation interval. Existing intended policy blocks are healthy behavior.",
+        "source": "https://netfilter.org/projects/nftables/manpage.html",
+        "command_ids": [
+          "acl_rules",
+          "routes"
+        ]
+      },
+      {
+        "id": "KB-RATE",
+        "faults": [
+          "high_utilization"
+        ],
+        "title": "Use sustained counter deltas and effective capacity",
+        "guidance": "Rates require elapsed time, usable consecutive counters and reset handling. Virtual NIC speed is not a validated bottleneck capacity. Inspect the configured shaping and repeat measurements before interpreting a high percentage.",
+        "source": "https://www.rfc-editor.org/rfc/rfc2863",
+        "command_ids": [
+          "link_counters",
+          "traffic_control"
+        ]
+      },
+      {
+        "id": "KB-MISSING",
+        "faults": [
+          "interface_shutdown",
+          "ospf_loss",
+          "acl_fault",
+          "high_utilization",
+          "unreachability"
+        ],
+        "title": "Abstain when distinguishing evidence is unavailable",
+        "guidance": "A lost management path can remove several signals at once. Preserve last observations and their age. Missing, stale or contradictory critical evidence requires an inconclusive outcome and further read-only checks.",
+        "source": "local:FYP Proposal.docx:5.4-5.6",
+        "command_ids": [
+          "link_state",
+          "routes"
+        ]
+      }
+    ],
+    "allowed_check_ids": [
+      "addresses",
+      "routes",
+      "ospf_neighbors",
+      "ospf_interfaces",
+      "acl_rules"
+    ]
+  },
+  "local_source_observations": "source-cf32c751a10f66217a4a.json",
+  "review_boundary": "Support is relative to the actual diagnostic input. The masked source bundle is available only to verify derived observations; it must not give credit for information absent from the diagnostic input."
+}

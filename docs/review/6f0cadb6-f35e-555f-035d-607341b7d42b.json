@@ -1,0 +1,143 @@
+{
+  "review_id": "6f0cadb6-f35e-555f-035d-607341b7d42b",
+  "observations": [
+    {
+      "evidence_id": "probe:71dc546f-9a8f-46f8-8c18-b97f038d12cd",
+      "device_id": "PC-B2-IT",
+      "kind": "probe",
+      "observed_at": "2026-11-16 22:51:14.391691+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned timeout."
+    },
+    {
+      "evidence_id": "probe:63d38c88-09b1-4484-9446-a2967c7343ad",
+      "device_id": "MLS-B2",
+      "kind": "probe",
+      "observed_at": "2026-11-16 22:51:14.351800+00:00",
+      "source": "icmp",
+      "is_stale": false,
+      "summary": "ICMP probe returned ok."
+    },
+    {
+      "evidence_id": "snapshot:1df9ae44-1f38-4f6a-830d-4c751a8dc5d5:acl",
+      "device_id": "MLS-B2",
+      "kind": "acl",
+      "observed_at": "2026-11-16 22:51:07.743367+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Read-only nftables rules and counters."
+    },
+    {
+      "evidence_id": "acl-delta:snapshot:1df9ae44-1f38-4f6a-830d-4c751a8dc5d5:acl:3",
+      "device_id": "MLS-B2",
+      "kind": "acl_counter_delta",
+      "observed_at": "2026-11-16 22:51:07.743367+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Matching deny counter increased between two snapshots."
+    }
+  ],
+  "candidate_hypotheses": [
+    {
+      "fault_class": "acl_fault",
+      "device_id": "MLS-B2",
+      "interface": null,
+      "affected_devices": [
+        "PC-B2-IT"
+      ],
+      "topology_path": [
+        "MON-HQ",
+        "SW-HQ-2",
+        "MLS-HQ",
+        "R-HQ",
+        "SW-WAN",
+        "R-B2",
+        "MLS-B2"
+      ]
+    }
+  ],
+  "status": "ok",
+  "interpretation": {
+    "disposition": "inconclusive",
+    "fault_class": "inconclusive",
+    "device_id": "MLS-B2",
+    "interface": "",
+    "summary": "Alert indicates suspected acl_fault at MLS-B2 affecting PC-B2-IT, but no concrete observational evidence or telemetry IDs are provided to confirm.",
+    "supporting_evidence_ids": [],
+    "alternative_checks": [
+      "acl_rules",
+      "routes",
+      "addresses"
+    ],
+    "uncertainty": "The observation relies solely on an unverified alert description without direct configuration or telemetry data.",
+    "missing_evidence": [
+      "acl_rules check output on MLS-B2",
+      "packet drop counters"
+    ]
+  },
+  "read_only_checks": [
+    {
+      "id": "acl_rules",
+      "command": "nft -j list table inet fyp_policy",
+      "device_id": "MLS-B2",
+      "executable": false
+    },
+    {
+      "id": "routes",
+      "command": "ip -j route show",
+      "device_id": "MLS-B2",
+      "executable": false
+    },
+    {
+      "id": "addresses",
+      "command": "ip -j address show",
+      "device_id": "MLS-B2",
+      "executable": false
+    }
+  ],
+  "actual_diagnostic_input": {
+    "description": "Alert: acl_fault suspected at MLS-B2 . Affected devices: PC-B2-IT",
+    "allowed_devices": [
+      "MLS-B1",
+      "MLS-B2",
+      "MLS-B3",
+      "MLS-HQ",
+      "MON-HQ",
+      "PC-B1-ADMIN",
+      "PC-B1-IT",
+      "PC-B1-STAFF",
+      "PC-B2-ADMIN",
+      "PC-B2-IT",
+      "PC-B2-STAFF",
+      "PC-B3-ADMIN",
+      "PC-B3-IT",
+      "PC-B3-STAFF",
+      "PC-HQ-ADMIN",
+      "PC-HQ-IT",
+      "PC-HQ-STAFF",
+      "R-B1",
+      "R-B2",
+      "R-B3",
+      "R-HQ",
+      "SW-B1-1",
+      "SW-B1-2",
+      "SW-B2-1",
+      "SW-B2-2",
+      "SW-B3-1",
+      "SW-B3-2",
+      "SW-HQ-1",
+      "SW-HQ-2",
+      "SW-WAN"
+    ],
+    "allowed_check_ids": [
+      "addresses",
+      "routes",
+      "ospf_neighbors",
+      "ospf_interfaces",
+      "acl_rules"
+    ]
+  },
+  "local_source_observations": "source-5fb1352ba15826d8b97b.json",
+  "review_boundary": "Support is relative to the actual diagnostic input. The masked source bundle is available only to verify derived observations; it must not give credit for information absent from the diagnostic input."
+}

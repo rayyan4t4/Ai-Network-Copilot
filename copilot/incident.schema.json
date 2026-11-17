@@ -1,0 +1,22 @@
+{
+ "$schema":"https://json-schema.org/draft/2020-12/schema",
+ "$id":"urn:fyp:incident:week2.1",
+ "title":"Traceable network incident package",
+ "type":"object",
+ "required":["incident_id","fingerprint","fault_class","device_id","interface","opened_at","updated_at","as_of","state","gate","facts","rules_applied","topology_path","affected_devices","evidence_digest"],
+ "properties":{
+  "incident_id":{"type":"string","format":"uuid"},
+  "fingerprint":{"type":"string"},
+  "fault_class":{"enum":["interface_shutdown","ospf_loss","acl_fault","high_utilization","unreachability"]},
+  "device_id":{"type":"string"},"interface":{"type":["string","null"]},
+  "opened_at":{"type":"string"},"updated_at":{"type":"string"},"as_of":{"type":"string"},
+  "state":{"enum":["active","inconclusive","resolved"]},
+  "gate":{"type":"object","required":["status","score","threshold","signals","missing","missing_critical","contradictions","score_is_probability"],
+   "properties":{"status":{"enum":["sufficient","inconclusive"]},"score":{"type":"number","minimum":0,"maximum":1},"score_is_probability":{"const":false}}},
+  "facts":{"type":"array","items":{"type":"object","required":["evidence_id","device_id","kind","observed_at","source","is_stale","value","summary"]}},
+  "rules_applied":{"type":"array","items":{"type":"string"}},
+  "topology_path":{"type":"array","items":{"type":"string"}},
+  "affected_devices":{"type":"array","items":{"type":"string"}},
+  "evidence_digest":{"type":"string"}
+ }
+}

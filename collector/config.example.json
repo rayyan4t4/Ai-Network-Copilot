@@ -1,0 +1,10 @@
+{
+  "database": "dbname=copilot user=root host=/run/postgresql",
+  "snmp_community": "SET_IN_PRIVATE_CONFIG",
+  "poll_interval_seconds": 30,
+  "probe_interval_seconds": 10,
+  "workers": 2,
+  "syslog_file": "/var/log/fyp/telemetry.jsonl",
+  "inventory_file": "/opt/copilot/inventory.json",
+  "capacity_overrides_bps": {}
+}

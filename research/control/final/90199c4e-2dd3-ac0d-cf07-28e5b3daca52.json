@@ -1,0 +1,38 @@
+{
+  "case_id": "90199c4e-2dd3-ac0d-cf07-28e5b3daca52",
+  "category": "high_utilization",
+  "underlying_class": "high_utilization",
+  "branch": "B2",
+  "device_id": "R-B2",
+  "interface": "eth1",
+  "target_host": "PC-B2-IT",
+  "load_mbps": 4,
+  "sequence": 24,
+  "started_at": "2026-11-16T22:58:42.796163+00:00",
+  "complete": true,
+  "intervention": {
+    "exit_code": 0,
+    "at": "2026-11-16T22:58:42.864115+00:00",
+    "stdout": "",
+    "stderr": ""
+  },
+  "captured_at": "2026-11-16T22:59:37.923440+00:00",
+  "observed_as_of": "2026-11-16 22:59:32.128431+00:00",
+  "capture_lag_seconds": 5.795009,
+  "observed_candidates": [
+    {
+      "class": "high_utilization",
+      "device": "R-B2",
+      "gate": "sufficient",
+      "missing": []
+    }
+  ],
+  "restoration": {
+    "exit_code": 0,
+    "at": "2026-11-16T22:59:38.075808+00:00",
+    "stdout": "",
+    "stderr": ""
+  },
+  "restored_at": "2026-11-16T22:59:38.075808+00:00",
+  "restoration_verified": true
+}

@@ -1,0 +1,77 @@
+{
+  "case_id": "57ebbd74-370a-828a-33c9-ee593bf91587",
+  "category": "ospf_loss",
+  "underlying_class": "ospf_loss",
+  "branch": "B1",
+  "device_id": "R-B1",
+  "interface": "eth0",
+  "target_host": "PC-B1-IT",
+  "load_mbps": 3,
+  "sequence": 7,
+  "started_at": "2026-11-16T22:16:40.695601+00:00",
+  "complete": true,
+  "intervention": {
+    "exit_code": 0,
+    "at": "2026-11-16T22:16:40.955203+00:00",
+    "stdout": "This command is deprecated, because it is not VRF-aware.\nPlease, use \"ip ospf passive\" on an interface instead.\n",
+    "stderr": ""
+  },
+  "captured_at": "2026-11-16T22:17:36.009016+00:00",
+  "observed_as_of": "2026-11-16 22:17:29.684390+00:00",
+  "capture_lag_seconds": 6.324626,
+  "observed_candidates": [
+    {
+      "class": "ospf_loss",
+      "device": "R-B1",
+      "gate": "inconclusive",
+      "missing": [
+        "neighbor_loss",
+        "configuration_change"
+      ]
+    },
+    {
+      "class": "unreachability",
+      "device": "PC-B1-ADMIN",
+      "gate": "sufficient",
+      "missing": [
+        "fresh_poll_outcome"
+      ]
+    },
+    {
+      "class": "unreachability",
+      "device": "PC-B1-IT",
+      "gate": "sufficient",
+      "missing": [
+        "fresh_poll_outcome"
+      ]
+    },
+    {
+      "class": "unreachability",
+      "device": "PC-B1-STAFF",
+      "gate": "sufficient",
+      "missing": [
+        "fresh_poll_outcome"
+      ]
+    },
+    {
+      "class": "unreachability",
+      "device": "SW-B1-1",
+      "gate": "sufficient",
+      "missing": []
+    },
+    {
+      "class": "unreachability",
+      "device": "SW-B1-2",
+      "gate": "sufficient",
+      "missing": []
+    }
+  ],
+  "restoration": {
+    "exit_code": 0,
+    "at": "2026-11-16T22:17:36.176491+00:00",
+    "stdout": "This command is deprecated, because it is not VRF-aware.\nPlease, use \"no ip ospf passive\" on an interface instead.\n",
+    "stderr": ""
+  },
+  "restored_at": "2026-11-16T22:17:36.176491+00:00",
+  "restoration_verified": true
+}

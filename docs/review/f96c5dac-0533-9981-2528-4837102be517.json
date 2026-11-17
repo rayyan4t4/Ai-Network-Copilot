@@ -1,0 +1,301 @@
+{
+  "review_id": "f96c5dac-0533-9981-2528-4837102be517",
+  "observations": [
+    {
+      "evidence_id": "snapshot:ad2a9be6-bc19-4cd7-af36-695d81b98cfb:link:eth0",
+      "device_id": "R-B1",
+      "kind": "console_interface",
+      "observed_at": "2026-11-16 23:40:47.712067+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Console shows eth0 administratively up."
+    },
+    {
+      "evidence_id": "snapshot:ad2a9be6-bc19-4cd7-af36-695d81b98cfb:ospf",
+      "device_id": "R-B1",
+      "kind": "ospf_neighbors",
+      "observed_at": "2026-11-16 23:40:47.712067+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Read-only FRR OSPF neighbor snapshot."
+    },
+    {
+      "evidence_id": "snapshot:ad2a9be6-bc19-4cd7-af36-695d81b98cfb:ospf_config:eth0",
+      "device_id": "R-B1",
+      "kind": "ospf_config",
+      "observed_at": "2026-11-16 23:40:47.712067+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "OSPF interface eth0 is passive; verified healthy reference mode is active."
+    },
+    {
+      "evidence_id": "event:23044cd0-de1b-5c54-9fa8-0dfaa7d4fb8c",
+      "device_id": "R-B1",
+      "kind": "ospf_loss_event",
+      "observed_at": "2026-11-16 23:40:02.333916+00:00",
+      "source": "syslog",
+      "is_stale": false,
+      "summary": "Identified ospfd event: ospf_loss_event on eth0."
+    },
+    {
+      "evidence_id": "snapshot:6af515f2-5597-439d-b29d-f00549d4d247:ospf",
+      "device_id": "R-B1",
+      "kind": "ospf_neighbors",
+      "observed_at": "2026-11-16 23:40:27.122418+00:00",
+      "source": "authorized_readonly_console",
+      "is_stale": false,
+      "summary": "Previous missing-neighbor observation with underlying interface up."
+    }
+  ],
+  "candidate_hypotheses": [
+    {
+      "fault_class": "ospf_loss",
+      "device_id": "R-B1",
+      "interface": "eth0",
+      "affected_devices": [
+        "MLS-B1",
+        "PC-B1-ADMIN",
+        "PC-B1-IT",
+        "PC-B1-STAFF",
+        "SW-B1-1",
+        "SW-B1-2"
+      ],
+      "topology_path": [
+        "MON-HQ",
+        "SW-HQ-2",
+        "MLS-HQ",
+        "R-HQ",
+        "SW-WAN",
+        "R-B1"
+      ]
+    }
+  ],
+  "status": "ok",
+  "interpretation": {
+    "disposition": "supported",
+    "fault_class": "ospf_loss",
+    "device_id": "R-B1",
+    "interface": "eth0",
+    "summary": "OSPF loss observed on R-B1 interface eth0 due to incorrect passive interface configuration.",
+    "supporting_evidence_ids": [
+      "snapshot:ad2a9be6-bc19-4cd7-af36-695d81b98cfb:ospf_config:eth0",
+      "event:23044cd0-de1b-5c54-9fa8-0dfaa7d4fb8c"
+    ],
+    "alternative_checks": [
+      "ospf_interfaces",
+      "ospf_neighbors"
+    ],
+    "uncertainty": "The exact impact on specific adjacent routers beyond R-B1 is not fully detailed in the current observations.",
+    "missing_evidence": [
+      "ospf_interfaces"
+    ]
+  },
+  "read_only_checks": [
+    {
+      "id": "ospf_interfaces",
+      "command": "vtysh -c 'show ip ospf interface json'",
+      "device_id": "R-B1",
+      "executable": false
+    },
+    {
+      "id": "ospf_neighbors",
+      "command": "vtysh -c 'show ip ospf neighbor json'",
+      "device_id": "R-B1",
+      "executable": false
+    }
+  ],
+  "actual_diagnostic_input": {
+    "as_of": "2026-11-16 23:40:49.816675+00:00",
+    "observations": [
+      {
+        "evidence_id": "snapshot:ad2a9be6-bc19-4cd7-af36-695d81b98cfb:link:eth0",
+        "device_id": "R-B1",
+        "kind": "console_interface",
+        "observed_at": "2026-11-16 23:40:47.712067+00:00",
+        "source": "authorized_readonly_console",
+        "is_stale": false,
+        "summary": "Console shows eth0 administratively up."
+      },
+      {
+        "evidence_id": "snapshot:ad2a9be6-bc19-4cd7-af36-695d81b98cfb:ospf",
+        "device_id": "R-B1",
+        "kind": "ospf_neighbors",
+        "observed_at": "2026-11-16 23:40:47.712067+00:00",
+        "source": "authorized_readonly_console",
+        "is_stale": false,
+        "summary": "Read-only FRR OSPF neighbor snapshot."
+      },
+      {
+        "evidence_id": "snapshot:ad2a9be6-bc19-4cd7-af36-695d81b98cfb:ospf_config:eth0",
+        "device_id": "R-B1",
+        "kind": "ospf_config",
+        "observed_at": "2026-11-16 23:40:47.712067+00:00",
+        "source": "authorized_readonly_console",
+        "is_stale": false,
+        "summary": "OSPF interface eth0 is passive; verified healthy reference mode is active."
+      },
+      {
+        "evidence_id": "event:23044cd0-de1b-5c54-9fa8-0dfaa7d4fb8c",
+        "device_id": "R-B1",
+        "kind": "ospf_loss_event",
+        "observed_at": "2026-11-16 23:40:02.333916+00:00",
+        "source": "syslog",
+        "is_stale": false,
+        "summary": "Identified ospfd event: ospf_loss_event on eth0."
+      },
+      {
+        "evidence_id": "snapshot:6af515f2-5597-439d-b29d-f00549d4d247:ospf",
+        "device_id": "R-B1",
+        "kind": "ospf_neighbors",
+        "observed_at": "2026-11-16 23:40:27.122418+00:00",
+        "source": "authorized_readonly_console",
+        "is_stale": false,
+        "summary": "Previous missing-neighbor observation with underlying interface up."
+      }
+    ],
+    "candidate_hypotheses": [
+      {
+        "fault_class": "ospf_loss",
+        "device_id": "R-B1",
+        "interface": "eth0",
+        "affected_devices": [
+          "MLS-B1",
+          "PC-B1-ADMIN",
+          "PC-B1-IT",
+          "PC-B1-STAFF",
+          "SW-B1-1",
+          "SW-B1-2"
+        ],
+        "topology_path": [
+          "MON-HQ",
+          "SW-HQ-2",
+          "MLS-HQ",
+          "R-HQ",
+          "SW-WAN",
+          "R-B1"
+        ]
+      }
+    ],
+    "health_counts": {
+      "healthy": 24,
+      "unknown": 0,
+      "unreachable": 6
+    },
+    "allowed_devices": [
+      "MLS-B1",
+      "MLS-B2",
+      "MLS-B3",
+      "MLS-HQ",
+      "MON-HQ",
+      "PC-B1-ADMIN",
+      "PC-B1-IT",
+      "PC-B1-STAFF",
+      "PC-B2-ADMIN",
+      "PC-B2-IT",
+      "PC-B2-STAFF",
+      "PC-B3-ADMIN",
+      "PC-B3-IT",
+      "PC-B3-STAFF",
+      "PC-HQ-ADMIN",
+      "PC-HQ-IT",
+      "PC-HQ-STAFF",
+      "R-B1",
+      "R-B2",
+      "R-B3",
+      "R-HQ",
+      "SW-B1-1",
+      "SW-B1-2",
+      "SW-B2-1",
+      "SW-B2-2",
+      "SW-B3-1",
+      "SW-B3-2",
+      "SW-HQ-1",
+      "SW-HQ-2",
+      "SW-WAN"
+    ],
+    "curated_guidance": [
+      {
+        "id": "KB-LINK",
+        "faults": [
+          "interface_shutdown",
+          "unreachability"
+        ],
+        "title": "Distinguish administrative state from reachability symptoms",
+        "guidance": "Compare the named interface's observed administrative state and link events. Downstream probe failures establish impact, not the physical or configuration cause by themselves.",
+        "source": "https://github.com/iproute2/iproute2/blob/main/man/man8/ip-link.8.in",
+        "command_ids": [
+          "link_state",
+          "addresses",
+          "routes"
+        ]
+      },
+      {
+        "id": "KB-OSPF",
+        "faults": [
+          "ospf_loss",
+          "interface_shutdown"
+        ],
+        "title": "Check the expected adjacency and underlying interface",
+        "guidance": "Inspect FRR neighbors and interface configuration. Point-to-point uplinks require the expected neighbor. On a broadcast network a 2-Way DROther relationship may be normal; do not label every non-Full pair a fault.",
+        "source": "https://docs.frrouting.org/en/stable-8.4/ospfd.html",
+        "command_ids": [
+          "ospf_neighbors",
+          "ospf_interfaces",
+          "routes"
+        ]
+      },
+      {
+        "id": "KB-ACL",
+        "faults": [
+          "acl_fault"
+        ],
+        "title": "Attribute a failed flow using rule matches and counter changes",
+        "guidance": "Compare the actual source, destination and incoming interface against the rule. Require a positive deny-counter change over an observation interval. Existing intended policy blocks are healthy behavior.",
+        "source": "https://netfilter.org/projects/nftables/manpage.html",
+        "command_ids": [
+          "acl_rules",
+          "routes"
+        ]
+      },
+      {
+        "id": "KB-RATE",
+        "faults": [
+          "high_utilization"
+        ],
+        "title": "Use sustained counter deltas and effective capacity",
+        "guidance": "Rates require elapsed time, usable consecutive counters and reset handling. Virtual NIC speed is not a validated bottleneck capacity. Inspect the configured shaping and repeat measurements before interpreting a high percentage.",
+        "source": "https://www.rfc-editor.org/rfc/rfc2863",
+        "command_ids": [
+          "link_counters",
+          "traffic_control"
+        ]
+      },
+      {
+        "id": "KB-MISSING",
+        "faults": [
+          "interface_shutdown",
+          "ospf_loss",
+          "acl_fault",
+          "high_utilization",
+          "unreachability"
+        ],
+        "title": "Abstain when distinguishing evidence is unavailable",
+        "guidance": "A lost management path can remove several signals at once. Preserve last observations and their age. Missing, stale or contradictory critical evidence requires an inconclusive outcome and further read-only checks.",
+        "source": "local:FYP Proposal.docx:5.4-5.6",
+        "command_ids": [
+          "link_state",
+          "routes"
+        ]
+      }
+    ],
+    "allowed_check_ids": [
+      "addresses",
+      "routes",
+      "ospf_neighbors",
+      "ospf_interfaces",
+      "acl_rules"
+    ]
+  },
+  "local_source_observations": "source-9794918427a70ce6fcd8.json",
+  "review_boundary": "Support is relative to the actual diagnostic input. The masked source bundle is available only to verify derived observations; it must not give credit for information absent from the diagnostic input."
+}

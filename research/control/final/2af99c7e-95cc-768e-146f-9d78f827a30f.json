@@ -1,0 +1,41 @@
+{
+  "case_id": "2af99c7e-95cc-768e-146f-9d78f827a30f",
+  "category": "insufficient",
+  "underlying_class": "unreachability",
+  "branch": "B1",
+  "device_id": "PC-B1-IT",
+  "interface": "",
+  "target_host": "PC-B1-IT",
+  "load_mbps": 4,
+  "sequence": 63,
+  "started_at": "2026-11-17T00:05:13.433492+00:00",
+  "complete": true,
+  "intervention": {
+    "exit_code": 0,
+    "at": "2026-11-17T00:05:13.553674+00:00",
+    "stdout": "",
+    "stderr": ""
+  },
+  "captured_at": "2026-11-17T00:05:48.601963+00:00",
+  "observed_as_of": "2026-11-17 00:05:45.623434+00:00",
+  "capture_lag_seconds": 2.978529,
+  "observed_candidates": [
+    {
+      "class": "unreachability",
+      "device": "PC-B1-IT",
+      "gate": "inconclusive",
+      "missing": [
+        "upstream_status",
+        "fresh_poll_outcome"
+      ]
+    }
+  ],
+  "restoration": {
+    "exit_code": 0,
+    "at": "2026-11-17T00:05:48.662574+00:00",
+    "stdout": "",
+    "stderr": ""
+  },
+  "restored_at": "2026-11-17T00:05:48.662574+00:00",
+  "restoration_verified": true
+}

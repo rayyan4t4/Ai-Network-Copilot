@@ -1,0 +1,13 @@
+{
+  "recorded_at": "2026-11-17T11:53:19.942264+00:00",
+  "passed": true,
+  "suite_counts": [
+    10,
+    38,
+    24,
+    9,
+    10
+  ],
+  "total": 91,
+  "scope": "All tests from a clean committed checkout without machine-private configuration, using a fresh requirements.txt virtual environment."
+}

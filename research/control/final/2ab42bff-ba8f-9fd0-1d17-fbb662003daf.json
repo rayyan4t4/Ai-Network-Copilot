@@ -1,0 +1,38 @@
+{
+  "case_id": "2ab42bff-ba8f-9fd0-1d17-fbb662003daf",
+  "category": "acl_fault",
+  "underlying_class": "acl_fault",
+  "branch": "B3",
+  "device_id": "MLS-B3",
+  "interface": "",
+  "target_host": "PC-B3-IT",
+  "load_mbps": 3,
+  "sequence": 15,
+  "started_at": "2026-11-16T22:45:06.973468+00:00",
+  "complete": true,
+  "intervention": {
+    "exit_code": 0,
+    "at": "2026-11-16T22:45:07.149384+00:00",
+    "stdout": "",
+    "stderr": ""
+  },
+  "captured_at": "2026-11-16T22:45:57.208535+00:00",
+  "observed_as_of": "2026-11-16 22:45:55.332163+00:00",
+  "capture_lag_seconds": 1.876372,
+  "observed_candidates": [
+    {
+      "class": "acl_fault",
+      "device": "MLS-B3",
+      "gate": "sufficient",
+      "missing": []
+    }
+  ],
+  "restoration": {
+    "exit_code": 0,
+    "at": "2026-11-16T22:45:57.357273+00:00",
+    "stdout": "",
+    "stderr": ""
+  },
+  "restored_at": "2026-11-16T22:45:57.357273+00:00",
+  "restoration_verified": true
+}

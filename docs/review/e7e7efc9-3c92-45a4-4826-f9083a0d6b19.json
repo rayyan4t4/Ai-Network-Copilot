@@ -1,0 +1,155 @@
+{
+  "review_id": "e7e7efc9-3c92-45a4-4826-f9083a0d6b19",
+  "observations": [
+    {
+      "evidence_id": "sample:1d10248f-f450-4a7a-a32e-2b5f3b665425:R-B3:eth1",
+      "device_id": "R-B3",
+      "kind": "interface",
+      "observed_at": "2026-11-17 00:07:13.915695+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "R-B3:eth1 administrative status 1, operational status 1."
+    },
+    {
+      "evidence_id": "rate:1d10248f-f450-4a7a-a32e-2b5f3b665425:R-B3:eth1",
+      "device_id": "R-B3",
+      "kind": "rate",
+      "observed_at": "2026-11-17 00:07:13.915695+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "Measured R-B3 eth1 traffic: ingress 6601 bps, egress 2445494 bps. Configured effective capacity 2000000 bps; utilization at least 80 percent."
+    },
+    {
+      "evidence_id": "rate:e675f924-2a05-4e50-90bc-c2a9633d98ad:R-B3:eth1",
+      "device_id": "R-B3",
+      "kind": "rate",
+      "observed_at": "2026-11-17 00:07:04.095503+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "Measured R-B3 eth1 traffic: ingress 6626 bps, egress 1639619 bps. Configured effective capacity 2000000 bps; utilization at least 80 percent."
+    },
+    {
+      "evidence_id": "rate:1dca6628-b972-4ff5-ba41-2095f0a17b13:R-B3:eth1",
+      "device_id": "R-B3",
+      "kind": "rate",
+      "observed_at": "2026-11-17 00:06:53.110908+00:00",
+      "source": "snmp",
+      "is_stale": false,
+      "summary": "Measured R-B3 eth1 traffic: ingress 6345 bps, egress 1900356 bps. Configured effective capacity 2000000 bps; utilization at least 80 percent."
+    }
+  ],
+  "candidate_hypotheses": [
+    {
+      "fault_class": "high_utilization",
+      "device_id": "R-B3",
+      "interface": "eth1",
+      "affected_devices": [],
+      "topology_path": [
+        "MON-HQ",
+        "SW-HQ-2",
+        "MLS-HQ",
+        "R-HQ",
+        "SW-WAN",
+        "R-B3"
+      ]
+    }
+  ],
+  "status": "ok",
+  "interpretation": {
+    "disposition": "inconclusive",
+    "fault_class": "inconclusive",
+    "device_id": "R-B3",
+    "interface": "eth1",
+    "summary": "Alert suspects high utilization on R-B3 eth1, but no operational telemetry observations are provided to confirm or deny the condition.",
+    "supporting_evidence_ids": [],
+    "alternative_checks": [
+      "addresses",
+      "routes",
+      "ospf_neighbors",
+      "ospf_interfaces",
+      "acl_rules"
+    ],
+    "uncertainty": "The alert relies entirely on an unverified suspicion without baseline statistics or interface metrics.",
+    "missing_evidence": [
+      "interface counters",
+      "traffic utilization logs",
+      "error logs"
+    ]
+  },
+  "read_only_checks": [
+    {
+      "id": "addresses",
+      "command": "ip -j address show",
+      "device_id": "R-B3",
+      "executable": false
+    },
+    {
+      "id": "routes",
+      "command": "ip -j route show",
+      "device_id": "R-B3",
+      "executable": false
+    },
+    {
+      "id": "ospf_neighbors",
+      "command": "vtysh -c 'show ip ospf neighbor json'",
+      "device_id": "R-B3",
+      "executable": false
+    },
+    {
+      "id": "ospf_interfaces",
+      "command": "vtysh -c 'show ip ospf interface json'",
+      "device_id": "R-B3",
+      "executable": false
+    },
+    {
+      "id": "acl_rules",
+      "command": "nft -j list table inet fyp_policy",
+      "device_id": "R-B3",
+      "executable": false
+    }
+  ],
+  "actual_diagnostic_input": {
+    "description": "Alert: high_utilization suspected at R-B3 eth1. Affected devices: ",
+    "allowed_devices": [
+      "MLS-B1",
+      "MLS-B2",
+      "MLS-B3",
+      "MLS-HQ",
+      "MON-HQ",
+      "PC-B1-ADMIN",
+      "PC-B1-IT",
+      "PC-B1-STAFF",
+      "PC-B2-ADMIN",
+      "PC-B2-IT",
+      "PC-B2-STAFF",
+      "PC-B3-ADMIN",
+      "PC-B3-IT",
+      "PC-B3-STAFF",
+      "PC-HQ-ADMIN",
+      "PC-HQ-IT",
+      "PC-HQ-STAFF",
+      "R-B1",
+      "R-B2",
+      "R-B3",
+      "R-HQ",
+      "SW-B1-1",
+      "SW-B1-2",
+      "SW-B2-1",
+      "SW-B2-2",
+      "SW-B3-1",
+      "SW-B3-2",
+      "SW-HQ-1",
+      "SW-HQ-2",
+      "SW-WAN"
+    ],
+    "allowed_check_ids": [
+      "addresses",
+      "routes",
+      "ospf_neighbors",
+      "ospf_interfaces",
+      "acl_rules"
+    ]
+  },
+  "local_source_observations": "source-bb908762abdac9fe1fcb.json",
+  "review_boundary": "Support is relative to the actual diagnostic input. The masked source bundle is available only to verify derived observations; it must not give credit for information absent from the diagnostic input."
+}
